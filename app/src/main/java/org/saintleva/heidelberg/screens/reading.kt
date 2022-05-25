@@ -19,14 +19,52 @@ package org.saintleva.heidelberg.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Face
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavHostController
+import kotlinx.coroutines.launch
+import org.saintleva.heidelberg.Repository
 
 
 @Composable
 fun ReadingScreean(navController: NavHostController) {
-    Box(modifier = Modifier.fillMaxSize().background(color = Color.Green))
+    val scaffoldState = rememberScaffoldState()
+    val scope = rememberCoroutineScope()
+
+    Scaffold(
+        scaffoldState = scaffoldState,
+        drawerContent = { SelectTranslationScreen(navController) },
+        topBar = {
+            TopAppBar {
+                IconButton(
+                    onClick = {
+                        scope.launch {
+                            scaffoldState.drawerState.open()
+                        }
+                    }
+                ) {
+                    Icon(Icons.Filled.Face, contentDescription = "Navigation Drawer")
+                }
+            }
+        }
+    ) {
+        Column(modifier = Modifier
+            .fillMaxSize()
+            .background(color = Color.Green)
+        ) {
+            if (Repository.currentTranslationId.value == null)
+                Text("TRANSLATION NOT SELECTED")
+            else {
+                Text(Repository.currentTranslationId.value!!)
+                Text(Repository.currentTraslationName!!)
+            }
+        }
+    }
 }
