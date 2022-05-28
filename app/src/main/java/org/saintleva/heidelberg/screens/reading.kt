@@ -55,16 +55,17 @@ fun ReadingScreean(navController: NavHostController) {
             }
         }
     ) {
-        Column(modifier = Modifier
+        Box(modifier = Modifier
             .fillMaxSize()
             .background(color = Color.Green)
         ) {
-            if (Repository.currentTranslationId.value == null)
-                Text("TRANSLATION NOT SELECTED")
-            else {
-                Text(Repository.currentTranslationId.value!!)
-                Text(Repository.currentTraslationName!!)
-            }
+//            if (Repository.currentTranslationId.value == null)
+//                Text("TRANSLATION NOT SELECTED")
+//            else {
+//                Text(Repository.currentTranslationId.value!!)
+//                Text(Repository.currentTraslationName!!)
+//            }
+            Text(Repository.transtation.value)
         }
     }
 }

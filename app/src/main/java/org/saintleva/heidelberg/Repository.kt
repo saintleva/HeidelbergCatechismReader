@@ -17,6 +17,7 @@
 
 package org.saintleva.heidelberg
 
+import android.content.Context
 import androidx.compose.runtime.mutableStateOf
 
 
@@ -42,4 +43,14 @@ object Repository {
             else
                 null
         }
+
+    val transtation = mutableStateOf("")
+
+    fun loadTranstlation(context: Context) {
+        val assetManager = context.assets
+        transtation.value = assetManager
+            .open("translations/1temp.translation")
+            .bufferedReader()
+            .readText()
+    }
 }
