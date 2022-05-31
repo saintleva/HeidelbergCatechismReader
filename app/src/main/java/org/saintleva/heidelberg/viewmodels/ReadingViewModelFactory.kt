@@ -15,14 +15,18 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.saintleva.heidelberg.data
+package org.saintleva.heidelberg.viewmodels
+
+import android.content.Context
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 
 
-class Record(
-    val question: String,
-    val answer: String
-)
+class ReadingViewModelFactory(private val context: Context) : ViewModelProvider.Factory {
 
-class Catechism {
-    val records = mutableListOf<Record>()
+    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+        if (modelClass.isAssignableFrom(ReadingViewModel::class.java))
+            return ReadingViewModel(context) as T
+        throw IllegalArgumentException("Unknown ViewModel class")
+    }
 }

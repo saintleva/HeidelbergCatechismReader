@@ -15,14 +15,15 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.saintleva.heidelberg.data
+package org.saintleva.heidelberg.viewmodels
+
+import android.content.Context
+import androidx.lifecycle.ViewModel
+import org.saintleva.heidelberg.Repository
+import org.saintleva.heidelberg.data.loadCatechismFromXml
 
 
-class Record(
-    val question: String,
-    val answer: String
-)
+class ReadingViewModel(context: Context) : ViewModel() {
 
-class Catechism {
-    val records = mutableListOf<Record>()
+    val translation = loadCatechismFromXml(Repository.loadTranstlation(context))
 }

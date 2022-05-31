@@ -21,6 +21,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Face
@@ -28,9 +29,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import kotlinx.coroutines.launch
 import org.saintleva.heidelberg.Repository
+import org.saintleva.heidelberg.viewmodels.ReadingViewModel
+import org.saintleva.heidelberg.viewmodels.ReadingViewModelFactory
 
 
 @Composable
@@ -65,7 +70,18 @@ fun ReadingScreean(navController: NavHostController) {
 //                Text(Repository.currentTranslationId.value!!)
 //                Text(Repository.currentTraslationName!!)
 //            }
-            Text(Repository.transtation.value)
+//            Text(Repository.transtation.value)
+            val vm = viewModel<ReadingViewModel>(
+                factory = ReadingViewModelFactory(LocalContext.current))
+            LazyColumn {
+                for (record in vm.translation.records)
+                    item {
+                        Column {
+                            Text(record.question)
+                            Text(record.answer)
+                        }
+                    }
+            }
         }
     }
 }

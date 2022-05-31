@@ -17,27 +17,30 @@
 
 package org.saintleva.heidelberg.data
 
+import org.jdom2.Element
+import org.jdom2.JDOMFactory
+import org.jdom2.input.SAXBuilder
 import java.io.InputStream
 import javax.xml.parsers.DocumentBuilderFactory
 
 
-class XmlTranslationException(message: String) : Exception(message)
+//abstract class XmlTranslationException(message: String) : Exception(message)
+//class RecodsAreNumberedIncorrectlyException :
+//    XmlTranslationException("Records are numbered incorrectly")
+//class SingleChildNotFoundException :
+//    XmlTranslationException("None or several child with given name found")
 
-fun loadCatechismFromXml(stream: InputStream): String {
-    val documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder()
-    val document = documentBuilder.parse(stream)
-    val root = document.documentElement
+fun loadCatechismFromXml(stream: InputStream): Catechism {
+//    val documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder()
+//    val document = documentBuilder.parse(stream)
+//    val root = document.documentElement
+    val document = SAXBuilder().build(stream)
+    val root = document.rootElement
     val result = Catechism()
-    for (i in 0 until root.childNodes.length) {
-        val recordNode = root.childNodes.item(i)
-        if (recordNode.attributes.getNamedItem("number").nodeValue.toInt() != i + 1)
-            throw XmlTranslationException("Records have not been numerated correctly")
-        val questionNode = recordNode.childNodes.item(0)
-        if (questionNode.nodeName != "question")
-            throw XmlTranslationException("There is must be 'question' node")
-        val answerNode = recordNode.childNodes.item(1)
-        if (answerNode.nodeName != "answer")
-            throw XmlTranslationException("There is must be 'question' node")
-        result.records.add(Record(questionNode.nodeValue, answerNode.nodeValue))
-    }
+    for (recordNode in root.getChildren("record"))
+        result.records.add(Record(
+            recordNode.getChild("question").text,
+            recordNode.getChild("answer").text
+        ))
+    return result
 }
