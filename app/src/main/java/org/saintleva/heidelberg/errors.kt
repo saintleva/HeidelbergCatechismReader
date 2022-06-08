@@ -15,14 +15,11 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.saintleva.heidelberg.data
+package org.saintleva.heidelberg
 
 
-class Record(
-    val question: String,
-    val answer: String
-)
+abstract class HeidelbergException: Exception()
 
-class Catechism(val description: String) {
-    val records = mutableListOf<Record>()
-}
+abstract class DataFormatException: HeidelbergException()
+
+class TranslationFormatException: DataFormatException()

@@ -17,13 +17,34 @@
 
 package org.saintleva.heidelberg.viewmodels
 
+import android.app.Application
 import android.content.Context
+import androidx.compose.runtime.State
+import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import org.saintleva.heidelberg.Repository
+import org.saintleva.heidelberg.TranslationFormatException
+import org.saintleva.heidelberg.data.Catechism
 import org.saintleva.heidelberg.data.loadCatechismFromXml
 
 
-class ReadingViewModel(context: Context) : ViewModel() {
+class ReadingViewModel(localContext: Context) : ViewModel() {
 
-    val translation = loadCatechismFromXml(Repository.loadTranstlation(context))
+    val context = localContext.applicationContext
+
+    private var _error = mutableStateOf<TranslationFormatException?>(null)
+    val error: State<TranslationFormatException?>
+        get() = _error
+
+    var translation: Catechism? = null
+
+    init {
+        try {
+            translation = loadCatechismFromXml(Repository.loadTranstlation(context))
+        }
+        catch (e: TranslationFormatException) {
+            _error.value = e
+        }
+    }
+
 }

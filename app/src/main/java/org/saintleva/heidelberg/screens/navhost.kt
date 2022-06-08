@@ -27,7 +27,7 @@ import androidx.navigation.compose.composable
 fun AppNavGraph(navController: NavHostController) {
     NavHost(navController = navController, startDestination = "reading") {
         composable("reading") {
-            ReadingScreean(navController)
+            ReadingScreen(navController)
         }
     }
 }

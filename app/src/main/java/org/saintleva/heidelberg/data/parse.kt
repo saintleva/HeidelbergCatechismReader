@@ -17,10 +17,15 @@
 
 package org.saintleva.heidelberg.data
 
+import org.jdom2.Document
 import org.jdom2.Element
 import org.jdom2.JDOMFactory
+import org.jdom2.input.DOMBuilder
 import org.jdom2.input.SAXBuilder
+import org.saintleva.heidelberg.TranslationFormatException
 import java.io.InputStream
+import java.io.InputStreamReader
+import java.lang.StringBuilder
 import javax.xml.parsers.DocumentBuilderFactory
 
 
@@ -30,17 +35,36 @@ import javax.xml.parsers.DocumentBuilderFactory
 //class SingleChildNotFoundException :
 //    XmlTranslationException("None or several child with given name found")
 
+fun trimTextInXml(text: CharSequence): String {
+    val result = StringBuilder()
+    val lines = text.lines()
+    for (i in 1 until lines.size - 1) {
+        result.append(lines[i].trimStart())
+        if (i != lines.size - 2)
+            result.append(" ")
+    }
+    return result.toString()
+}
+
+fun getRootElement(stream: InputStream): Element {
+    //TODO: Migrate to org.jdom2.input.SAXBuilder()
+    val documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder()
+    val document = DOMBuilder().build(documentBuilder.parse(stream))
+    return document.rootElement
+}
+
 fun loadCatechismFromXml(stream: InputStream): Catechism {
-//    val documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder()
-//    val document = documentBuilder.parse(stream)
-//    val root = document.documentElement
-    val document = SAXBuilder().build(stream)
-    val root = document.rootElement
-    val result = Catechism()
-    for (recordNode in root.getChildren("record"))
-        result.records.add(Record(
-            recordNode.getChild("question").text,
-            recordNode.getChild("answer").text
-        ))
-    return result
+    try {
+        val rootNode = getRootElement(stream)
+        val result = Catechism(trimTextInXml(rootNode.getChild("description").text))
+        for (recordNode in rootNode.getChild("data").getChildren("record"))
+            result.records.add(Record(
+                trimTextInXml(recordNode.getChild("question").text),
+                trimTextInXml(recordNode.getChild("answer").text)
+            ))
+        return result
+    }
+    catch (e: org.xml.sax.SAXParseException) {
+        throw TranslationFormatException()
+    }
 }
