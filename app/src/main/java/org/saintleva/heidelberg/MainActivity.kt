@@ -17,9 +17,6 @@ import org.saintleva.heidelberg.ui.theme.HeidelbergCatechismReaderTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        Repository.loadTranstlation(this)
-
         setContent {
             val navController = rememberNavController()
             HeidelbergCatechismReaderTheme {

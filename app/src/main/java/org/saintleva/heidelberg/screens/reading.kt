@@ -17,17 +17,17 @@
 
 package org.saintleva.heidelberg.screens
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Face
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -36,18 +36,54 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import kotlinx.coroutines.launch
+import org.saintleva.heidelberg.*
 import org.saintleva.heidelberg.R
-import org.saintleva.heidelberg.Repository
 import org.saintleva.heidelberg.viewmodels.ReadingViewModel
 import org.saintleva.heidelberg.viewmodels.ReadingViewModelFactory
+import java.lang.Exception
 
-//import org.saintleva.heidelberg.viewmodels.ReadingViewModelFactory
 
+@Composable
+fun DataAlert(exception: DataException, onClose: () -> Unit) {
+
+    val errorMessage = when(exception) {
+        is FileLoadingException -> stringResource(R.string.error_while_loading_from_file_with)
+        is DataFormatException -> stringResource(R.string.invalid_format_in_the_file_with)
+        else -> stringResource(R.string.another_error_concerned_with)
+    } + " " +
+    when(exception.fileType) {
+        FileType.TRANSLATION -> stringResource(R.string.catechism_translation)
+        FileType.STRUCTURE -> stringResource(R.string.catechism_structure)
+        FileType.LIST -> stringResource(R.string.translation_list)
+    } + ": ${exception.message}"
+
+    AlertDialog(
+        onDismissRequest = onClose,
+        title = { Text(stringResource(R.string.error)) },
+        text = { Text(errorMessage) },
+        buttons = {
+            Box(
+                modifier = Modifier
+                    .padding(all = 8.dp)
+                    .fillMaxWidth()
+            ) {
+                Button(
+                    modifier = Modifier.align(Alignment.Center),
+                    onClick = onClose
+                ) {
+                    Text(text = "OK", fontSize = 22.sp)
+                }
+            }
+        }
+    )
+}
 
 @Composable
 fun ReadingScreen(navController: NavHostController) {
     val scaffoldState = rememberScaffoldState()
     val scope = rememberCoroutineScope()
+
+    val errorAlerted = remember { mutableStateOf(false) }
 
     Scaffold(
         scaffoldState = scaffoldState,
@@ -77,32 +113,18 @@ fun ReadingScreen(navController: NavHostController) {
             factory = ReadingViewModelFactory(LocalContext.current)
         )
 
-        if (vm.error.value != null)
-            AlertDialog(
-                onDismissRequest = {},
-                title = { Text(stringResource(R.string.error)) },
-                text = { Text(stringResource(R.string.translation_format_error)) },
-                buttons = {
-                    Box(modifier = Modifier
-                        .padding(all = 8.dp)
-                        .fillMaxWidth()) {
-                        Button(
-                            modifier = Modifier.align(Alignment.Center),
-                            onClick = {}
-                        ) {
-                            Text("OK", fontSize = 22.sp)
-                        }
-                    }
-                }
-
+        if (vm.error.value != null && errorAlerted.value == false)
+            DataAlert(
+                exception = vm.error.value!!,
+                onClose = { errorAlerted.value = true }
             )
-        else {
+        if (vm.error.value == null) {
+            errorAlerted.value = false
             val records = vm.translation!!.records
             LazyColumn {
                 for (i in 0 until records.count())
                     item {
                         Column {
-                            //TODO: Use stringResource()
                             Text(
                                 text = "${stringResource(R.string.question)} ${i + 1}",
                                 modifier = Modifier.padding(all = 4.dp),
@@ -124,6 +146,15 @@ fun ReadingScreen(navController: NavHostController) {
                 item {
                     Text(vm.translation!!.description)
                 }
+            }
+        }
+        if (vm.translation == null && (vm.error.value == null || errorAlerted.value == true)) {
+            Box(modifier = Modifier.fillMaxSize()) {
+                Text(
+                    text = stringResource(R.string.no_translation_selected),
+                    modifier = Modifier.align(Alignment.Center),
+                    style = MaterialTheme.typography.h6.copy(fontWeight = FontWeight.Bold)
+                )
             }
         }
     }

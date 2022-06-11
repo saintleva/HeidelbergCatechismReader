@@ -18,8 +18,12 @@
 package org.saintleva.heidelberg
 
 
-abstract class HeidelbergException: Exception()
+abstract class HeidelbergException(cause: Exception) : Exception(cause)
 
-abstract class DataFormatException: HeidelbergException()
+enum class FileType { TRANSLATION, STRUCTURE, LIST }
 
-class TranslationFormatException: DataFormatException()
+abstract class DataException(val fileType: FileType, cause: Exception) : HeidelbergException(cause)
+
+class FileLoadingException(fileType: FileType, cause: Exception) : DataException(fileType, cause)
+
+class DataFormatException(fileType: FileType, cause: Exception) : DataException(fileType, cause)

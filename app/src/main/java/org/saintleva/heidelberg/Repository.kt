@@ -37,7 +37,7 @@ object Repository {
 
     var currentTranslationId = mutableStateOf<String?>(null)
 
-    val currentTraslationName: String?
+    val currentTranslationName: String?
         get() {
             return if (currentTranslationId.value != null)
                 names[currentTranslationId.value]
@@ -45,10 +45,10 @@ object Repository {
                 null
         }
 
-    val transtation = mutableStateOf("")
+    val translation = mutableStateOf("")
 
-    fun loadTranstlation(context: Context): InputStream {
+    fun loadTranslation(context: Context): InputStream {
         val assetManager = context.assets
-        return assetManager.open("translations/1temp.translation")
+        return assetManager.open("translations/2temp.translation")
     }
 }

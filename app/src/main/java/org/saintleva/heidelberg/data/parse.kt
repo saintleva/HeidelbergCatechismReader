@@ -17,23 +17,15 @@
 
 package org.saintleva.heidelberg.data
 
-import org.jdom2.Document
 import org.jdom2.Element
-import org.jdom2.JDOMFactory
 import org.jdom2.input.DOMBuilder
-import org.jdom2.input.SAXBuilder
-import org.saintleva.heidelberg.TranslationFormatException
+import org.saintleva.heidelberg.DataFormatException
+import org.saintleva.heidelberg.FileLoadingException
+import org.saintleva.heidelberg.FileType
 import java.io.InputStream
-import java.io.InputStreamReader
 import java.lang.StringBuilder
 import javax.xml.parsers.DocumentBuilderFactory
 
-
-//abstract class XmlTranslationException(message: String) : Exception(message)
-//class RecodsAreNumberedIncorrectlyException :
-//    XmlTranslationException("Records are numbered incorrectly")
-//class SingleChildNotFoundException :
-//    XmlTranslationException("None or several child with given name found")
 
 fun trimTextInXml(text: CharSequence): String {
     val result = StringBuilder()
@@ -57,14 +49,17 @@ fun loadCatechismFromXml(stream: InputStream): Catechism {
     try {
         val rootNode = getRootElement(stream)
         val result = Catechism(trimTextInXml(rootNode.getChild("description").text))
-        for (recordNode in rootNode.getChild("data").getChildren("record"))
-            result.records.add(Record(
-                trimTextInXml(recordNode.getChild("question").text),
-                trimTextInXml(recordNode.getChild("answer").text)
-            ))
+        for (recordNode in rootNode.getChild("data").getChildren("record")) {
+            result.records.add(
+                Record(
+                    trimTextInXml(recordNode.getChild("question").text),
+                    trimTextInXml(recordNode.getChild("answer").text)
+                )
+            )
+        }
         return result
     }
-    catch (e: org.xml.sax.SAXParseException) {
-        throw TranslationFormatException()
+    catch (e: Exception) {
+        throw DataFormatException(FileType.TRANSLATION, e)
     }
 }
