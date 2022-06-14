@@ -49,6 +49,6 @@ object Repository {
 
     fun loadTranslation(context: Context): InputStream {
         val assetManager = context.assets
-        return assetManager.open("translations/2temp.translation")
+        return assetManager.open("translations/viasovsky.translation")
     }
 }

@@ -32,8 +32,8 @@ fun trimTextInXml(text: CharSequence): String {
     val lines = text.lines()
     for (i in 1 until lines.size - 1) {
         result.append(lines[i].trimStart())
-        if (i != lines.size - 2)
-            result.append(" ")
+        if (i < lines.size - 2)
+            result.append("\n")
     }
     return result.toString()
 }
