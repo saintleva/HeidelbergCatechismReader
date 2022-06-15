@@ -44,10 +44,12 @@ fun getRootElement(stream: InputStream): Element {
     return document.rootElement
 }
 
-fun loadCatechismFromXml(stream: InputStream): Catechism {
+fun loadTranslationFromXml(stream: InputStream): Translation {
     try {
         val rootNode = getRootElement(stream)
-        val result = Catechism(trimTextInXml(rootNode.getChild("description").text))
+        val result = Translation(trimTextInXml(rootNode.getChild("description").text))
+        for (partNode in rootNode.getChild("partNames").getChildren("part"))
+            result.partNames.add(partNode.text)
         for (recordNode in rootNode.getChild("data").getChildren("record"))
             result.records.add(
                 Record(

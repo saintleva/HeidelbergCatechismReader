@@ -7,6 +7,11 @@
 
         Перевод с немецкого: Евгений Устинович
     </description>
+    <partNames>
+        <part number="1">О греховности человека</part>
+        <part number="2">Об искуплении</part>
+        <part number="3">О нашей благодарности</part>
+    </partNames>
     <data>
         <record number="1">
             <question>

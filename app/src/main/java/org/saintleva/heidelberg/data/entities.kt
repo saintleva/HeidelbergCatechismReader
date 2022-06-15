@@ -23,6 +23,11 @@ class Record(
     val answer: String
 )
 
-class Catechism(val description: String) {
+class Translation(val description: String) {
+    val partNames = mutableListOf<String>()
     val records = mutableListOf<Record>()
+}
+
+class Structure {
+
 }
