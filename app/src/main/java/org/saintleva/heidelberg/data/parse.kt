@@ -20,7 +20,6 @@ package org.saintleva.heidelberg.data
 import org.jdom2.Element
 import org.jdom2.input.DOMBuilder
 import org.saintleva.heidelberg.DataFormatException
-import org.saintleva.heidelberg.FileLoadingException
 import org.saintleva.heidelberg.FileType
 import java.io.InputStream
 import java.lang.StringBuilder
@@ -49,14 +48,13 @@ fun loadCatechismFromXml(stream: InputStream): Catechism {
     try {
         val rootNode = getRootElement(stream)
         val result = Catechism(trimTextInXml(rootNode.getChild("description").text))
-        for (recordNode in rootNode.getChild("data").getChildren("record")) {
+        for (recordNode in rootNode.getChild("data").getChildren("record"))
             result.records.add(
                 Record(
                     trimTextInXml(recordNode.getChild("question").text),
                     trimTextInXml(recordNode.getChild("answer").text)
                 )
             )
-        }
         return result
     }
     catch (e: Exception) {

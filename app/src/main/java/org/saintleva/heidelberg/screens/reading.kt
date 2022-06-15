@@ -30,7 +30,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextIndent
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -38,6 +40,7 @@ import androidx.navigation.NavHostController
 import kotlinx.coroutines.launch
 import org.saintleva.heidelberg.*
 import org.saintleva.heidelberg.R
+import org.saintleva.heidelberg.ui.multiParagraphText
 import org.saintleva.heidelberg.viewmodels.ReadingViewModel
 import org.saintleva.heidelberg.viewmodels.ReadingViewModelFactory
 import java.lang.Exception
@@ -136,7 +139,10 @@ fun ReadingScreen(navController: NavHostController) {
                                 style = MaterialTheme.typography.body1.copy(fontWeight = FontWeight.Bold)
                             )
                             Text(
-                                text = records[i].answer,
+                                text = multiParagraphText(
+                                    records[i].answer,
+                                    TextIndent(firstLine = 12.sp)
+                                ),
                                 modifier = Modifier.padding(all = 4.dp),
                                 style = MaterialTheme.typography.body2
                             )
