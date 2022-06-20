@@ -63,3 +63,21 @@ fun loadTranslationFromXml(stream: InputStream): Translation {
         throw DataFormatException(FileType.TRANSLATION, e)
     }
 }
+
+fun loadStructureFromXml(stream: InputStream): Structure {
+    try {
+        val rootNode = getRootElement(stream)
+        val sundayCount =
+            rootNode.getChild("sunday-count").getAttribute("count").intValue
+        val partStarts = mutableListOf<Int>()
+        for (partNode in rootNode.getChild("parts").getChildren("part"))
+            partStarts.add(partNode.getAttribute("start").intValue - 1)
+        val sundayStarts = mutableListOf<Int>()
+        for (sundayNode in rootNode.getChild("sundays").getChildren("sunday"))
+            sundayStarts.add(sundayNode.getAttribute("start").intValue - 1)
+        return Structure(sundayCount, partStarts, sundayStarts)
+    }
+    catch (e: Exception) {
+        throw DataFormatException(FileType.STRUCTURE, e)
+    }
+}

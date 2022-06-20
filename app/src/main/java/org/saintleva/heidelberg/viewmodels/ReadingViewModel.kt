@@ -19,6 +19,7 @@ package org.saintleva.heidelberg.viewmodels
 
 import android.content.Context
 import android.util.Log
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
@@ -26,8 +27,7 @@ import org.saintleva.heidelberg.DataException
 import org.saintleva.heidelberg.FileLoadingException
 import org.saintleva.heidelberg.FileType
 import org.saintleva.heidelberg.Repository
-import org.saintleva.heidelberg.data.Catechism
-import org.saintleva.heidelberg.data.loadCatechismFromXml
+import org.saintleva.heidelberg.data.*
 
 
 class ReadingViewModel(localContext: Context) : ViewModel() {
@@ -38,13 +38,16 @@ class ReadingViewModel(localContext: Context) : ViewModel() {
     val error: State<DataException?>
         get() = _error
 
-    var translation: Catechism? = null
+    val structure: MutableState<Structure?>
+        get() = Repository.structure
+    val translation: MutableState<Translation?>
+        get() = Repository.translation
 
     init {
-        Log.d("file", "translation will be loaded")
         try {
             try {
-                translation = loadCatechismFromXml(Repository.loadTranslation(context))
+                structure.value = loadStructureFromXml(Repository.loadStructure(context))
+                translation.value = loadTranslationFromXml(Repository.loadTranslation(context))
             }
             catch (e: java.io.IOException) {
                 throw FileLoadingException(FileType.TRANSLATION, e)

@@ -40,6 +40,7 @@ import androidx.navigation.NavHostController
 import kotlinx.coroutines.launch
 import org.saintleva.heidelberg.*
 import org.saintleva.heidelberg.R
+import org.saintleva.heidelberg.data.Record
 import org.saintleva.heidelberg.ui.multiParagraphText
 import org.saintleva.heidelberg.viewmodels.ReadingViewModel
 import org.saintleva.heidelberg.viewmodels.ReadingViewModelFactory
@@ -79,6 +80,31 @@ fun DataAlert(exception: DataException, onClose: () -> Unit) {
             }
         }
     )
+}
+
+@Composable
+fun RecordItem(index: Int, record: Record) {
+    Column {
+        Text(
+            text = "${stringResource(R.string.question)} ${index + 1}",
+            modifier = Modifier.padding(all = 4.dp),
+            style = MaterialTheme.typography.h6
+        )
+        Text(
+            text = record.question,
+            modifier = Modifier.padding(all = 4.dp),
+            style = MaterialTheme.typography.body1.copy(fontWeight = FontWeight.Bold)
+        )
+        Text(
+            text = multiParagraphText(
+                record.answer,
+                TextIndent(firstLine = 12.sp)
+            ),
+            modifier = Modifier.padding(all = 4.dp),
+            style = MaterialTheme.typography.body2
+        )
+    }
+
 }
 
 @Composable
@@ -123,34 +149,34 @@ fun ReadingScreen(navController: NavHostController) {
             )
         if (vm.error.value == null) {
             errorAlerted.value = false
-            val records = vm.translation!!.records
+            val records = vm.translation.value!!.records
             LazyColumn {
-                for (i in 0 until records.count())
-                    item {
-                        Column {
+                for (i in 0 until records.size) {
+                    val start = vm.structure.value!!.starts[i]
+                    if (start.part != null)
+                        item {
                             Text(
-                                text = "${stringResource(R.string.question)} ${i + 1}",
+                                text = "${stringResource(R.string.part)} ${start.part + 1}",
                                 modifier = Modifier.padding(all = 4.dp),
-                                style = MaterialTheme.typography.h6
-                            )
-                            Text(
-                                text = records[i].question,
-                                modifier = Modifier.padding(all = 4.dp),
-                                style = MaterialTheme.typography.body1.copy(fontWeight = FontWeight.Bold)
-                            )
-                            Text(
-                                text = multiParagraphText(
-                                    records[i].answer,
-                                    TextIndent(firstLine = 12.sp)
-                                ),
-                                modifier = Modifier.padding(all = 4.dp),
-                                style = MaterialTheme.typography.body2
+                                style = MaterialTheme.typography.h4
                             )
                         }
-                        Divider(thickness = 3.dp)
+                    if (start.sunday != null)
+                        item {
+                            Text(
+                                text = "${stringResource(R.string.sunday)} ${start.sunday + 1}",
+                                modifier = Modifier.padding(all = 4.dp),
+                                style = MaterialTheme.typography.h5
+                            )
+                        }
+                    item {
+                        RecordItem(i, records[i])
+                        if (i < records.size - 1)
+                            Divider(thickness = 3.dp)
                     }
-                item {
-                    Text(vm.translation!!.description)
+//                item {
+//                    Text(vm.translation!!.description)
+//                }
                 }
             }
         }

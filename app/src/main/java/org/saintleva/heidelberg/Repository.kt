@@ -19,6 +19,8 @@ package org.saintleva.heidelberg
 
 import android.content.Context
 import androidx.compose.runtime.mutableStateOf
+import org.saintleva.heidelberg.data.Structure
+import org.saintleva.heidelberg.data.Translation
 import java.io.InputStream
 
 
@@ -45,10 +47,16 @@ object Repository {
                 null
         }
 
-    val translation = mutableStateOf("")
+    var structure = mutableStateOf<Structure?>(null)
+    var translation = mutableStateOf<Translation?>(null)
 
     fun loadTranslation(context: Context): InputStream {
         val assetManager = context.assets
         return assetManager.open("translations/viasovsky.translation")
+    }
+
+    fun loadStructure(context: Context): InputStream {
+        val assetManager = context.assets
+        return assetManager.open("structure")
     }
 }

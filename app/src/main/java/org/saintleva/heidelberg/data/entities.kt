@@ -28,6 +28,33 @@ class Translation(val description: String) {
     val records = mutableListOf<Record>()
 }
 
-class Structure {
+class Start(
+    val part: Int?,
+    val sunday: Int?
+)
 
+class Structure(
+    val sundayCount: Int,
+    val partStarts: List<Int>,
+    val sundayStarts: List<Int>
+) {
+    val starts = mutableListOf<Start>()
+
+    init {
+        var partIndex = 0
+        var sundayIndex = 0
+        for (index in 0 until sundayCount) {
+            var part: Int? = null
+            if (partStarts[partIndex] == index) {
+                part = partIndex
+                partIndex++
+            }
+            var sunday: Int? = null
+            if (sundayStarts[sundayIndex] == index) {
+                sunday = sundayIndex
+                sundayIndex++
+            }
+            starts.add(Start(part, sunday))
+        }
+    }
 }

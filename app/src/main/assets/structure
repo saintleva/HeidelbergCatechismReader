@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <structure>
+    <sunday-count count="129"/>
     <parts>
         <part number="1" start="3"/>
         <part number="2" start="12"/>

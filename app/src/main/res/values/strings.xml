@@ -9,4 +9,6 @@
     <string name="catechism_structure">catechism structure</string>
     <string name="translation_list">translation list</string>
     <string name="no_translation_selected">NO TRANSLATION SELECTED</string>
+    <string name="part">Part</string>
+    <string name="sunday">Sunday</string>
 </resources>
