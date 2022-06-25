@@ -29,8 +29,8 @@ class Translation(val description: String) {
 }
 
 class Start(
-    val part: Int?,
-    val sunday: Int?
+    var part: Int? = null,
+    var sunday: Int? = null
 )
 
 class Structure(
@@ -38,23 +38,24 @@ class Structure(
     val partStarts: List<Int>,
     val sundayStarts: List<Int>
 ) {
-    val starts = mutableListOf<Start>()
+    val starts = Array<Start>(sundayCount) { Start() }
 
     init {
         var partIndex = 0
         var sundayIndex = 0
-        for (index in 0 until sundayCount) {
-            var part: Int? = null
+        for (index in 0 until sundayCount)
             if (partStarts[partIndex] == index) {
-                part = partIndex
+                starts[index].part = partIndex
                 partIndex++
+                if (partIndex >= partStarts.size)
+                    break
             }
-            var sunday: Int? = null
+        for (index in 0 until sundayCount)
             if (sundayStarts[sundayIndex] == index) {
-                sunday = sundayIndex
+                starts[index].sunday = sundayIndex
                 sundayIndex++
+                if (sundayIndex >= sundayStarts.size)
+                    break
             }
-            starts.add(Start(part, sunday))
-        }
     }
 }

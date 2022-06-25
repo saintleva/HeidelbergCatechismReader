@@ -17,6 +17,8 @@
 
 package org.saintleva.heidelberg.screens
 
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.*
@@ -28,10 +30,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextIndent
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -83,6 +88,31 @@ fun DataAlert(exception: DataException, onClose: () -> Unit) {
 }
 
 @Composable
+fun CopyableSubItem(text: AnnotatedString, style: TextStyle) {
+    val clipboardManager = LocalClipboardManager.current
+    Box {
+        val expanded = remember { mutableStateOf(false) }
+        Text(
+            text = text,
+            modifier = Modifier
+                .combinedClickable(onLongClick = { expanded.value = true }, onClick = {})
+                .padding(all = 4.dp),
+            style = style
+        )
+        DropdownMenu(expanded = expanded.value, onDismissRequest = { expanded.value = false }) {
+            DropdownMenuItem(
+                onClick = {
+                    clipboardManager.setText(text)
+                    expanded.value = false
+                }
+            ) {
+                Text(stringResource(R.string.copy))
+            }
+        }
+    }
+}
+
+@Composable
 fun RecordItem(index: Int, record: Record) {
     Column {
         Text(
@@ -90,21 +120,18 @@ fun RecordItem(index: Int, record: Record) {
             modifier = Modifier.padding(all = 4.dp),
             style = MaterialTheme.typography.h6
         )
-        Text(
-            text = record.question,
-            modifier = Modifier.padding(all = 4.dp),
+        CopyableSubItem(
+            text = AnnotatedString(record.question),
             style = MaterialTheme.typography.body1.copy(fontWeight = FontWeight.Bold)
         )
-        Text(
+        CopyableSubItem(
             text = multiParagraphText(
                 record.answer,
                 TextIndent(firstLine = 12.sp)
             ),
-            modifier = Modifier.padding(all = 4.dp),
             style = MaterialTheme.typography.body2
         )
     }
-
 }
 
 @Composable
@@ -150,33 +177,43 @@ fun ReadingScreen(navController: NavHostController) {
         if (vm.error.value == null) {
             errorAlerted.value = false
             val records = vm.translation.value!!.records
+            val partNames = vm.translation.value!!.partNames
             LazyColumn {
                 for (i in 0 until records.size) {
                     val start = vm.structure.value!!.starts[i]
                     if (start.part != null)
                         item {
                             Text(
-                                text = "${stringResource(R.string.part)} ${start.part + 1}",
-                                modifier = Modifier.padding(all = 4.dp),
+                                text = "${stringResource(R.string.part)} ${start.part!! + 1}. " +
+                                        "${partNames[start.part!!]}",
+                                textAlign = TextAlign.Center,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(all = 4.dp),
                                 style = MaterialTheme.typography.h4
                             )
                         }
                     if (start.sunday != null)
                         item {
                             Text(
-                                text = "${stringResource(R.string.sunday)} ${start.sunday + 1}",
-                                modifier = Modifier.padding(all = 4.dp),
+                                text = "${stringResource(R.string.sunday)} ${start.sunday!! + 1}",
+                                textAlign = TextAlign.Center,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(all = 4.dp),
                                 style = MaterialTheme.typography.h5
                             )
                         }
                     item {
                         RecordItem(i, records[i])
-                        if (i < records.size - 1)
-                            Divider(thickness = 3.dp)
+                        if (i < records.size - 1) {
+                            Spacer(modifier = Modifier.padding(all = 4.dp))
+                            Divider(
+                                thickness = 1.dp,
+                                modifier = Modifier.padding(horizontal = 4.dp)
+                            )
+                        }
                     }
-//                item {
-//                    Text(vm.translation!!.description)
-//                }
                 }
             }
         }

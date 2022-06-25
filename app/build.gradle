@@ -52,6 +52,15 @@ android {
     }
 }
 
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        freeCompilerArgs += [
+                // Avoid having to stutter experimental annotations all over the codebase
+                "-Xopt-in=androidx.compose.foundation.ExperimentalFoundationApi"
+            ]
+    }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
 
