@@ -21,9 +21,13 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Face
+import androidx.compose.material.icons.filled.KeyboardArrowLeft
+import androidx.compose.material.icons.filled.KeyboardArrowRight
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -88,6 +92,19 @@ fun DataAlert(exception: DataException, onClose: () -> Unit) {
 }
 
 @Composable
+fun ElementSpin(element: String, onPrevious: () -> Unit, onNext: () -> Unit) {
+    Row {
+        IconButton(onClick = onPrevious) {
+            Icon(Icons.Default.KeyboardArrowLeft, contentDescription = "Go to previous")
+        }
+        Text(text = element)
+        IconButton(onClick = onNext) {
+            Icon(Icons.Default.KeyboardArrowRight, contentDescription = "Go to next")
+        }
+    }
+}
+
+@Composable
 fun CopyableSubItem(text: AnnotatedString, style: TextStyle) {
     val clipboardManager = LocalClipboardManager.current
     Box {
@@ -141,6 +158,10 @@ fun ReadingScreen(navController: NavHostController) {
 
     val errorAlerted = remember { mutableStateOf(false) }
 
+    val itemToRecordIndices = mutableListOf<Int>()
+    var recordToItemIndices = mutableListOf<Int>()
+    val lazyListState: LazyListState = rememberLazyListState()
+
     Scaffold(
         scaffoldState = scaffoldState,
         drawerContent = { SelectTranslationScreen(navController) },
@@ -155,6 +176,20 @@ fun ReadingScreen(navController: NavHostController) {
                 ) {
                     Icon(Icons.Filled.Face, contentDescription = "Navigation Drawer")
                 }
+                val position = itemToRecordIndices[lazyListState.firstVisibleItemIndex]
+                ElementSpin(
+                    element = "${stringResource(R.string.question)} ${position + 1}",
+                    onPrevious = {
+                        scope.launch {
+                            //lazyListState.scrollToItem(recordToItemIndices[position - 1])
+                        }
+                    },
+                    onNext = {
+                        scope.launch {
+                            //lazyListState.scrollToItem(recordToItemIndices[position + 1])
+                        }
+                    }
+                )
             }
         }
     ) {
@@ -178,10 +213,13 @@ fun ReadingScreen(navController: NavHostController) {
             errorAlerted.value = false
             val records = vm.translation.value!!.records
             val partNames = vm.translation.value!!.partNames
-            LazyColumn {
+
+            LazyColumn(state = lazyListState) {
+                var recordToItemIndex = 0
+                var itemToRecordIndex = 0
                 for (i in 0 until records.size) {
                     val start = vm.structure.value!!.starts[i]
-                    if (start.part != null)
+                    if (start.part != null) {
                         item {
                             Text(
                                 text = "${stringResource(R.string.part)} ${start.part!! + 1}. " +
@@ -193,7 +231,10 @@ fun ReadingScreen(navController: NavHostController) {
                                 style = MaterialTheme.typography.h4
                             )
                         }
-                    if (start.sunday != null)
+                        recordToItemIndex++
+                        itemToRecordIndices.add(itemToRecordIndex)
+                    }
+                    if (start.sunday != null) {
                         item {
                             Text(
                                 text = "${stringResource(R.string.sunday)} ${start.sunday!! + 1}",
@@ -204,6 +245,9 @@ fun ReadingScreen(navController: NavHostController) {
                                 style = MaterialTheme.typography.h5
                             )
                         }
+                        recordToItemIndex++
+                        itemToRecordIndices.add(itemToRecordIndex)
+                    }
                     item {
                         RecordItem(i, records[i])
                         if (i < records.size - 1) {
@@ -214,6 +258,10 @@ fun ReadingScreen(navController: NavHostController) {
                             )
                         }
                     }
+                    recordToItemIndices.add(recordToItemIndex)
+                    recordToItemIndex++
+                    itemToRecordIndices.add(itemToRecordIndex)
+                    itemToRecordIndex++
                 }
             }
         }

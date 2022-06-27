@@ -38,7 +38,7 @@ import org.saintleva.heidelberg.viewmodels.SelectTranslationViewModel
 
 
 @Composable
-fun TranslationItem(name: String, isCurrent: Boolean, onTransationChange: () -> Unit) {
+fun TranslationItem(name: String, isCurrent: Boolean, onTranslationChange: () -> Unit) {
     Card(
         elevation = 8.dp,
         modifier = Modifier
@@ -56,7 +56,7 @@ fun TranslationItem(name: String, isCurrent: Boolean, onTransationChange: () -> 
                         MaterialTheme.colors.surface
                 )
                 .padding(horizontal = 8.dp, vertical = 4.dp)
-                .clickable { onTransationChange() },
+                .clickable { onTranslationChange() },
             style = MaterialTheme.typography.caption
         )
     }
@@ -72,7 +72,7 @@ fun SelectTranslationScreen(navController: NavHostController) {
                 TranslationItem(
                     name = names[key]!!,
                     isCurrent = vm.currentTranslationId.value == key ,
-                    onTransationChange = {
+                    onTranslationChange = {
                         vm.changeCurrentTranslationId(key)
                         navController.navigate("reading")
                     }
