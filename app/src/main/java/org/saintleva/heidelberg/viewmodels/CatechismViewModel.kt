@@ -15,22 +15,16 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.saintleva.heidelberg.screens
+package org.saintleva.heidelberg.viewmodels
 
-import androidx.compose.runtime.Composable
-import androidx.navigation.NavHostController
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
+import androidx.compose.runtime.MutableState
+import androidx.lifecycle.ViewModel
+import org.saintleva.heidelberg.Repository
+import org.saintleva.heidelberg.data.Catechism
 
 
-@Composable
-fun AppNavGraph(navController: NavHostController) {
-    NavHost(navController = navController, startDestination = "reading") {
-        composable("reading") {
-            ReadingScreen(navController)
-        }
-        composable("selectquestion") {
-            SelectQuestionScreen(navController)
-        }
-    }
+abstract class CatechismViewModel : ViewModel() {
+
+    val catechism: MutableState<Catechism?>
+        get() = Repository.catechism
 }

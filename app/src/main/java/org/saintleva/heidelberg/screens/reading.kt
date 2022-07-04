@@ -92,13 +92,14 @@ fun DataAlert(exception: DataException, onClose: () -> Unit) {
 }
 
 @Composable
-fun ElementSpin(element: String, onPrevious: () -> Unit, onNext: () -> Unit) {
-    Row {
-        IconButton(onClick = onPrevious) {
+fun ElementSpin(element: String, previousEnabled: Boolean, onPrevious: () -> Unit,
+                nextEnabled: Boolean, onNext: () -> Unit, onSelect: () -> Unit) {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        IconButton(onClick = onPrevious, enabled = previousEnabled) {
             Icon(Icons.Default.KeyboardArrowLeft, contentDescription = "Go to previous")
         }
-        Text(text = element)
-        IconButton(onClick = onNext) {
+        Text(text = element, modifier = Modifier.clickable { onSelect() })
+        IconButton(onClick = onNext, enabled = nextEnabled) {
             Icon(Icons.Default.KeyboardArrowRight, contentDescription = "Go to next")
         }
     }
@@ -158,9 +159,19 @@ fun ReadingScreen(navController: NavHostController) {
 
     val errorAlerted = remember { mutableStateOf(false) }
 
-    val itemToRecordIndices = mutableListOf<Int>()
-    var recordToItemIndices = mutableListOf<Int>()
     val lazyListState: LazyListState = rememberLazyListState()
+
+    fun lastVisibleItemIndex(): Int {
+        val first = lazyListState.firstVisibleItemIndex
+        val info = lazyListState.layoutInfo.visibleItemsInfo
+        if (info.isEmpty())
+            return -1
+        return info[info.lastIndex].index
+    }
+
+    val vm = viewModel<ReadingViewModel>(
+        factory = ReadingViewModelFactory(LocalContext.current)
+    )
 
     Scaffold(
         scaffoldState = scaffoldState,
@@ -176,51 +187,48 @@ fun ReadingScreen(navController: NavHostController) {
                 ) {
                     Icon(Icons.Filled.Face, contentDescription = "Navigation Drawer")
                 }
-                val position = itemToRecordIndices[lazyListState.firstVisibleItemIndex]
-                ElementSpin(
-                    element = "${stringResource(R.string.question)} ${position + 1}",
-                    onPrevious = {
-                        scope.launch {
-                            //lazyListState.scrollToItem(recordToItemIndices[position - 1])
+                if (vm.catechism.value != null) {
+                    val position = lazyListState.firstVisibleItemIndex
+                    ElementSpin(
+                        element = "${stringResource(R.string.question)} ${position + 1}",
+                        previousEnabled = position > 0,
+                        onPrevious = {
+                            scope.launch {
+                                lazyListState.scrollToItem(position - 1)
+                            }
+                        },
+                        nextEnabled = lastVisibleItemIndex() <
+                                vm.catechism.value!!.questionCount - 1,
+                        onNext = {
+                            scope.launch {
+                                lazyListState.scrollToItem(position + 1)
+                            }
+                        },
+                        onSelect = {
+                            navController.navigate("selectquestion")
                         }
-                    },
-                    onNext = {
-                        scope.launch {
-                            //lazyListState.scrollToItem(recordToItemIndices[position + 1])
-                        }
-                    }
-                )
+                    )
+                }
             }
         }
     ) {
-//            if (Repository.currentTranslationId.value == null)
-//                Text("TRANSLATION NOT SELECTED")
-//            else {
-//                Text(Repository.currentTranslationId.value!!)
-//                Text(Repository.currentTraslationName!!)
-//            }
-//            Text(Repository.transtation.value)
-        val vm = viewModel<ReadingViewModel>(
-            factory = ReadingViewModelFactory(LocalContext.current)
-        )
-
         if (vm.error.value != null && errorAlerted.value == false)
             DataAlert(
                 exception = vm.error.value!!,
                 onClose = { errorAlerted.value = true }
             )
-        if (vm.error.value == null) {
+        if (vm.catechism.value != null) {
             errorAlerted.value = false
-            val records = vm.translation.value!!.records
-            val partNames = vm.translation.value!!.partNames
+            val records = vm.catechism.value!!.translation.records
+            val partNames = vm.catechism.value!!.translation.partNames
 
             LazyColumn(state = lazyListState) {
                 var recordToItemIndex = 0
                 var itemToRecordIndex = 0
-                for (i in 0 until records.size) {
-                    val start = vm.structure.value!!.starts[i]
-                    if (start.part != null) {
-                        item {
+                for (i in records.indices) {
+                    val start = vm.catechism.value!!.structure.starts[i]
+                    item {
+                        if (start.part != null)
                             Text(
                                 text = "${stringResource(R.string.part)} ${start.part!! + 1}. " +
                                         "${partNames[start.part!!]}",
@@ -230,12 +238,7 @@ fun ReadingScreen(navController: NavHostController) {
                                     .padding(all = 4.dp),
                                 style = MaterialTheme.typography.h4
                             )
-                        }
-                        recordToItemIndex++
-                        itemToRecordIndices.add(itemToRecordIndex)
-                    }
-                    if (start.sunday != null) {
-                        item {
+                        if (start.sunday != null)
                             Text(
                                 text = "${stringResource(R.string.sunday)} ${start.sunday!! + 1}",
                                 textAlign = TextAlign.Center,
@@ -244,11 +247,6 @@ fun ReadingScreen(navController: NavHostController) {
                                     .padding(all = 4.dp),
                                 style = MaterialTheme.typography.h5
                             )
-                        }
-                        recordToItemIndex++
-                        itemToRecordIndices.add(itemToRecordIndex)
-                    }
-                    item {
                         RecordItem(i, records[i])
                         if (i < records.size - 1) {
                             Spacer(modifier = Modifier.padding(all = 4.dp))
@@ -258,14 +256,10 @@ fun ReadingScreen(navController: NavHostController) {
                             )
                         }
                     }
-                    recordToItemIndices.add(recordToItemIndex)
-                    recordToItemIndex++
-                    itemToRecordIndices.add(itemToRecordIndex)
-                    itemToRecordIndex++
                 }
             }
         }
-        if (vm.translation == null && (vm.error.value == null || errorAlerted.value == true)) {
+        if (vm.catechism.value == null && (vm.error.value == null || errorAlerted.value == true)) {
             Box(modifier = Modifier.fillMaxSize()) {
                 Text(
                     text = stringResource(R.string.no_translation_selected),

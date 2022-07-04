@@ -30,7 +30,7 @@ import org.saintleva.heidelberg.Repository
 import org.saintleva.heidelberg.data.*
 
 
-class ReadingViewModel(localContext: Context) : ViewModel() {
+class ReadingViewModel(localContext: Context) : CatechismViewModel() {
 
     val context = localContext.applicationContext
 
@@ -38,17 +38,20 @@ class ReadingViewModel(localContext: Context) : ViewModel() {
     val error: State<DataException?>
         get() = _error
 
-    val structure: MutableState<Structure?>
-        get() = Repository.structure
-    val translation: MutableState<Translation?>
-        get() = Repository.translation
+//    val structure: MutableState<Structure?>
+//        get() = Repository.structure
+//    val translation: MutableState<Translation?>
+//        get() = Repository.translation
 
     init {
         try {
             try {
-                structure.value = loadStructureFromXml(Repository.loadStructure(context))
-                translation.value = loadTranslationFromXml(Repository.loadTranslation(context))
+                catechism.value = Catechism(
+                    loadStructureFromXml(Repository.loadStructure(context)),
+                    loadTranslationFromXml(Repository.loadTranslation(context))
+                )
             }
+            //TODO: Catch exceptions from both FileType
             catch (e: java.io.IOException) {
                 throw FileLoadingException(FileType.TRANSLATION, e)
             }

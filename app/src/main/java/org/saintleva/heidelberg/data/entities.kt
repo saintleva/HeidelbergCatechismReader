@@ -59,3 +59,21 @@ class Structure(
             }
     }
 }
+
+class Catechism(
+    val structure: Structure,
+    val translation: Translation
+) {
+    val questionCount: Int
+        get() = translation.records.size
+
+    val sundayOfQuestion = Array<Int>(questionCount) { 0 }
+
+    init {
+        for (sunday in 0 until structure.sundayStarts.size - 1)
+            for (question in structure.sundayStarts[sunday] until structure.sundayStarts[sunday + 1])
+                sundayOfQuestion[question] = sunday
+        for (question in structure.sundayStarts[structure.sundayStarts.size - 1] until questionCount)
+            sundayOfQuestion[question] = structure.sundayStarts.size - 1
+    }
+}

@@ -19,6 +19,7 @@ package org.saintleva.heidelberg
 
 import android.content.Context
 import androidx.compose.runtime.mutableStateOf
+import org.saintleva.heidelberg.data.Catechism
 import org.saintleva.heidelberg.data.Structure
 import org.saintleva.heidelberg.data.Translation
 import java.io.InputStream
@@ -47,8 +48,9 @@ object Repository {
                 null
         }
 
-    var structure = mutableStateOf<Structure?>(null)
-    var translation = mutableStateOf<Translation?>(null)
+//    var structure = mutableStateOf<Structure?>(null)
+//    var translation = mutableStateOf<Translation?>(null)
+    val catechism = mutableStateOf<Catechism?>(null)
 
     fun loadTranslation(context: Context): InputStream {
         val assetManager = context.assets
