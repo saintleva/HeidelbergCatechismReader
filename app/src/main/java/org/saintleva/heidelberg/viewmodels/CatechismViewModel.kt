@@ -26,9 +26,7 @@ import org.saintleva.heidelberg.Repository
 
 abstract class CatechismViewModel : ViewModel() {
 
-    protected val _catechismState: MutableState<CatechismState>
-        get() = Repository.catechismState
-    val catechismState: State<CatechismState>
-        get() = _catechismState
+    protected val _catechismState = Repository.catechismState
+    val catechismState: State<CatechismState> = _catechismState
 
 }

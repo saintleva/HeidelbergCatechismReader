@@ -16,8 +16,6 @@ import org.saintleva.heidelberg.ui.theme.HeidelbergCatechismReaderTheme
 
 class MainActivity : ComponentActivity() {
 
-    val viewModel: MainViewModel by viewModels()
-
     @ExperimentalMaterial3Api
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

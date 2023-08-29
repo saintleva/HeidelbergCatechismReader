@@ -33,6 +33,7 @@ import org.saintleva.heidelberg.MainActivity
 import org.saintleva.heidelberg.Repository
 import org.saintleva.heidelberg.TranslationId
 import org.saintleva.heidelberg.data.AllTranslations
+import org.saintleva.heidelberg.data.TranslationListState
 
 
 class SelectTranslationViewModel(localContext: Context) : ViewModel() {
@@ -45,16 +46,14 @@ class SelectTranslationViewModel(localContext: Context) : ViewModel() {
 //    private var _error = mutableStateOf<DataException?>(null)
 //    val error: State<DataException?> = _error
 
-    var allTranslations: AllTranslations
+    private val _allTranslations = Repository.manager.allTranslations
+    val allTranslations: State<TranslationListState> = _allTranslations
 
-    init {
-        runBlocking {
-            (context.activity as MainActivity).viewModel.translationListLoadingJob.join()
-            allTranslations = Repository.manager.allTranslations
+    fun loadTranslationList() {
+        viewModelScope.launch {
+            Repository.manager.load(context)
         }
     }
-
-//    val allTranslations = Repository.manager.allTranslations
 
     fun isCurrent(id: String): Boolean =
         when (val translationId = currentTranslationId.value) {

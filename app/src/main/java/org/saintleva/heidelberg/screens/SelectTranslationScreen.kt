@@ -20,6 +20,7 @@ package org.saintleva.heidelberg.screens
 import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -28,18 +29,27 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Card
 import androidx.compose.material3.Checkbox
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import androidx.navigation.NavHost
 import androidx.navigation.NavHostController
+import org.saintleva.heidelberg.CatechismState
+import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.Repository
 import org.saintleva.heidelberg.data.Manager
+import org.saintleva.heidelberg.data.TranslationListState
 import org.saintleva.heidelberg.data.TranslationMetadata
 import org.saintleva.heidelberg.viewmodels.ReadingViewModelFactory
 import org.saintleva.heidelberg.viewmodels.SelectTranslationViewModel
@@ -86,27 +96,59 @@ fun TranslationItem(metadata: TranslationMetadata, isCurrent: Boolean, onTransla
 }
 
 @Composable
+fun NoListBox() {
+    Box(modifier = Modifier.fillMaxSize()) {
+        Text(
+            text = stringResource(R.string.no_translation_list_loaded),
+            modifier = Modifier.align(Alignment.Center),
+            style = MaterialTheme.typography.headlineSmall.copy(fontWeight = FontWeight.Bold)
+        )
+    }
+}
+
+@Composable
 fun SelectTranslationScreen(navigateToReading: () -> Unit) {
     val vm = viewModel<SelectTranslationViewModel>(
         factory = SelectTranslationViewModelFactory(LocalContext.current)
     )
 
-    val names = vm.allTranslations
-    Log.d("compose", "names have been loaded")
-    Log.d("compose", "names count is ${names.size}")
-    LazyColumn {
-        for (key in names.keys) {
-            item {
-                TranslationItem(
-                    metadata = names[key]!!,
-                    isCurrent = vm.isCurrent(key),
-                    onTranslationChange = {
-                        vm.changeCurrentTranslationId(key)
-                        navigateToReading()
-                    }
+    val errorAlerted = remember { mutableStateOf(false) }
+
+    when (val state = vm.allTranslations.value) {
+        TranslationListState.None -> {
+            Box(modifier = Modifier.fillMaxSize()) {
+                CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
+            }
+            vm.loadTranslationList()
+        }
+
+        is TranslationListState.Error -> {
+            if (errorAlerted.value) {
+                NoListBox()
+            } else {
+                DataAlert(
+                    exception = state.error,
+                    onClose = { errorAlerted.value = true }
                 )
             }
         }
+
+        is TranslationListState.Loaded -> {
+            val names = state.all
+            LazyColumn {
+                for (key in names.keys) {
+                    item {
+                        TranslationItem(
+                            metadata = names[key]!!,
+                            isCurrent = vm.isCurrent(key),
+                            onTranslationChange = {
+                                vm.changeCurrentTranslationId(key)
+                                navigateToReading()
+                            }
+                        )
+                    }
+                }
+            }
+        }
     }
-    Log.d("compose", "SelectTranslationScreen composed")
 }
