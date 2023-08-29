@@ -1,0 +1,80 @@
+{
+    "ustinovich": {
+        "name": "Перевод Евгения Устиновича, 2021",
+        "englishName": "Translation by Evgeny Ustinovich",
+        "language": "russian",
+        "isOriginal": false
+    },
+    "afrikaans": {
+        "name": "",
+        "englishName": "Translation to Afrikaans language from forms.reformed.org.ua",
+        "language": "afrikaans",
+        "isOriginal": false
+    },
+    "dutch-modern": {
+        "name": "",
+        "englishName": "Translation to modern Dutch language from forms.reformed.org.ua",
+        "language": "dutch",
+        "isOriginal": false
+    },
+    "dutch-old": {
+        "name": "",
+        "englishName": "Translation to old Dutch language from forms.reformed.org.ua",
+        "language": "dutch",
+        "isOriginal": false
+    },
+    "english-modern": {
+        "name": "Translation to modern English language from forms.reformed.org.ua",
+        "englishName": "Translation to modern English language from forms.reformed.org.ua",
+        "language": "english",
+        "isOriginal": false
+    },
+    "english-old": {
+        "name": "Translation to old English language from forms.reformed.org.ua",
+        "englishName": "Translation to old English language from forms.reformed.org.ua",
+        "language": "english",
+        "isOriginal": false
+    },
+    "german-modern": {
+        "name": "",
+        "englishName": "Translation to modern German language from forms.reformed.org.ua",
+        "language": "german",
+        "isOriginal": false
+    },
+    "german-original": {
+        "name": "",
+        "englishName": "German original from forms.reformed.org.ua",
+        "language": "german",
+        "isOriginal": true
+    },
+    "latin": {
+        "name": "",
+        "englishName": "Translation to Latin language from forms.reformed.org.ua",
+        "language": "latin",
+        "isOriginal": false
+    },
+    "russian1": {
+        "name": "Русский перевод №1 с сайта forms.reformed.org.ua",
+        "englishName": "1st russian translation from forms.reformed.org.ua",
+        "language": "russian",
+        "isOriginal": false
+    },
+    "russian2": {
+        "name": "Русский перевод №2 с сайта forms.reformed.org.ua",
+        "englishName": "2nd russian translation from forms.reformed.org.ua",
+        "language": "russian",
+        "isOriginal": false
+    },
+    "russian3": {
+        "name": "Русский перевод №3 с сайта forms.reformed.org.ua",
+        "englishName": "3rd russian translation from forms.reformed.org.ua",
+        "language": "russian",
+        "isOriginal": false
+    },
+    "ukrainian": {
+        "name": "Український переклад із сайту forms.reformed.org.ua",
+        "englishName": "Ukrainian translation from forms.reformed.org.ua",
+        "language": "ukrainian",
+        "isOriginal": false
+    }
+}

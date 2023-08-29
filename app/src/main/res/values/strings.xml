@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">HeidelbergCatechismReader</string>
+    <string name="question">Question</string>
+    <string name="error">Error</string>
+    <string name="error_while_loading_from_file_with">Error while loading from file with</string>
+    <string name="invalid_format_in_the_file_with">Invalid format in the file with</string>
+    <string name="another_error_concerned_with">Another error concerned with</string>
+    <string name="catechism_translation">catechism translation</string>
+    <string name="catechism_structure">catechism structure</string>
+    <string name="translation_list">translation list</string>
+    <string name="no_translation_selected">NO TRANSLATION SELECTED</string>
+    <string name="part">Part</string>
+    <string name="sunday">Sunday</string>
+    <string name="copy">Copy</string>
+    <string name="questions">Questions</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="search_in_questions">Search in questions</string>
+    <string name="search_in_answers">Search in answers</string>
+    <string name="match_case">Match case</string>
+    <string name="enter_search_text">Enter search text:</string>
+    <string name="not_found_in_questions_and_answers">No one question or answer matching \"%s\"</string>
+    <string name="not_found_in_questions">No one question matching \"%s\"</string>
+    <string name="not_found_in_answers">No one answer matching \"%s\"</string>
+    <string name="about_translation">About translation</string>
+    <string name="about_catechism">About catechism</string>
+    <string name="about_application">About application</string>
+</resources>

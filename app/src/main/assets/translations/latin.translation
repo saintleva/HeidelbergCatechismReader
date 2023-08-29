@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation>
+  <description>Catechesis Religionis Christianae</description>
+  <blockNames part="Part" sunday="Lord's Day" question="Question" />
+  <partNames>
+    <part number="1">Of the Misery of Man</part>
+    <part number="2">Of Man's Deliverance</part>
+    <part number="3">Of thankfulness</part>
+  </partNames>
+  <data>
+    <record number="1">
+      <question>Quae est unica tua consolatio in vita et in morte?</question>
+      <answer>Quod animo pariter et corpore, sive vivam, sive moriar, non meus, sed fidissimi domini et servatoris mei IESU CHRISTI sum proprius, qui pretioso sanguine suo, pro omnibus peccatis meis plenissime satisfaciens, me ab omni potestate diaboli liberavit, meque ita conservat, ut sine voluntate patris mei coelestis, ne pilus quidem de meo capite possit cadere, imo vero etiam omnia saluti meae servire oporteat. Quocirca me quoque suo sancto Spiritu de vita aeterna certum facit, utque ipsi deinceps vivam, promptum ac paratum reddit.</answer>
+    </record>
+    <record number="2">
+      <question>Quot sunt tibi scitu necessaria, ut ista consolatione fruens, beate vivas et moriaris?</question>
+      <answer>Tria. Primum, quanta sit peccati mei et miseriae meae magnitudo. Secundum, quo pacto ab omni peccato et miseria liberer. Tertium, quam gratiam Deo pro tanta liberatione debeam.</answer>
+    </record>
+    <record number="3">
+      <question>Unde tuam miseriam cognoscis?</question>
+      <answer>Ex lege Dei.</answer>
+    </record>
+    <record number="4">
+      <question>Quid a nobis postulat Lex Dei?</question>
+      <answer>Id docet nos Christus summatim: Matth.22. Diliges Dominum Deum tuum, ex toto corde tuo, ex tota anima tua, &amp;amp; ex omnibus viribus tuis. Istud est primum, &amp;amp; maximum mandatum. Secundum autem simile est huic: Diliges proximum tuum sicut te ipsum. Ab ipsis duobus mandatis, tota Lex &amp;amp; Prophetae pendent.</answer>
+    </record>
+    <record number="5">
+      <question>Num haec omnia perfecte servare potes?</question>
+      <answer>Minime:Natura enim propensus sum ad odium Dei et proximi.</answer>
+    </record>
+    <record number="6">
+      <question>Num ergo Deus hominem ita pravum et perversum condidit?</question>
+      <answer>Nequaquam: Imo vero bonum et ad imaginem sui condidit eum, hoc est, vera iustitia et sanctitate praeditum, ut Deum creatorem suum recte cognosceret, ex animo diligeret, cum eo beatus in aeternum viveret, idque ad eum laudandum et celebrandum.</answer>
+    </record>
+    <record number="7">
+      <question>Unde igitur existit haec naturae humanae pravitas?</question>
+      <answer>Ex lapsu et inobedientia primorum parentum Adami et Evae: Hinc natura nostra ita este depravata, ut omnes in peccatis concipiamur et nascamur.</answer>
+    </record>
+    <record number="8">
+      <question>An vero adeo corrupti sumus, ut ad bene agendum prorsus non simus idonei, et ad omne vitium proclives?</question>
+      <answer>Certe, nisi per Spiritum sanctum regeneremur.</answer>
+    </record>
+    <record number="9">
+      <question>An non igitur Deus homini iniuriam facit, qui ab eo in lege flagitet, quae praestare non queat?</question>
+      <answer>Minime. Nam Deus hominem talem condiderat, ut ea praestare posset: verum homo, impulsore Diabolo, sua ipsius contumacia, se et omnem posteritatem divinis illis donis orbavit</answer>
+    </record>
+    <record number="10">
+      <question>Num Deus hanc contumaciam et defectionem hominis dimittit impunitam?</question>
+      <answer>Imo vero horrendis modis irascitur, tum ob innata nobis peccata, tum ob ea quae ipssi committimus, eaque iustissimo iudicio praesentibus et aeternis suppliciis punit, quemadmodum ipse pronunciat: Maledictus omnis qui non permanet in omnibus, quae scripta sunt in libro legis, ut ea faciat.</answer>
+    </record>
+    <record number="11">
+      <question>An non igitur Deus etiam est misericors?</question>
+      <answer>Est ille quidem misericors, verum ita, ut etiam sit iustus. Quapropter postulat eius iustitia, quod adversus summam Dei maiestatem commissum est, id quoque ut summis, hoc est, sempiternis cum animi tum corporis suppliciis luatur.</answer>
+    </record>
+    <record number="12">
+      <question>Quoniam igitur iusto Dei iudicio, temporalibus et aeternis poenis obnoxii sumus: est-ne reliqua ulla ratio aut via, qua his poenis liberemur, et Deo reconciliemur?</question>
+      <answer>Vult Deus suae iustitiae satisfieri: quocirca necesse est, vel per nos, vel per alium satisfaciamus.</answer>
+    </record>
+    <record number="13">
+      <question>Possumusne ipsi per nos satisfacere?</question>
+      <answer>Nulla ex parte: quin etiam debitum in singulos dies augemus.</answer>
+    </record>
+    <record number="14">
+      <question>Potestne ulla creaturarum, in coelo vel in terra, quae tantum creatura sit, pro nobis satisfacere?</question>
+      <answer>Nulla. Nam principio non vult Deus quod homo peccavit, id in ulla alia creatura plectere. Deinde nec potest quidem, quod nihil nisi creatura sit , iram Dei adversus peccatum sustinere, et alios ab ea liberare.</answer>
+    </record>
+    <record number="15">
+      <question>Qualis ergi quaerendus est Mediator et Liberator?</question>
+      <answer>Qui verus quidem homo sit, ac perfecte iustus, et tamen omnibus creaturis potentior, hoc est, qui simul etiam sit verus Deus</answer>
+    </record>
+    <record number="16">
+      <question>Cur necesse est eum verum hominem, et quidem perfecte iustum esse?</question>
+      <answer>Quia iustitia Dei postulat, ut eadem natura humana quae peccavit, ipsa pro peccato dependat: qui vero ipse peccator esset, pro aliis dependere non posset.</answer>
+    </record>
+    <record number="17">
+      <question>Quare oportet eum simul etiam vere Deum esset?</question>
+      <answer>Ut potentia suae divinitatis, onus irae divinae, carne sua sustinere, nobisque amissam iustitiam et vitam reparare ac restituere posset.</answer>
+    </record>
+    <record number="18">
+      <question>Quis autem est ille Mediator, qui simul est et vere Deus, et verus, ac perfecte iustus homo?</question>
+      <answer>Dominus noster Iesus Christus, qui factus est nobis Sapientia a Deo, Iustitia, Sanctificatio et Redemtio.</answer>
+    </record>
+    <record number="19">
+      <question>Unde id scis?</question>
+      <answer>Ex Evangelio, quod Deus primum in paradiso patefecit: ac deinceps per Patriarchas, et Prophetas propagavit: Sacrificiis, reliquisque ceremoniis legis adumbravit: Ad extremum vero, per filium suum unigenitum complevit.</answer>
+    </record>
+    <record number="20">
+      <question>Num igitur omnibus hominibus qui in Adamo perierant, per Christum salus redditur?</question>
+      <answer>Non omnibus, verum iis tantum qui vera fide ipsi inseruntur, eiusque beneficia amplectuntur.</answer>
+    </record>
+    <record number="21">
+      <question>Quid est fides?</question>
+      <answer>Est non tantum notitia, qua firmiter assentior omnibus quae Deus nobis in verbo suo patefecit, sed etiam certa fiducia, a Spiritu Sancto, per Evangelium in corde meo accensa, qua in Deo acquiesco, certo statuens, non solum aliis, sed mihi quoque remissionem peccatorum, aeternam iustitiam et vitam donata esse, idque gratis ex Dei misericordia, propter unius Christi meritum.</answer>
+    </record>
+    <record number="22">
+      <question>Quaeriam sunt illa quae necesse est hominem Christianum credere?</question>
+      <answer>Omnia quae nobis in Evangelio promittuntur, quorum summa in Symbolo Apostolico, seu in capitibus catholicae et indubitatae omnium Christianorum fidei, breviter comprehenditur</answer>
+    </record>
+    <record number="23">
+      <question>Quod est illud Symbolum?</question>
+      <answer>Credo in Deum patrem, omnipotentem, creatorem coeli et terrae. Et in Iesum Christum, filium eius unigenitum, Dominum nostrum, qui conceptus est de Spiritu Sancto, natus ex Maria virgine, passus sub Pontio Pilato, crucifixus, mortuus et sepultus, descendit ad inferna, tertio die resurrexit a mortuis, ascendit ad caelos, sedet ad dextram Dei Patris omnipotentis, inde venturus est iudicatum [sic!] vivos et mortuos. Credo in Spiritum Sanctum. Credo sanctam Ecclesiam catholicam, sanctorum communionem, remissionem peccatorum, carnis resurrectionem et vitam aeternam</answer>
+    </record>
+    <record number="24">
+      <question>In quot partes distribuitur hoc Symbolum?</question>
+      <answer>In tres partes. Prima est de aeterno Patre, et nostri creatione. Altera est de Filio, et nostri redemtione. Tertia est de Spiritu sancto, et nostri sanctificatione.</answer>
+    </record>
+    <record number="25">
+      <question>Cum una sit tantum essentia divina: cur tres istos nominas, Patrem, Filium et Spiritum sanctum?</question>
+      <answer>Quia Deus ita se in suo verbo patefecit, quod tres hae distinctae personae, sint unus ille verus et aeternus Deus.</answer>
+    </record>
+    <record number="26">
+      <question>Quid credis cum dicis: Credo in Deum patrem, omnipotentem, creatorem coeli et terrae?</question>
+      <answer>Credo, aeternum patrem Domini nostri Iesu Christi, qui coelum et terram cum omnibus, quae in iis sunt, ex nihilo creavit quique eadem aeterno suo consilio et providentia sustentat ac gubernat propter Christum, Deum meum et patrem meum esse. Itaque sic ei confido, sic in eo acquiesco, ut non dubitem, quin provisurus sit omnibus, tum animo tum corpori meo necessariis: quinetiam quae mihi mala in hac aerumnosa vita immittit, ea in meam salutem sit conversurus: cum et facere id possit, ut omnipotens Deus et facere id velit, ut benignus pater.</answer>
+    </record>
+    <record number="27">
+      <question>Quid est providentia Dei?</question>
+      <answer>Omnipotens et ubique praesens Dei vis, qua coelum ac terram cum omnibus creaturis tamquam manu sustinet ac gubernat, ut omnia quae terra nascuntur, pluvia item et siccitas, fertilitas et sterilitas, cibus et potus, bona et adversa valetudo, divitiae et paupertas, omnia denique non temere aut fortuito, sed paterno eius consilio et voluntate contingant.</answer>
+    </record>
+    <record number="28">
+      <question>Quid nobis prodest haec cognitio creationis et providentiae divinae?</question>
+      <answer>Ut in adversis patientes, in secundis grati simus, in futurum vero optimam in Deo fidissimo patre spem repositam habeamus, certo scientes, nihil esse, quod nos ab eius amore abstrahat, quandoquidem omnes creaturae ita sunt in eius potestate, ut sine eius arbitrio non modo nihil agere, sed ne moveri quidem possint</answer>
+    </record>
+    <record number="29">
+      <question>Quare Filius Dei appellatur Iesus, hoc est Salvator?</question>
+      <answer>Quia nos salvat ab omnibus peccatis nostris, nec ulla salus aliunde peti debet, nec alibi reperiri potest.</answer>
+    </record>
+    <record number="30">
+      <question>Creduntne igitur illi in unicum servatorem Iesum, qui a sanctis aut a se aut aliunde felicitatem aut salutem quaerunt?</question>
+      <answer>Non; etsi enim verbo quidem eo Servatore gloriantur, re ipsa tamen abnegant unicum Servatorem Iesum. Necesse est enim, aut Iesum non esse perfectum Servatorem, aut qui eum Servatorem vera fide amplectuntur eos omni in ipso possidere, quae ad salutem requiruntur.</answer>
+    </record>
+    <record number="31">
+      <question>Quare appellatur Christus, hoc est, unctus?</question>
+      <answer>Quod a patre ordinatus et Spiritu Sancto unctus sit summus propheta act doctor, qui nobis arcanum consilium et omnem voluntatem patris de redemptione nostri patefecit; et summus pontifex, qui nos unico sacrificio sui corporis redemit, ac assidueu pro nobis apud patrem intercedit; et rex, qui nos suo Verbo et Spiritu gubernat et partam nobis salutem tuetur ac conservat.</answer>
+    </record>
+    <record number="32">
+      <question>Cur vero tu Christianus appellaris?</question>
+      <answer>Quod per fidem membrum sum Iesu Christi et unctionis ipsius particeps, ut et nomen eius confitear meque sistam ipsi vivam gratitudinis hostiam et in hac vita contra peccatum et satanam libera et bona conscientia pugnem et postea aeternum cum Christo regnum in omnes creaturas teneam.</answer>
+    </record>
+    <record number="33">
+      <question>Quam ob causam Christus vocatur Filius Dei unigenitus, cum nos quoque simus filii Dei?</question>
+      <answer>Quia solus Christus est coaeternus et naturalis aeterni Patris Filius; nos autem propter eum ex gratia a Patre adoptati sumus.</answer>
+    </record>
+    <record number="34">
+      <question>Qua de causa appellas eum Dominum nostrum?</question>
+      <answer>Quia corpus et animam nostram a peccatis non auro nec argento, sed pretioso suo sanguirie redimens et ab omni potestate diaboli liberans nos sibi proprios vindicavit.</answer>
+    </record>
+    <record number="35">
+      <question>Quid credis cum dicis: conceptus est per Spiritum Sanctum, natus ex Maria virgine?</question>
+      <answer>Quod ipse Filius Dei, qui est et permanet verus ac aeternus Deus, naturam vere humanam ex carne et sanguine virginis Mariae operatione Spiritus Sancti assumpsit, ut simul sit verum semen Davidis, fratribus suis per omnia similis, excepto peccato.</answer>
+    </record>
+    <record number="36">
+      <question>Quem fructum percipis ex sancta conceptione et nativitate Christi?</question>
+      <answer>Quod is noster sit Mediator et sua innocentia ac perfecta sanctitate mea peccata, in quibus conceptus sum, tegat, ne in conspectum Dei veniant.</answer>
+    </record>
+    <record number="37">
+      <question>Quid credis cum dicis: passus est?</question>
+      <answer>Eum toto quidem vitae suae tempore, quo in terris egit, praecipue vero in eius extremo, iram Dei adversus peccatum universi generis humani corpore et anima sustinuisse, ut sua passione tamquam unico sacrificio propitiatorio corpus et animam nostram ab aeterna damnatione liberaret et nobis gratiam Dei, iustitiam et vitam aeternam acquireret.</answer>
+    </record>
+    <record number="38">
+      <question>Quid causae fuit, cur sub iudice Pilato pateretur?</question>
+      <answer>Ut innocens coram iudice politico damnatus, nos a severo Dei iudicio, quod omnes manebat, eximeret.</answer>
+    </record>
+    <record number="39">
+      <question>Est vero quiddam amplius, quod affixus sit cruci, quam si alio genere mortis affectus esset?</question>
+      <answer>Sane amplius; ex hac enim re sum certus eum maledictionem, quae mihi incumbebat, in se recepisse. Nam mors crucis a Deo erat maledicta.</answer>
+    </record>
+    <record number="40">
+      <question>Cur necesse fuit, ut Christus ad mortem usque se demitteret?</question>
+      <answer>Propterea, quod iustitiae et veritati Dei nullo alio pacto pro nostris peccatis potuit satisfieri, quam ipsa morte Filii Dei.</answer>
+    </record>
+    <record number="41">
+      <question>Quare etiam sepultus est?</question>
+      <answer>Ut eo testatum faceret se vere mortuum esse.</answer>
+    </record>
+    <record number="42">
+      <question>At cum Christus pro nobis mortem oppetierit, cur nobis quoque est moriendum?</question>
+      <answer>Mors nostra non est pro peccatis nostris satisfactio, sed peccati abolitio et transitus in vitam aeternam.</answer>
+    </record>
+    <record number="43">
+      <question>Quid praeterea capimus commodi ex sacrificio et morte Christi?</question>
+      <answer>Quod virtute eius mortis vetus noster homo una cum eo crucifigitur, interimitur ac sepelitur, ne pravae cupiditates et desideria carnis posthac in nobis regnent, sed nos ipsos ei hostiam gratitudinis offeramus.</answer>
+    </record>
+    <record number="44">
+      <question>Cur additur: descendit ad inferna?</question>
+      <answer>Ut in summis doloribus et gravissimis tentationibus me consolatione hac sustentem, quod Dominus meus Iesus Christus inenarrabilibus animi sui angustiis, cruciatibus et terroribus, in quos cum antea, tum maxime in cruce pendens fuerat demersus, me ab angustiis et cruciatibus inferni liberaverit.</answer>
+    </record>
+    <record number="45">
+      <question>Quid nobis prodest resurrectio Christi?</question>
+      <answer>Primum sua resurrectione mortem devicit, ut nos posset eius iustitiae, quam nobis sua morte pepererat, participes facere. Deinde, nos iam quoque eius potentia ad novam vitam excitamur. Postremo, resurrectio Christi nobis gloriosae resurrectionis nostrae pignus est.</answer>
+    </record>
+    <record number="46">
+      <question>Quomodo intelligis illud: ascendit ad coelos?</question>
+      <answer>Quod aspicientibus discipulis Christus de terra in coelum sublatus est atque etiamnum nostra causa ibidem est et erit, donec redeat ad iudicandum vivos et mortuos.</answer>
+    </record>
+    <record number="47">
+      <question>An ergo Christus non est nobiscum, usque ad finem mundi, quemadmodum promisit?</question>
+      <answer>Christus est verus Deus et verus homo. Itaque secundum naturam humanam iam non est in terra; at secundum divinitatem suam, maiestatem, gratiam et Spiritum nullo unquam tempore a nobis abest.</answer>
+    </record>
+    <record number="48">
+      <question>An vero isto pacto duae naturae in Christo non divelluntur, si non sit natura humana, ubicumque est divina?</question>
+      <answer>Minime; nam cum divinitas comprehendi non queat et omni loco praesens sit, necessario consequitur, esse eam quidem extra naturam humanam, quam assumpsit, sed nihilominus tamen esse in eadem eique personaliter unitam permanere.</answer>
+    </record>
+    <record number="49">
+      <question>Quem fructum nobis adfert ascensio Christi in coelum?</question>
+      <answer>Primum, quod in caelo apud Patrem pro nobis intercedit. Deinde, quod carnem nostram in coelo habemus, ut eo tamquam certo pignore confirmemur fore ut ipse, qui caput nostrum est, nos sua membra ad se extollat. Tertio, quod nobis suum Spiritum mutui pignoris loco mittit, cuius efficacia non terrena, sed superna quaerimus, ubi ipse sedet ad dexteram Dei.</answer>
+    </record>
+    <record number="50">
+      <question>Cur additur: sedet ad dexteram Dei?</question>
+      <answer>Quia Christus ideo in coelum ascendit, ut se ibi caput suae ecclesiae declararet, per quod Pater omnia gubernat.</answer>
+    </record>
+    <record number="51">
+      <question>Quid nobis prodest gloria nostri capitis Christi?</question>
+      <answer>Primum, quod per Spiritum Sanctum in nos, sua membra, coelestia dona effundit. Deinde, quod nos sua potentia contra omnes hostes protegit ac defendit.</answer>
+    </record>
+    <record number="52">
+      <question>Quid te consolatur reditus Christi ad iudicandum vivos et mortuos?</question>
+      <answer>Quod in omnibus miseriis et persecutionibus, erecto capite, eundem illum, qui se prius pro me iudicio Dei statuit et maledictionem omnem a me abstulit, iudicem e coelo exspecto, qui omnes suos et meos hostes in aeternas poenas abiiciat; me vero cum omnibus electis ad se in coelestia gaudia et sempiternam gloriam traducat.</answer>
+    </record>
+    <record number="53">
+      <question>Quid credis de Spiritu Sancto?</question>
+      <answer>Primum, quod sit verus et coaeternus Deus cum aeterno Patre et Filio. Deinde, quod mihi quoque datus sit, ut me per veram fidem Christi et omnium eius beneficiorum participem faciat, me consoletur et mecum in aeternum maneat.</answer>
+    </record>
+    <record number="54">
+      <question>Quid credis de sancta et catholica Christi ecclesia?</question>
+      <answer>Credo filium Dei ab initio mundi ad finem usque, sibi ex universo genere humano, coetum ad vitam aeternam electum, per Spiritum suum et Verbum, in vera fide consentientem, colligere, tueri ac servare; meque vivum eius coetus membrum esse et perpetuo mansurum.</answer>
+    </record>
+    <record number="55">
+      <question>Quid sibi vult communio sanctorum?</question>
+      <answer>Primum, quod universi et singuli credentes, Christi et omnium eius bonorum, tamquam ipsius membra communionem habeant. Deinde, quod singuli, quae acceperunt dona, in commune commodum et universorum salutem, prompte et alacriter conferre debeant.</answer>
+    </record>
+    <record number="56">
+      <question>Quid credis de remissione peccatorum?</question>
+      <answer>Deum propter satisfactionem Christi meorum peccatorum atque illius etiam pravitatis, cum qua mihi per omnem vitam pugnandum est, memoriam omnem deposuisse et me iustitia Christi gratis donare, ne unquam in iudicium veniam.</answer>
+    </record>
+    <record number="57">
+      <question>Quid te consolatur resurrectio carnis?</question>
+      <answer>Quod non tantum anima mea, postquam e corpore excesserit, e vestigio ad Christum suum caput assumetur, verum quod haec quoque caro mea potentia Christi excitata, rursus animae meae unietur et glorioso corpori Christi conformabitur.</answer>
+    </record>
+    <record number="58">
+      <question>Quam consolationem capis ex articulo de vita aeterna?</question>
+      <answer>Quod, quoniam in praesentia vitae aeternae initia in meo corde persentisco, futurum sit ut post hanc vitam plena perfectaque beatitudine potiar, in qua Deum in aeternum celebrem; quam quidem beatitudinem nec oculus vidit, nec auris audivit, nec ullus homo cogitatione comprehendit.</answer>
+    </record>
+    <record number="59">
+      <question>At cum haec omnia credis, quid utilitatis inde ad te redit?</question>
+      <answer>Quod in Christo iustus sum coram Deo et haeres vitae aeternae.</answer>
+    </record>
+    <record number="60">
+      <question>Quomodo iustus es coram Deo?</question>
+      <answer>Sola fide in Iesum Christum, adeo ut licet me mea conscientia accuset, quod adversus omnia mandata Dei graviter peccaverim, nec ullum eorum servaverim, ad haec etiamnum ad omne malum propensus sim; nihilominus tamen (modo haec beneficia vera animi fiducia amplectar) sine ullo meo merito, ex mera Dei misericordia, mihi perfecta satisfactio, iustitia et sanctitas Christi, imputetur ac donetur, perinde ac si nec ullum ipse peccatum admisissem, nec ulla mihi labes inhaereret: imo vero quasi eam obedientiam, quam pro me Christus praestitit, ipse perfecte praestitissem.</answer>
+    </record>
+    <record number="61">
+      <question>Cur sola fide te iustum esse affirmas?</question>
+      <answer>Non quod dignitate meae fidei Deo placeam, sed quod sola satisfactio, iustitia et sanctitas Christi mea iustitia sit coram Deo: ego vero eam non alia ratione, quam fide amplecti et mihi applicare queam.</answer>
+    </record>
+    <record number="62">
+      <question>Cur nostra bona opera non possunt esse iustitia, vel pars aliqua iustitiae coram Deo?</question>
+      <answer>Propterea, quod oporteat eam iustitiam, quae in iudicio Dei consistat, perfecte absolutam esse et omni ex parte divinae legi congruentem; nostra vero etiam praestantissima quaeque opera in hac vita sint imperfecta atque adeo peccatis inquinata.</answer>
+    </record>
+    <record number="63">
+      <question>Quomodo bona opera nostra nihil promereantur, cum Deus et in praesenti et in futura vita mercedem pro his se daturum promittat?</question>
+      <answer>Merces ea non datur ex merito sed ex gratia.</answer>
+    </record>
+    <record number="64">
+      <question>An autem haec doctrina non reddit homines securos et profanos?</question>
+      <answer>Non; neque enim fieri potest, quin ii, qui Christo per fidem insiti sunt, fructus proferant gratitudinis.</answer>
+    </record>
+    <record number="65">
+      <question>Quoniam igitur sola fides nos Christi atque omnium eius beneficiorum participes facit, unde proficiscitur haec fides?</question>
+      <answer>A Spiritu Sancto, qui eam per praedicationem Evangelii in nostris cordibus accendit et per usum Sacramentorum confirmat.</answer>
+    </record>
+    <record number="66">
+      <question>Quid sunt Sacramenta?</question>
+      <answer>Sunt sacra et in oculos incurrentia signa ac sigilla ob eam causam a Deo instituta, ut per ea nobis promissionem Evangelii magis declaret et obsignet: quod scilicet non universis tantum, verum etiam singulis credentibus, propter unicum illud Christi sacrificium in cruce peractum, gratis donet remissionem peccatorum et vitam aeternam.</answer>
+    </record>
+    <record number="67">
+      <question>Num utraque igitur et Verbum et Sacramenta eo spectant, ut fidem nostram ad sacrificium Christi in cruce peractum, tamquam ad unicum nostrae salutis fundamentum, deducant?</question>
+      <answer>Ita est. Nam Spiritus Sanctus docet Evangelio et confirmat Sacramentis, omnem nostram salutem positam esse in unico sacrificio Christi pro nobis in cruce oblati.</answer>
+    </record>
+    <record number="68">
+      <question>Quot Sacramenta instituit Christus in novo foedere?</question>
+      <answer>Duo: baptismum et sacram coenam</answer>
+    </record>
+    <record number="69">
+      <question>Qua ratione in baptismo admoneris et confirmaris te unici illius sacrificii Christi participem esse?</question>
+      <answer>Quod Christus externum aquae lavacrum mandavit, addita hac promissione, me non minus certo ipsius sanguine et Spiritu a sordibus animae, hoc est, ab omnibus meis peccatis lavari, quam aqua extrinsecus ablutus sum, qua sordes corporis expurgari solent.</answer>
+    </record>
+    <record number="70">
+      <question>Quid est sanguine et Spiritu Christi ablui?</question>
+      <answer>Est accipere a Deo remissionem peccatorum gratis, propter sanguinem Christi, quem is pro nobis in suo sacrificio in cruce profudit. Deinde etiam per Spiritum Sanctum renovari et ipso sanctificante membrum Christi fieri, quo magis ac magis peccatis moriamur et sancte inculpateque vivamus.</answer>
+    </record>
+    <record number="71">
+      <question>Ubi promisit Christus se nos tam certo sanguine et Spiritu suo abluturum, quam aqua baptismi abluti sumus?</question>
+      <answer>In institutione baptismi, cuius haec sunt verba: Ite et docete omnes gentes, baptizantes eos, in nomine Patris et Filii et Spiritus Sancti. Qui crediderit et baptizatus fuerit, servabitur: qui non crediderit, condemnabitur. Haec promissio repetitur cum Scriptura baptismum nominat lavacrum regenerationis et ablutionem peccatorum.</answer>
+    </record>
+    <record number="72">
+      <question>Estne ergo externus baptismus aquae ipsa peccatorum ablutio?</question>
+      <answer>Non est, nam solus sanguis Iesu Christi purgat nos ab omni peccato.</answer>
+    </record>
+    <record number="73">
+      <question>Cur ergo Spiritus Sanctus baptismum appellat lavacrum regenerationis et ablutionem peccatorum?</question>
+      <answer>Deus non sine gravi causa sic loquitur, videlicet non solum ut nos doceat, quem-admodum sordes corporis aqua purgantur, sic peccata nostra sanguine et Spiritu Christi expiari; verum multo magis, ut nobis hoc divino symbolo ac pignore certum faciat nos non minus vere a peccatis nostris interna lotione ablui, quam externa et visibili aqua abluti sumus.</answer>
+    </record>
+    <record number="74">
+      <question>Suntne etiam infantes baptizandi?</question>
+      <answer>Omnino; nam cum aeque ac adulti ad foedus et ecclesiam Dei pertineant, cumque eis per sanguinem Christi, remissio peccatorum et Spiritus Sanctus, fidei effector, non minus quam adultis promittatur: per baptismumg ecclesiae Dei inserendi sunt et ab infidelium liberis discernendi, itidem ut in veteri foedere per circumcisionem fiebat, cui in novo foedere substitutus est baptismus.</answer>
+    </record>
+    <record number="75">
+      <question>Qua ratione in coena Domini admoneris et confirmaris te unici illius sacrificii Christi in cruce oblati atque omnium eius bonorum participem esse?</question>
+      <answer>Quod Christus me atque omnes fideles de hoc fracto pane edere et de poculo distributo bibere iussit, addita hac promissione: primum, corpus suum non minus certo pro me in cruce oblatum ac fractum et sanguinem suum pro me fusum esse, quam oculis cerno panem Domini mihi frangi et poculum mihi communicari. Deinde animam meam non minus certo ipsius corpore, quod pro nobis crucifixum et sanguine, qui pro nobis fusus est, ad vitam aeternam ab ipso pasci, quam panem et vinum, symbola corporis dominici, e manu ministri accepta ore corporis percipio.</answer>
+    </record>
+    <record number="76">
+      <question>Quid est crucifixum corpus Christi edere et fusum eius sanguinem bibere?</question>
+      <answer>Est non tantum totam passionem et mortem Christi certa animi fiducia amplecti ac per id remissionem peccatorum et vitam aeternam adipisci: sed etiam per Spiritum Sanctum, qui simul in Christo et in nobis habitat, ita sacro sancto eius corpori magis ac magis uniri, ut quamvis ipse in coelo, nos vero in terra simus, nihilominus tamen caro simus de carne eius et os de ossibus eius: utque omnia corporis membra ab una anima, sic nos uno eodemque Spiritu vivificemur et gubernemur.</answer>
+    </record>
+    <record number="77">
+      <question>Quo loco promisit Christus se credentibus tam certo corpus et sanguinem suum sic edendum et bibendum daturum, quam fractum hunc panem edunt et poculum hoc bibunt?</question>
+      <answer>In institutione coenae, cuius haec sunt verba: Dominus noster Iesus Christus ea nocte, qua proditus est, accepit panem et gratiis actis fregit ac dixit: accipite, hoc est corpus meum, quod pro vobis frangitur, hoc facite in mei recordationem. Itidem et poculum, postquam coenassent, dicens: hoc poculum est novum foedus per meum sanguinem; hoc facite, quotiescumque biberitis in mei recordationem. Quotiescumque enim ederitis panem hunc et poculum hoc biberitis, mortem Domini annuntiate, donec venerit. Haec promissio a Paulo repetitur, cum inquit: poculum gratiarum actionis, quo gratias agimus, nonne communio est sanguinis Christi?</answer>
+    </record>
+    <record number="78">
+      <question>Num ergo panis et vinum fiunt ipsum corpus et sanguis Christi?</question>
+      <answer>Nequaquam; verum ut aqua baptismi in sanguinem Christi non convertitur, nec est ipsa peccatorum ablutio sed symbolum tantum et pignus earum rerum, quae nobis in baptismo obsignantur, ita nec panis coenae dominicae est ipsum corpus Christi, quamquam pro ratione Sacramentorum et usitata Spiritui Sancto de his loquendi forma, panis Christi corpus appellatur.</answer>
+    </record>
+    <record number="79">
+      <question>Cur ergo Christus panem appellat suum corpus, calicem vero suum sanguinem, seu novem foedus per suum sanguinem, Paulus item panem et vinum communionem corporis et sanguinis Christi?</question>
+      <answer>Christus non sine gravi causa sic loquitur: videlicet non solum ut nos doceat, quemadmodum panis et vinum corporis vitam sustentant, sic etiam crucifixum suum corpus et effusum suum sanguinem, vere esse animae nostrae cibum ac potum, quo ad vitam aeternam nutriatur; verum multo magis, ut hoc visibili signo ac pignore nobis certum faciat, nos non minus vere corporis et sanguinis sui per operationem Spiritus S. participes esse, quam sacra ista symbola, in eius memoriam, ore corporis percipimus. Tum etiam, quod eius passio et oboedientia tam certo nostra sit, quam si ipsimet pro nostris peccatis poenas dedissemus et Deo satisfecissemus.</answer>
+    </record>
+    <record number="80">
+      <question>Quid interest inter coenam Domini et missam papisticam?</question>
+      <answer>Coena Domini nobis testatur nos perfectam remissionem omnium nostrorum peccatorum habere, propter unicum illud Christi sacrificium, quod ipsemet semel in cruce peregit; tum etiam nos per Spiritum Sanctum inseri Christo, qui iam secundum naturam suam humanam tantum in coelis est ad dexteram patris ibique vult a nobis adorari. In missa autem negatur, vivos et mortuos habere remissionem peccatorum propter unicam Christi passionem, nisi etiamnum quotidie Christus pro ipsis a sacrificulis offeratur; tum etiam docetur Christum corporaliter sub speciebus panis et vini esse, ideoque in illis adorandum esse. Atque ita ipsum missae fundamentum nihil aliud est quam abnegatio unici illius sacrifii et passionis Iesu Christi et exsecranda idololatria.</answer>
+    </record>
+    <record number="81">
+      <question>Quibus accedendum est ad mensam Domini?</question>
+      <answer>Tantum iis, qui vere dolent se suis peccatis Deum offendisse, confidunt autem sibi ea propter Christum remissa esse et quas reliquas habent infirmitates, eas passione et morte illius obtectas esse, quique desiderant magis ac magis in fide et integritate vitae proficere. Hypocritae autem et qui non vere resipiscunt, damnationem sibi edunt et bibunt.</answer>
+    </record>
+    <record number="82">
+      <question>Suntne illi etiam ad hanc coenam admittendi, qui confessione et vita se infideles et impios esse declarant?</question>
+      <answer>Nequaquam. Nam eo pacto foedus Dei profanatur et ira Dei in universum coetum concitatur. Quocirca ecclesia, ex praescripto Christi et apostolorum, hos, clavibus regni coelorum utens, a coena arcere debet, quoad resipuerint et mores mutaverint.</answer>
+    </record>
+    <record number="83">
+      <question>Quid sunt claves regni coelorum?</question>
+      <answer>Praedicatio Evangelii et ecclesiastica disciplina, quibus coelum credentibus aperitur, infidelibus autem clauditur.</answer>
+    </record>
+    <record number="84">
+      <question>Quo pacto aperitur et clauditur regnum coelorum praedicatione evangelii?</question>
+      <answer>Cum ex mandato Christi credentibus universis et singulis publice annuntiatur, omnia peccata ipsis divinitus propter meritum Christi condonari, quoties promissionem Evangelii vera fide amplectuntur. Contra vero omnibus infidelibus et hypocritis denuntiatur, tantisper ipsis iram Dei et aeternam condemnationem incumbere, dum in suis sceleribus perseverant, secundum quod Evangelii testimonium, Deus tam in praesenti, quam in futura vita iudicaturus est.</answer>
+    </record>
+    <record number="85">
+      <question>Quo pacto clauditur et aperitur regnum coelorum per disciplinam ecclesiasticam?</question>
+      <answer>Cum ex mandato Christi ii, qui nomine quidem sunt Christiani, verum a doctrina et vita christiana sunt alieni, postquam aliquoties fraterne admoniti, ab erroribus aut flagitiis discedere nolunt, ecclesiae indicantur aut iis, qui ab ecclesia ad eam rem sunt constituti; ac si ne horum quidem admonitioni pareant, ab iisdem interdictione Sacramentorum ex coetu ecclesiae et ab ipso Deo ex regno Christi excluduntur; ac rursum, si emendationem profiteantur, et re ipsa declarent, tamquam Christi et ecclesiae membra recipiuntur.</answer>
+    </record>
+    <record number="86">
+      <question>Cum ab omnibus peccatis et miseriis, sine ullo nostro merito, sola Dei misericordia proptert Christum liberati simus, quid est cur bona opera faciamus?</question>
+      <answer>Quia postquam nos Christus suo sanguine redemit, renovat nos quoque suo Spiritu ad imaginem sui, ut tantis beneficiis affecti, in omni vita nos erga Deum gratos declaremus et ipse per nos celebretur. Deinde ut nos quoque ex fructibus de sua quisque fide certi simus. Postremo ut vitae nostrae integritate alios Christo lucrifaciamus.</answer>
+    </record>
+    <record number="87">
+      <question>Non possunt igitur illi servari, qui ingrati et in peccatis secure persistentes, a sua pravitate ad Deum non convertuntur?</question>
+      <answer>Nullo modo. Nam ut scriptura testatur, nec impudici, nec idololatrae, nec adulteri, nec fures, nec avari, nec ebriosi, nec convitiatores, nec raptores haereditatem regni Dei consequentur.</answer>
+    </record>
+    <record number="88">
+      <question>Quibus partibus constat conversio hominis ad Deum?</question>
+      <answer>Mortificatione veteris et vivificatione novi hominis.</answer>
+    </record>
+    <record number="89">
+      <question>Quid est mortificatio veteris hominis?</question>
+      <answer>Vere et ex animo dolere, quod peccatis tuis Deum offenderis eaque magis ac magis odisse et fugere.</answer>
+    </record>
+    <record number="90">
+      <question>Quid est vivificatio novi hominis?</question>
+      <answer>Vera laetitia in Deo et serium ac promptum studium instituendi vitam ex voluntate Dei omniaque bona opera exercendi.</answer>
+    </record>
+    <record number="91">
+      <question>Quae sunt bona opera?</question>
+      <answer>Tantum ea, quae ex vera fide secundum legem Dei fiunt et ad eius solius gloriam referuntur; non ea autem, quae a nobis opinione recti conficta, aut ab hominibus tradita sunt.</answer>
+    </record>
+    <record number="92">
+      <question>Quae est lex Dei?</question>
+      <answer>Locutus est Deus omnia verba haec. Primum praeceptum Ego sum Dominus Deus tuus, qui eduxi te ex Aegypto, domo servitutis. Non habebis deos alios in conspectu meo. Secundum Ne sculpas tibi simulacrum nec ullam imaginem effingas eorum, quae aut supra sunt in coelo, aut infra in terra, aut in aquis sub terra; neque incurves te illis neque colas ea. Ego enim sum Dominus Deus tuus, fortis, zelotes, vindicans peccata parentum in filiis idque in tertia et quarta progenie eorum, qui oderunt me et misericordia utens in millesima meorum, qui diligunt me et observant praecepta mea. Tertium Ne usurpes nomen Domini Dei tui temere. Neque enim Dominus dimittet eum impunitum, qui nomen suum vane usurpaverit. Quartum Memento, ut diem sabbathi sanctifices. Sex diebus operaberis et facies omne opus tuum. At septimo die sabbathum erit Domino Deo tuo. Non facies ullum opus, nec tu, nec filius tuus, nec filia tua, nec servus tuus, nec ancilla tua, nec iumentum tuum, nec advena, qui est intra portas tuas. Nam sex diebus fecit Deus coelum, terram, mare et quaecumque in iis sunt et requievit die septimo, ideoque benedixit diei sabbathi et sanctificavit eum. Quintum Honora patrem tuum et matrem tuam, ut diu vivas in terra, quam tibi Dominus Deus tuus daturus est. Sextum Non occides. Septimum Non committes adulterium. Octavum Non furaberis. Nonum Non dices contra proximum tuum falsum testimonium. Decimum Non concupisces domum proximi tui, nec concupisces uxorem proximi tui nec servum eius, nec ancillam, nec bovem, nec asinum, nec quicquam eorum, quae sunt proximi tui.</answer>
+    </record>
+    <record number="93">
+      <question>Quomodo dividuntur haec praecepta?</question>
+      <answer>In duas tabulas, quarum prior quattuor praeceptis tradit, quo pacto nos erga Deum geramus; posterior sex praeceptis, quae officia proximo debeamus.</answer>
+    </record>
+    <record number="94">
+      <question>Quid postulat Deus in primo praecepto?</question>
+      <answer>Ut, quam mihi cara est salus animae meae, tam studiose vitem et fugiam omnem idololatriam, magiam, incantationem, superstitionem, invocationem sanctorum, aut ceterarum creaturarum, unicum autem et verum Deum recte agnoscam, ipsi soli fidam, summa humilitate et patientia me illi subiiciam, ab eo solo omnia bona exspectem, denique intimo cordis affectu ipsum amem, reverear, venerer, adeo ut omnibus potius creaturis renuntiem, quam ut vel minimum contra eius volutatem committam.</answer>
+    </record>
+    <record number="95">
+      <question>Quid est idololatria?</question>
+      <answer>Est loco unius Dei aut praeter unum illum et verum Deum, qui se in suo verbo patefecit, aliud quippiam fingere aut habere. in quo spem reponas.</answer>
+    </record>
+    <record number="96">
+      <question>Quid postulat secundum praeceptum?</question>
+      <answer>Ne Deum ulla imagine aut figura exprimamus, neve ulla alia ratione eum colamus, quam qua se in suo verbo coli praecepit.</answer>
+    </record>
+    <record number="97">
+      <question>An nullae ergo prorsus fingendae sunt imagines aut simulacra?</question>
+      <answer>Deus nec ulla ratione effingi debet nec potest. Creaturas autem, etsi exprimere quidem licet, vetat tamen Deus earum imagines fingi aut haberi, quo vel ipsas, vel Deum per ipsas colamus, aut honoremus.</answer>
+    </record>
+    <record number="98">
+      <question>An autem in templis imagines tolerari non possunt, quae pro libris sint imperitae multitudini?</question>
+      <answer>Minime; neque enim decet nos sapientiores esse Deo, qui suam ecclesiam non mutis simulacris, sed viva praedicatione Verbi sui vult erudiri</answer>
+    </record>
+    <record number="99">
+      <question>Quid sancit Deus tertio praecepto?</question>
+      <answer>Ut non solum exsencrando aut peierando, verum etiam temere iurando nomen Dei contumeliose aut irreverenter ne usurpemus, neve tacendo aut connivendo, horrendis istis sceleribus communicemus; sed sacrosancto Dei nomine summa cum religione et veneratione utamur, ut vera et constanti confessione, invocatione, omnibus denique verbis et actionibus nostris ipse celebretur.</answer>
+    </record>
+    <record number="100">
+      <question>Estne igitur adeo grave peccatum iurando aut dira imprecando nomen Dei temerare, ut Deus etiam iis succenseat, qui quantum in se est, illud non prohibent aut impediunt?</question>
+      <answer>Certe gravissimum: Neque enim ullum est peccatum maius aut quod Deum gravius offendat, quam sacri ipsius nominis contumelia. Quocirca etiam id scelus morte multari voluit.</answer>
+    </record>
+    <record number="101">
+      <question>Potestne quis etiam pie per nomen Dei iurare?</question>
+      <answer>Potest, cum vel magistratus id exigit, vel alioqui necessitas hoc pacto fidem firmari et veritatem stabiliri postulat, quo et gloria Dei illustretur et aliorum saluti consulatur. Nam eius generis iusiurandum Verbo Dei sancitur ideoque etiam a sanctis in veteri et novo foedere recte est usurpatum.</answer>
+    </record>
+    <record number="102">
+      <question>Estne licitum iurare per sanctos aut alias creaturas?</question>
+      <answer>Non; nam legitimum iuramentum est invocatio Dei, qua petitur, ut is tamquam unicus cordium inspector, testimonium det veritati et iurantem puniat, si sciens fallat. Porro hic honos nulli creaturae convenit.</answer>
+    </record>
+    <record number="103">
+      <question>Quid praecipit Deus in quarto praecepto?</question>
+      <answer>Primum, ut ministerium evangelii et scholae conserventur, utque ego cum aliis, tum praecipue festis diebus studiose coetus divinos frequentem, Verbum Dei diligenter audiam, utar Sacramentis, precibus publicis meas quoque preces adiungam, pro facultatibus aliquid conferam in pauperes. Deinde, ut in omni vita a pravis actionibus vacem, Domino concedens, ut per Spiritum Sanctum in me suum opus faciat atque ita sempiternum illud sabbathum in hac vita exordiar.</answer>
+    </record>
+    <record number="104">
+      <question>Quid nobis iniungit Deus in quinto praecepto?</question>
+      <answer>Ut parentibus atque adeo omnibus, qui nobis praesunt, debitum honorem, amorem et fidem praestemus, nosque ipsorum fidelibus praeceptis et castigationi ea, qua par est, obedientia submittamus; tum etiam ut eorum vitia et mores nostra patientia toleremus, illud semper cogitantes, Deum nos illorum manu velle ducere ac regere.</answer>
+    </record>
+    <record number="105">
+      <question>Quid flagitat Deus in sexto praecepto?</question>
+      <answer>Ut proximo neque cogitationem neque verbis, neque gestibus, nedum factis, vel per me, vel per alium incommodem aut noceam neve eum oderim neu occidam, sed omnem vindictae cupiditatem abiiciam, Adhaec ne me ipsum laedam aut sciens in aliquod periculum coniiciam. Quocirca etiam, ne caedes fierent, magistratum gladio armavit.</answer>
+    </record>
+    <record number="106">
+      <question>Atqui hoc praeceptum solam caedem prohibere videtur?</question>
+      <answer>At caedem prohibendo docet Deus, se radicem et originem caedis, iram scilicet, invidiam, odium vindictae cupiditatem odisse atque ea omnia pro caede ducere.</answer>
+    </record>
+    <record number="107">
+      <question>An vero id satis est, nos neminem eo, quo dictum est modo occidere?</question>
+      <answer>Non est satis: dum enim Deus iram, invidiam, odium damnat, postulat ut proximum aeque ac nos ipsos diligamus et ut humanitate, lenitate, mansuetudine, patientia et misericordia erga eum utamur, quodque ei damno esse possit, quantum in nobis est, avertamus. Ad summam ita animo affecti simus, ut ne inimicis quidem benefacere dubitemus.</answer>
+    </record>
+    <record number="108">
+      <question>Quae est sententia septimi praecepti?</question>
+      <answer>Deum omnem turpitudinem excecrari ideoque nos eam penitus odisse et detestari debere contraque temperanter, modeste et caste, vel in sacro coniugio, vel in vita coelibe vivere oportere.</answer>
+    </record>
+    <record number="109">
+      <question>Nihilne amplius prohibet Deus hoc praecepto, quam adulterium et id genus turpitudines?</question>
+      <answer>Cum corpus et animus noster templa sint Spiritus Sancti, vult Deus ut utrumque pure sancteque possideamus. Ideoque facta, gestus, sermones, cogitationes, cupiditates foedas et quidquid hominem ad ista allicit, id universum prohibet.</answer>
+    </record>
+    <record number="110">
+      <question>Quid vetat Deus in octavo praecepto?</question>
+      <answer>Non solum ea furta et rapinas, quas magistratus punit, sed furti nomine comprehendit quidquid est malarum artium et aucupiorum, quibus aliena captamus et ad nos vi aut specie recti transferre studemus; qualia sunt iniquum pondus, iniusta ulna, inaequalis mensura, fucosa merx, fallax moneta, usura aut alia quaevis ratio aut modus rem faciendi a Deo interdictus. His adde omnem avaritiam et multiplicem divinorum donorum profusionem et abusum.</answer>
+    </record>
+    <record number="111">
+      <question>Quae sunt ea, quae Deus hic iubet?</question>
+      <answer>Ut commoda et utilitates proximi, quantum possim, adiuvem et augeam; cum eo sic agam, ut mecum agi cuperem, sedulo et fideliter opus faciam, ut aliorum quoque egestati subvenire queam.</answer>
+    </record>
+    <record number="112">
+      <question>Quid exigit nonum praeceptum?</question>
+      <answer>Ne adversus quempiam dicam falsum testimonium, nullius verba calumnier, nulli obtrectem aut convicium faciam, neminem temere vel indicta causa condamnem; verum omnis generis mendacia, fraudes, ut opera propria diaboli, nisi in me gravissimam iram Dei concitare velim, omni cura fugiam, in iudiciis ceterisque negotiis veritatem secter et id quod res est, libere et constanter profitear. Ad haec famam aliorum et existimationem, quantum queam, defendam et augeam.</answer>
+    </record>
+    <record number="113">
+      <question>Quid prohibet decimum praeceptum?</question>
+      <answer>Ne vel minima cupiditate aut cogitatione adversus ullum Dei praeceptum corda nostra unquam sollicitentur; sedc perpetuo et ex animo omne peccatum detestemur contraque omni iustitia delectemur.</answer>
+    </record>
+    <record number="114">
+      <question>Possuntne autem illi, qui ad Deum conversi sunt, haec praecepta perfecte servare?</question>
+      <answer>Minime; verum etiam sanctissimi quique, quamdiu vivunt, habent tantum exigua initia huius obedientiae, sic tamen, ut serio ac non simulato studio non secundum aliqua tantum, sed secundum omnia Dei praecepta vivere incipiant.</answer>
+    </record>
+    <record number="115">
+      <question>Cur igitur vult Deus legem suam adeo exacte et severe praedicari, cum nemo sit in hac vita, qui eam servare possit?</question>
+      <answer>Primum, ut in omni vita, magis magisque agnoscamus, quanta sit naturae nostrae ad peccandum propensio tantoque avidius remissionem peccatorum et iustitiam in Christo expetamus. Deinde, ut hoc perpetuo agamus, illud semper meditemur et gratiam Spiritus Sancti a Patre imploremus, quo indies magis ac magis ad imaginem Dei renovemur, donec aliquando tandem, postquam ex hac vita decesserimus, propositam nobis perfectionem laeti assequamur.</answer>
+    </record>
+    <record number="116">
+      <question>Quare Christianis necessaria est precatio?</question>
+      <answer>Quia praecipua pars est eius, quam Deus a nobis postulat gratitudinis. Tum quia illis tantum suam gratiam et Spiritum Sanctum Deus largitur, qui veris gemitibus continenter haec ab eo petunt et pro iis ipsi gratias agunt.</answer>
+    </record>
+    <record number="117">
+      <question>Quae ad eam precationem requiruntur, quae Deo placeat quaeque ab ipso exaudiatur?</question>
+      <answer>Primum ut a solo vero Deo, qui se in Verbo suo patefecit, omnia, quae a se peti iussit, vero cordis affectu petamus. Deinde ut ex intimo nostrae indigentiae ac miseriae sensu, nos in conspectu divinae Maiestatis supplices abiiciamus. Postremo, ut huic firmo fundamento innitamur nos a Deo, quamquam indignos, propter Christum tamen certo exaudiri, quemadmodum nobis in suo Verbo promisit.</answer>
+    </record>
+    <record number="118">
+      <question>Quae sunt ea, quae a se peti iubet?</question>
+      <answer>Omnia tum animae tum corpori necessaria, quae Dominus noster Iesus Christus ea precatione, quam nos ipse docuit, complexus est.</answer>
+    </record>
+    <record number="119">
+      <question>Quae est illa precatio?</question>
+      <answer>Pater noster, qui es in coelis; sanctificetur nomen tuum. Veniat regnum tuum. Fiat voluntas tua, quemadmodum in coelo, sic etiam in terra. Panem nostrum quotidianum da nobis hodie. Et remitte nobis debita nostra, sicut et nos remittimus debitoribus nostris. Et ne inducas nos in tentationem, sed libera nos a malo. Quia tuum est regnum et potentia et gloria, in saecula. Amen.</answer>
+    </record>
+    <record number="120">
+      <question>Cur praecipit Christus, ut ita Deum compellemus: Pater noster?</question>
+      <answer>Ut statim in ipso precationis exordio convenientem Dei filiis reverentiam et fiduciam erga Deum in nobis excitet, quae nostrae precationis fundamentum esse debet; nimirum Deum propter Christum nobis patrem factum esse et quae vera fide ab eo petimus, nobis multo minus negare, quam parentes nostri nobis bona terrena denegant.</answer>
+    </record>
+    <record number="121">
+      <question>Cur additur: Qui es in coelis?</question>
+      <answer>Ne de coelesti maiestate Dei humile quippiam aut terrenum cogitemus, simul etiam, ut ab eius omnipotentia, quaecunque animo et corpori sunt necessaria, exspectemus.</answer>
+    </record>
+    <record number="122">
+      <question>Quae est prima petitio?</question>
+      <answer>Sanctificetur nomen tuum; hoc est, da principio, ut te recte agnoscamus et lucentem in omnibus operibus tuis omnipotentiam, sapientiam, bonitatem, iustitiam, misericordiam et veritatem tuam veneremur, praedicemus et celebremus. Deinde, ut universam vitam nostram, cogitationes, sermones et actiones eo semper dirigamus, ne sanctissimum nomen tuum propter nos contumelia afficiatur, sed honore potius et laudibus illustretur.</answer>
+    </record>
+    <record number="123">
+      <question>Quae est secunda petitio?</question>
+      <answer>Veniat regnum tuum; hoc est, regas nos ita Verbo et Spiritu tuo, ut nos tibi magis magisque subiiciamus. Conserva et auge ecclesiam tuam, destrue opera diaboli omnemque potentiam se adversus maiestatem tuam efferentem. Irrita fac omnia consilia, quae contra Verbum tuum capiuntur, quoad plene tandem ac perfecte regnes, cum eris omnia in omnibus.</answer>
+    </record>
+    <record number="124">
+      <question>Quae est tertia petitio?</question>
+      <answer>Fiat voluntas tua, quemadmodum in coelo, sic etiam in terra; hoc est, da, ut nos et omnes homines, voluntati propriae renunciantes, tuae voluntati, quae sola est sancta, prompte et sine ullo murmure pareamus atque ita singuli mandatum nobis munus fideliter et alacriter exsequamur, quemadmodum faciunt angeli in coelo.</answer>
+    </record>
+    <record number="125">
+      <question>Quae est quarta petitio?</question>
+      <answer>Panem nostrum quotidianum da nobis hodie; hoc est, suppedita nobis omnia, quae sunt ad hanc vitam necessaria, ut per ea agnoscamus te unicum fontem esse, ex quo omnia bona emanant, ac nisi tu benedicas, omnem nostram curam et industriam atque adeo tua ipsius dona nobis infelicia et noxia esse. Quapropter da, ut fiduciam nostram ab omnibus creaturis aversam in te solo collocemus.</answer>
+    </record>
+    <record number="126">
+      <question>Quae est quinta petitio?</question>
+      <answer>Remitte nobis debita nostra, sicut et nos remittimus debitoribus nostris; hoc est, nobis miserrimis peccatoribus, omnia peccata nostra atque eam etiam pravitatem, quae in nobis etiamnum haeret, propter Christi sanguinem ne imputes, quemadmodum nos quoque hoc tuae gratiae testimonium in cordibus nostris sentimus, quod firmiter nobis propositum habemus omnibus, qui nos offenderunt, ex animo ignoscere.</answer>
+    </record>
+    <record number="127">
+      <question>Quae ext sexta petitio?</question>
+      <answer>Ne nos inducas in tentationem, sed libera nos a malo; hoc est, quoniam ipsi natura adeo debiles et infirmi sumus, ut ne momento quidem subsistere possimus, infensissimi autem hostes nostri, Satan, mundus ac nostra ipsorum caro nos continenter oppugnant, tu nos sustentes et Spiritus tui robore firmes, ne in hoc spirituali certamine succumbamus, sed tantisper illis fortiter resitamus, donec integram tandem victoriam obtineamus.</answer>
+    </record>
+    <record number="128">
+      <question>Quomodo concludis precationem tuam?</question>
+      <answer>Quia tuum est regnum et potentia et gloria in saecula; hoc est, omnia haec a te petimus, quia cum et rex noster et omnipotens sis, omnia nobis et vis et potes largiri. Atque haec quidem ideo petimus, ut ex iis, non ad nos, sed ad sanctum nomen tuum omnis gloria redeat.</answer>
+    </record>
+    <record number="129">
+      <question>Quid sibi vult particula, Amen?</question>
+      <answer>Rem certam ac ratam esse. Nam precatio mea multo certius a Deo est exaudita quam ego in corde meo sentio, me illud ex animo cupere.</answer>
+    </record>
+  </data>
+</translation>

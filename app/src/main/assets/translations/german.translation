@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation>
+  <description>Der Heidelberger Katechismus</description>
+  <blockNames part="Der Teil" sunday="Sontag" question="Frage" />
+  <partNames>
+    <part number="1">Von des Menschen Elend</part>
+    <part number="2">Von des Menschen Erlösung</part>
+    <part number="3">Von der Dankbarkeit</part>
+  </partNames>
+  <data>
+    <record number="1">
+      <question>Was ist dein einziger Trost im Leben und im Sterben?</question>
+      <answer>Daß ich mit Leib und Seele, sowohl im Leben als auch im Sterben (Röm 14,7.8), nicht mir (1.Kor 6,19), sondern meinem getreuen Heiland Jesus Christus gehöre (1.Kor 3,23), der mit seinem teuren Blut (1. Petr 1,18.19) für alle meine Sünden vollkommen bezahlt (1.Joh 1,7; 2,2) und mich aus aller Gewalt des Teufels erlöst hat (1.Joh 3,8) und so bewahrt (Joh 6,39), daß ohne den Willen meines Vaters im Himmel kein Haar von meinem Haupt fallen kann (Mt 10,29-31; Lk 21,18), ja, daß mir wirklich alles zu meiner Seligkeit dienen muß (Röm 8,28). Darum versichert er mich auch durch seinen heiligen Geist des ewigen Lebens (2.Kor 1,20-22; 5,5; Eph 1,13.14) und macht mich von Herzen willig und bereit, ihm hinfort zu leben (Röm 8,14-16).</answer>
+    </record>
+    <record number="2">
+      <question>Wieviel Dinge mußt du wissen, damit du in diesem Trost selig leben und sterben kannst?</question>
+      <answer>Drei Dinge (Lk24,46-48; 1.Kor6,11; Tit3,3-7): Erstens, wie groß meine Sünde und Elend sind (Joh9,41; 15,22; Röm3,9). Zweitens, wie ich von allen meinen Sünden und Elend erlöst werde (Joh17,3; Apg4,12; 10,43). Und drittens, wie ich Gott für diese Erlösung dankbar sein soll (Eph5,8-11; 1.Petr2,9.10; Rom6,1.2 .12.13).</answer>
+    </record>
+    <record number="3">
+      <question>Woher erkennst du dein Elend?</question>
+      <answer>Aus dem Gesetz Gottes (Röm3,20).</answer>
+    </record>
+    <record number="4">
+      <question>Was fordert denn das göttliche Gesetz von uns?</question>
+      <answer>Dies lehrt uns Christus zusammenfassend in Matth.22: ‘Du sollst lieben Gott, deinen Herrn, von ganzem Herzen, von ganzer Seele, von ganzem Gemüt und allen Kräften. Dies ist das erste und das größte Gebot. Das zweite aber ist dem gleich: Du sollst deinen Nächsten lieben wie dich selbst. In diesen zwei Geboten hängt das ganze Gesetz und die Propheten’ (Mt22,37-40; Lk10,27).</answer>
+    </record>
+    <record number="5">
+      <question>Kannst du dies alles vollkommen halten?</question>
+      <answer>Nein (Röm3,10 .23; 1.Joh1,7.8), denn ich bin von Natur aus geneigt, Gott und meinen Nächsten zu hassen (Röm8,7; Eph2,3).</answer>
+    </record>
+    <record number="6">
+      <question>Hat denn Gott den Menschen so böse und verkehrt erschaffen?</question>
+      <answer>Nein (1.Mose1,31); sondern Gott hat den Menschen gut und nach seinem Ebenbild erschaffen (1.Mose1,26.27), das heißt in wahrhaftiger Gerechtigkeit und Heiligkeit, damit er Gott, seinen Schöpfer, recht erkennt und von Herzen liebt und in ewiger Seligkeit mit ihm lebt, um ihn zu loben und zu preisen (2.Kor3,18; Kol3,9.10; Eph4,23.24).</answer>
+    </record>
+    <record number="7">
+      <question>Woher kommt denn dieses verdorbene Wesen des Menschen?</question>
+      <answer>Aus dem Fall und Ungehorsam unserer ersten Eltern, Adam und Eva, im Paradies (1.Mose3,1-6; Röm5,12 .18.19); damals wurde unsere Natur so vergiftet, daß wir alle in Sünden empfangen und geboren werden (Ps51,7; 1.Mose5,3).</answer>
+    </record>
+    <record number="8">
+      <question>Sind wir aber dermaßen verdorben, daß wir ganz und gar unfähig sind zu irgendeinem Guten und geneigt zu allem Bösen?</question>
+      <answer>Ja (Joh3,6; 1.Mose6,5; Hiob14,4; 15,16 .35; Jes53,6), es sei denn, daß wir durch den Geist Gottes wiedergeboren werden (Joh3,5).</answer>
+    </record>
+    <record number="9">
+      <question>Tut denn Gott dem Menschen nicht Unrecht, daß er in seinem Gesetz von ihm fordert, was er nicht tun kann?</question>
+      <answer>Nein (Eph4,24.25); denn Gott hat den Menschen so erschaffen, daß er es tun konnte. Der Mensch aber hat sich und alle seine Nachkommen, vom Teufel angestiftet, durch mutwilligen Ungehorsam dieser Gaben beraubt (Röm5,12).</answer>
+    </record>
+    <record number="10">
+      <question>Will Gott diesen Ungehorsam und Abfall ungestraft hingehen lassen?</question>
+      <answer>Mitnichten (Röm5,12; Hebr9,27); sondern er zürnt schrecklich, sowohl über angeborene als auch über selbst begangene Sünden, und will sie aus gerechtem Urteil zeitlich und ewig strafen, wie er gesprochen hat: ‘Verflucht sei jedermann, der nicht bleibt in all dem, was geschrieben steht in dem Buch des Gesetzes, daß er's tue’ (5.Mose27,26; Gal3,10).</answer>
+    </record>
+    <record number="11">
+      <question>Ist denn Gott nicht auch barmherzig?</question>
+      <answer>Gott ist wohl barmherzig (2.Mose34,6.7), er ist aber auch gerecht (2.Mose20,5; Ps5,5-7; 2.Kor6,14-17), deshalb fordert seine Gerechtigkeit, daß die Sünde, die gegen die allerhöchste Majestät Gottes begangen wird, auch mit der höchsten, das heißt der ewigen Strafe an Leib und Seele, gestraft wird.</answer>
+    </record>
+    <record number="12">
+      <question>Wenn wir nun nach dem gerechten Urteil Gottes zeitliche und ewige Strafe verdient haben, wie können wir dieser Strafe entgehen und wiederum Gnade bekommen?</question>
+      <answer>Gott will, daß seiner Gerechtigkeit Genüge geschehe (2.Mose20,5; 23,7), deswegen müssen wir ihr entweder selbst oder durch einen anderen das volle Sühnegeld bezahlen (Röm8,3.4).</answer>
+    </record>
+    <record number="13">
+      <question>Können wir aber selbst das Sühnegeld bezahlen?</question>
+      <answer>Mitnichten; sondern wir machen sogar die Schuld noch täglich größer (Hiob9,3; 15,15; Mt6,12),</answer>
+    </record>
+    <record number="14">
+      <question>Kann aber irgendeine bloße Kreatur für uns bezahlen?</question>
+      <answer>Keine; denn erstens will Gott an keiner anderen Kreatur strafen, was der Mensch verschuldet hat (Hebr2,14-16). Zweitens kann auch keine bloße Kreatur die Last des ewigen Zorns Gottes gegen die Sünde ertragen und andere davon erlösen (Ps130,3).</answer>
+    </record>
+    <record number="15">
+      <question>Was müssen wir denn für einen Mittler und Erlöser suchen?</question>
+      <answer>Einen solchen, der ein wahrer (1.Kor15,21) und gerechter Mensch (Jer23,5.6; 33,15.16; Ps53,4; Jes53,9; 2.Kor5,21) und doch stärker als alle Kreaturen, das heißt zugleich wahrer Gott ist (Hebr7,16 .26; Jes7,14; Röm8,3.4; 9,5).</answer>
+    </record>
+    <record number="16">
+      <question>Warum muß er ein wahrer und gerechter Mensch sein?</question>
+      <answer>Weil die Gerechtigkeit Gottes fordert (Röm5,12 .15), daß die menschliche Natur, die gesündigt hat, für die Sünde bezahlt, und weil einer, der selbst ein Sünder ist, nicht für andere bezahlen kann (1Petr3,18; Jes53,3-5 .10 .11.</answer>
+    </record>
+    <record number="17">
+      <question>Warum muß er zugleich wahrer Gott sein?</question>
+      <answer>Damit er durch die Kraft seines Gottseins (Jes53,8; Apg2,24; 1.Petr3,18) die Last des Zorns Gottes in seinem Menschsein ertragen und uns die Gerechtigkeit und das Leben erwerben (Joh3,16; Apg20,28) und wiedergeben kann (Joh1,4).</answer>
+    </record>
+    <record number="18">
+      <question>Wer ist aber dieser Mittler, der zugleich wahrer Gott und ein wahrer, gerechter Mensch ist?</question>
+      <answer>Unser Herr Jesus Christus (Mt1,23; 1.Tim 3,16; Lk2,11), der uns zur vollkommenen Erlösung und Gerechtigkeit geschenkt ist (1.Kor1,30).</answer>
+    </record>
+    <record number="19">
+      <question>Woher weißt du das?</question>
+      <answer>Aus dem heiligen Evangelium, das Gott selbst zuerst im Paradies (1.Mose3,15) offenbart hat, danach durch die heiligen Erzväter (1.Mose22,18; 49,10.11; Röm1,2; Hebr1,1; Apg3,22-24; Apg10,43) und Propheten hat verkündigen lassen und durch die Opfer und anderen Zeremonien des Gesetzes vorgebildet (Joh5,46; Hebr10,7), schließlich aber durch seinen einzigen geliebten Sohn erfüllt hat (Röm10,4; Gal4,4.5).</answer>
+    </record>
+    <record number="20">
+      <question>Werden denn alle Menschen wiederum durch Christus selig, wie sie durch Adam verloren worden sind?</question>
+      <answer>Nein; sondern nur diejenigen, die durch wahren Glauben ihm eingeleibt werden und alle seine Wohltaten annehmen (Joh1,12; Jes53,11; Ps2,12; Röm11,17 .19; Hebr4,2; 10,39).</answer>
+    </record>
+    <record number="21">
+      <question>Was ist wahrer Glaube?</question>
+      <answer>Es ist nicht nur eine sichere Erkenntnis, durch die ich alles für wahr halte, was uns Gott in seinem Wort offenbart hat (Hebr11,1 .3; Jak1,18; 2,19), sondern auch ein herzliches Vertrauen (Röm4,16-21; 5,1; 10,10), welches der Heilige Geist (2.Kor4,13; Eph2,8.9; Mt16,17; Phil1,19) durchs Evangelium in mir wirkt (Röm1,16; 10,17), daß nicht nur anderen, sondern auch mir Vergebung der Sünden, ewige Gerechtigkeit und Seligkeit von Gott geschenkt ist (Hebr11,7-10; Röm1,16) aus lauter Gnade, allein um des Verdienstes Christi willen (Eph2,7 .8.9; Röm3,24-26; Gal2,16).</answer>
+    </record>
+    <record number="22">
+      <question>Was muß aber ein Christ glauben?</question>
+      <answer>Alles, was uns im Evangelium verheißen wird (Joh20,31; Mt28,20), wie es uns die Artikel des Bekenntnisses unseres allgemeinen unangezweifelten christlichen Glaubens in einer Zusammenfassung lehren.</answer>
+    </record>
+    <record number="23">
+      <question>Wie lautet dieses Glaubensbekenntnis?</question>
+      <answer>‘Ich glaube an Gott Vater,
+den Allmächtigen,
+den Schöpfer des Himmels und der Erde.
+
+Und an Jesus Christus,
+seinen eingeborenen Sohn, unseren Herrn,
+der empfangen ist von dem Heiligen Geist,
+geboren von Maria, der Jungfrau,
+gelitten unter Pontius Pilatus,
+gekreuzigt, gestorben und begraben,
+hinabgestiegen zur Hölle,
+am dritten Tage wieder auferstanden von den Toten,
+aufgefahren gen Himmel;
+er sitzt zur Rechten Gottes,
+des allmächtigen Vaters;
+von dort wird er kommen,
+zu richten die Lebendigen und die Toten.
+
+Ich glaube an den Heiligen Geist,
+eine heilige allgemeine christliche Kirche,
+die Gemeinschaft der Heiligen,
+Vergebung der Sünden,
+Auferstehung des Fleisches
+und ein ewiges Leben.’</answer>
+    </record>
+    <record number="24">
+      <question>Wie werden diese Artikel eingeteilt?</question>
+      <answer>In drei Teile: Der erste ist von Gott dem Vater und unserer Erschaffung. Der zweite von Gott dem Sohn und unserer Erlösung. Der dritte von Gott dem Heiligen Geist und unserer Heiligung.</answer>
+    </record>
+    <record number="25">
+      <question>Wenn es nur ein einziges göttliches Wesen gibt (5.Mose&amp;nbsp;6,4), warum nennst du drei, den Vater, Sohn und Heiligen Geist?</question>
+      <answer>Weil sich Gott so in seinem Wort geoffenbart hat (Jes61,1; Ps110,1; Mt3,16.17; 28,19; 1.Joh5,7), daß diese drei unterschiedlichen Personen der eine wahrhaftige ewige Gott seien.</answer>
+    </record>
+    <record number="26">
+      <question>Was glaubst du, wenn du sprichst: ‘Ich glaube an Gott Vater, den Allmächtigen, Schöpfer des Himmels und der Erde’?</question>
+      <answer>Daß der ewige Vater unseres Herrn Jesu Christi, der Himmel und Erde samt allem, was darinnen ist, aus nichts erschaffen hat (1.Mose1,1; Ps33,6) und sie noch immer durch seinen ewigen Rat und Vorsehung erhält und regiert (Ps104,10-17 .27-30; Mt10,29; Hebr1,3; Ps115,1-3), um seines Sohns Christi willen mein Gott und mein Vater ist (Joh1,12; Röm8,15; Gal4,5-7; Eph1,5), auf den ich so vertraue, daß ich nicht zweifele, daß er mich mit allem, was für Leib und Seele nötig ist, versorgen wird (Ps55,23; Mt6,25-26; Lk12,22), und auch alles Übel, das er mir in diesem Jammertal zuschickt, mir zum Guten wenden wird (Röm8,28), weil er's tun kann als ein allmächtiger Gott (Röm10,12) und auch tun will als ein getreuer Vater (Mt6,25-26; 7,9-11).</answer>
+    </record>
+    <record number="27">
+      <question>Was verstehst du unter der Vorsehung Gottes?</question>
+      <answer>Die allmächtige und allgegenwärtige Kraft Gottes (Apg17,25-28), durch die er Himmel und Erde samt allen Kreaturen, gleichwie mit seiner Hand, noch immer erhält (Hebr1,3) und so regiert, daß Laub und Gras, Regen und Dürre, fruchtbare und unfruchtbare Jahre, Essen und Trinken (Jer5,24; Apg14,17), Gesundheit und Krankheit (Joh9,3), Reichtum und Armut (Spr22,2), überhaupt alles, nicht aus Zufall, sondern von seiner väterlichen Hand uns zukommt.</answer>
+    </record>
+    <record number="28">
+      <question>Was nützt uns die Erkenntnis der Schöpfung und Vorsehung Gottes?</question>
+      <answer>Daß wir in aller Widerwärtigkeit geduldig (Röm5,3; Jak1,3; Hiob1,21), in Glückseligkeit dankbar (5.Mose8,10; 1.Thess5,18) und aufs Zukünftige guter Zuversicht zu unserem getreuen Gott und Vater sein sollen, daß uns keine Kreatur von seiner Liebe scheiden wird (Röm8,38.39), weil alle Kreaturen so in seiner Hand sind, daß sie sich ohne seinen Willen weder regen noch bewegen können (Hiob1,12; Apg17,25-28; Spr21,1).</answer>
+    </record>
+    <record number="29">
+      <question>Warum wird der Sohn Gottes Jesus, das heißt ‘Seligmacher’, genannt?</question>
+      <answer>Weil er uns selig macht von unseren Sünden (Mt1,21; Hebr7,24 .25), und weil bei keinem anderen irgendeine Seligkeit zu suchen noch zu finden ist (Apg4,12).</answer>
+    </record>
+    <record number="30">
+      <question>Glauben denn die auch an den alleinigen Seligmacher Jesus, die ihre Seligkeit und Heil bei Heiligen, bei ihnen selbst oder anderswo suchen?</question>
+      <answer>Nein, sondern sie verleugnen mit der Tat den alleinigen Seligmacher und Heiland Jesus, auch wenn sie ihn rühmen (1.Kor1,12.13 .31; Gal5,4). Denn entweder muß Jesus nicht ein vollkommener Heiland sein, oder die diesen Heiland mit wahrem Glauben annehmen, müssen alles in ihm haben, das zu ihrer Seligkeit vonnöten ist (Jes9,6; Kol1,19.20; 2,10; Joh1,16).</answer>
+    </record>
+    <record number="31">
+      <question>Warum wird er Christus, das heißt ein ‘Gesalbter’, genannt?</question>
+      <answer>Weil er von Gott dem Vater eingesetzt und mit dem Heiligen Geist (Hebr1,9) gesalbt ist zu unserem obersten Propheten und Lehrer (5.Mose18,15; Apg3,22), der uns den verborgenen Rat und Willen Gottes von unserer Erlösung vollkommen offenbart (Joh1,18; Joh15,15); und zu unserem einzigen Hohenpriester (Ps110,4; Hebr7,21), der uns mit dem einmaligen Opfer seines Leibes erlöst hat und immer mit seiner Fürbitte vor dem Vater vertritt (Röm8,34; Röm5,9-11); und zu unserem ewigen König, der uns mit seinem Wort und Geist regiert und bei der erworbenen Erlösung schützt und erhält (Ps2,6; Lk1,33; Mt28,18).</answer>
+    </record>
+    <record number="32">
+      <question>Warum wirst aber du ein Christ genannt?</question>
+      <answer>Weil ich durch den Glauben ein Glied Christi bin (Apg11,26) und so Anteil an seiner Salbung habe (1.Joh2,27; Apg2,17; Joel3,1), damit auch ich seinen Namen bekenne (Mk8,38; Mt10,32), mich ihm zu einem lebendigen Dankopfer hingebe (Röm6,13; 12,1; Offb1,6; 5,8; 1.Petr2,5 .9) und mit freiem Gewissen in diesem Leben gegen die Sünde und den Teufel kämpfe (1.Tim1,18.19) und hernach in Ewigkeit mit ihm über alle Kreaturen herrsche (2.Tim2,12).</answer>
+    </record>
+    <record number="33">
+      <question>Warum heißt er Gottes eingeborener Sohn, wo doch auch wir Kinder Gottes sind?</question>
+      <answer>Weil Christus allein der ewige natürliche Sohn Gottes ist (Joh1,1 .2.3 .14 .18; Hebr1,2), wir aber um seinetwillen aus Gnade zu Kindern Gottes angenommen sind (Röm8,15-17; Eph1,5.6).</answer>
+    </record>
+    <record number="34">
+      <question>Warum nennst du ihn unseren Herrn?</question>
+      <answer>Weil er uns mit Leib und Seele von der Sünde und aus aller Gewalt des Teufels, nicht mit Gold oder Silber, sondern mit seinem teuren Blut, ihm zum Eigentum erlöst und erkauft hat (1.Petr1,18.19; 2,9; 1.Kor6,20; 7,23).</answer>
+    </record>
+    <record number="35">
+      <question>Was heißt, daß er empfangen ist von dem Heiligen Geist, geboren von Maria, der Jungfrau?</question>
+      <answer>Daß der ewige Sohn Gottes, der wahrer und ewiger Gott ist (Joh1,1; Röm1,4) und bleibt (Röm9,5), wahre menschliche Natur aus dem Fleisch und Blut der Jungfrau Maria (Gal4,4; Joh1,14) durch Wirkung des Heiligen Geistes an sich genommen hat (Mt1,18 .20; Lk1,35; Eph1,3), damit er auch der wahre Samen Davids ist (Ps132,11; Röm1,3), seinen Brüdern in allem gleich (Phil2,7), ausgenommen die Sünde (Hebr4,15).</answer>
+    </record>
+    <record number="36">
+      <question>Was nützt dir die heilige Empfängnis und Geburt Christi?</question>
+      <answer>Daß er unser Mittler ist (Hebr2,16-18) und mit seiner Unschuld und vollkommenen Heiligkeit meine Sünde, in der ich empfangen bin, vor Gottes Angesicht bedeckt (Ps32,1; 1.Kor1,30).</answer>
+    </record>
+    <record number="37">
+      <question>Was verstehst du unter dem Wörtchen ‘gelitten’?</question>
+      <answer>Daß er an Leib und Seele die ganze Zeit seines Lebens auf der Erde, besonders aber an dessen Ende, den Zorn Gottes gegen die Sünde des ganzen Menschengeschlechts getragen hat (1.Petr2,24; Jes53,12), um mit seinem Leiden als dem einmaligen Sühnopfer (1.Joh2,2; 4,10; Röm3,25) unseren Leib und unsere Seele von der ewigen Verdammnis zu erlösen und uns Gottes Gnade, Gerechtigkeit und ewiges Leben zu erwerben.</answer>
+    </record>
+    <record number="38">
+      <question>Warum hat er unter dem Richter Pontius Pilatus gelitten?</question>
+      <answer>Damit er unschuldig unter dem weltlichen Richter verdammt würde (Apg4,27.28; Lk23,14; Joh19,4) und uns damit von dem strengen Urteil Gottes, das über uns ergehen sollte, frei macht (Ps69,5; Jes53,4.5; 2.Kor5,21; Gal3,13).</answer>
+    </record>
+    <record number="39">
+      <question>Ist es etwas mehr, daß er gekreuzigt worden ist, als wenn er eines anderen Todes gestorben wäre?</question>
+      <answer>Ja; denn dadurch bin ich gewiß, daß er den Fluch, der auf mir läge, auf sich geladen hat (Gal3,13), weil der Tod am Kreuz von Gott verflucht war (5.Mose21,23; Gal3,13).</answer>
+    </record>
+    <record number="40">
+      <question>Warum hat Christus den Tod erleiden müssen?</question>
+      <answer>Weil wegen der Gerechtigkeit und Wahrheit (1.Mose2,17) Gottes nicht anders für unsere Sünden bezahlt werden konnte, als durch den Tod des Sohnes Gottes (Hebr2,9 .14.15).</answer>
+    </record>
+    <record number="41">
+      <question>Warum ist er begraben worden?</question>
+      <answer>Um damit zu bezeugen, daß er wahrhaftig gestorben ist (Mt27,59.60; Lk23,50-52; Joh19,38-42; Apg13,29).</answer>
+    </record>
+    <record number="42">
+      <question>Weil doch Christus für uns gestorben ist, wie kommt's, daß wir auch sterben müssen?</question>
+      <answer>Unser Tod ist nicht eine Bezahlung für unsere Sünde, sondern nur ein Absterben der Sünden und Eingang zum ewigen Leben (Joh5,24; Phil1,23; Röm7,24).</answer>
+    </record>
+    <record number="43">
+      <question>Was mehr nützt uns das Opfer und der Tod Christi am Kreuz?</question>
+      <answer>Daß durch seine Kraft unser alter Mensch mit ihm gekreuzigt, getötet und begraben wird (Röm6,6-8 .11; Kol 2,12). damit die bösen Lüste des Fleisches nicht mehr in uns regieren (Röm6,12), sondern daß wir uns selbst ihm zur Danksagung aufopfern (Röm12,1).</answer>
+    </record>
+    <record number="44">
+      <question>Warum folgt ‘hinabgestiegen zur Hölle’?</question>
+      <answer>Damit ich in meinen höchsten Anfechtungen versichert bin, daß mein Herr Christus mich durch seine unaussprechliche Angst, Schmerzen und Schrecken, die er auch an seiner Seele, am Kreuz und zuvor erlitten hat, von der höllischen Angst und Pein erlöst hat (Jes53,10; Mt27,46).</answer>
+    </record>
+    <record number="45">
+      <question>Was nützt uns die Auferstehung Christi?</question>
+      <answer>Erstens hat er durch seine Auferstehung den Tod überwunden, damit er uns an der Gerechtigkeit, die er uns durch seinen Tod erworben hat, Anteil geben kann (1.Kor15,17 .54.55; Röm4,25; 1.Petr1,3 .21). Zweitens werden auch wir schon jetzt durch seine Kraft erweckt zu einem neuen Leben (Röm6,4; Kol3,1 .5; Eph2,5). Drittens ist uns die Auferstehung Christi ein sicheres Pfand unserer seligen Auferstehung (1.Kor15,12; Röm8,11).</answer>
+    </record>
+    <record number="46">
+      <question>Wie verstehst du, daß er gen Himmel gefahren ist?</question>
+      <answer>Daß Christus vor den Augen seiner Jünger von der Erde aufgehoben wurde gen Himmel (Apg1,9; Mt26,64; Mk16,19; Lk24,51) und uns zugute dort ist (Hebr4,14; 7,25; 9,24; Röm8,34; Eph4,10; Kol3,1), bis daß er wiederkommt, zu richten die Lebendigen und die Toten (Apg1,11; Mt24,30).</answer>
+    </record>
+    <record number="47">
+      <question>Ist denn Christus nicht bei uns bis ans Ende der Welt, wie er uns verheißen hat (Mt&amp;nbsp;28,20)?</question>
+      <answer>Christus ist wahrer Mensch und wahrer Gott: Nach seiner menschlichen Natur ist er jetzt nicht auf der Erde (Mt26,11; Joh16,28; 17,11; Apg3,21), aber nach seiner Gottheit, Majestät, Gnade und Geist weicht er niemals von uns (Joh14,17-19; 16,13; Mt28,20; Eph4,8 .12).</answer>
+    </record>
+    <record number="48">
+      <question>Werden aber auf diese Art die zwei Naturen in Christus nicht voneinander getrennt, wenn die menschliche Natur nicht überall ist, wo die Gottheit ist?</question>
+      <answer>Mitnichten; denn weil die Gottheit unbegreiflich und allenthalben gegenwärtig ist (Apg7,49; Jer23,24), so muß folgen, daß sie wohl außerhalb ihrer angenommenen menschlichen Natur und dennoch nichtsdestoweniger auch in ihr ist und persönlich mit ihr vereinigt bleibt (Kol2,9; Joh3,13; 11,15; Mt28,6).</answer>
+    </record>
+    <record number="49">
+      <question>Was nützt uns die Himmelfahrt Christi?</question>
+      <answer>Erstens, daß er im Himmel vor dem Angesicht seines Vaters unser Fürsprecher ist (1.Joh2,1; Röm8,34). Zweitens, daß wir unser Fleisch im Himmel zu einem sicheren Pfand haben, daß er als das Haupt uns, seine Glieder, auch zu sich hinaufnehmen wird (Joh14,2; Joh20,17; Eph2,6). Drittens, daß er uns seinen Geist zum Gegenpfand herabsendet (Joh14,16; Apg2,1-4 .33; 2.Kor1,22; 5,5), durch dessen Kraft wir suchen, was droben ist, wo Christus ist, sitzend zur Rechten Gottes, und nicht, was auf der Erde ist (Kol3,1; Phil3,14).</answer>
+    </record>
+    <record number="50">
+      <question>Warum wird hinzugefügt, daß er zur Rechten Gottes sitzt?</question>
+      <answer>Weil Christus darum gen Himmel gefahren ist, damit er sich selbst als das Haupt seiner christlichen Kirche erweist (Eph1,20-23; Kol1,18), durch das der Vater alles regiert (Mt28,18; Joh5,22).</answer>
+    </record>
+    <record number="51">
+      <question>Was nützt uns diese Herrlichkeit unseres Haupts Christi?</question>
+      <answer>Erstens, daß er durch seinen Heiligen Geist in uns, seine Glieder, die himmlischen Gaben ausgießt (Eph4,10). Danach, daß er uns mit seiner Gewalt gegen alle Feinde schützt und erhält (Ps2,9; Joh10,28; Eph4,8).</answer>
+    </record>
+    <record number="52">
+      <question>Was tröstet dich die Wiederkunft Christi, zu richten die Lebendigen und die Toten?</question>
+      <answer>Daß ich in aller Trübsal und Verfolgung mit aufgerichtetem Haupt eben den Richter, der sich zuvor dem Gericht Gottes für mich hingegeben und alle Verdammung von mir weggenommen hat, aus dem Himmel erwarte (Lk21,28; Röm8,23 .33; Phil3,20; Tit2,13), der alle seine und meine Feinde in die ewige Verdammnis werfen (2.Thess1,6-10; 1.Thess4,16; Mt25,41-43), mich aber samt allen Auserwählten zu ihm in die himmlische Freude und Herrlichkeit nehmen wird (Mt25,34).</answer>
+    </record>
+    <record number="53">
+      <question>Was glaubst du vom Heiligen Geist?</question>
+      <answer>Erstens, daß er gleich ewiger Gott mit dem Vater und dem Sohn ist (1.Mose1,2; Jes48,16; 1.Kor3,16; 6,19; Apg5,3.4). Zweitens, daß er auch mir gegeben ist (Mt28,19; 2.Kor1,21.22), mir durch einen wahren Glauben Anteil an Christus und allen seinen Wohltaten gibt (Gal3,14; 1.Petr1,2; 1.Kor6,17), mich tröstet (Apg9,31) und bei mir bleiben wird bis in Ewigkeit (Joh14,16; 1.Petr4,14).</answer>
+    </record>
+    <record number="54">
+      <question>Was glaubst du von der heiligen allgemeinen christlichen Kirche?</question>
+      <answer>Daß der Sohn Gottes (Joh10,11) aus dem ganzen Menschengeschlecht (1.Mose26,4) sich eine auserwählte Gemeinde zum ewigen Leben (Röm8,29.30; Eph1,10-13) durch seinen Geist und Wort (Jes59,21; Röm1,16; 10,14-17; Eph5,26) in Einigkeit des wahren Glaubens (Apg2,46; Eph4,3-6) von Anbeginn der Welt bis ans Ende (Ps71,18; 1.Kor11,26) versammelt, schützt und erhält (Mt16,18; Joh10,28-30; 1.Kor1,8 .9) und daß ich ein lebendiges Glied dieser Gemeinde bin (1.Joh3,1) und ewig bleiben werde (1.Joh2,27).</answer>
+    </record>
+    <record number="55">
+      <question>Was verstehst du unter der Gemeinschaft der Heiligen?</question>
+      <answer>Erstens, daß alle und jede Gläubigen als Glieder an dem Herrn Christus und allen seinen Schätzen und Gaben Gemeinschaft haben (1.Joh1,3; 1.Kor1,9; Röm8,32). Zweitens, daß ein jeder sich schuldig wissen soll, seine Gaben zum Nutzen und Heil der anderen Glieder willig und mit Freude zu gebrauchen (1.Kor12,12.13 .21; 13,5; Phil2,4-6).</answer>
+    </record>
+    <record number="56">
+      <question>Was glaubst du von der Vergebung der Sünden?</question>
+      <answer>Daß Gott um der Genugtuung Christi willen (1.Joh2,2; 2.Kor5,19 .21) aller meiner Sünden, auch des sündigen Wesens, mit dem ich mein Leben lang zu kämpfen habe (Jer31,34; Ps103,3.4 .10 .12; Röm7,24.25; 8,1-4), nie mehr gedenken will, sondern mir die Gerechtigkeit Christi aus Gnade schenkt, damit ich niemals ins Gericht kommen soll (Joh3,18).</answer>
+    </record>
+    <record number="57">
+      <question>Was tröstet dich die Auferstehung des Fleisches?</question>
+      <answer>Daß nicht nur meine Seele gleich nach diesem Leben zu Christus, ihrem Haupt, genommen wird (Lk23,43; Phil1,23), sondern auch, daß dies mein Fleisch durch die Kraft Christi auferweckt, wieder mit meiner Seele vereinigt und dem herrlichen Leib Christi gleichförmig werden soll (1.Kor15,53.54; Hiob19,25.26; 1.Joh3,2; Phil3,21).</answer>
+    </record>
+    <record number="58">
+      <question>Was tröstet dich der Artikel vom ewigen Leben?</question>
+      <answer>Daß, nachdem ich jetzt schon den Anfang der ewigen Freude in meinem Herzen empfinde (2.Kor5,2.3), ich nach diesem Leben vollkommene Seligkeit besitzen werde, die kein Auge gesehen, kein Ohr gehört und in keines Menschen Herz je gekommen ist (1.Kor2,9), um Gott ewig darin zu preisen (Joh17,3).</answer>
+    </record>
+    <record number="59">
+      <question>Was hilft es dir aber nun, wenn du dies alles glaubst?</question>
+      <answer>Daß ich in Christus vor Gott gerecht und ein Erbe des ewigen Lebens bin (Hab2,4; Röm1,17; Joh3,36).</answer>
+    </record>
+    <record number="60">
+      <question>Wie bist du gerecht vor Gott?</question>
+      <answer>Allein durch wahren Glauben an Jesus Christus (Röm3,21-28; Gal2,16; Eph2,8 .9; Phil3,9); so daß, selbst wenn mich mein Gewissen anklagt, daß ich gegen alle Gebote Gottes schwer gesündigt und keines dieser Gebote je gehalten habe (Röm3,9) und noch immer zu allem Bösen geneigt bin (Röm7,23), doch Gott ohne alle meine Verdienste (Tit3,5), aus lauter Gnade (Röm3,24; Eph2,8), mir die vollkommene Genugtuung (1.Joh2,2), Gerechtigkeit und Heiligkeit Christi schenkt (1.Joh2,1) und anrechnet (Röm4,4.5; 2.Kor5,19), als hätte ich nie eine Sünde begangen noch gehabt und selbst all den Gehorsam vollbracht, den Christus für mich geleistet hat (2.Kor5,21), wenn ich nur diese Wohltat mit gläubigem Herzen annehme (Röm3,22; Joh3,18).</answer>
+    </record>
+    <record number="61">
+      <question>Warum sagst du, daß du allein durch den Glauben gerecht seist?</question>
+      <answer>Nicht deswegen, weil ich wegen der Würdigkeit meines Glaubens Gott gefalle, sondern weil allein die Genugtuung, Gerechtigkeit und Heiligkeit Christi meine Gerechtigkeit vor Gott ist (1.Kor1,30; 2,2) und ich diese Gerechtigkeit nicht anders als durch den Glauben annehmen und mir zueignen kann (1.Joh5,10).</answer>
+    </record>
+    <record number="62">
+      <question>Warum können aber unsere guten Werke nicht die Gerechtigkeit vor Gott oder ein Stück davon sein?</question>
+      <answer>Weil die Gerechtigkeit, wenn sie vor Gottes Gericht bestehen soll, absolut vollkommen sein und mit dem göttlichen Gesetz ganz übereinstimmen muß (Gal3,10; 5.Mose27,26), wohingegen auch unsere besten Werke in diesem Leben alle unvollkommen und mit Sünde befleckt sind (Jes64,6).</answer>
+    </record>
+    <record number="63">
+      <question>Verdienen aber unsere guten Werke nichts, wenn sie doch Gott in diesem und im zukünftigen Leben belohnen will?</question>
+      <answer>Diese Belohnung geschieht nicht aus Verdienst, sondern aus Gnade (Lk17,10).</answer>
+    </record>
+    <record number="64">
+      <question>Macht aber diese Lehre nicht sorglose und verruchte Leute?</question>
+      <answer>Nein; denn es ist unmöglich, daß diejenigen, die Christus durch wahren Glauben eingepflanzt sind, nicht Frucht der Dankbarkeit bringen sollten (Mt7,18).</answer>
+    </record>
+    <record number="65">
+      <question>Wenn nun allein der Glaube uns Anteil an Christus und allen seinen Wohltaten gibt, woher kommt dieser Glaube?</question>
+      <answer>Der Heilige Geist wirkt diesen Glauben in unseren Herzen (Eph2,8.9; Joh3,5) durch die Predigt des heiligen Evangeliums und bestätigt ihn durch den Gebrauch der heiligen Sakramente (Mt28,19.20; 1.Petr1,22-25).</answer>
+    </record>
+    <record number="66">
+      <question>Was sind die Sakramente?</question>
+      <answer>Es sind sichtbare heilige Wahrzeichen und Siegel, von Gott dazu eingesetzt, um uns durch ihren Gebrauch die Verheißung des Evangeliums noch besser verständlich zu machen und zu versiegeln; nämlich, daß er uns wegen des einmaligen Opfers Christi, am Kreuz vollbracht, Vergebung der Sünden und ewiges Leben aus Gnade schenkt (1.Mose17,11; Röm4,11; 5.Mose30,6; 3.Mose6,23; Hebr9,8.9 .24; Hes20,12).</answer>
+    </record>
+    <record number="67">
+      <question>Sind denn beide, das Wort und die Sakramente, dahin gerichtet, daß sie unseren Glauben auf das Opfer Jesu Christi am Kreuz als auf den einzigen Grund unserer Seligkeit weisen?</question>
+      <answer>Ja freilich; denn der Heilige Geist lehrt im Evangelium und bestätigt durch die heiligen Sakramente, daß unsere ganze Seligkeit in dem einmaligen Opfer Christi stehe, für uns am Kreuz geschehen (Röm6,3; Gal3,27).</answer>
+    </record>
+    <record number="68">
+      <question>Wieviel Sakramente hat Christus im Neuen Testament eingesetzt?</question>
+      <answer>Zwei; die heilige Taufe und das heilige Abendmahl.</answer>
+    </record>
+    <record number="69">
+      <question>Wie wirst du in der heiligen Taufe erinnert und versichert, daß das einmalige Opfer Christi am Kreuz dir zugute kommt?</question>
+      <answer>So, daß Christus dieses äußerliche Wasserbad eingesetzt hat (Mt28,19 .20; Apg2,38) und dabei verheißen hat (Mt3,11; Mk16,16; Röm6,3 .4), daß ich so gewiß mit seinem Blut und Geist von der Unreinigkeit meiner Seele, das heißt von allen meinen Sünden, reingewaschen bin, so gewiß ich äußerlich mit Wasser, das die Unsauberkeit des Leibes hinwegnimmt, gewaschen bin (Mk1,4; Lk3,3).</answer>
+    </record>
+    <record number="70">
+      <question>Was heißt, mit dem Blut und Geist Christi gewaschen sein?</question>
+      <answer>Es heißt, Vergebung der Sünden von Gott aus Gnade haben um des Blutes Christi willen, das er in seinem Opfer am Kreuz für uns vergossen hat (Hebr12,24; 1.Petr1,2; Offb1,5; Sach13,1; Hes36,25); danach auch durch den Heiligen Geist erneuert und zu einem Glied Christi geheiligt sein, daß wir je länger, je mehr der Sünde absterben und ein gottgefälliges, unsträfliches Leben führen (Joh1,33; Joh3,5; 1.Kor6,11; 12,13; Röm6,4; Kol2,12).</answer>
+    </record>
+    <record number="71">
+      <question>Wo hat Christus verheißen, daß wir so gewiß mit seinem Blut und Geist wie mit dem Taufwasser gewaschen sind?</question>
+      <answer>In der Einsetzung der Taufe, die so lautet: ‘Geht hin und lehrt alle Völker und tauft sie im Namen des Vaters und des Sohnes und des Heiligen Geistes’ (Mt28,19). ‘Wer da glaubt und getauft wird, der wird selig werden; wer aber nicht glaubt, der wird verdammt werden’ (Mk16,16). Diese Verheißung wird auch wiederholt, wo die Schrift die Taufe das Bad der Wiedergeburt (Tit3,5) und das Abwaschen der Sünden nennt (Apg22,16).</answer>
+    </record>
+    <record number="72">
+      <question>Ist denn das äußerliche Wasserbad das Abwaschen der Sünden selbst?</question>
+      <answer>Nein (Mt3,11; 1.Petr3,21; Eph5,26.27); denn allein das Blut Jesu Christi und der Heilige Geist reinigen uns von allen Sünden (1.Joh1,7; 1.Kor6,11).</answer>
+    </record>
+    <record number="73">
+      <question>Warum nennt denn der Heilige Geist die Taufe das Bad der Wiedergeburt und das Abwaschen der Sünden?</question>
+      <answer>Gott redet so nicht ohne große Ursache: Nämlich, nicht nur, daß er uns damit lehren will, daß, gleich wie die Unsauberkeit des Leibes durch Wasser, so unsere Sünden durch Blut und Geist Christi hinweggenommen werden (Apg1,5; 7,14; 1.Kor6,11), sondern vielmehr, daß er uns durch dieses göttliche Pfand und Wahrzeichen versichern will, daß wir so wahrhaftig von unseren Sünden geistlich gewaschen sind, wie wir leiblich mit dem Wasser gewaschen werden (Mk16,16; Gal3,17).</answer>
+    </record>
+    <record number="74">
+      <question>Soll man auch die jungen Kinder taufen?</question>
+      <answer>Ja; denn weil sie, ebenso wie die Alten, in den Bund Gottes und in seine Gemeinde gehören (1.Mose17,7) und ihnen in dem Blut Christi die Erlösung von den Sünden (Mt19,14) und der Heilige Geist, der den Glauben wirkt, nicht weniger als den Alten zugesagt wird (Lk1,14.15; Ps22,11; Jes44,1-3; 46,3.4; Apg2,39), so sollen sie auch durch die Taufe als das Bundeszeichen der christlichen Kirche eingeleibt und von den Kindern der Ungläubigen unterschieden werden (Apg10,47), wie es im Alten Testament durch die Beschneidung geschehen ist (1.Mose17,14), an deren Stelle im Neuen Testament die Taufe eingesetzt wurde (Kol2,11-13).</answer>
+    </record>
+    <record number="75">
+      <question>Wie wirst du im heiligen Abendmahl erinnert und versichert, daß du an dem einmaligen Opfer Christi am Kreuz und allen seinen Gütern Gemeinschaft hast?</question>
+      <answer>So, daß Christus mir und allen Gläubigen befohlen hat, zu seinem Gedächtnis von diesem gebrochenen Brot zu essen und von diesem Kelch zu trinken und dabei verheißen hat (Mt26,26-28; Mk14,22-24; Lk22,19.20; 1.Kor10,16.17; 11,23-25; 12,13): Erstens, daß sein Leib so gewiß für mich am Kreuz geopfert und gebrochen und sein Blut für mich vergossen ist, so gewiß ich mit Augen sehe, daß das Brot des Herrn mir gebrochen und der Kelch mir gereicht wird. Und zweitens, daß er selbst meine Seele mit seinem gekreuzigten Leib und vergossenen Blut so gewiß zum ewigen Leben speist und tränkt, wie ich aus der Hand des Dieners empfange und leiblich genieße das Brot und den Kelch des Herrn, die mir als sichere Wahrzeichen des Leibes und Blutes Christi gegeben werden.</answer>
+    </record>
+    <record number="76">
+      <question>Was heißt, den gekreuzigten Leib Christi essen und sein vergossenes Blut trinken?</question>
+      <answer>Es heißt nicht nur, mit gläubigem Herzen das ganze Leiden und Sterben Christi annehmen und dadurch Vergebung der Sünden und ewiges Leben bekommen (Joh6,35 .40 .47.48 .50 .51 .53.54), sondern auch daneben, durch den Heiligen Geist, der zugleich in Christus und in uns wohnt, so mit seinem gesegneten Leib mehr und mehr vereinigt werden (Joh6,55.56), daß wir, obgleich er im Himmel (Apg3,21; 1.Kor11,26) und wir auf der Erde sind, dennoch Fleisch von seinem Fleisch und Bein von seinem Bein sind (Eph3,16.17; 5,29.30; .32; 1.Kor6,15 .17 .19; 1.Joh3,24; 4,13; Joh14,23) und von einem Geist (wie die Glieder unseres Leibes von einer Seele) ewig leben und regiert werden (Joh6,56-58; 15,1-6; Eph4,15.16).</answer>
+    </record>
+    <record number="77">
+      <question>Wo hat Christus verheißen, daß er die Gläubigen so gewiß so mit seinem Leib und Blut speist und tränkt, wie sie von diesem gebrochenen Brot essen und von diesem Kelch trinken?</question>
+      <answer>In der Einsetzung des Abendmahls, die so lautet (1.Kor11,23-25; Mt26,26-28; Mk14,22-24; Lk22,19.20): ‘Unser Herr Jesus, in der Nacht, da er verraten ward, nahm er das Brot, dankte und brach's und sprach: Nehmt, eßt, das ist mein Leib, der für euch gebrochen wird; dies tut zu meinem Gedächtnis. Desselbengleichen auch den Kelch nach dem Abendmahl und sprach: Dieser Kelch ist das neue Testament in meinem Blut (2.Mose24,8; Hebr9,20); dies tut, sooft ihr's trinkt, zu meinem Gedächtnis (2.Mose13,9). Denn sooft ihr von diesem Brot eßt und von diesem Kelch trinkt, sollt ihr des Herrn Tod verkündigen, bis daß er kommt.’ Und diese Verheißung wird auch wiederholt durch S.Paulus, wo er spricht: ‘Der Kelch der Danksagung, über dem wir danksagen, ist er nicht die Gemeinschaft des Blutes Christi? Das Brot, das wir brechen, ist das nicht die Gemeinschaft des Leibes Christi? Denn ein Brot ist's; so sind wir viele ein Leib, weil wir alle an einem Brot teilhaben’ (1.Kor10,16.17).</answer>
+    </record>
+    <record number="78">
+      <question>Wird denn aus Brot und Wein der wirkliche Leib und das Blut Christi?</question>
+      <answer>Nein; sondern wie das Wasser in der Taufe nicht in das Blut Christi verwandelt oder das Abwaschen der Sünden selbst wird, deren es nur ein göttliches Wahrzeichen und Versicherung ist (Mt26,29; Mk14,24), so wird auch das heilige Brot im Abendmahl nicht der Leib Christi selbst (1.Kor10,16.17; 11,26-28), auch wenn es nach Art und Gebrauch der Sakramente (1.Mose17,10.11 .14 .19; 2.Mose12,27 .43 .48; Tit3,5; 1.Petr3,21 1.Kor10,1-4) der Leib Christi genannt wird.</answer>
+    </record>
+    <record number="79">
+      <question>Warum nennt denn Christus das Brot seinen Leib und den Kelch sein Blut oder das neue Testament in seinem Blut, und warum spricht S.&amp;nbsp;Paulus von der Gemeinschaft des Leibes und Blutes Jesu Christi?</question>
+      <answer>Christus redet so nicht ohne große Ursache: Nämlich, daß er uns nicht nur damit lehren will, daß, gleich wie Brot und Wein das zeitliche Leben erhalten, so auch sein gekreuzigter Leib und vergossenes Blut die wahre Speise und Trank unserer Seele zum ewigen Leben ist (Joh6,51 .55); sondern vielmehr, daß er uns durch dieses sichtbare Zeichen und Pfand versichern will, daß wir so wahrhaftig an seinem wahren Leib und Blut durch Wirkung des Heiligen Geistes Anteil haben, wie wir diese heiligen Wahrzeichen mit dem leiblichen Mund zu seinem Gedächtnis empfangen (1.Kor10,16.17) und daß all sein Leiden und Gehorsam so gewiß uns gehören, als hätten wir selbst in unserer eigenen Person alles gelitten und Genüge getan.</answer>
+    </record>
+    <record number="80">
+      <question>Was für ein Unterschied besteht zwischen dem Abendmahl des Herrn und der päpstlichen Messe?</question>
+      <answer>Das Abendmahl bezeugt uns, daß wir vollkommene Vergebung aller unserer Sünden haben durch das einmalige Opfer Jesu Christi, das er selbst einmal am Kreuz vollbracht hat (Hebr7,27; 9,12 .25-28; 10,10 .12-14; Joh19,30 Mt26,28; Lk22,19.20) und daß wir durch den Heiligen Geist Christus eingeleibt werden (1.Kor6,17; 10,16), der jetzt mit seinem wahren Leib im Himmel zur Rechten des Vaters ist (Hebr1,3; 8,1.2) und dort angebetet werden will (Joh4,21-24; 20,17; Lk24,52; Apg7,55.56; Kol3,1; Phil3,20.21 1.Thess1,10). Die Messe aber lehrt, daß die Lebendigen und die Toten nicht durch das Leiden Christi Vergebung der Sünden haben, es sei denn, daß Christus immer noch täglich für sie von den Meßpriestern geopfert werde; und, daß Christus leiblich in der Gestalt des Brots und Weins sei und deshalb darin angebetet werden soll. Also ist die Messe im Grunde nichts anderes als eine Verleugnung des einmaligen Opfers und Leidens Jesu Christi (Hebr9,6-10; 10,19-31) und eine vermaledeite Abgötterei.
+
+Anmerkung: 
+Frage 80 war von Anfang an nicht unumstritten. Sie fehlt im ersten Druck vom Januar1563 noch völlig und findet sich in dieser Formulierung erst im dritten Druck vom November1563; Anlaß hierfür gab wohl das 1562/1563 wieder aufgenommene Trienter Konzil. Der Katechismus spricht hier die harte Sprache des Kampfes, der in der Reformationszeit um die rechte Lehre geführt wurde. Der Gegensatz der Auffassungen über die römisch-katholische Messe und das evangelische Abendmahl besteht auch heute noch. An die Stelle der Verdammung ist aber das ökumenische Gespräch zwischen den Kirchen getreten.</answer>
+    </record>
+    <record number="81">
+      <question>Welche Menschen sollen zu dem Tisch des Herrn kommen?</question>
+      <answer>Diejenigen, die sich selbst um ihrer Sünde willen mißfallen und doch vertrauen, daß ihnen diese Sünde verziehen und die übrige Schwachheit mit dem Leiden und Sterben Christi bedeckt ist, und die auch begehren, mehr und mehr ihren Glauben zu stärken und ihr Leben zu bessern. Die Unbußfertigen aber und Heuchler essen und trinken sich selbst zum Gericht (1.Kor10,21; 11,28.29).</answer>
+    </record>
+    <record number="82">
+      <question>Sollen aber zu diesem Abendmahl auch die zugelassen werden, die sich mit ihrem Bekenntnis und Leben als Ungläubige und Gottlose erweisen?</question>
+      <answer>Nein; denn es wird so der Bund Gottes geschmäht und sein Zorn über die ganze Gemeinde gereizt (1.Kor11,20 .34; Jes1,11-15; 66,3; Jer7,21-23; Ps50,16). Deshalb ist die christliche Kirche schuldig, nach der Ordnung Christi und seiner Apostel solche Menschen bis zur Besserung ihres Lebens durch das Amt der Schlüssel auszuschließen.</answer>
+    </record>
+    <record number="83">
+      <question>Was ist das Amt der Schlüssel?</question>
+      <answer>Die Predigt des heiligen Evangeliums und die christliche Bußzucht, durch welche zwei Dinge das Himmelreich den Gläubigen aufgeschlossen und den Ungläubigen zugeschlossen wird (Mt16,18.19; 18,15-18).</answer>
+    </record>
+    <record number="84">
+      <question>Wie wird das Himmelreich durch die Predigt des heiligen Evangeliums auf- und zugeschlossen?</question>
+      <answer>So, daß nach dem Befehl Christi allen und jeden Gläubigen verkündigt und öffentlich bezeugt wird, daß ihnen, sooft sie die Verheißung des Evangeliums mit wahrem Glauben annehmen, wahrhaftig alle ihre Sünden von Gott um des Verdienstes Christi willen vergeben sind; und umgekehrt allen Ungläubigen und Heuchlern, daß der Zorn Gottes und die ewige Verdammnis auf ihnen liegt, solang sie sich nicht bekehren (Joh20,21-23; Mt16,19). Nach diesem Zeugnis des Evangeliums will Gott sowohl in diesem als auch im zukünftigen Leben urteilen.</answer>
+    </record>
+    <record number="85">
+      <question>Wie wird das Himmelreich zu- und aufgeschlossen durch die christliche Bußzucht?</question>
+      <answer>So, daß nach dem Befehl Christi diejenigen, die unter dem christlichen Namen eine unchristliche Lehre vertreten oder unchristlich leben, nachdem sie etliche Male brüderlich ermahnt sind und von ihren Irrtümern oder Lastern nicht ablassen, der Kirche oder denen, die von der Kirche dazu eingesetzt sind, angezeigt, und wenn sie sich um diese Ermahnung auch nicht kehren, von ihnen durch Verbot der heiligen Sakramente aus der christlichen Gemeinde und von Gott selbst aus dem Reich Christi ausgeschlossen werden; und wiederum als Glieder Christi und der Kirche angenommen, wenn sie wahre Besserung verheißen und erweisen (Mt18,15-18; 1.Kor5,2-5; 2.Thess3,14.15; 2.Joh1,10.11).</answer>
+    </record>
+    <record number="86">
+      <question>Wenn wir nun aus unserem Elend ohne alle unsere Verdienste aus Gnade durch Christus erlöst sind, warum sollen wir gute Werke tun?</question>
+      <answer>Weil Christus, nachdem er uns mit seinem Blut erkauft hat, uns auch durch seinen heiligen Geist erneuert zu seinem Ebenbild, damit wir mit unserem ganzen Leben uns dankbar gegenüber Gott für seine Wohltat erweisen (Röm6,13; 12,1.2; 1.Petr2,5 .9.10; 1.Kor6,20) und er durch uns gepriesen wird (Mt5,16; 1.Petr2,12). Danach auch, daß wir bei uns selbst unseres Glaubens aus seinen Früchten gewiß sind (1.Petr1,6.7; Mt7,17; Gal5,6 .22.23) und mit unserem gottgefälligen Leben unsere Nächsten auch für Christus gewinnen (1.Petr3,1.2; Röm14,19).</answer>
+    </record>
+    <record number="87">
+      <question>Können denn die nicht selig werden, die sich von ihrem undankbaren, unbußfertigen Lebenswandel zu Gott nicht bekehren?</question>
+      <answer>In keiner Weise; denn, wie die Schrift sagt: Kein Unkeuscher, Abgöttischer, Ehebrecher, Dieb, Geiziger, Trunkenbold, Lästerer, Räuber und dergleichen wird das Reich Gottes erben (1.Kor6,9.10; Eph5,5.6; 1.Joh3,14).</answer>
+    </record>
+    <record number="88">
+      <question>Aus wieviel Teilen besteht die wahrhaftige Buße oder Bekehrung des Menschen?</question>
+      <answer>Aus zwei Teilen: Dem Absterben des alten (Röm6,4-6; Eph 4,22-24; Kol3,5-10 1.Kor5,7) und der Auferstehung des neuen Menschen.</answer>
+    </record>
+    <record number="89">
+      <question>Was ist das Absterben des alten Menschen?</question>
+      <answer>Sich die Sünde von Herzen leid sein lassen und sie je länger, je mehr hassen und fliehen (Röm8,13; Joel2,12.13). 9</answer>
+    </record>
+    <record number="90">
+      <question>Was ist die Auferstehung des neuen Menschen?</question>
+      <answer>Herzliche Freude in Gott durch Christus (Röm5,1; 14,17; Jes57,15) und Lust und Liebe haben nach dem Willen Gottes, in allen guten Werken zu leben (Röm6,10.11; Gal2,20).</answer>
+    </record>
+    <record number="91">
+      <question>Welches sind aber gute Werke?</question>
+      <answer>Nur diejenigen, die aus wahrem Glauben (Röm14,23) nach dem Gesetz Gottes (1.Sam15,22; Eph2,10) ihm zu Ehren geschehen (1.Kor10,31) und nicht diejenigen, die auf unser Gutdünken oder Menschensatzung gegründet sind (5.Mose13,1; Hes20,18.19; Jes29,13; Mt15,9).</answer>
+    </record>
+    <record number="92">
+      <question>Wie lautet das Gesetz des Herrn?</question>
+      <answer>Gott redete alle diese Worte (2.Mose20,1-17; 5.Mose5,6-21):
+
+Das erste Gebot
+‘Ich bin der HERR, dein Gott, der ich dich aus Ägyptenland, aus dem Diensthaus geführt habe. Du sollst keine anderen Götter vor mir haben.’
+
+Das zweite
+‘Du sollst dir kein Bildnis noch irgendein Gleichnis machen, weder von dem, was oben im Himmel, noch von dem, was unten auf der Erde, oder von dem, was im Wasser unter der Erde ist. Du sollst sie nicht anbeten, noch ihnen dienen. Denn ich der HERR, dein Gott, bin ein starker, eifernder Gott, der die Missetat der Väter heimsucht an den Kindern bis ins dritte und vierte Glied, derer, die mich hassen, und tue Barmherzigkeit an viel Tausenden, die mich lieben und meine Gebote halten.’
+
+Das dritte
+‘Du sollst den Namen des HERRN, deines Gottes, nicht mißbrauchen; denn der HERR wird den nicht ungestraft lassen, der seinen Namen mißbraucht.’
+
+Das vierte
+‘Gedenke des Sabbattags, daß du ihn heiligst. Sechs Tage sollst du arbeiten und alle deine Werke tun, aber am siebenten Tag ist der Sabbat des HERRN, deines Gottes; da sollst du keine Arbeit tun, noch dein Sohn, noch deine Tochter, noch dein Knecht, noch deine Magd, noch dein Vieh, noch der Fremdling, der in deinen Toren ist. Denn in sechs Tagen hat der HERR Himmel und Erde gemacht und das Meer und alles, was darinnen ist, und ruhte am siebenten Tag; darum segnete der HERR den Sabbattag und heiligte ihn.’
+
+Das fünfte
+‘Du sollst deinen Vater und deine Mutter ehren, auf daß du lang lebst im Land, das dir der HERR, dein Gott, gibt.’
+
+Das sechste
+‘Du sollst nicht töten.’
+
+Das siebente
+‘Du sollst nicht ehebrechen.’
+
+Das achte
+‘Du sollst nicht stehlen.’
+
+Das neunte
+‘Du sollst kein falsch Zeugnis reden wider deinen Nächsten.’
+
+Das zehnte
+‘Laß dich nicht gelüsten nach deines Nächsten Haus; laß dich nicht gelüsten nach deines Nächsten Weibes, noch seines Knechtes, noch seiner Magd, noch seines Ochsen, noch seines Esels, noch alles, was dein Nächster hat.’</answer>
+    </record>
+    <record number="93">
+      <question>Wie werden diese Gebote eingeteilt?</question>
+      <answer>In zwei Tafeln (2.Mose34,28; 5.Mose4,13; 10,3.4), deren erste in vier Geboten lehrt, wie wir uns gegenüber Gott verhalten sollen; die zweite in sechs Geboten, was wir unserem Nächsten schuldig sind (Mt22,37-39).</answer>
+    </record>
+    <record number="94">
+      <question>Was fordert der Herr im ersten Gebot?</question>
+      <answer>Daß ich bei Verlust von Heil und Seligkeit meiner Seele alle Abgötterei (1.Kor6,9.10; 10,7 .14), Zauberei, abergläubische Segen (3.Mose19,31; 5.Mose18,10-12), Anrufen der Heiligen oder anderer Kreaturen (Mt4,10; Offb19,10; 22,8.9) meiden und fliehen soll und den einen wahren Gott recht erkennen (Joh17,3), ihm allein vertrauen (Jer17,5), in aller Demut (1.Petr5,5.6) und Geduld (Hebr10,36; Kol1,11; Röm5,3.4; 1.Kor10,10; Phil2,14) von ihm allein alles Gute erwarten (Ps104,27-30; Jes45,7; Jak1,17) und ihn von ganzem Herzen lieben (5.Mose6,5; Mt22,37), fürchten (5.Mose6,2; Ps111,10; Spr1,7; 9,10; Mt10,28) und ehren (Mt4,10; 5.Mose10,20.21), so daß ich eher alle Kreaturen aufgebe, als im Geringsten gegen seinen Willen handle (Mt5,29.30; 10,37; Apg5,29).</answer>
+    </record>
+    <record number="95">
+      <question>Was ist Abgötterei?</question>
+      <answer>Anstatt des einen wahren Gottes, der sich in seinem Wort offenbart hat, oder neben ihm etwas anderes ausdenken oder haben, worauf der Mensch sein Vertrauen setzt (Eph5,5; 1.Chr16,26; Phil3,19; Gal4,8; Eph2,12; 1.Joh2,23; 2.Joh1,9; Joh5,23).</answer>
+    </record>
+    <record number="96">
+      <question>Was will Gott im zweiten Gebot?</question>
+      <answer>Daß wir Gott in keiner Weise abbilden (5.Mose4,15-19; Jes40,18-25; Röm1,23.24; Apg17,29), noch auf irgendeine andere Weise, als er in seinem Wort befohlen hat, verehren sollen (1.Sam15,23; 5.Mose12,30.31; 13,1; Mt15,9).</answer>
+    </record>
+    <record number="97">
+      <question>Soll man denn gar kein Bildnis machen?</question>
+      <answer>Gott kann und soll in keiner Weise abgebildet werden; die Kreaturen dürfen zwar abgebildet werden, jedoch verbietet Gott, ihr Bildnis zu machen und zu haben, um sie zu verehren oder ihm damit zu dienen (2.Mose23,24.25; 34,10-14 .17; 4.Mose33,52; 5.Mose7,5; 12,3; 16,22; 2.Kön18,3.4).</answer>
+    </record>
+    <record number="98">
+      <question>Dürfen aber nicht die Bilder als ‘der Laien Bücher’ in den Kirchen geduldet werden?</question>
+      <answer>Nein; denn wir sollen nicht weiser sein als Gott, der seine Christenheit nicht durch stumme Götzen (Jer10,8; Hab2,18.19), sondern durch die lebendige Predigt seines Worts unterwiesen haben will (2.Petr1,19; 2.Tim3,16.17).</answer>
+    </record>
+    <record number="99">
+      <question>Was will das dritte Gebot?</question>
+      <answer>Daß wir nicht nur mit Fluchen (3.Mose24,11-16) oder mit falschem Eid (3.Mose19,12), sondern auch mit unnötigem Schwören (Mt5,37; Jak5,12) den Namen Gottes nicht lästern oder mißbrauchen, noch uns mit unserem Stillschweigen und Zusehen an solchen schrecklichen Sünden mitschuldig machen. Und zusammengefaßt, daß wir den heiligen Namen Gottes nicht anders, als mit Furcht und Ehrerbietung gebrauchen (Jes45,23), so daß er von uns recht bekannt (Mt10,32), angerufen (1.Tim2,8) und in allen unseren Worten und Werken (Röm2,24; 1.Tim6,1; Kol3,16.17) gepriesen wird.</answer>
+    </record>
+    <record number="100">
+      <question>Ist denn durch Schwören und Fluchen Gottes Namen Lästern so eine schwere Sünde, daß Gott auch über die zürnt, die, soviel an ihnen liegt, nicht helfen, sie zu verhindern und zu verbieten?</question>
+      <answer>Ja freilich (3.Mose5,1); denn keine Sünde ist größer, noch erzürnt Gott heftiger, als Lästerung seines Namens; darum hat er sie auch mit dem Tod zu strafen befohlen (3.Mose24,15.16).</answer>
+    </record>
+    <record number="101">
+      <question>Darf man aber überhaupt als Christ bei dem Namen Gottes einen Eid schwören?</question>
+      <answer>Ja; wenn es die Obrigkeit von ihren Untertanen oder sonst die Not erfordert, Treue und Wahrheit zu Gottes Ehre und des Nächsten Heil dadurch zu erhalten und zu fördern. Denn solches Schwören eines Eides ist in Gottes Wort gegründet (5.Mose6,13; 10,20; Jes48,1; Hebr6,16) und deshalb von den Heiligen im Alten und Neuen Testament recht gebraucht worden (1.Mose21,24; 31,53.54; Jos9,15 .19; 1.Sam24,23; 2.Sam3,35; 1.Kön1,28-30; Röm1,9; 2.Kor1,23).</answer>
+    </record>
+    <record number="102">
+      <question>Darf man auch bei den Heiligen oder anderen Kreaturen einen Eid schwören?</question>
+      <answer>Nein; denn ein rechtmäßiger Eid ist eine Anrufung Gottes, daß er als der alleinige Kenner des Herzens der Wahrheit Zeugnis geben wolle und mich strafen, wenn ich falsch schwöre (2.Kor1,23); diese Ehre gebührt aber keiner Kreatur (Mt5,34-36; Jak5,12).</answer>
+    </record>
+    <record number="103">
+      <question>Was will Gott im vierten Gebot?</question>
+      <answer>Gott will erstens, daß das Predigtamt und Schulen erhalten werden (Tit1,5; 1.Tim3,1 .8.9; 4,13; 5,17; 1.Kor9,11 .13.14; 2.Tim2,2; 3,15) und ich, besonders am Feiertag, zu der Gemeinde Gottes fleißig komme (Ps40,10.11; 68,27; Apg2,42 .46), um das Wort Gottes zu lernen (1.Kor14,19 .29 .31), die heiligen Sakramente zu gebrauchen (1.Kor11,33), den Herrn öffentlich anzurufen (1.Tim2,1-3 .8; 1.Kor14,16) und das christliche Almosen zu geben (1.Kor16,2). Zweitens, daß ich alle Tage meines Lebens von meinen bösen Werken ablasse, den Herrn durch seinen Geist in mir wirken lasse und so den ewigen Sabbat in diesem Leben anfange (Jes66,23).</answer>
+    </record>
+    <record number="104">
+      <question>Was will Gott im fünften Gebot?</question>
+      <answer>Daß ich meinem Vater und meiner Mutter und allen, die mir vorgesetzt sind, alle Ehre, Liebe und Treue erweisen und mich aller guten Lehre und Strafe mit gebührendem Gehorsam unterwerfen (Eph5,22; 6,1-4; Kol3,18 .20-24; Spr1,8; 4,1 .10 .20; 20,20; 2.Mose21,17; Röm13,1-5) und auch mit ihren Schwächen und Fehlern Geduld haben soll (Spr23,22; 1.Mose9,24.25; 1.Petr2,18), weil uns Gott durch ihre Hand regieren will (Eph6,4 .9; Kol3,19 .21; Röm13,1-5; Mt22,21).</answer>
+    </record>
+    <record number="105">
+      <question>Was will Gott im sechsten Gebot?</question>
+      <answer>Daß ich meinen Nächsten weder mit Gedanken, noch mit Worten oder Gebärden, viel weniger mit der Tat, durch mich selbst oder andere schmähen, hassen, beleidigen oder töten soll (Mt5,21.22; Mt26,52; 1.Mose9,6), sondern alle Rachgier ablegen (Eph4,26; Röm12,19; Mt5,25; 18,35) und auch mir selbst keinen Schaden zufügen oder mich mutwillig in Gefahr begeben (Röm13,14; Kol2,23; Sir3,27; Mt4,7). Darum trägt auch die Obrigkeit, um den Totschlag zu verhindern, das Schwert (1.Mose9,6; 2.Mose21,14; Mt26,52; Röm13,4).</answer>
+    </record>
+    <record number="106">
+      <question>Redet denn dieses Gebot nicht nur vom Töten?</question>
+      <answer>Es will uns aber Gott durch Verbot des Totschlags lehren, daß er die Wurzel des Totschlags, nämlich Neid (Röm1,29), Haß (1.Joh2,9 .11), Zorn (Jak2,13; Gal5,19-21), Rachgier, haßt und daß dies alles vor ihm ein heimlicher Totschlag ist (1.Joh3,15).</answer>
+    </record>
+    <record number="107">
+      <question>Ist's aber damit genug, daß wir unseren Nächsten, im obigen Sinne, nicht töten?</question>
+      <answer>Nein; denn indem Gott Neid, Haß und Zorn verdammt, will er von uns haben, daß wir unseren Nächsten lieben wie uns selbst (Mt7,12; 22,39), ihm gegenüber Geduld, Frieden, Sanftmut (Eph4,2; Gal6,1.2; Mt5,9; Röm12,18), Barmherzigkeit (Mt5,7; Lk6,36) und Freundlichkeit (Röm12,10 .15) erweisen, seinen Schaden, soviel uns möglich, abwenden (2.Mose23,5) und auch unseren Feinden Gutes tun (Mt5,44.45; Röm12,20.21).</answer>
+    </record>
+    <record number="108">
+      <question>Was will das siebente Gebot?</question>
+      <answer>Daß alle Unkeuschheit von Gott verabscheut wird (3.Mose18,27-30) und daß wir darum ihr von Herzen feind sein (Jud1,23) und keusch und züchtig leben sollen (1.Thess4,3-5), es sei im heiligen Ehestand oder außerhalb desselben (Hebr13,4; 1.Kor7,1-9 .25-28).</answer>
+    </record>
+    <record number="109">
+      <question>Verbietet Gott in diesem Gebot nichts mehr als Ehebruch und dergleichen Schande?</question>
+      <answer>Weil beide, unser Leib und unsere Seele, Tempel des Heiligen Geistes sind, darum will er, daß wir sie sauber und heilig bewahren; er verbietet deshalb alle unkeuschen Taten, Gebärden, Worte (Eph5,3.4; 1.Kor6,18-20), Gedanken, Lust (Mt5,27-32) und was den Menschen dazu reizen kann (Eph5,18; 1.Kor15,33).</answer>
+    </record>
+    <record number="110">
+      <question>Was verbietet Gott im achten Gebot?</question>
+      <answer>Er verbietet nicht nur den Diebstahl (1.Kor6,10) und Räuberei (1.Kor5,10), welche die Obrigkeit straft, sondern Gott nennt auch Diebstahl alle bösen Pläne und Taten, womit wir unseres Nächsten Gut gedenken an uns zu bringen, es sei mit Gewalt oder Schein des Rechtes (Lk3,14; 1.Thess4,6), etwa mit unrechtem Gewicht (Spr11,1; 16,11), Ellen, Maß (Hes45,9-12; 5.Mose25,13-16), Ware, Münzen, Wucher (Ps15,5; Lk6,35) oder durch jegliches Mittel, das von Gott verboten ist, dazu auch allen Geiz (1.Kor6,10) und unnütze Verschwendung seiner Gaben (Spr5,16).</answer>
+    </record>
+    <record number="111">
+      <question>Was gebietet dir aber Gott in diesem Gebot?</question>
+      <answer>Daß ich meines nächsten Nutzen, wo ich kann und vermag, fördere, ihm gegenüber so handle, wie ich möchte, daß man mit mir handelt (Mt7,12), und gewissenhaft arbeite, damit ich dem Bedürftigen in seiner Not helfen kann (Eph4,28).</answer>
+    </record>
+    <record number="112">
+      <question>Was will das neunte Gebot?</question>
+      <answer>Daß ich gegen niemanden ein falsches Zeugnis gebe (Spr19,5 .9; Spr21,28), niemandem seine Worte verdrehe (Ps15,3), kein Verleumder und Lästerer bin (Röm1,29.30), niemanden ungehört und leichtfertig verdammen helfe (Mt7,1.2; Lk6,37), sondern alles Lügen und Betrügen als Werke des Teufels (Joh8,44) bei Gottes schwerem Zorn vermeide (Spr12,22; 13,5), in Gerichts- und allen anderen Handlungen die Wahrheit liebe, aufrichtig sage und bekenne (1.Kor13,6; Eph4,25), und auch meines Nächsten Ehre und guten Ruf nach meinem Vermögen rette und fördere (1.Petr4,8).</answer>
+    </record>
+    <record number="113">
+      <question>Was will das zehnte Gebot?</question>
+      <answer>Daß auch nicht die geringste Lust oder Gedanken gegen irgendein Gebot Gottes jemals in unser Herz kommen, sondern wir jederzeit von ganzem Herzen aller Sünde feind sein und Lust zu aller Gerechtigkeit haben sollen (Röm7,7).</answer>
+    </record>
+    <record number="114">
+      <question>Können aber diejenigen, die zu Gott bekehrt sind, diese Gebote vollkommen halten?</question>
+      <answer>Nein; sondern es haben auch die Allerheiligsten, solang sie in diesem Leben sind, nur einen geringen Anfang dieses Gehorsams (1.Joh1,8-10; Röm7,14.15; Pred7,20); doch so, daß sie mit ernsthaftem Vorsatz, nicht nur nach etlichen, sondern nach allen Geboten Gottes anfangen zu leben (Röm7,22; Jak2,10).</answer>
+    </record>
+    <record number="115">
+      <question>Warum läßt uns denn Gott so scharf die Zehn Gebote predigen, wenn sie in diesem Leben niemand halten kann?</question>
+      <answer>Erstens, damit wir unser ganzes Leben lang unser sündiges Wesen je länger, je mehr erkennen (1.Joh1,9; Ps32,5) und um so begieriger Vergebung der Sünden und Gerechtigkeit in Christus suchen (Röm7,24.25). Danach, daß wir ohne Unterlaß uns bemühen und Gott um die Gnade des Heiligen Geistes bitten, daß wir je länger, je mehr zu dem Ebenbild Gottes erneuert werden, bis wir das Ziel der Vollkommenheit nach diesem Leben erreichen (1.Kor9,24; Phil3,11-14).</answer>
+    </record>
+    <record number="116">
+      <question>Warum ist den Christen das Gebet nötig?</question>
+      <answer>Weil es der wichtigste Teil der Dankbarkeit ist, die Gott von uns fordert (Ps50,14.15), und weil Gott seine Gnade und Heiligen Geist nur denen geben will, die ihn mit herzlichem Seufzen ohne Unterlaß darum bitten und ihm dafür danken (Mt7,7.8; 13,12; Lk11,9-13).</answer>
+    </record>
+    <record number="117">
+      <question>Was gehört zu einem solchen Gebet, das Gott gefällt und von ihm erhört wird?</question>
+      <answer>Erstens, daß wir allein den wahren Gott, der sich uns in seinem Wort offenbart hat (Joh4,22-24), um alles, das er uns zu bitten befohlen hat (Röm8,26; 1.Joh5,14), von Herzen anrufen (Joh4,23.24). Zweitens, daß wir unsere Not und Elend recht gründlich erkennen (2.Chr20,12), um uns vor dem Angesicht seiner Majestät zu demütigen (Ps2,11; 34,19; Jes66,2). Drittens, daß wir diesen festen Grund haben (Röm10,14; Jak1,6), daß er unser Gebet, unangesehen, daß wir's unwürdig sind, doch um des Herrn Christi willen gewiß erhören will (Joh14,13.14; Dan9,17.18), wie er uns in seinem Wort verheißen hat (Mt7,8; Ps143,1).</answer>
+    </record>
+    <record number="118">
+      <question>Was hat uns Gott befohlen, von ihm zu erbitten?</question>
+      <answer>Alles, was geistlich und leiblich nötig ist, (Jak1,17; Mt6,33), wie es der Herr Christus zusammengefaßt hat in dem Gebet, das er uns selbst gelehrt hat.</answer>
+    </record>
+    <record number="119">
+      <question>Wie lautet dieses Gebet?</question>
+      <answer>‘Unser Vater (Mt6,9-13; Lk11,2-4), der du bist im Himmel,
+geheiligt werde dein Name.
+Dein Reich komme.
+Dein Wille geschehe auf der Erde wie im Himmel.
+Unser täglich Brot gib uns heute.
+Und vergib uns unsere Schuld, wie auch wir vergeben unseren Schuldigern.
+Und führe uns nicht in Versuchung, sondern erlöse uns vom Bösen.
+Denn dein ist das Reich und die Kraft und die Herrlichkeit in Ewigkeit;
+Amen.’</answer>
+    </record>
+    <record number="120">
+      <question>Warum hat uns Christus befohlen, Gott so anzureden: ‘Unser Vater’?</question>
+      <answer>Damit er gleich im Anfang unseres Gebetes in uns die kindliche Ehrfurcht und Zuversicht gegenüber Gott erweckt, die Grundlage unseres Gebets sein soll; nämlich, daß Gott unser Vater durch Christus geworden ist und uns viel weniger verweigern will, worum wir ihn im Glauben bitten, als unsere Väter uns irdische Dinge abschlagen (Mt7,9-11; Lk11,11-13).</answer>
+    </record>
+    <record number="121">
+      <question>Warum wird hinzugefügt: ‘der du bist im Himmel’?</question>
+      <answer>Damit wir von der himmlischen Majestät Gottes nicht irdisch denken (Jer23,23.24; Apg17,24.25 .27) und von seiner Allmacht alles, was für Leib und Seele nötig ist, erwarten (Röm10,12).</answer>
+    </record>
+    <record number="122">
+      <question>Was ist die erste Bitte?</question>
+      <answer>‘Geheiligt werde dein Name’: das heißt, gib uns erstens, daß wir dich recht erkennen (Joh17,3; Mt16,17; Jak1,5; Ps119,105) und dich in allen deinen Werken, in denen leuchtet deine Allmacht, Weisheit, Güte, Gerechtigkeit, Barmherzigkeit und Wahrheit, heiligen, rühmen und preisen (Ps119,137; Röm11,33-36). Danach auch, daß wir unser ganzes Leben, Gedanken, Worte und Werke dahin richten, daß dein Name um unsertwillen nicht gelästert, sondern geehrt und gepriesen wird (Ps71,8; 115,1).</answer>
+    </record>
+    <record number="123">
+      <question>Was ist die zweite Bitte?</question>
+      <answer>‘Dein Reich komme’: das heißt, regiere uns so durch dein Wort und deinen Geist, daß wir uns dir je länger, je mehr unterwerfen (Mt6,33; Ps119,5; 143,10); erhalte und mehre deine Kirche (Ps51,20; 122,6-9) und zerstöre die Werke des Teufels und alle Gewalt, die sich gegen dich erhebt, und alle bösen Pläne, die gegen dein heiliges Wort erdacht werden (1.Joh3,8; Röm16,20), bis die Vollendung deines Reiches kommt (Offb22,17 .20; Röm8,22.23), in dem du alles in allen sein wirst (1.Kor15,28).</answer>
+    </record>
+    <record number="124">
+      <question>Was ist die dritte Bitte?</question>
+      <answer>‘Dein Wille geschehe auf der Erde wie im Himmel’: das heißt, verleihe, daß wir und alle Menschen unserem eigenen Willen absagen (Mt16,24; Tit2,12) und deinem allein guten Willen ohne alles Widersprechen gehorchen (Lk22,42), so daß jedermann sein Amt und seine Berufung so willig und treu ausrichtet (1.Kor7,24) wie die Engel im Himmel (Ps103,20.21).</answer>
+    </record>
+    <record number="125">
+      <question>Was ist die vierte Bitte?</question>
+      <answer>‘Unser täglich Brot gib uns heute’: das heißt, versorge uns mit allem leiblich Nötigen (Ps104,27-30; 145,15.16; Mt6,25-34), so daß wir dadurch erkennen, daß du der einzige Ursprung alles Guten bist (Apg14,17; 17,27.28) und daß ohne deinen Segen weder unsere Sorgen und Arbeit, noch deine Gaben uns nützen (1.Kor15,58; 5.Mose8,3; Ps37,3-7 .16.17) und wir deshalb unser Vertrauen von allen Kreaturen abziehen und allein auf dich setzen (Ps55,23; 62,11).</answer>
+    </record>
+    <record number="126">
+      <question>Was ist die fünfte Bitte?</question>
+      <answer>‘Vergib uns unsere Schuld, wie auch wir vergeben unseren Schuldigern’: das heißt, rechne uns armen Sündern alle unsere Missetat, auch das Böse, das uns noch immer anhängt, um des Blutes Christi willen nicht an (Ps51,1-7; 143,2; 1.Joh2,1.2), wie auch wir als Zeugnis deiner Gnade in uns finden, daß unser ganzer Vorsatz ist, unserem Nächsten von Herzen zu verzeihen (Mt6,14.15).</answer>
+    </record>
+    <record number="127">
+      <question>Was ist die sechste Bitte?</question>
+      <answer>‘Und führe uns nicht in Versuchung, sondern erlöse uns vom Bösen’: das heißt, weil wir aus uns selbst so schwach sind, daß wir nicht einen Augenblick bestehen können (Joh15,5; Ps103,14), und dazu unsere Todfeinde, der Teufel (1.Petr5,8; Eph6,12), die Welt (Joh15,19) und unser eigenes Fleisch (Röm7,23; Gal5,17), nicht aufhören, uns anzufechten, darum erhalte und stärke uns durch die Kraft des Heiligen Geistes, damit wir ihnen festen Widerstand leisten können und in diesem geistlichen Kampf nicht unterliegen (Mt26,41; Mk13,33), bis daß wir schließlich den völligen Sieg erlangen (1.Thess3,13; 5,23).</answer>
+    </record>
+    <record number="128">
+      <question>Wie beschließt du dieses Gebet?</question>
+      <answer>‘Denn dein ist das Reich, die Kraft und die Herrlichkeit in Ewigkeit’: das heißt, dies alles erbitten wir darum von dir, weil du, als unser König und aller Dinge mächtig, uns alles Gute geben willst und kannst (Röm10,11.12; 2.Petr2,9) und daß dadurch nicht wir, sondern dein heiliger Name ewig gepriesen werden soll (Joh14,13; Ps115,1).</answer>
+    </record>
+    <record number="129">
+      <question>Was bedeutet das Wörtchen ‘Amen’?</question>
+      <answer>‘Amen’ heißt, das soll wahr und gewiß sein; denn mein Gebet ist viel gewisser von Gott erhört, als ich in meinem Herzen fühle, daß ich dies alles von ihm begehre (2.Kor1,20; 2.Tim2,13).</answer>
+    </record>
+  </data>
+</translation>

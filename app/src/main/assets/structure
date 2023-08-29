@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<structure>
+    <question-count count="129"/>
+    <parts>
+        <part number="1" start="3"/>
+        <part number="2" start="12"/>
+        <part number="3" start="86"/>
+    </parts>
+    <sundays>
+        <sunday number="1" start="1"/>
+        <sunday number="2" start="3"/>
+        <sunday number="3" start="6"/>
+        <sunday number="4" start="9"/>
+        <sunday number="5" start="12"/>
+        <sunday number="6" start="16"/>
+        <sunday number="7" start="20"/>
+        <sunday number="8" start="24"/>
+        <sunday number="9" start="26"/>
+        <sunday number="10" start="27"/>
+        <sunday number="11" start="29"/>
+        <sunday number="12" start="31"/>
+        <sunday number="13" start="33"/>
+        <sunday number="14" start="35"/>
+        <sunday number="15" start="37"/>
+        <sunday number="16" start="40"/>
+        <sunday number="17" start="45"/>
+        <sunday number="18" start="46"/>
+        <sunday number="19" start="50"/>
+        <sunday number="20" start="53"/>
+        <sunday number="21" start="54"/>
+        <sunday number="22" start="57"/>
+        <sunday number="23" start="59"/>
+        <sunday number="24" start="62"/>
+        <sunday number="25" start="65"/>
+        <sunday number="26" start="69"/>
+        <sunday number="27" start="72"/>
+        <sunday number="28" start="75"/>
+        <sunday number="29" start="78"/>
+        <sunday number="30" start="80"/>
+        <sunday number="31" start="83"/>
+        <sunday number="32" start="86"/>
+        <sunday number="33" start="88"/>
+        <sunday number="34" start="92"/>
+        <sunday number="35" start="96"/>
+        <sunday number="36" start="99"/>
+        <sunday number="37" start="101"/>
+        <sunday number="38" start="103"/>
+        <sunday number="39" start="104"/>
+        <sunday number="40" start="105"/>
+        <sunday number="41" start="108"/>
+        <sunday number="42" start="110"/>
+        <sunday number="43" start="112"/>
+        <sunday number="44" start="113"/>
+        <sunday number="45" start="116"/>
+        <sunday number="46" start="120"/>
+        <sunday number="47" start="122"/>
+        <sunday number="48" start="123"/>
+        <sunday number="49" start="124"/>
+        <sunday number="50" start="125"/>
+        <sunday number="51" start="126"/>
+        <sunday number="52" start="127"/>
+    </sundays>
+</structure>

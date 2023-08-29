@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation>
+  <description>Catechismus</description>
+  <blockNames part="Der Teil" sunday="Sontag" question="Frage" />
+  <partNames>
+    <part number="1">Von des menschen elend</part>
+    <part number="2">Von desz Menschen Erlösung</part>
+    <part number="3">Von der Danckbarkeyt</part>
+  </partNames>
+  <data>
+    <record number="1">
+      <question>Was ist dein einiger trost in leben und in sterben?</question>
+      <answer>Das ich mit leib und seel beyde, in leben und in sterben nicht mein, sonder meines getreuen heilands Jesu Christi eigen bin, der mit seinem theuren blut für alle meine sünden volkommlich bezalet und mich ausz allem gewalt des teufels erlöset hat und also bewaret, dat one den willen meines vaters im himmel kein har von meinem haupt kan fallen, ja auch mir alles zu meiner seligkeyt dienen musz. Darumb er mich auch durch seinen heiligen geist des ewigen lebens versichert und im forthin zu leben von hertzen willig und bereit ma</answer>
+    </record>
+    <record number="2">
+      <question>Wieviel stück seind dir nötig zu wissen, dasz du in diesem trost seliglich leben und sterben mögest?</question>
+      <answer>Drey stück, erstlich, wie grosz meine sünde und elend seyen, zum andern, wie ich von allen meinen sünden und elend erlöset werde, und zum dritten, wie ich Gott für solche erlösung sol danckbar s</answer>
+    </record>
+    <record number="3">
+      <question>Woher erkennest dein elend?</question>
+      <answer>Ausz dem gesetz Got</answer>
+    </record>
+    <record number="4">
+      <question>Was erfordert denn das göttlich gesetz von uns?</question>
+      <answer>Disz lehret uns Christus in einer summa Matth. am 22.: Du solt lieben Gott, deinen herren, von gantzem hertzen, von gantzer seelen, von gantzem gemüth und allen kreften. Disz ist das fürnemste und das gröste gebot. Das ander aber ist dem gleich: Du solt deinen nechsten lieben als dich selbs. In diesen zweyen geboten hanget das gantze gesetz und die prophe</answer>
+    </record>
+    <record number="5">
+      <question>Kanstu disz alles vollkomlich halten?</question>
+      <answer>Nein, denn ich bin von natur geneigt, Gott und meinen nechsten zu has</answer>
+    </record>
+    <record number="6">
+      <question>Hat denn Gott den menschen also bösz und verkert erschaffen?</question>
+      <answer>Nein, sonder Gott hat den menschen gut und nach seinem ebenbild erschaffen, das ist, in warhaftiger gerechtigkeyt und heiligkeyt, auf dasz er Gott, seinen schöpfer, recht erkennte und von hertzen liebte und in ewiger seligkeyt mit im lebte, in zu loben und zu prei</answer>
+    </record>
+    <record number="7">
+      <question>Woher kompt denn solche verderbte art des menschen?</question>
+      <answer>Ausz dem fall und ungehorsam unser ersten eltern Adams und Even im paradeisz, da unser natur also vergiftet worden, dasz wir alle in sünden empfangen und geboren wer</answer>
+    </record>
+    <record number="8">
+      <question>Seind wir aber dermassen verderbt, dasz wir gantz und gar untüchtig seind zu einigem guten und geneigt zu allem bösen?</question>
+      <answer>Ja, es sey denn, dasz wir durch den geist Gottes widergeboren wer</answer>
+    </record>
+    <record number="9">
+      <question>Thut denn Gott dem menschen nicht unrecht, dasz er in seinem gesetz von im fordert, das er nicht thun kan?</question>
+      <answer>Nein, denn Gott hat den menschen also erschaffen, dasz er es kondte thun. Der mensch aber hat sich und alle seine nachkommen ausz anstiftung des teufels durch mutwilligen ungehorsam derselbigen gaben bera</answer>
+    </record>
+    <record number="10">
+      <question>Wil Gott solchen ungehorsam und abfall ungestraft lassen hingehen?</question>
+      <answer>Mit nichten, sonder er zürnet schrecklich beyde, uber angeborne und würckliche sünden und will sie ausz gerechtem urtheil zeitlich und ewig strafen, wie er gesprochen hat: Verflucht sey jederman, der nicht bleibet in allem dem, das geschrieben stehet in dem buch des gesetzes, dasz ers t</answer>
+    </record>
+    <record number="11">
+      <question>Ist denn Gott nicht auch barmhertzig?</question>
+      <answer>Gott ist wol barmhertzig, er ist aber auch gerecht, derhalben erfordert seine gerechtigkeyt dasz die sünde, welche wider die allerhöchste majestet Gottes begangen ist, auch mit der höchsten, das ist, der ewigen straf an leib und seel gestraft we</answer>
+    </record>
+    <record number="12">
+      <question>Dieweil wir denn nach dem gerechten urtheil Gottes zeitliche und ewige straf verdient haben, wie möchten wir dieser straf entgehen und widerumb zu gnaden kommen?</question>
+      <answer>Gott will, das seiner gerechtigkeyt gnug geschehe, derwegen müssen wir derselben entweder durch uns selbst oder durch einen andern volkommene bezalung t</answer>
+    </record>
+    <record number="13">
+      <question>Können wir aber durch uns selbst bezalung thun?</question>
+      <answer>Mit nichten, sonder wir machen auch die schuld noch täglich grös</answer>
+    </record>
+    <record number="14">
+      <question>Kan aber irgendeine blosse creatur für uns bezalen?</question>
+      <answer>Keine, denn erstlich will Gott an keiner andern creatur strafen, das der mensch verschuldet hat, zum andern so kan auch kein blosse creatur den last des ewigen zorns Gottes wider die sünde ertragen und andere davon erlö</answer>
+    </record>
+    <record number="15">
+      <question>Was müssen wir denn für einen mittler und erlöser suchen?</question>
+      <answer>Einen solchen, der ein warer und gerechter mensch und doch stercker denn alle creaturen, das ist, zugleich warer Gott</answer>
+    </record>
+    <record number="16">
+      <question>Warumb musz er ein warer und gerechter mensch sein?</question>
+      <answer>Darumb, dasz die gerechtigkeyt Gottes erfordert, dasz die menschliche natur, die gesündiget hat, für die sünde bezale, und aber einer, der selbst ein sünder were, nicht köndte für andere beza</answer>
+    </record>
+    <record number="17">
+      <question>Warumb musz er zugleich warer Gott sein?</question>
+      <answer>Dasz er ausz kraft seiner gottheyt den last des zorns Gottes an seiner menschheyt ertragen und uns die gerechtigkeyt und das leben erwerben und widergeben möc</answer>
+    </record>
+    <record number="18">
+      <question>Wer ist aber derselbe mittler, der zugleich warer Gott und ein warer, gerechter mensch ist?</question>
+      <answer>Unser herr Jesus Christus, der uns zur volkommenen erlösung und gerechtigkeyt geschenckt</answer>
+    </record>
+    <record number="19">
+      <question>Woher weistu das?</question>
+      <answer>Ausz dem heiligen evangelio, welchs Gott selbst anfenglich im paradeisz hat offenbaret, folgends durch die heilige ertzväter und propheten lassen verkündigen und durch die opfer und andere ceremonien des gesetzes fürgebildet, endtlich aber durch seinen eingeliebten son erfül</answer>
+    </record>
+    <record number="20">
+      <question>Werden denn alle menschen widerumb durch Christum selig, wie sie durch Adam sind verloren worden?</question>
+      <answer>Nein, sonder allein diejenigen, die durch waren glauben im werden eingeleibet und alle seine wolthaten anne</answer>
+    </record>
+    <record number="21">
+      <question>Was ist warer glaub?</question>
+      <answer>Es ist nicht allein ein gewisse erkandtnusz, dardurch ich alles für war halte, was uns Gott in seinem wort hat offenbaret, sonder auch ein hertzliches vertrauen, welches der heilige geist durchs evangelium in mir würcket, dasz nicht allein andern, sonder auch mir vergebung der sünden, ewige gerechtigkeyt und seligkeyt von Gott gesehenckt sey ausz lauter gnaden allein umb des verdiensts Christi wil</answer>
+    </record>
+    <record number="22">
+      <question>Was ist aber einem christen noth zu glauben?</question>
+      <answer>Alles, was uns im evangelio verheissen wird, welchs uns die artickel unsers allgemeinen, ungezweifelten christlichen glaubens in einer summa leh</answer>
+    </record>
+    <record number="23">
+      <question>Wie lauten dieselben?</question>
+      <answer>Ich glaub in Gott, vater, den allmechtigen, schöpfer himmels und der erden. Und in Jesum Christum, seinen eingebornen son, unsern herrn, der empfangen ist von dem heiligen geist, geboren ausz Maria, der jungfrauen, gelitten under Pontio Pilato, gecreutziget, gestorben und begraben, abgestiegen zu der hellen, am dritten tage wider auferstanden von den todten, aufgefaren gen himmel, sitzet zu der rechten Gottes, des allmechtigen vaters, von dannen er kommen wird, zu richten die lebendigen und die todten. Ich glaub in den heiligen geist, eine heilige, allgemeine christliche kirche, die gemeinschaft der heiligen, vergebung der sünden, auferstehung des fleisches und ein ewigs le</answer>
+    </record>
+    <record number="24">
+      <question>Wie werden diese artickel abgetheilt?</question>
+      <answer>In drey theil. Der erst ist von Gott, dem vater, und unser erschöpfung, der ander von Gott, dem sun, und unser erlösung, der dritt von Gott, dem heiligen geist, und unser heilig</answer>
+    </record>
+    <record number="25">
+      <question>Dieweil nur ein einig göttlich wesen ist, warumb nennestu drey, den vater, son und heiligen geist?</question>
+      <answer>Darumb, dasz sich Gott also in seinem wort geoffenbaret hat, dasz dise drey underschiedliche personen der einig, warhaftig, ewig Gott se</answer>
+    </record>
+    <record number="26">
+      <question>Was glaubestu, wenn du sprichst: Ich glaub in Gott, vater, den allmechtigen, schöpfer himmels und der erden?</question>
+      <answer>Dasz der ewig vater unsers herrn Jesu Christi, der himmel und erden sampt allem, was drinnen ist, ausz nichts erschaffen, auch dieselbigen noch durch seinen ewigen raht und fürsehung erhelt und regieret, umb seines sons Christi willen mein Gott und mein vater sey, auf welchen ich also ver- traue, dasz ich nicht zweifel, er werde mich mit aller notturft leibs und der seelen versorgen, auch alles ubel, so er mir in diesem jammerthal zuschicket, mir zugut wenden, dieweil er thun kan als ein allmechtiger Gott und auch thun will als ein getreuer va</answer>
+    </record>
+    <record number="27">
+      <question>Was verstehestu durch die fürsehung Gottes?</question>
+      <answer>Die allmechtige und gegenwertige kraft Gottes, durch welche er himel und erde sampt allen creaturen gleich als mit seiner hand noch erhelt und also regiert, das laub und grasz, regen und dürre, fruchtbare und unfruchtbare jar, essen und trincken, gesundheyt und kranckheit, reichthumb und armut und alles nicht one gefähr, sonder von seiner väterlichen hand uns zuko</answer>
+    </record>
+    <record number="28">
+      <question>Was für nutz bekommen wir ausz erkandtnusz der schöpfung und fürsehung Gottes?</question>
+      <answer>Das wir in aller widerwertigkeyt gedultig, in glückseligkeyt danckbar und aufs zukünftig guter zuversicht zu unserm getreuen Gott und vater sein sollen, dasz uns keine creatur von seiner liebe scheiden wird, dieweil alle creaturen also in seiner hand sind, dasz sie sich one seinen willen auch nicht regen noch bewegen kön</answer>
+    </record>
+    <record number="29">
+      <question>Warumb wird der son Gottes Jesus, das ist, seligmacher genannt?</question>
+      <answer>Darumb, dasz er uns selig macht von unsern sünden und dasz bey keinem andern einige seligkeyt zu suchen noch zu finden</answer>
+    </record>
+    <record number="30">
+      <question>Glauben denn auch die an den einigen seligmacher Jesum, die ire seligkeyt und heil bey heiligen, bey inen selbst oder anderstwo suchen?</question>
+      <answer>Nein, sonder sie verleugnen mit der that den einigen seligmacher und heiland Jesum, ob sie sich sein gleich rhümen. Denn entweder Jesus nicht ein volkommener heiland sein musz, oder die diesen heiland mit warem glauben annemen, müssen alles in im haben, das zu irer seligkeyt vonnöten</answer>
+    </record>
+    <record number="31">
+      <question>Warumb ist er Christus, das ist, ein gesalbter genannt?</question>
+      <answer>Dasz er von Gott, dem Vater, verordnet und mit dem heiligen geist gesalbet ist zu unserm öbersten propheten und lehrer, der uns den heimlichen rath und willen Gottes von unser erlösung volkomlich offenbaret, und zu unserem einigen hohenpriester, der uns mit dem einigen opfer seines leibs erlöset hat und immerdar mit seiner fürbit für dem vater vertritt, und zu unserm ewigen könig, der uns mit seinem wort und geist regiert und bey der erworbenen erlösung schützet und erh</answer>
+    </record>
+    <record number="32">
+      <question>Warumb wirst aber du ein christ genent?</question>
+      <answer>Dasz ich durch den glauben ein glied Christi und also seiner salbung theilhaftig bin, auf dasz auch ich seinen namen bekenne, mich ihm zu einem lebendigen danckopfer darstelle und mit freiem gewissen in diesem leben wider die sünde und teufel streite und hernach in ewigkeyt mit im uber alle creaturen hers</answer>
+    </record>
+    <record number="33">
+      <question>Warumb heist er Gottes eingeborner son, so doch wir auch kinder Gottes sind?</question>
+      <answer>Darumb, dasz Christus allein der ewig, natürlich son Gottes ist, wir aber umb seinetwillen ausz gnaden zu kindern Gottes angenommen</answer>
+    </record>
+    <record number="34">
+      <question>Warumb nennestu in unsern herrn?</question>
+      <answer>Dasz er uns mit leib und seel von der sünden und ausz allem gewalt des teufels nicht mit gold oder silber, sonder mit seinem theuern blut ihm zum eigenthumb erlöset und erkauft</answer>
+    </record>
+    <record number="35">
+      <question>Was heist, dasz er empfangen ist von dem heiligen geist, geborn ausz Maria, der jungfrauen?</question>
+      <answer>Dasz der ewige son Gottes, der warer und ewiger Gott ist und bleibet, ware menschliche natur ausz dem fleisch und blut der jungfrauen Maria durch würckung des heiligen geists an sich genommen hat, auf dasz er auch der ware samen Davids sey, seinen brüdern in allem gleich, auszgenommen die sü</answer>
+    </record>
+    <record number="36">
+      <question>Was nutz bekomestu ausz der heiligen empfengnusz und geburt Christi?</question>
+      <answer>Das er unser mittler ist und mit seiner unschuldt und volkommenen heiligkeyt meine sünde, darin ich bin empfangen, für Gottes angesicht bedec</answer>
+    </record>
+    <record number="37">
+      <question>Was verstehestu durch das wörtlein gelitten?</question>
+      <answer>Dasz er an leib und seel die gantze zeit seines lebens auf erden, sonderlich aber am ende desselben, den zorn Gottes wider die sünde des gantzen menschlichen geschlechts getragen hat, auf dasz er mit seinem leiden als mit dem einigen sönopfer unser leib und seel von der ewigen verdamnusz erlösete und uns Gottes Gnade, gerechtigkeyt und ewiges leben erwü</answer>
+    </record>
+    <record number="38">
+      <question>Warumb hat er under dem richter Pontio Pilato gelitten?</question>
+      <answer>Auf dasz er unschuldig under dem weltlichen richter verdampt würde und uns damit von dem strengen urtheil Gottes, das uber uns gehen solte, erledi</answer>
+    </record>
+    <record number="39">
+      <question>Ist es etwas mehr, dasz er ist gecreutziget worden, denn so er eines andern tods gestorben were?</question>
+      <answer>Ja, denn dardurch bin ich gewisz, dasz er die vermaledeidung die auf mir lage, auf sich geladen habe, dieweil der todt des creutzes von Gott verflucht</answer>
+    </record>
+    <record number="40">
+      <question>Warumb hat Christus den todt müssen leiden?</question>
+      <answer>Darumb, dasz von wegen der gerechtigkeyt und warheyt Gottes nicht anderst für unsere sünden mochte bezalet werden denn durch den todt des sons Got</answer>
+    </record>
+    <record number="41">
+      <question>Warumb ist er begraben worden?</question>
+      <answer>Damit zu bezeugen, dasz er warhaftig gestorben</answer>
+    </record>
+    <record number="42">
+      <question>Weil den Christus für uns gestorben ist, wie kompts, dasz wir auch sterben müssen?</question>
+      <answer>Unser todt ist nicht ein bezalung für unsere sünde, sonder nur ein absterbung der sünden und eingang zum ewigen le</answer>
+    </record>
+    <record number="43">
+      <question>Was bekommen wir mehr für nutz ausz dem opfer und todt Christi am creutz?</question>
+      <answer>Dasz durch seine kraft unser alter mensch mit im gecreutziget, getödtet und begraben wird, auf dasz die bösen lüste des fleisches nicht mehr in uns regieren, sonder dasz wir uns selbst im zur dancksagung auf opf</answer>
+    </record>
+    <record number="44">
+      <question>Warumb folget abgestiegen zu der hellen?</question>
+      <answer>Dasz ich in meinen höchsten anfechtungen versichert sey, mein herr Christus habe mich durch seine unauszsprechliche angst, schmertzen und schrecken, die er auch an seiner seelen am creutz und zuvor erlitten, von der hellischen angst und pein erlö</answer>
+    </record>
+    <record number="45">
+      <question>Was nützet uns die auferstehung Christi?</question>
+      <answer>Erstlich hat er durch seine auferstehung den todt ubenwunden, dasz er uns der gerechtigkeyt, die er uns durch seinen todt erworben hat, köndte theilhaftig machen. Zum andern werden auch wir jetzunder durch seine kraft erwecket zu einem neuen leben. Zum dritten ist uns die auferstehung Christi ein gewisses pfandt unserer seligen aufersteh</answer>
+    </record>
+    <record number="46">
+      <question>Wie verstehestu, dasz er ist gen himmel gefaren?</question>
+      <answer>Dasz Christus für den augen seiner jünger ist von der erden aufgehaben gen himmel und uns zugut daselbst ist, bisz dasz er widerkompt zu richten die lebendigen und die tod</answer>
+    </record>
+    <record number="47">
+      <question>Ist denn Christus nit bey uns bisz ans ende der welt, wie er uns verheissen hat?</question>
+      <answer>Christus ist warer mensch und warer Gott, nach seinen menschlichen natur ist er jetzunder nit auf erden, aber nach seiner gottheyt, majestet, gnad und geist weicht en nimmer von</answer>
+    </record>
+    <record number="48">
+      <question>Werden aber mit der weis die zwo naturen in Christo nit voneinander getrennet, so die menscheit nicht uberal ist, da die gottheyt ist?</question>
+      <answer>Mit nichten, denn weil die gottheyt unbegreiflich und allenthalben gegenwertig ist, so musz folgen, dasz sie wol ausserhalb irer angenommenen menschheyt und dennoch nichtsdestoweniger auch in derselben ist und persönlich mit ir vereiniget ble</answer>
+    </record>
+    <record number="49">
+      <question>Was nützet uns die himmelfahrt Christi?</question>
+      <answer>Erstlich, dasz er im himmel für dem angesicht seines vaters unser fürsprecher ist, zum andern, dasz wir unser fleisch im himmel zu einem sichern pfand haben, dasz er als das haupt uns, seine glieder, auch zu sich werde hinaufnemen, zum dritten, dasz er uns seinen geist zum gegenpfand herabsendet, durch welches kraft wir suchen, was droben ist, da Christus ist, sitzend zu der rechten Gottes, und nicht, das auf erden</answer>
+    </record>
+    <record number="50">
+      <question>Warumb wirdt hinzugesetzt, dasz er sitze zur rechten Gottes?</question>
+      <answer>Dasz Christus darumb gen himmel gefahren ist, dasz er sich daselbst erzeige als das haupt seiner christlichen kirchen, durch welches der vater alles regi</answer>
+    </record>
+    <record number="51">
+      <question>Was nutzet uns diese herrligkeyt unsers haupts Christi?</question>
+      <answer>Erstlich, dasz er durch seinen heiligen geist in uns, seine glieder, die himlischen gaben auszgeuszt, darnach, dasz er uns mit seinem gewalt wider alle feind schützet und erh</answer>
+    </record>
+    <record number="52">
+      <question>Was tröstet dich die widerkunft Christi, zu richten die lebendigen und die todten?</question>
+      <answer>Dasz ich in allem trübsal und verfolgung mit aufgerichtem haupt eben des richters, der sich zuvor dem gericht Gottes für mich dargestellt und alle vermaledeyung von mir hinweggenommen hat, ausz dem himmel gewertig bin, dasz er alle seine und meine feinde in die ewige verdamnusz werfe, mich aber sampt allen auszerwehlten zu im in die himlische freud und herrligkeyt n</answer>
+    </record>
+    <record number="53">
+      <question>Was glaubestu vom heiligen geist?</question>
+      <answer>Erstlich, dasz er gleich ewiger Gott mit dem vater und dem son ist, zum andern, dasz er auch mir gegeben ist, mich durch ein waren glauben Christi und aller seiner wolthaten theilhaftig macht, mich tröstet und bey mir bleiben wird bisz in ewigk</answer>
+    </record>
+    <record number="54">
+      <question>Was glaubstu von der heiligen, allgemeinen christlichen kirchen?</question>
+      <answer>Dasz der son Gottes ausz dem gantzen menschlichen geschlecht ihm ein auszerwelte gemein zum ewigen leben durch seinen geist und wort in einigkeyt des waren glaubens von anbegin der welt bisz ans end versamle, schütze und erhalte und, dasz ich derselben ein lebendiges glied bin und ewig bleiben we</answer>
+    </record>
+    <record number="55">
+      <question>Was verstehestu durch die gemeinschaft der heiligen?</question>
+      <answer>Erstlich, dasz alle und jede gläubigen als glieder an dem herren Christo und allen seinen schätzen und gaben gemeinschaft haben, zum andern, dasz em jeder seine gaben zu nutz und heil der andern glieder willig und mit freuden anzulegen sich schuldig wissen s</answer>
+    </record>
+    <record number="56">
+      <question>Was glaubstu von vergebung der sünden?</question>
+      <answer>Dasz Gott umb der genugthuung Christi willen aller meiner sünden, auch der sündlichen art, mit der ich mein leben lang zu streiten habe, nimmermehr gedencken wil, sonder mir die gerechtigkeyt Christi ausz gnaden schencket, dasz ich ins gericht nimmermehr soll kom</answer>
+    </record>
+    <record number="57">
+      <question>Was tröst dich die auferstehung des fleisches?</question>
+      <answer>Dasz nicht allein meine seel nach diesem leben alsbald zu Christo, irem haupt, genommen wird, sonder auch, dasz disz mein fleisch durch die kraft Christi auferweckt, wider mit meiner seelen vereiniget und dem herrlichen leib Christi gleichförmig werden s</answer>
+    </record>
+    <record number="58">
+      <question>Was tröst dich der artickel vom ewigen leben?</question>
+      <answer>Dasz, nachdem ich jetzunder den anfang der ewigen freude in meinem hertzen empfinde, ich nach diesem leben volkommene seligkeyt besitzen werde, die kein aug gesehen, kein ohr gehöret und in keines menschen hertz nie kommen ist, Gott ewiglich darin zu prei</answer>
+    </record>
+    <record number="59">
+      <question>Was hilft es dich aber nun, wenn du disz alles glaubest?</question>
+      <answer>Dasz ich in Christo für Gott gerecht und ein erb des ewigen lebens</answer>
+    </record>
+    <record number="60">
+      <question>Wie bistu gerecht für Gott?</question>
+      <answer>Allein durch waren glauben in Jesum Christum also, dasz, ob mich schon mein gewissen anklagt, dasz ich wider alle gebot Gottes schwerlich gesündiget und derselben keines nie gehalten hab, auch noch immerdar zu allem bösen geneigt bin, doch Gott on alle meine verdienst ausz lauter gnaden mir die volkommene gnugthuung, gerechtigkeyt und heiligkeyt Christi schencke und zurechnet, als hette ich nie keine sünd begangen noch gebabt und selbst allen den gehorsam volbracht den Christus für mich hat geleistet, wenn ich allein solche wolthat mit glaubigem hertzen ann</answer>
+    </record>
+    <record number="61">
+      <question>Warumb sagstu, dasz du allein durch den glauben gerecht seyest?</question>
+      <answer>Nicht, dasz ich von wegen der wirdigkeyt meines glaubens Gott gefalle, sondern darumb, dasz allein die genugthuung, gerechtigkeyt und heiligkeyt Christi meine gerechtigkeyt für Gott ist und ich dieselbe nit anderst denn allein durch den glauben annemen und mir zueignen</answer>
+    </record>
+    <record number="62">
+      <question>Warumb können aber unsere gute werck nit die gerechtigkeyt für Gott oder ein stück derselben sein?</question>
+      <answer>Darumb, dasz die gerechtigkeyt, so für Gottes gericht bestehen soll, durchausz volkommen und dem göttlichen gesetz gantz gleichförmig sein müsz und aber auch unsere beste werck in disem leben alle unvollkommen und mit sünden befleckt s</answer>
+    </record>
+    <record number="63">
+      <question>Verdienen aber unsere gute werck nichts, so sie doch Gott in diesem und zukünftigem leben will belohnen?</question>
+      <answer>Diese belohnung geschicht nit ausz verdienst, sonder ausz gna</answer>
+    </record>
+    <record number="64">
+      <question>Macht aber diese lehr nicht sorglose und verruchte leuth?</question>
+      <answer>Nein, denn es unmöglich ist, dasz die, so Christo durch waren glauben sind eingepflantzt, nicht frucht der danckbarkeyt sollen brin</answer>
+    </record>
+    <record number="65">
+      <question>Dieweil denn allein der glaub uns Christi und aller seiner wolthaten theilhaftig macht, woher kompt solcher glaube?</question>
+      <answer>Der heilig geist würckt denselben in unsern hertzen durch die predig des heiligen evangelions und bestätiget den durch den brauch der heiligen sacramen</answer>
+    </record>
+    <record number="66">
+      <question>Was seind die sacrament?</question>
+      <answer>Es seind sichtbare, heilige warzeichen und sigill, von Gott darzu eingesetzt, dasz er uns durch den brauch derselben die verheissung des evangelions desto besser zu verstehen gebe und versigele, nemlich dasz er uns von wegen des einigen opfers Christi, am creutz volbracht, vergebung der sünden und ewiges leben ausz gnaden schen</answer>
+    </record>
+    <record number="67">
+      <question>Seind denn beyde, das wort und die sacrament, dahin gericht, dasz sie unsern glauben auf das opfer Jesu Christi am creutz als auf den einigen grund unserer seligkeyt weisen?</question>
+      <answer>Ja freilich, denn der heilig geist lehret im evangelio und bestätiget durch die heiligen sacrament, dasz unsere gantze seligkeyt stehe in dem einigen opfer Christi, für uns am creutz gesche</answer>
+    </record>
+    <record number="68">
+      <question>Wieviel sacrament hat Christus im neuen testament eingesetzt?</question>
+      <answer>Zwey, den heiligen tauf und das heilig abend</answer>
+    </record>
+    <record number="69">
+      <question>Wie wirstu im heiligen tauf erinnert und versichert, dasz das einige opfer Christi am creutz dir zugut komme?</question>
+      <answer>Also, dasz Christus disz eusserlich wasserbad eingesetzt und darbey verheissen hat, dasz ich so gewisz mit seinem blut und geist von der unreinigkeyt meiner seelen, das ist, allen meinen sünden gewaschen sey, so gewisz ich eusserlich mit dem wasser, welches die unsauberkeyt des leibs ptlegt hinzunemen, gewaschen</answer>
+    </record>
+    <record number="70">
+      <question>Was heist mit dem blut und geist Christi gewaschen sein?</question>
+      <answer>Es heist vergebung der sünden von Gott ausz gnaden haben umb des bluts Christi willen, welches er in seinem opfer am creutz für uns vergossen hat, darnach auch durch den heiligen geist erneuert und zu einem glied Christi geheiliget sein, dasz wir je lenger je mehr der sünden absterben und in einem gottseligen, unsträflichen leben wand</answer>
+    </record>
+    <record number="71">
+      <question>Wo hat Christus verheissen, dasz wir so gewisz mit seinem blut und geist als mit dem taufwasser gewaschen seind?</question>
+      <answer>In der einsetzung des taufs, we also lautet: Gehet hin und lehret alle völcker und taufet sie im namen des vaters und des sons und des heiligen geists. Wer da glaubet und getaufet wird, der wird selig werden, wer aber nicht glaubt, der wirdt verdampt werden. Diese verheissung wirdt auch widerholet, da die schrift den tauf das bad den widergeburt und abwäschung der sünden nen</answer>
+    </record>
+    <record number="72">
+      <question>Ist denn das eusserlich wasserbad die abwaschung der sünden selbst?</question>
+      <answer>Nein, denn allein das blut Jesu Christi und der heilige geist reiniget uns von allen sün</answer>
+    </record>
+    <record number="73">
+      <question>Warumb nennet denn der heilige geist den tauf das bad der widergeburt und die abwäschung der sünden?</question>
+      <answer>Gott redet also nit one grosse ursach, nemlich nit allein, dasz er uns damit wil lehren, dasz, gleich wie die unsauberkeyt des leibs durch wasser, also unsere sünden durchs blut und geist Christi hinweggenommen werden, sonder vielmehr, dasz er uns durch disz göttlich pfand und warzeichen wil versichern, dasz wir so warhaftig von unsern sünden geistlich gewaschen sind, als wir mit dem leiblichen wasser gewaschen wer</answer>
+    </record>
+    <record number="74">
+      <question>Soll man auch die jungen kinder taufen?</question>
+      <answer>Ja, denn dieweil sie sowol als die alten in den bund Gottes und seine gemein gehören und ihnen in dem blut Christi die erlösung von sünden und der heilig geist, welcher den glauben würcket nit weniger denn den alten zugesagt wird, so sollen sie auch durch den tauf als des bunds zeichen der christlichen kirchen eingeleibt und von der ungläubigen kinder underscheiden werden, wie im alten testament durch die beschneidung geschehen ist, an welcher statt im neuen testament der tauf ist eingese</answer>
+    </record>
+    <record number="75">
+      <question>Wie wirstu im heiligen abendmal erinnert und versichert, dasz du an dem einigen opfer Christi am creutz und allen seinen gütern gemeinschaft habest?</question>
+      <answer>Also, dasz Christus mir und allen gläubigen von diesem gebrochnen brod zu essen und von disem kelch zu trincken befohlen hat zu seinem gedechtnisz und darbey verheissen, erstlich, dasz sein leib so gewisz für mich am creutz geopfert und gebrochen und sein blut für mich vergossen sey, so gewisz ich mit augen sehe, dasz das brod des herrn mir gebrochen und der kelch mir mitgetheilet wird, und zum andern, dasz er selbst meine seel mit seinem gecreutzigten leib und vergossnen blut so gewisz zum ewigen leben speise und trencke, als ich ausz der hand des dieners empfange und leiblich niesse das brod und den kelch des herrn, welche mir als gewisse warzeichen des leibs und bluts Christi gegeben wer</answer>
+    </record>
+    <record number="76">
+      <question>Was heist den gecreutzigten leib Christi essen und sein vergossen blut trincken?</question>
+      <answer>Es heist nit allein mit glaubigem hertzen das gantze leiden und sterben Christi annemen und dadurch vergebung der sünden und ewiges leben bekommen, sonder auch darneben durch den heiligen geist, der zugleich in Christo und in uns wohnet, also mit seinem gebenedeyten leib je mehr und mehr vereiniget werden, dasz wir, obgleich er im himmel und wir auf erden sind, dennoch fleisch von seinem fleisch und bein von seinen beinen sind und von einem geist (wie die glieder unsers leibs von einer seelen) ewig leben und regieret wer</answer>
+    </record>
+    <record number="77">
+      <question>Wo hat Christus verheissen, dasz er die gläubigen so gewisz also mit seinem leib und blut speise und trencke, als sie von diesem gebrochnen brod essen und von diesem kelch trincken?</question>
+      <answer>In der einsatzung des abendmals, welche also lautet: Unser herr Jesus, in der nacht, da er verrahten ward, nam er das brodt, dancket und brachs und sprach: Nemet, esset, das ist mein leib, der für euch gebrochen wirdt, so thut zu meiner gedechtnusz. Desselbengleichen auch den kelch nach dem abendtmal und sprach: Dieser kelch ist das neue testament in meinem blut, solches thut, so oft irs trincket, zu meiner gedechtnusz. Denn so oft ir von diesem brod esset und von diesem kelch trincket, solt ir des herren tod verkündigen, bisz dasz er kompt. Und diese verheissung wirdt auch widerholet durch s. Paulum, da er spricht: Der kelch der dancksagung, damit wir dancksagen, ist er nit die gemeinschaft des bluts Christi? Das brodt, das wir brechen, ist das nicht die gemeinschaft des leibs Christi? Denn ein brod ists, so seind wir viel ein leib, dieweil wir alle eines brots theilhaftig se</answer>
+    </record>
+    <record number="78">
+      <question>Wirdt denn ausz brod und wein der wesentlich leib und blut Christi?</question>
+      <answer>Nein, sonder wie das wasser in dem tauf nicht in das blut Christi verwandlet oder die abwaschung der sünden selbst wird, deren es allein ein göttlich warzeichen und versicherung ist, also wirdt auch das heilig brodt im abendmal nit der leib Christi selbst, wiewol es nach art und brauch der sacramenten der leib Christi genennet w</answer>
+    </record>
+    <record number="79">
+      <question>Warumb nennet denn Christus das brod seinen leib und den kelch sein blut oder das neue testament in seinem blut und s. Paulus die gemeinschaft des leibs und bluts Jesu Christi?</question>
+      <answer>Christus redet also nit ohne grosse ursach, nemlich, dasz er uns nicht allein damit wil lehren, dasz, gleich wie brod und wein das zeitliche leben erhalten, also sey auch sein gecreutzigter leib und vergossen blut die ware speisz und tranck unserer seelen zum ewigen leben, sonder vielmehr, dasz er uns durch disz sichtbare zeichen und pfand wil versichern, dasz wir so warhaftig seines waren leibs und bluts durch würckung des heiligen geists theilhaftig werden, als wir diese heilige warzeichen mit dem leiblichen mund zu seiner gedechtnusz empfangen und, dasz all sein leiden und gehorsam so gewisz unser eigen sey, als hetten wir se in unser eigen person alles gelitten und gnug get</answer>
+    </record>
+    <record number="80">
+      <question>Was ist für ein underscheid zwischen dem abendtmal des herrn und der bäpstlichen mesz?</question>
+      <answer>Das abendmal bezeuget uns, dasz wir volkommene vergebung aller unser sünden haben durch das einige opfer Jesu Christi, so er selbst einmal am creutz vollbracht hat und dasz wir durch den heiligen geist Christo werden eingeleibt, der jetzund mit seinem waren leib im himmel zur rechten des vaters ist und daselbst wil angebetet werden. Die mesz aber lehret, dasz die lebendigen und die todten nicht durch das leiden Christi vergebung der sünden haben, es sey denn, dasz Christus noch täglich für sie von den meszpriestern geopfert werde, und das Christus leiblich under der gestalt brots und weins sey und derhalben darin soll angebetet werden. Und ist also die mesz im grund nichts anderst denn ein verleugnung des einigen opfers und leidens Jesu Christi und ein vermaledeyte abgötte</answer>
+    </record>
+    <record number="81">
+      <question>Welche sollen zu dem tisch des herren kommen?</question>
+      <answer>Die ihnen selbst umb irer sünden willen miszfallen und doch vertrauen, dasz dieselbige ihnen verzihen und die ubrige schwachheyt mit dem leiden und sterben Christi bedeckt sey, begeren auch, je mehr und mehr ihren glauben zu stercken und ihr leben zu bessern. Die unbuszfertigen aber und heuchler essen und trincken inen selbst das geri</answer>
+    </record>
+    <record number="82">
+      <question>Sollen aber zu diesem abendmal auch zugelassen werden, die sich mit ihrer bekandtnusz und leben als unglaubige und gottlose erzeigen?</question>
+      <answer>Nein, denn es wirdt also der bundt Gottes geschmecht und sein zorn uber die gantze gemein gereitzet. Derhalben die christliche kirch schuldig ist, nach der ordnung Christi und seiner aposteln solche bisz zu besserung ires lebens durch das ampt der schlüssel au?zuschlies</answer>
+    </record>
+    <record number="83">
+      <question>Was ist das ampt der schlüssel?</question>
+      <answer>Die predig des heiligen evangelions und die christliche bu?zucht, durch welche beyde stück das himmelreich den glaubigen aufgeschlossen und den unglaubigen zugeschlossen w</answer>
+    </record>
+    <record number="84">
+      <question>Wie wird das himmelreich durch die predig des heiligen evangelions auf- und zugeschlossen?</question>
+      <answer>Also, das nach dem befelch Christi allen und jeden glaubigen verkündiget und offentlich bezeuget wird, dasz ihnen, so oft sie die verheissung des evangelions mit warem glauben annemen, warhaftig alle ire sünden von Gott umb des verdiensts Christi willen vergeben sind, und herwiderumb allen unglaubigen und heuchlern, dasz der zorn Gottes und die ewige verdamnusz auf inen ligt, so lang sie sich nicht bekeren, nach welchem zeugnusz des evangelii Gott beide in diesem und zukunftigen leben urtheilen</answer>
+    </record>
+    <record number="85">
+      <question>Wie wirdt das himmelreich zu- und aufgeschlossen durch die christliche bu?zucht?</question>
+      <answer>Also, dasz nach dem befelch Christi diejenigen, so under dem christlichen namen unchristliche lehr oder wandel führen, nachdem sie etlich mal brüderlich vermanet sein und von iren irrthumen oder lastern nit abstehen, der kirchen oder denen, so von der kirchen darzu verordnet seind, angezeigt und, so sie sich an derselben vermanung auch nit keren, von ihnen durch verbietung der heiligen sacrament ausz der christlichen gemein und von Gott selbst ausz dem reich Christi werden au?geschlossen und widerumb als glieder Christi und der kirchen angenommen, wenn sie ware besserung verheissen und erzei</answer>
+    </record>
+    <record number="86">
+      <question>Dieweil wir denn ausz unserm elend one alle unsere verdienst ausz gnaden durch Christum erlöset seind, warumb sollen wir gute werck thun?</question>
+      <answer>Darumb, dasz Christus, nachdem er uns mit seinem blut erkauft hat, uns auch durch seinen heiligen geist erneuert zu seinem ebenbildt, dasz wir mit unserm gantzen leben uns danckbar gegen Gott für seine wolthat erzeigen und er durch uns gepriesen werde, darnach auch, dasz wir bey uns selbst unsers glaubens ausz seinen früchten gewisz sein und mit unserm gottseligen wandel unsere nechsten auch Christo gewin</answer>
+    </record>
+    <record number="87">
+      <question>Können denn die nicht selig werden, die sich von ihrem undanckbaren, unbuszfertigen wandel zu Gott nicht bekeren?</question>
+      <answer>Keinswegs, denn, wie die schrift saget: Kein unkeuscher, abgöttischer, ehebrecher, dieb, geitziger, trunckenpoltz, lesterer, rauber und dergleichen wird das reich Gottes er</answer>
+    </record>
+    <record number="88">
+      <question>In wieviel stücken stehet die warhaftige busz oder bekerung des menschen?</question>
+      <answer>In zweyen stücken, in absterbung des alten und auferstehung des neuen mensc</answer>
+    </record>
+    <record number="89">
+      <question>Was ist die absterbung des alten menschen?</question>
+      <answer>Im die sünde von hertzen lassen leid sein und dieselbige je lenger je mehr hassen und flie</answer>
+    </record>
+    <record number="90">
+      <question>Was ist die auferstehung des neuen menschen?</question>
+      <answer>Hertzliche freud in Gott durch Christum und lust und lieb haben, nach dem willen Gottes in allen guten wercken zu le</answer>
+    </record>
+    <record number="91">
+      <question>Welches seind aber gute werck?</question>
+      <answer>Allein die ausz warem glauben nach dem gesetz Gottes im zu ehren geschehen, und nicht, die auf unser gutduncken oder menschensatzung gegründet s</answer>
+    </record>
+    <record number="92">
+      <question>Wie haut das gesetz des herrn?</question>
+      <answer>Ex. 20. Deut. 5. Gott redet alle diese wort. Das erst gebot Ich bin der herr, dein Gott, der ich dich ausz Egyptenland, ausz dem diensthausz geführet habe. Du solt kein ander götter für mir haben. Das ander Du solt dir keine bildnusz noch irgendteine gleichnus machen weder des, das oben im himmel, noch des, das unden auf erden, oder desz, das im wasser under der erden ist. Du solt sie nicht anbeten noch inen dienen. Denn ich der herr, dein Gott, bin ein starcker, eyveriger Gott, der die missethat der väter heimsucht an den kindern bis ins dritte und vierde glied deren, die mich hassen, und thue barmhertzigkeyt an viel tausenden, die mich lieben und meine gebot halten. Das dritt Du solt den namen des herren, deines Gottes, nicht miszbrauchen. Denn der herr wirdt den nicht ungestraft lassen, der seinen namen miszbraucht. Das vierdt Gedenck des sabbahttags, dasz du ihn heiligest. Sechs tag soltu arbeiten und alle deine werck thun, aber am sibenden tage ist der sabbath des herren, deines Gottes, da solt du keine arbeit thun, noch dein son, noch deine tochter, noch dein knecht, noch deine magt, noch dein vieh, noch der frembdling, der in deinen thoren ist. Denn in sechs tagen hat der herr himmel und erden gemacht und das meer und alles, was drinnen ist, und rhuete am sibenden tage. Darumb segnete der herr den sabbathtag und heiliget in. Das fünfte Du solt dein vater und deine mutter ehren, auf dasz du lang lebest im land, das dir der herr, dein Gott, gibt. Das sechste Du solt nit tödten. Das sibende Du solt nit ehebrechen. Das achte Du solt nit stelen. Das neunde Du solt kein falsch zeugnusz reden wider deinen nechsten. Das zehende Lasz dich nit gelüsten deines nechsten hausz. Lasz dich nit gelüsten deines nechsten weibs noch seines knechts noch seiner magd noch seines ochsen noch seines esels noch alles, dasz dein nechster</answer>
+    </record>
+    <record number="93">
+      <question>Wie werden diese gebot getheilt?</question>
+      <answer>In zwo tafeln, deren die erste in vier geboten lehret, wie wir uns gegen Gott sollen halten, die ander in sechs geboten, was wir unserm nechsten schuldig s</answer>
+    </record>
+    <record number="94">
+      <question>Was erfordert der herr im ersten gebot?</question>
+      <answer>Dasz ich bey verlierung meiner seelen heil und seligkeyt alle abgötterey, zauberey, abergläubische segen, anrufung der heiligen oder anderer creaturen meiden und fliehen soll und den einigen, waren Gott recht erkennen, im allein vertrauen, in aller demut und gedult von im allein alles guts gewarten und in von gantzem hertzen lieben, förchten und ehren, also dasz ich ehe alle creaturen ubergebe, denn in dem geringsten wider seinen willen t</answer>
+    </record>
+    <record number="95">
+      <question>Was ist abgötterey?</question>
+      <answer>Anstatt das einigen, waren Gottes, der sich in seinem wort hat offenbaret, oder neben demselbigen etwas anderst dichten oder haben, darauf der mensch sein vertrauen se</answer>
+    </record>
+    <record number="96">
+      <question>Was wil Gott im andern gebot?</question>
+      <answer>Dasz wir Gott in keinen weg verbilden noch auf irgendeine andere weise, denn er in seinem wort befohlen hat, verehren sol</answer>
+    </record>
+    <record number="97">
+      <question>Sol man denn gar kein bildnusz machen?</question>
+      <answer>Gott kan und soll keinesweges abgebildet werden, die creaturen aber, ob sie schon mögen abgebildet werden, so verbeut doch Gott, derselbigen bildtnusz zu machen und zu haben, dasz man sie verehre oder im damit di</answer>
+    </record>
+    <record number="98">
+      <question>Mögen aber nicht die bilder als der leyen bücher in den kirchen geduldet werden?</question>
+      <answer>Nein, denn wir nicht sollen weiser sein denn Gott, welcher seine christenheyt nicht durch stumme götzen, sonder durch die lebendige predig seines worts wil underwiesen ha</answer>
+    </record>
+    <record number="99">
+      <question>Was wil das dritt gebot?</question>
+      <answer>Dasz wir nicht allein mit fluchen oder mit falschem eyde, sonder auch mit unnötigem schweren den namen Gottes nicht lestern oder miszbrauchen noch uns mit unserm stillschweigen und zusehen solcher schrecklichen sünden theilhaftig machen, und in summa, dasz wir den heiligen namen Gottes anderst nicht denn mit forcht und ehrerbietung gebrauchen, auf dasz er von uns recht bekendt, angerufen und in allen unsern worten und wercken gepriesen werd</answer>
+    </record>
+    <record number="100">
+      <question>Ist denn mit schweren und fluchen, Gottes namen lestern so ein schwere sünd, dasz Gott auch uber die zürnet, die, soviel an inen ist, dieselbe nicht helfen wehren und verbieten?</question>
+      <answer>Ja freilich, denn keine sünde grösser ist noch Gott heftiger erzürnet denn lesterung seines namens, darumb er sie auch mit dem todt zu strafen befohlen</answer>
+    </record>
+    <record number="101">
+      <question>Mag man aber auch gottselig bey dem namen Gottes einen ayd schweren?</question>
+      <answer>Ja, wenn es die oberkeyt von iren underthanen oder sonst die noth erfordert, treue und warheyt zu Gottes ehr und des nechsten heil dardurch zu erhalten und zu fürdern. Denn solches eydschweren ist in Gottes wort gegründet und derhalben von den heiligen im alten und neuen testament recht gebrauchet worde</answer>
+    </record>
+    <record number="102">
+      <question>Mag man auch bey den heyligen oder andern creaturen ayd schweren?</question>
+      <answer>Nein, denn ein rechtmessiger ayd ist ein anrufung Gottes, dasz er als der einig hertzkündiger der warheyt zeugnusz wölle geben und mich strafen, so ich falsch schwere, welche ehre denn keiner creaturen gebü</answer>
+    </record>
+    <record number="103">
+      <question>Was wil Gott in dem vierdten gebot?</question>
+      <answer>Gott wil erstlich, dasz das predigampt und schulen erhalten werden und ich, sonderlich am feiertag, zu der gemeine Gottes vleissig komme, das wort Gottes zu lernen, die heiligen sacrament zu gebrauchen, den herren offentlich anzurufen und das christlich almosz zu geben, zum andern, dasz ich alle tage meines lebens von meinen bösen wercken feiere, den herren durch seinen geist in mir wircken lasse und also den ewigen sabbath in diesem leben anf</answer>
+    </record>
+    <record number="104">
+      <question>Was wil Gott im fünften gebot?</question>
+      <answer>Dasz ich meinem vater und mutter und allen, die mir fürgesetzt sein, alle ehre, liebe und treue beweisen und mich aller guten lehr und straf mit gebürlichem gehorsam underwerfen und auch mit ihren gebrechen gedult haben soll, dieweil uns Gott durch ire hand regieren</answer>
+    </record>
+    <record number="105">
+      <question>Was wil Gott in dem sechsten gebot?</question>
+      <answer>Das ich meinen nechsten weder mit gedancken noch mit worten oder geberden, viel weniger mit der that durch mich selbst oder andere schmehen, hassen, beleidigen oder tödten, sonder alle rachgirigkeyt ablegen, auch mich selbst nit beschedigen oder mutwillig in gefahr begeben sol. Darumb auch die oberkeyt, dem todschlag zu weren, das schwert treg</answer>
+    </record>
+    <record number="106">
+      <question>Redet doch disz gebot allein von tödten?</question>
+      <answer>Es wil ons aber Gott durch verbietung des todtschlags lehren, dasz er die wurtzel des todtschlags, als neid, hasz, zorn, rachgirigkeyt hasset und das solches alles für ihm ein heimlicher todtschlag sey</answer>
+    </record>
+    <record number="107">
+      <question>Ists aber damit gnug, dasz wir unsern nechsten, wie gemelt, nit tödten?</question>
+      <answer>Nein, denn indem Gott neid, hasz und zorn verdampt, wil er von uns haben, dasz wir onsern nechsten lieben als uns selbst, gegen im gedult, friede, sanftmut, barmhertzigkeyt und freundligkeyt erzeigen, seinen schaden, soviel ons möglich, abwenden und auch unsern feinden guts t</answer>
+    </record>
+    <record number="108">
+      <question>Was will das siebende gebot?</question>
+      <answer>Dasz alle unkeuschheyt von Gott vermaledeyet sey und dasz wir darumb ir von hertzen feind sein und keusch und züchtig leben sollen, es sey im heiligen ehestandt oder ausserhalb desselbe</answer>
+    </record>
+    <record number="109">
+      <question>Verbeut Gott in diesem gebot nichts mehr denn ehebruch und dergleichen schanden?</question>
+      <answer>Dieweil beyde, unser leib und seel, tempel des heiligen geists sein, so will er, dasz wir sie beyde sauber und heilig bewaren, verbeut derhalben alle unkeusche thaten, geberden, wort, gedancken, lust und, was den menschen darzu reitzen</answer>
+    </record>
+    <record number="110">
+      <question>Was verbeut Gott im achten gebot?</question>
+      <answer>Er verbeut nicht allein den diebstal und rauberey, welche die obergkeyt straft, sonder Gott nennet auch diebstal alle böse stück und anschläge, damit wir unsers nechsten gut gedencken an uns zu bringen, es sey mit gewalt oder schein des rechtens, als unrechtem gewicht, ellen, masz, wahre, müntz, wucher oder durch einiges mittel, das von Gott verboten ist, darzu auch allen geitz und unnütze verschwendung seiner gabe</answer>
+    </record>
+    <record number="111">
+      <question>Was gebeut dir aber Gott in diesem gebot?</question>
+      <answer>Dasz ich meines nechsten nutz, wo ich kan und mag, fürdere, gegen im also handle, wie ich wolte, das man mit mir handlete, und treulich arbeite, auf das ich dem dürftigen in seiner noth helfen</answer>
+    </record>
+    <record number="112">
+      <question>Was wil das neund gebot?</question>
+      <answer>Dasz ich wider niemand falsche zeugnusz gebe, niemand seine wort verkere, kein afterreder und lesterer seye, niemand unverhört und leichtlich verdammen helfe, sonder allerley liegen und triegen als eigene werck des teufels bey schwerem gotteszorn vermeide, in gerichts- und allen andern handlungen die warheyt liebe, aufrichtig sage und bekenne, auch meines nechsten ehre und glimpf nach meinem vermögen rette und fürd</answer>
+    </record>
+    <record number="113">
+      <question>Was will das zehend gebot?</question>
+      <answer>Dasz auch die geringste lust oder gedancken wider irgendein gebot Gottes in unser hertz nimmermehr kommen, sonder wir für und für von gantzem hertzen aller sünde feind sein und lust zu aller gerechtigkeyt haben solle</answer>
+    </record>
+    <record number="114">
+      <question>Können aber, die zu Gott bekeret sind, solche gebot volkömlich halten?</question>
+      <answer>Nein, sonder es haben auch die allerheiligsten, so lang sie in diesem leben sind, nur einen geringen anfang dieses gehorsams, doch also, dasz sie mit ernstlichem fürsatz nicht allein nach etlichen, sonder nach allen geboten Gottes anfangen zu lebe</answer>
+    </record>
+    <record number="115">
+      <question>Warumb lest uns denn Gott also scharf die zehen gebot predigen, weil sie in diesem leben niemand halten kan?</question>
+      <answer>Erstlich, auf dasz wir unser gantzes leben lang unser sündliche art je lenger je mehr erkennen und soviel desto begieriger vergebung der sünden und gerechtigkeyt in Christo suchen, darnach, dasz wir one underlasz uns befleissen und Gott bitten umb die gnade des heiligen geists, dasz wir je lenger je mehr zu dem ebenbild Gottes erneuert werden, bisz wir das ziel der volkommenheyt nach diesem leben erreic</answer>
+    </record>
+    <record number="116">
+      <question>Warumb ist den christen das gebet nötig?</question>
+      <answer>Darumb, dasz es das fürnembste stück der danckbarkeyt ist, we Gott von uns erfordert und das Gott seine gnade und heiligen geist allein denen wil geben, die ihn mit herzlichem seuftzen one underlasz darumb bitten und im darfür dancke</answer>
+    </record>
+    <record number="117">
+      <question>Was gehöret zu einem solchen gebet, das Gott gefalle und von im erhöret werde?</question>
+      <answer>Erstlich, dasz wir allein den einigen, waren Gott, der sich uns in seinem wort hat offenbaret umb alles, dasz er uns zu bitten befohlen hat, von hertzen anrufen, zum andern, dasz wir unsere noth und elend recht gründtlich erkennen, unsz für dem angesicht seiner majestet zo demütigen, zum dritten, dasz wir diesen festen grund haben, dasz er unser gebet unangesehen, dasz wirs unwirdig seind, doch umb des herrn Christi willen gewiszlich wölle erhören, wie er uns in seinem wort verheissen ha</answer>
+    </record>
+    <record number="118">
+      <question>Was hat ons Gott befohlen von im zu bitten?</question>
+      <answer>Alle geistliche und leibliche notturft, we der herr Christus begriffen hat in dem gebet, dasz er uns selbst gelehre</answer>
+    </record>
+    <record number="119">
+      <question>Wie lautet dasselbe?</question>
+      <answer>Unser vater, der du bist in himmeln, Geheiliget werde dein name, Dein reich komme, Dein wil geschehe auf erden wie im himmel. Unser täglich brot gib uns heut. Und vergib uns unser schuld, als auch wir vergeben unsern schuldigern. Und füre uns nicht in versuchung, sonder erlöse uns vom bösen. Denn dein ist das reich und die kraft und die herrligkeyt in ewigkeyt, A</answer>
+    </record>
+    <record number="120">
+      <question>Warumb hat uns Christus befohlen, Gott also anzureden: Unser vater?</question>
+      <answer>Dasz er gleich im anfang unsers gebets in uns erwecke die kindliche forcht und zuversicht gegen Gott, welche der grund unsers gebets soll sein, nemlich dasz Gott unser vater durch Christum worden sey und wölle uns viel weniger versagen, warumb wir in im glauben bitten, denn unsere väter uns irdische ding abschlage</answer>
+    </record>
+    <record number="121">
+      <question>Warumb wird hinzugethan: Der du bist in himmeln?</question>
+      <answer>Auf dasz wir von der himmlischen majestet Gottes nichts irdisch gedencken und von seiner allmechtigkeyt alle notturft leibs und der seelen gewar</answer>
+    </record>
+    <record number="122">
+      <question>Was ist die erste bitt?</question>
+      <answer>Geheiliget werde dein name, das ist, gib uns erstlich, dasz wir dich recht erkennen und dich in allen deinen wercken, in welchen leuchtet deine allmechtigkeyt, weiszheyt, güte, gerechtigkeyt, barmhertzigkeyt und warheyt, heiligen, rümen und preisen, darnach auch, dasz wir unser gantzes leben, gedancken, wort und werck dahin richten, dasz dein name umb unsertwillen nit gelestert, sonder geehret und gepriesen we</answer>
+    </record>
+    <record number="123">
+      <question>Was ist die ander bitt?</question>
+      <answer>Zukom dein reich, das ist, regiere uns also durch dein wort und geist, dasz wir uns dir je lenger je mehr underwerfen, erhalt und mehre deine kirchen und zerstöre die werck des teufels und allen gewalt, der sich wider dich erhebt, und alle böse rahtschlege, die wider dein heiliges wort erdacht werden, bisz die volkommenheyt deines reichs her zukomme, darin du wirst alles in allen s</answer>
+    </record>
+    <record number="124">
+      <question>Was ist die dritte bitt?</question>
+      <answer>Dein will geschehe auf erden wie im himmel, das ist, verleihe, dasz wir und alle menschen unserm eigenen willen absagen und deinem allein guten willen one alles widersprechen gehorchen, dasz also jederman sein ampt und beruf so willig und treulich auszrichte, wie die engel im him</answer>
+    </record>
+    <record number="125">
+      <question>Was ist die vierde bitt?</question>
+      <answer>Gib uns heut unser teglich brodt, das ist, wollest uns mit aller leiblichen notturft versorgen, auf dasz wir dardurch erkennen, dasz du der einig ursprung alles guten bist und dasz one deinen segen weder unsere sorgen und arbeit noch deine gaben uns gedeien und wir derhalben unser vertrauen von allen creaturen abziehen und allein auf dich set</answer>
+    </record>
+    <record number="126">
+      <question>Was ist die fünfte bitt?</question>
+      <answer>Vergib uns unsere schuld, als auch wir vergeben unsern schuldigern, das ist, wollest uns armen sündern alle unsere missethat, auch das böse, so uns noch immerdar anhenget, umb des bluts Christi willen nicht zurechnen, wie auch wir disz zeugnusz deiner gnad in uns befinden, dasz unser gantzer fürsatz ist, unserm nechsten von hertzen zu verzei</answer>
+    </record>
+    <record number="127">
+      <question>Was ist die sechste bitt?</question>
+      <answer>Und füre uns nit in versuchung, sonder erlöse uns vom bösen, das ist, dieweil wir ausz uns selbst so schwach sein, dasz wir nit einen augenblick bestehen können und darzu unsere abgesagte feind, der teufel, die welt und unser eigen fleisch nit aufhören, uns anzufechten, so wollest uns erhalten und stercken durch die kraft deines heiligen geistes, auf dasz wir inen mögen festen widerstand thun und in diesem geistlichen streit nit unden ligen, bisz dasz wir endlich den sieg volkomlich behalte</answer>
+    </record>
+    <record number="128">
+      <question>Wie beschleust du disz gebet?</question>
+      <answer>Denn dein ist das reich, die kraft und die herrligkeyt in ewigkeyt, das ist, solchs alles bitten wir darumb von dir, dasz du als unser könig und aller ding mechtig, uns alles guts geben wilst und kanst und, dasz dadurch nicht wir, sonder dein heiliger name ewig soll gepriesen werde</answer>
+    </record>
+    <record number="129">
+      <question>Was bedeut das wörtlein: Amen?</question>
+      <answer>Amen heist, das soll war und gewisz sein, denn mein gebet viel gewisser von Gott erhöret ist, denn ich in meinem hertzen füle, dasz ich solches von ihm beg</answer>
+    </record>
+  </data>
+</translation>
