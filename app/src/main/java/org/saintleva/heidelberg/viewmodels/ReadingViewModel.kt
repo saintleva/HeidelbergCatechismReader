@@ -39,16 +39,26 @@ class ReadingViewModel(localContext: Context) : CatechismViewModel() {
         _scrollPosition.value = Repository.scrollPosition
     }
 
-    fun loadCatechism() {
+    private fun loadCatechism() {
         viewModelScope.launch(Dispatchers.IO) {
-            _catechismState.value = CatechismState.Loaded(
-                Loader.load(
-                    (Repository.currentTranslationId.value as TranslationId.Id).value,
-                    context = context
+            try {
+                _catechismState.value = CatechismState.Loaded(
+                    Repository.loader.load(
+                        (Repository.currentTranslationId.value as TranslationId.Id).value,
+                        context = context
+                    )
                 )
-            )
+            } catch (e: FileLoadingException) {
+                _catechismState.value = CatechismState.Error(e)
+            }
         }
     }
+
+    fun selectToLoad() {
+        _catechismState.value = CatechismState.SelectedToLoad
+        loadCatechism()
+    }
+
     fun saveScrollPosition(state: LazyListState) {
         Repository.scrollPosition = ScrollPosition(state.firstVisibleItemIndex,
             state.firstVisibleItemScrollOffset)

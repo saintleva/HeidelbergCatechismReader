@@ -167,10 +167,10 @@ fun NoTranslationBox() {
 }
 
 @Composable
-fun ReadingArea(vm: ReadingViewModel, questionPosition: Int?) {
+fun ReadingArea(vm: ReadingViewModel, questionPosition: Int) {
 
     val lazyListState =
-        if (questionPosition == null)
+        if (questionPosition == -1)
             rememberLazyListState(vm.scrollPosition.value.firstVisibleItemIndex,
                 vm.scrollPosition.value.firstVisibleItemScrollOffset)
         else
@@ -208,7 +208,7 @@ fun ReadingArea(vm: ReadingViewModel, questionPosition: Int?) {
             Box(modifier = Modifier.fillMaxSize()) {
                 CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
             }
-            //TODO: Select to load???
+            vm.selectToLoad()
         }
 
         is CatechismState.Loaded -> {
@@ -269,7 +269,7 @@ interface NavigateToScreens {
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int?) {
+fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
     val scope = rememberCoroutineScope()
 
     val vm = viewModel<ReadingViewModel>(

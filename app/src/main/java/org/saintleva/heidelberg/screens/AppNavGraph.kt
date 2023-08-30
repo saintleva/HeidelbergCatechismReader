@@ -32,6 +32,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import org.saintleva.heidelberg.Repository
 import org.saintleva.heidelberg.data.SearchConditions
 
 
@@ -110,7 +111,9 @@ fun AppNavGraph(navController: NavHostController) {
             ReadingScreen(
                 object : NavigateToScreens {
                     override fun selectTranslation() {
-                        navController.navigate(Route.Reading.path)
+                        navController.navigate(
+                            Route.Reading.withArgs(Repository.scrollPosition.firstVisibleItemIndex)
+                        )
                     }
 
                     override fun selectQuestion(selectedQuestion: Int) {

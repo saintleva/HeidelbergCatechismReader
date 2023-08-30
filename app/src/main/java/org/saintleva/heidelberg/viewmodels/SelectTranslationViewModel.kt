@@ -29,6 +29,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import org.saintleva.heidelberg.CatechismState
 import org.saintleva.heidelberg.DataException
+import org.saintleva.heidelberg.FileLoadingException
 import org.saintleva.heidelberg.MainActivity
 import org.saintleva.heidelberg.Repository
 import org.saintleva.heidelberg.TranslationId
@@ -51,7 +52,11 @@ class SelectTranslationViewModel(localContext: Context) : ViewModel() {
 
     fun loadTranslationList() {
         viewModelScope.launch {
-            Repository.manager.load(context)
+            try {
+                Repository.manager.load(context)
+            } catch (e: FileLoadingException) {
+                _allTranslations.value = TranslationListState.Error(e)
+            }
         }
     }
 
