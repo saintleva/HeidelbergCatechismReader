@@ -17,6 +17,7 @@
 
 package org.saintleva.heidelberg.viewmodels
 
+import android.app.Application
 import android.content.Context
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.runtime.State
@@ -28,9 +29,7 @@ import org.saintleva.heidelberg.*
 import org.saintleva.heidelberg.data.*
 
 
-class ReadingViewModel(localContext: Context) : CatechismViewModel() {
-
-    val context = localContext.applicationContext
+class ReadingViewModel(application: Application) : CatechismViewModel(application) {
 
     private var _scrollPosition = mutableStateOf(ScrollPosition.DEFAULT)
     val scrollPosition: State<ScrollPosition> = _scrollPosition
@@ -45,7 +44,7 @@ class ReadingViewModel(localContext: Context) : CatechismViewModel() {
                 _catechismState.value = CatechismState.Loaded(
                     Repository.loader.load(
                         (Repository.currentTranslationId.value as TranslationId.Id).value,
-                        context = context
+                        context = getApplication()
                     )
                 )
             } catch (e: FileLoadingException) {

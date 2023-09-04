@@ -17,6 +17,7 @@
 
 package org.saintleva.heidelberg.viewmodels
 
+import android.app.Application
 import android.content.Context
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
@@ -37,9 +38,9 @@ import org.saintleva.heidelberg.data.AllTranslations
 import org.saintleva.heidelberg.data.TranslationListState
 
 
-class SelectTranslationViewModel(localContext: Context) : ViewModel() {
+class SelectTranslationViewModel(application: Application) : AndroidViewModel(application) {
 
-    val context = localContext.applicationContext
+    //val context = localContext.applicationContext
 
     private val _currentTranslationId: MutableState<TranslationId> = Repository.currentTranslationId
     val currentTranslationId: State<TranslationId> = _currentTranslationId
@@ -53,7 +54,7 @@ class SelectTranslationViewModel(localContext: Context) : ViewModel() {
     fun loadTranslationList() {
         viewModelScope.launch {
             try {
-                Repository.manager.load(context)
+                Repository.manager.load(getApplication())
             } catch (e: FileLoadingException) {
                 _allTranslations.value = TranslationListState.Error(e)
             }

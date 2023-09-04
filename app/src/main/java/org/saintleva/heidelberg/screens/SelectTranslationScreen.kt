@@ -45,7 +45,6 @@ import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.data.TranslationListState
 import org.saintleva.heidelberg.data.TranslationMetadata
 import org.saintleva.heidelberg.viewmodels.SelectTranslationViewModel
-import org.saintleva.heidelberg.viewmodels.SelectTranslationViewModelFactory
 
 
 @Composable
@@ -100,9 +99,9 @@ fun NoListBox() {
 
 @Composable
 fun SelectTranslationScreen(navigateToReading: () -> Unit) {
-    val viewModel = viewModel<SelectTranslationViewModel>(
-        factory = SelectTranslationViewModelFactory(LocalContext.current)
-    )
+    val viewModel = viewModel<SelectTranslationViewModel>()
+//        factory = SelectTranslationViewModelFactory(LocalContext.current)
+//    )
 
     val errorAlerted = remember { mutableStateOf(false) }
 

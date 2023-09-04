@@ -17,14 +17,16 @@
 
 package org.saintleva.heidelberg.viewmodels
 
+import android.app.Application
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModel
 import org.saintleva.heidelberg.CatechismState
 import org.saintleva.heidelberg.Repository
 
 
-abstract class CatechismViewModel : ViewModel() {
+abstract class CatechismViewModel(application: Application) : AndroidViewModel(application) {
 
     protected val _catechismState = Repository.catechismState
     val catechismState: State<CatechismState> = _catechismState

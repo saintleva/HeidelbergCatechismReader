@@ -17,11 +17,12 @@
 
 package org.saintleva.heidelberg.viewmodels
 
+import android.app.Application
 import org.saintleva.heidelberg.CatechismNotLoadedException
 import org.saintleva.heidelberg.CatechismState
 import org.saintleva.heidelberg.data.Catechism
 
-open class LoadedCatechismViewModel : CatechismViewModel() {
+open class LoadedCatechismViewModel(application: Application) : CatechismViewModel(application) {
 
     val catechism: Catechism
         get() {

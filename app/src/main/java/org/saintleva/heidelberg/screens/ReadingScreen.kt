@@ -271,9 +271,9 @@ interface NavigateToScreens {
 fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
     val scope = rememberCoroutineScope()
 
-    val viewModel = viewModel<ReadingViewModel>(
-        factory = ReadingViewModelFactory(LocalContext.current)
-    )
+    val viewModel = viewModel<ReadingViewModel>()
+//        factory = ReadingViewModelFactory(LocalContext.current)
+//    )
 
     val searchDialogViewModel = viewModel<SearchDialogViewModel>()
 
