@@ -31,9 +31,9 @@ import org.saintleva.heidelberg.viewmodels.LoadedCatechismViewModel
 
 @Composable
 fun AboutTranslationScreen() {
-    val vm = viewModel<LoadedCatechismViewModel>()
-    if (vm.catechism != null) {
-        Text(vm.catechism.description)
+    val viewModel = viewModel<LoadedCatechismViewModel>()
+    if (viewModel.catechism != null) {
+        Text(viewModel.catechism.description)
     } else {
         Text(
             stringResource(R.string.no_translation_selected),
