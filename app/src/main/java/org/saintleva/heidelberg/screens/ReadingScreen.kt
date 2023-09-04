@@ -166,12 +166,12 @@ fun NoTranslationBox() {
 }
 
 @Composable
-fun ReadingArea(vm: ReadingViewModel, questionPosition: Int) {
+fun ReadingArea(viewModel: ReadingViewModel, questionPosition: Int) {
 
     val lazyListState =
         if (questionPosition == -1)
-            rememberLazyListState(vm.scrollPosition.value.firstVisibleItemIndex,
-                vm.scrollPosition.value.firstVisibleItemScrollOffset)
+            rememberLazyListState(viewModel.scrollPosition.value.firstVisibleItemIndex,
+                viewModel.scrollPosition.value.firstVisibleItemScrollOffset)
         else
             rememberLazyListState(questionPosition)
 
@@ -179,7 +179,7 @@ fun ReadingArea(vm: ReadingViewModel, questionPosition: Int) {
         object : NestedScrollConnection {
             override fun onPostScroll(consumed: Offset, available: Offset,
                                       source: NestedScrollSource): Offset {
-                vm.saveScrollPosition(lazyListState)
+                viewModel.saveScrollPosition(lazyListState)
                 return Offset.Zero
             }
         }
@@ -187,7 +187,7 @@ fun ReadingArea(vm: ReadingViewModel, questionPosition: Int) {
 
     val errorAlerted = remember { mutableStateOf(false) }
 
-    when (val state = vm.catechismState.value) {
+    when (val state = viewModel.catechismState.value) {
         CatechismState.Never -> {
             NoTranslationBox()
         }
@@ -207,7 +207,7 @@ fun ReadingArea(vm: ReadingViewModel, questionPosition: Int) {
             Box(modifier = Modifier.fillMaxSize()) {
                 CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
             }
-            vm.selectToLoad()
+            viewModel.selectToLoad()
         }
 
         is CatechismState.Loaded -> {
