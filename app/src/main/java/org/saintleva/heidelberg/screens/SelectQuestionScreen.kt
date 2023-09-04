@@ -42,11 +42,11 @@ import org.saintleva.heidelberg.viewmodels.LoadedCatechismViewModel
 
 @Composable
 fun SelectQuestionScreen(navigateToReadingScreen: (Int) -> Unit, selected: Int) {
-    val vm = viewModel<LoadedCatechismViewModel>()
+    val viewModel = viewModel<LoadedCatechismViewModel>()
     val newSelected = remember { mutableStateOf(selected) }
 
     LazyVerticalGrid(columns = GridCells.Adaptive(minSize = 70.dp)) {
-        for (i in 0 until vm.catechism.questionCount) {
+        for (i in 0 until viewModel.catechism.questionCount) {
             item {
                 Card(
                     modifier = Modifier
@@ -69,7 +69,7 @@ fun SelectQuestionScreen(navigateToReadingScreen: (Int) -> Unit, selected: Int) 
                         )
                         Text(
                             text = "(${stringResource(R.string.sunday)}" +
-                                    " ${vm.catechism.sundayOfQuestion(i) + 1})",
+                                    " ${viewModel.catechism.sundayOfQuestion(i) + 1})",
                             fontSize = 12.sp
                         )
                     }

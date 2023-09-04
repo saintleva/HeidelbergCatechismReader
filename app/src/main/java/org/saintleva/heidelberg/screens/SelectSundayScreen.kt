@@ -41,8 +41,8 @@ import org.saintleva.heidelberg.viewmodels.LoadedCatechismViewModel
 
 @Composable
 fun SelectSundayScreen(navigateToReadingScreen: (Int) -> Unit, selectedQuestion: Int) {
-    val vm = viewModel<LoadedCatechismViewModel>()
-    val catechism = vm.catechism
+    val viewModel = viewModel<LoadedCatechismViewModel>()
+    val catechism = viewModel.catechism
     val newSelectedSunday =
         remember { mutableStateOf(catechism.sundayOfQuestion(selectedQuestion)) }
 

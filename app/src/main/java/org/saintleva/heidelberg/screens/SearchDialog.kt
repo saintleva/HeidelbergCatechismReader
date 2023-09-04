@@ -38,10 +38,10 @@ import org.saintleva.heidelberg.viewmodels.SearchDialogViewModel
 
 @ExperimentalMaterial3Api
 @Composable
-fun SearchDialog(vm: SearchDialogViewModel) {
+fun SearchDialog(viewModel: SearchDialogViewModel) {
     AlertDialog(
         modifier = Modifier.padding(horizontal = 20.dp),
-        onDismissRequest = vm::onCancel,
+        onDismissRequest = viewModel::onCancel,
         properties = DialogProperties(usePlatformDefaultWidth = false),
         text = {
             Column {
@@ -53,31 +53,31 @@ fun SearchDialog(vm: SearchDialogViewModel) {
                     fontSize = 22.sp
                 )
                 OutlinedTextField(
-                    value = vm.text.value,
-                    onValueChange = { vm.onTextChange(it) },
+                    value = viewModel.text.value,
+                    onValueChange = { viewModel.onTextChange(it) },
                     modifier = Modifier.fillMaxWidth(),
                     textStyle = TextStyle(fontSize = 16.sp),
                     label = { Text(stringResource(R.string.enter_search_text)) },
-                    isError = vm.text.value.isEmpty()
+                    isError = viewModel.text.value.isEmpty()
                 )
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Checkbox(
-                        checked = vm.searchInQuestions.value,
-                        onCheckedChange = { vm.onSearchInQuestionsChange(it) }
+                        checked = viewModel.searchInQuestions.value,
+                        onCheckedChange = { viewModel.onSearchInQuestionsChange(it) }
                     )
                     Text(stringResource(R.string.search_in_questions))
                 }
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Checkbox(
-                        checked = vm.searchInAnswers.value,
-                        onCheckedChange = { vm.onSearchInAnswerChange(it) }
+                        checked = viewModel.searchInAnswers.value,
+                        onCheckedChange = { viewModel.onSearchInAnswerChange(it) }
                     )
                     Text(stringResource(R.string.search_in_answers))
                 }
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Checkbox(
-                        checked = vm.matchCase.value,
-                        onCheckedChange = { vm.onMatchCaseChange(it) }
+                        checked = viewModel.matchCase.value,
+                        onCheckedChange = { viewModel.onMatchCaseChange(it) }
                     )
                     Text(stringResource(R.string.match_case))
                 }
@@ -85,14 +85,14 @@ fun SearchDialog(vm: SearchDialogViewModel) {
         },
         confirmButton = {
             TextButton(
-                onClick = vm::onOK,
-                enabled = vm.maySearch()
+                onClick = viewModel::onOK,
+                enabled = viewModel.maySearch()
             ) {
                 Text(text = stringResource(R.string.ok), fontSize = 22.sp)
             }
         },
         dismissButton = {
-            TextButton(onClick = vm::onCancel) {
+            TextButton(onClick = viewModel::onCancel) {
                 Text(text = stringResource(R.string.cancel), fontSize = 22.sp)
             }
         }

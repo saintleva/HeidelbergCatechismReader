@@ -17,7 +17,6 @@
 
 package org.saintleva.heidelberg.screens
 
-import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -42,16 +41,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.navigation.NavController
-import androidx.navigation.NavHost
-import androidx.navigation.NavHostController
-import org.saintleva.heidelberg.CatechismState
 import org.saintleva.heidelberg.R
-import org.saintleva.heidelberg.Repository
-import org.saintleva.heidelberg.data.Manager
 import org.saintleva.heidelberg.data.TranslationListState
 import org.saintleva.heidelberg.data.TranslationMetadata
-import org.saintleva.heidelberg.viewmodels.ReadingViewModelFactory
 import org.saintleva.heidelberg.viewmodels.SelectTranslationViewModel
 import org.saintleva.heidelberg.viewmodels.SelectTranslationViewModelFactory
 
@@ -108,18 +100,18 @@ fun NoListBox() {
 
 @Composable
 fun SelectTranslationScreen(navigateToReading: () -> Unit) {
-    val vm = viewModel<SelectTranslationViewModel>(
+    val viewModel = viewModel<SelectTranslationViewModel>(
         factory = SelectTranslationViewModelFactory(LocalContext.current)
     )
 
     val errorAlerted = remember { mutableStateOf(false) }
 
-    when (val state = vm.allTranslations.value) {
+    when (val state = viewModel.allTranslations.value) {
         TranslationListState.None -> {
             Box(modifier = Modifier.fillMaxSize()) {
                 CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
             }
-            vm.loadTranslationList()
+            viewModel.loadTranslationList()
         }
 
         is TranslationListState.Error -> {
@@ -140,9 +132,9 @@ fun SelectTranslationScreen(navigateToReading: () -> Unit) {
                     item {
                         TranslationItem(
                             metadata = names[key]!!,
-                            isCurrent = vm.isCurrent(key),
+                            isCurrent = viewModel.isCurrent(key),
                             onTranslationChange = {
-                                vm.changeCurrentTranslationId(key)
+                                viewModel.changeCurrentTranslationId(key)
                                 navigateToReading()
                             }
                         )

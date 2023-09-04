@@ -17,7 +17,6 @@
 
 package org.saintleva.heidelberg.screens
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -69,14 +68,14 @@ class FoundTransformer(val found: Found) : TextTransformer {
 
 @Composable
 fun FoundScreen(conditions: SearchConditions) {
-    val vm = viewModel<FoundViewModel>()
-    vm.find(conditions)
-    if (vm.found.value == null) {
+    val viewModel = viewModel<FoundViewModel>()
+    viewModel.find(conditions)
+    if (viewModel.found.value == null) {
         Box(modifier = Modifier.fillMaxSize()) {
             CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
         }
     } else {
-        val found = vm.found.value!!
+        val found = viewModel.found.value!!
         if (found.isEmpty()) {
             Box(
                 Modifier
@@ -103,7 +102,7 @@ fun FoundScreen(conditions: SearchConditions) {
             LazyColumn {
                 for (index in found.keys) {
                     item {
-                        RecordItem(vm.catechism, index, FoundTransformer(found))
+                        RecordItem(viewModel.catechism, index, FoundTransformer(found))
                         if (index < found.keys.maxOrNull()!!) {
                             Spacer(modifier = Modifier.padding(all = 4.dp))
                             Divider(

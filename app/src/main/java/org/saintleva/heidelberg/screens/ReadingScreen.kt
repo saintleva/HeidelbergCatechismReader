@@ -20,7 +20,6 @@ package org.saintleva.heidelberg.screens
 import android.annotation.SuppressLint
 import android.content.res.Configuration
 import android.util.Log
-import android.widget.Toast
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -272,7 +271,7 @@ interface NavigateToScreens {
 fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
     val scope = rememberCoroutineScope()
 
-    val vm = viewModel<ReadingViewModel>(
+    val viewModel = viewModel<ReadingViewModel>(
         factory = ReadingViewModelFactory(LocalContext.current)
     )
 
@@ -293,7 +292,7 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
     @Composable
     fun filledBottomAppBar()  {
         BottomAppBar {
-            CatechismNavigationButtons(vm, lazyListState, scope, navigateToScreens)
+            CatechismNavigationButtons(viewModel, lazyListState, scope, navigateToScreens)
         }
     }
 
@@ -324,7 +323,6 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
                         IconButton(
                             onClick = {
                                 scope.launch {
-//                                    Toast.makeText(vm.context, "Navigation drawer will be opened", Toast.LENGTH_SHORT).show()
                                     drawerState.open()
                                 }
                             }
@@ -339,7 +337,7 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
                             Icon(Icons.Filled.Search, contentDescription = "Search")
                         }
                         if (isWidthLarge) {
-                            CatechismNavigationButtons(vm, lazyListState, scope, navigateToScreens)
+                            CatechismNavigationButtons(viewModel, lazyListState, scope, navigateToScreens)
                         }
 //                        Spacer(modifier = Modifier.weight(1f))
                         Box {
@@ -380,8 +378,7 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
             if (searchDialogViewModel.showDialog.value) {
                 SearchDialog(searchDialogViewModel)
             }
-            ReadingArea(vm, questionPosition)
+            ReadingArea(viewModel, questionPosition)
         }
     }
-    Log.d("compose", "ReadingScreen initially composed")
 }
