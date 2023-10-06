@@ -18,43 +18,48 @@
 package org.saintleva.heidelberg.viewmodels
 
 import android.app.Application
-import android.content.Context
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 import org.saintleva.heidelberg.CatechismState
-import org.saintleva.heidelberg.DataException
 import org.saintleva.heidelberg.FileLoadingException
-import org.saintleva.heidelberg.MainActivity
 import org.saintleva.heidelberg.Repository
 import org.saintleva.heidelberg.TranslationId
-import org.saintleva.heidelberg.data.AllTranslations
 import org.saintleva.heidelberg.data.TranslationListState
+import org.saintleva.heidelberg.data.TranslationMetadata
 
+
+class OneLanguageTranslations(
+    val language: String
+) {
+    val translations = mutableListOf<TranslationMetadata>()
+}
+
+typealias CombinedTranslations = List<OneLanguageTranslations>
 
 class SelectTranslationViewModel(application: Application) : AndroidViewModel(application) {
-
-    //val context = localContext.applicationContext
 
     private val _currentTranslationId: MutableState<TranslationId> = Repository.currentTranslationId
     val currentTranslationId: State<TranslationId> = _currentTranslationId
 
-//    private var _error = mutableStateOf<DataException?>(null)
-//    val error: State<DataException?> = _error
-
     private val _allTranslations = Repository.manager.allTranslations
     val allTranslations: State<TranslationListState> = _allTranslations
+
+    private val _combinedTranslations = mutableStateOf<CombinedTranslations?>(null)
+    val combinedTranslations: State<CombinedTranslations?> = _combinedTranslations
+
+    fun combineTranslations() {
+
+    }
 
     fun loadTranslationList() {
         viewModelScope.launch {
             try {
                 Repository.manager.load(getApplication())
+                combineTranslations()
             } catch (e: FileLoadingException) {
                 _allTranslations.value = TranslationListState.Error(e)
             }

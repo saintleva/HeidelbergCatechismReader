@@ -17,6 +17,7 @@
 
 package org.saintleva.heidelberg.viewmodels
 
+import android.app.Application
 import android.util.Log
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
@@ -31,7 +32,7 @@ import org.saintleva.heidelberg.data.SearchConditions
 import org.saintleva.heidelberg.data.findInCatechism
 
 
-class FoundViewModel : LoadedCatechismViewModel() {
+class FoundViewModel(application: Application) : LoadedCatechismViewModel(application) {
 
     private var _previousConditions: SearchConditions?
         get() = Repository.previousConditions

@@ -17,23 +17,28 @@
 
 package org.saintleva.heidelberg.screens
 
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.lifecycle.viewmodel.compose.viewModel
-import org.saintleva.heidelberg.CatechismState
 import org.saintleva.heidelberg.R
-import org.saintleva.heidelberg.Repository
 import org.saintleva.heidelberg.viewmodels.LoadedCatechismViewModel
 
 
 @Composable
-fun AboutTranslationScreen() {
+fun AboutTranslationScreen(innerPadding: PaddingValues) {
     val viewModel = viewModel<LoadedCatechismViewModel>()
     if (viewModel.catechism != null) {
-        Text(viewModel.catechism.description)
+        Text(
+            text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+//            text = viewModel.catechism.description,
+            modifier = Modifier.padding(innerPadding)
+        )
     } else {
         Text(
             stringResource(R.string.no_translation_selected),

@@ -17,10 +17,22 @@
 
 package org.saintleva.heidelberg.screens
 
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 
 
 @Composable
-fun AboutApplicationScreen() {
+fun AboutApplicationScreen(innerPadding: PaddingValues) {
+    //TODO: Implement real screen and remove this stub
+    Column(modifier = androidx.compose.ui.Modifier.padding(innerPadding)) {
+        Text("AboutApplicationScreen 1")
+        Text("AboutApplicationScreen 2")
+        Text("AboutApplicationScreen 3")
+        Text("AboutApplicationScreen 4")
+        Text("AboutApplicationScreen 5")
+    }
 }

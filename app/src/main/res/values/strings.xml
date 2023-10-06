@@ -27,4 +27,9 @@
     <string name="about_catechism">About catechism</string>
     <string name="about_application">About application</string>
     <string name="no_translation_list_loaded">No translation list loaded</string>
+    <string name="found_questions">Found questions</string>
+    <string name="select_sunday">Select sunday</string>
+    <string name="select_question">Select question</string>
+    <string name="select_translation">Select translation</string>
+    <string name="original">original</string>
 </resources>

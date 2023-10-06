@@ -18,6 +18,7 @@
 package org.saintleva.heidelberg.screens
 
 import android.annotation.SuppressLint
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
@@ -27,11 +28,13 @@ import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.Repository
 import org.saintleva.heidelberg.data.SearchConditions
 
@@ -41,6 +44,8 @@ sealed class Route(val path: String) {
     object Reading: Route("reading") {
         const val questionPosition = "questionPosition"
     }
+
+    object SelectTranslation: Route("selectTranslation")
 
     abstract class SelectSomething(path: String): Route(path) {
         val selectedQuestion = "selectedQuestion"
@@ -79,17 +84,16 @@ sealed class Route(val path: String) {
     }
 }
 
-@ExperimentalMaterial3Api
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AppNavGraph(navController: NavHostController) {
 
-    @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
     @Composable
-    fun NavigableUpScreen(content: @Composable () -> Unit) {
+    fun NavigableUpScreen(title: String, content: @Composable (PaddingValues) -> Unit) {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("MY TITLE") },
+                    title = { Text(title) },
                     navigationIcon = {
                         IconButton(onClick = { navController.navigateUp() }) {
                             Icon(Icons.Default.ArrowBack, contentDescription = "Go back")
@@ -98,7 +102,7 @@ fun AppNavGraph(navController: NavHostController) {
                 )
             }
         ) { innerPadding ->
-            content()
+            content(innerPadding)
         }
     }
 
@@ -111,9 +115,7 @@ fun AppNavGraph(navController: NavHostController) {
             ReadingScreen(
                 object : NavigateToScreens {
                     override fun selectTranslation() {
-                        navController.navigate(
-                            Route.Reading.withArgs(Repository.scrollPosition.firstVisibleItemIndex)
-                        )
+                        navController.navigate(Route.SelectTranslation.path)
                     }
 
                     override fun selectQuestion(selectedQuestion: Int) {
@@ -152,15 +154,27 @@ fun AppNavGraph(navController: NavHostController) {
         }
 
         composable(
+            route = Route.SelectTranslation.path
+        ) {
+            NavigableUpScreen(stringResource(R.string.select_translation)) { innerPadding ->
+                SelectTranslationScreen(
+                    navigateToReadingScreen = { navController.navigateUp() },
+                    innerPadding
+                )
+            }
+        }
+
+        composable(
             route = Route.SelectQuestion.formatArgs(Route.SelectQuestion.selectedQuestion),
             arguments = listOf(navArgument(Route.SelectQuestion.selectedQuestion) { type = NavType.IntType })
         ) { backStackEntry ->
-            NavigableUpScreen {
+            NavigableUpScreen(stringResource(R.string.select_question)) { innerPadding ->
                 val selected = backStackEntry.arguments!!.getInt(Route.SelectQuestion.selectedQuestion)
                 SelectQuestionScreen(
                     navigateToReadingScreen = { selectedQuestion ->
                         navController.navigate(Route.Reading.withArgs(selectedQuestion))
                     },
+                    innerPadding,
                     selected
                 )
             }
@@ -170,12 +184,13 @@ fun AppNavGraph(navController: NavHostController) {
             route = Route.SelectSunday.formatArgs(Route.SelectSunday.selectedQuestion),
             arguments = listOf(navArgument(Route.SelectSunday.selectedQuestion) { type = NavType.IntType })
         ) { backStackEntry ->
-            NavigableUpScreen {
+            NavigableUpScreen(stringResource(R.string.select_sunday)) { innerPadding ->
                 val selected = backStackEntry.arguments!!.getInt(Route.SelectSunday.selectedQuestion)
-                SelectQuestionScreen(
+                SelectSundayScreen(
                     navigateToReadingScreen = { selectedQuestion ->
                         navController.navigate(Route.Reading.withArgs(selectedQuestion))
                     },
+                    innerPadding,
                     selected
                 )
             }
@@ -195,33 +210,34 @@ fun AppNavGraph(navController: NavHostController) {
                 navArgument(Route.Found.matchCase) { type = NavType.BoolType },
             )
         ) { backStackEntry ->
-            NavigableUpScreen {
+            NavigableUpScreen(stringResource(R.string.found_questions)) { innerPadding ->
                 FoundScreen(
                     SearchConditions(
                         backStackEntry.arguments!!.getString(Route.Found.text)!!,
                         backStackEntry.arguments!!.getBoolean(Route.Found.searchInQuestions),
                         backStackEntry.arguments!!.getBoolean(Route.Found.searchInAnswers),
                         backStackEntry.arguments!!.getBoolean(Route.Found.matchCase)
-                    )
+                    ),
+                    innerPadding
                 )
             }
         }
 
         composable(route = Route.AboutTranslation.path) {
-            NavigableUpScreen {
-                AboutTranslationScreen()
+            NavigableUpScreen(stringResource(R.string.about_translation)) { innerPadding ->
+                AboutTranslationScreen(innerPadding)
             }
         }
 
         composable(route = Route.AboutCatechism.path) {
-            NavigableUpScreen {
-                AboutCatechismScreen()
+            NavigableUpScreen(stringResource(R.string.about_catechism)) { innerPadding ->
+                AboutCatechismScreen(innerPadding)
             }
         }
 
         composable(route = Route.AboutApplication.path) {
-            NavigableUpScreen {
-                AboutApplicationScreen()
+            NavigableUpScreen(stringResource(R.string.about_application)) { innerPadding ->
+                AboutApplicationScreen(innerPadding)
             }
         }
     }

@@ -67,7 +67,7 @@ class FoundTransformer(val found: Found) : TextTransformer {
 }
 
 @Composable
-fun FoundScreen(conditions: SearchConditions) {
+fun FoundScreen(conditions: SearchConditions, innerPadding: PaddingValues) {
     val viewModel = viewModel<FoundViewModel>()
     viewModel.find(conditions)
     if (viewModel.found.value == null) {
@@ -78,7 +78,8 @@ fun FoundScreen(conditions: SearchConditions) {
         val found = viewModel.found.value!!
         if (found.isEmpty()) {
             Box(
-                Modifier
+                modifier = Modifier
+                    .padding(innerPadding)
                     .background(color = Color.LightGray)
                     .fillMaxSize(),
                 contentAlignment = Alignment.Center
@@ -99,7 +100,7 @@ fun FoundScreen(conditions: SearchConditions) {
                 )
             }
         } else {
-            LazyColumn {
+            LazyColumn(modifier = Modifier.padding(innerPadding)) {
                 for (index in found.keys) {
                     item {
                         RecordItem(viewModel.catechism, index, FoundTransformer(found))

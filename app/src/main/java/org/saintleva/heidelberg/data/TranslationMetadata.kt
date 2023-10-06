@@ -21,11 +21,21 @@ import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 
 
+//open class TranslationWithoutLanguage(
+//    val name: String,
+//    val englishName: String,
+//    val isOriginal: Boolean
+//) {
+//    fun isEnglish() = name == englishName
+//}
+
 class TranslationMetadata(
     val name: String,
     val englishName: String,
     val language: String,
     val isOriginal: Boolean
-)
+) {
+    fun isEnglish() = name == englishName
+}
 
 typealias AllTranslations = Map<String, TranslationMetadata>

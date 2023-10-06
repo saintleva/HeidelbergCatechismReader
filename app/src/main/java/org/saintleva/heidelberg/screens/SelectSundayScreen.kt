@@ -40,13 +40,17 @@ import org.saintleva.heidelberg.viewmodels.LoadedCatechismViewModel
 
 
 @Composable
-fun SelectSundayScreen(navigateToReadingScreen: (Int) -> Unit, selectedQuestion: Int) {
+fun SelectSundayScreen(navigateToReadingScreen: (Int) -> Unit, innerPadding: PaddingValues,
+                       selectedQuestion: Int) {
     val viewModel = viewModel<LoadedCatechismViewModel>()
     val catechism = viewModel.catechism
     val newSelectedSunday =
         remember { mutableStateOf(catechism.sundayOfQuestion(selectedQuestion)) }
 
-    LazyVerticalGrid(columns = GridCells.Adaptive(minSize = 70.dp)) {
+    LazyVerticalGrid(
+        columns = GridCells.Adaptive(minSize = 70.dp),
+        modifier = Modifier.padding(innerPadding)
+    ) {
         for (i in 0 until catechism.sundayCount) {
             item {
                 Card(

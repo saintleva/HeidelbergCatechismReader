@@ -38,7 +38,8 @@ import org.saintleva.heidelberg.viewmodels.SearchDialogViewModel
 
 @ExperimentalMaterial3Api
 @Composable
-fun SearchDialog(viewModel: SearchDialogViewModel) {
+//TODO: Use "innerPadding" parameter of remove it
+fun SearchDialog(viewModel: SearchDialogViewModel, innerPadding: PaddingValues) {
     AlertDialog(
         modifier = Modifier.padding(horizontal = 20.dp),
         onDismissRequest = viewModel::onCancel,

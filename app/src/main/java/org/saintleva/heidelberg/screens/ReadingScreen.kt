@@ -166,7 +166,7 @@ fun NoTranslationBox() {
 }
 
 @Composable
-fun ReadingArea(viewModel: ReadingViewModel, questionPosition: Int) {
+fun ReadingArea(viewModel: ReadingViewModel, innerPadding: PaddingValues, questionPosition: Int) {
 
     val lazyListState =
         if (questionPosition == -1)
@@ -213,7 +213,9 @@ fun ReadingArea(viewModel: ReadingViewModel, questionPosition: Int) {
         is CatechismState.Loaded -> {
             val catechism = state.catechism
             LazyColumn(
-                modifier = Modifier.nestedScroll(nestedScrollConnection),
+                modifier = Modifier
+                    .padding(innerPadding)
+                    .nestedScroll(nestedScrollConnection),
                 state = lazyListState
             ) {
                 for (i in 0 until catechism.questionCount) {
@@ -265,15 +267,12 @@ interface NavigateToScreens {
     fun aboutApplication()
 }
 
-@SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
     val scope = rememberCoroutineScope()
 
     val viewModel = viewModel<ReadingViewModel>()
-//        factory = ReadingViewModelFactory(LocalContext.current)
-//    )
 
     val searchDialogViewModel = viewModel<SearchDialogViewModel>()
 
@@ -303,82 +302,73 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
     val isWidthLarge = configuration.orientation == Configuration.ORIENTATION_LANDSCAPE ||
             configuration.screenWidthDp > 840
 
-    val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
-
-    ModalNavigationDrawer(
-        drawerState = drawerState,
-        drawerContent = { SelectTranslationScreen(navigateToScreens::selectTranslation) }
-    ) {
-        Scaffold(
-            topBar = {
-                TopAppBar(
-                    title = {
-                        Text(
-                            "Simple TopAppBar",
-                            maxLines = 1,
-                            overflow = TextOverflow.Visible
-                        )
-                    },
-                    navigationIcon = {
-                        IconButton(
-                            onClick = {
-                                scope.launch {
-                                    drawerState.open()
-                                }
-                            }
-                        ) {
-                            Icon(Icons.Default.Menu, contentDescription = "Navigation Drawer")
-                        }
-                    },
-                    actions = {
-                        IconButton(
-                            onClick = { searchDialogViewModel.show() }
-                        ) {
-                            Icon(Icons.Filled.Search, contentDescription = "Search")
-                        }
-                        if (isWidthLarge) {
-                            CatechismNavigationButtons(viewModel, lazyListState, scope, navigateToScreens)
-                        }
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {},
+//                title = {
+//                    Text(
+//                        "Simple TopAppBar",
+//                        maxLines = 1,
+//                        overflow = TextOverflow.Visible
+//                    )
+//                },
+                navigationIcon = {
+                    IconButton(
+                        onClick = navigateToScreens::selectTranslation
+                    ) {
+                        //TODO: Use "Translation" icon
+                        Icon(Icons.Default.Face, contentDescription = "Select translation")
+                    }
+                },
+                actions = {
+                    IconButton(
+                        onClick = { searchDialogViewModel.show() }
+                    ) {
+                        Icon(Icons.Filled.Search, contentDescription = "Search")
+                    }
+                    if (isWidthLarge) {
+                        CatechismNavigationButtons(viewModel, lazyListState, scope, navigateToScreens)
+                    }
 //                        Spacer(modifier = Modifier.weight(1f))
-                        Box {
-                            IconButton(
-                                onClick = { aboutMenuExpanded.value = true }
-                            ) {
-                                Icon(Icons.Default.MoreVert, contentDescription = "Show about menu")
-                            }
-                            DropdownMenu(
-                                expanded = aboutMenuExpanded.value,
-                                onDismissRequest = { aboutMenuExpanded.value = false }
-                            ) {
-                                DropdownMenuItem(
-                                    text = { Text(stringResource(about_translation)) },
-                                    onClick = navigateToScreens::aboutTranslation
-                                )
-                                DropdownMenuItem(
-                                    text = { Text(stringResource(R.string.about_catechism)) },
-                                    onClick = navigateToScreens::aboutCatechism
-                                )
-                                DropdownMenuItem(
-                                    text = { Text(stringResource(R.string.about_application)) },
-                                    onClick = navigateToScreens::aboutApplication
-                                )
-                            }
+                    Box {
+                        IconButton(
+                            onClick = { aboutMenuExpanded.value = true }
+                        ) {
+                            Icon(Icons.Default.MoreVert, contentDescription = "Show about menu")
+                        }
+                        DropdownMenu(
+                            expanded = aboutMenuExpanded.value,
+                            onDismissRequest = { aboutMenuExpanded.value = false }
+                        ) {
+                            DropdownMenuItem(
+                                text = { Text(stringResource(about_translation)) },
+                                onClick = navigateToScreens::aboutTranslation
+                            )
+                            DropdownMenuItem(
+                                text = { Text(stringResource(R.string.about_catechism)) },
+                                onClick = navigateToScreens::aboutCatechism
+                            )
+                            DropdownMenuItem(
+                                text = { Text(stringResource(R.string.about_application)) },
+                                onClick = navigateToScreens::aboutApplication
+                            )
                         }
                     }
-                )
-            },
-            bottomBar = {
-                if (!isWidthLarge) {
-                    filledBottomAppBar()
-                } else {
-                    emptyBottomAppBar()
                 }
+            )
+        },
+        bottomBar = {
+            if (!isWidthLarge) {
+                filledBottomAppBar()
+            } else {
+                emptyBottomAppBar()
             }
-        ) {
-            if (searchDialogViewModel.showDialog.value) {
-                SearchDialog(searchDialogViewModel)
-            }
-            ReadingArea(viewModel, questionPosition)
         }
+    ) { innerPadding ->
+        if (searchDialogViewModel.showDialog.value) {
+            SearchDialog(searchDialogViewModel, innerPadding)
+        }
+        ReadingArea(viewModel, innerPadding, questionPosition)
     }
 }

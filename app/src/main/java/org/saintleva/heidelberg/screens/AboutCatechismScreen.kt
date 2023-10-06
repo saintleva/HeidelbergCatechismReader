@@ -17,9 +17,22 @@
 
 package org.saintleva.heidelberg.screens
 
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 
 
 @Composable
-fun AboutCatechismScreen() {
+fun AboutCatechismScreen(innerPadding: PaddingValues) {
+    //TODO: Implement real screen and remove this stub
+    Column(modifier = Modifier.padding(innerPadding)) {
+        Text("AboutCatechismScreen 1")
+        Text("AboutCatechismScreen 2")
+        Text("AboutCatechismScreen 3")
+        Text("AboutCatechismScreen 4")
+        Text("AboutCatechismScreen 5")
+    }
 }

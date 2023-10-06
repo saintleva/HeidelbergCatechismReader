@@ -21,14 +21,19 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Check
 import androidx.compose.material3.Card
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -70,17 +75,21 @@ fun TranslationItem(metadata: TranslationMetadata, isCurrent: Boolean, onTransla
                 text = metadata.name,
                 style = MaterialTheme.typography.labelSmall
             )
-            Text(
-                text = metadata.englishName,
-                style = MaterialTheme.typography.labelSmall
-            )
+            if (!metadata.isEnglish()) {
+                Text(
+                    text = metadata.englishName,
+                    style = MaterialTheme.typography.labelSmall
+                )
+            }
             Text(
                 text = metadata.language,
                 style = MaterialTheme.typography.labelSmall
             )
-            Row {
-                Checkbox(checked = metadata.isOriginal, onCheckedChange = null)
-                Text("original")
+            if (metadata.isOriginal) {
+                Row {
+                    Icon(Icons.Default.Check, contentDescription = "Original")
+                    Text(stringResource(R.string.original))
+                }
             }
         }
     }
@@ -98,10 +107,8 @@ fun NoListBox() {
 }
 
 @Composable
-fun SelectTranslationScreen(navigateToReading: () -> Unit) {
+fun SelectTranslationScreen(navigateToReadingScreen: () -> Unit, innerPadding: PaddingValues) {
     val viewModel = viewModel<SelectTranslationViewModel>()
-//        factory = SelectTranslationViewModelFactory(LocalContext.current)
-//    )
 
     val errorAlerted = remember { mutableStateOf(false) }
 
@@ -126,7 +133,7 @@ fun SelectTranslationScreen(navigateToReading: () -> Unit) {
 
         is TranslationListState.Loaded -> {
             val names = state.all
-            LazyColumn {
+            LazyColumn(modifier = Modifier.padding(innerPadding)) {
                 for (key in names.keys) {
                     item {
                         TranslationItem(
@@ -134,7 +141,7 @@ fun SelectTranslationScreen(navigateToReading: () -> Unit) {
                             isCurrent = viewModel.isCurrent(key),
                             onTranslationChange = {
                                 viewModel.changeCurrentTranslationId(key)
-                                navigateToReading()
+                                navigateToReadingScreen()
                             }
                         )
                     }

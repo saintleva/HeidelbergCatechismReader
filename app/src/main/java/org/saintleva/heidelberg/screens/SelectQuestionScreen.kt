@@ -19,6 +19,7 @@ package org.saintleva.heidelberg.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
@@ -41,11 +42,15 @@ import org.saintleva.heidelberg.viewmodels.LoadedCatechismViewModel
 
 
 @Composable
-fun SelectQuestionScreen(navigateToReadingScreen: (Int) -> Unit, selected: Int) {
+fun SelectQuestionScreen(navigateToReadingScreen: (Int) -> Unit, innerPadding: PaddingValues,
+                         selected: Int) {
     val viewModel = viewModel<LoadedCatechismViewModel>()
     val newSelected = remember { mutableStateOf(selected) }
 
-    LazyVerticalGrid(columns = GridCells.Adaptive(minSize = 70.dp)) {
+    LazyVerticalGrid(
+        columns = GridCells.Adaptive(minSize = 70.dp),
+        modifier = Modifier.padding(innerPadding)
+    ) {
         for (i in 0 until viewModel.catechism.questionCount) {
             item {
                 Card(
