@@ -30,15 +30,23 @@ import org.saintleva.heidelberg.Repository
 import org.saintleva.heidelberg.TranslationId
 import org.saintleva.heidelberg.data.TranslationListState
 import org.saintleva.heidelberg.data.TranslationMetadata
+import java.util.SortedMap
 
 
-class OneLanguageTranslations(
-    val language: String
-) {
-    val translations = mutableListOf<TranslationMetadata>()
-}
+//class OneLanguageTranslations(
+//    val language: String
+//) {
+//    val translations = mutableListOf<TranslationMetadata>()
+//}
+//
+//typealias CombinedTranslations = List<OneLanguageTranslations>
 
-typealias CombinedTranslations = List<OneLanguageTranslations>
+class TranslationMetadataWithID(
+    val id: String,
+    val data: TranslationMetadata
+)
+
+typealias CombinedTranslations = SortedMap<String, MutableSet<TranslationMetadataWithID>>
 
 class SelectTranslationViewModel(application: Application) : AndroidViewModel(application) {
 
@@ -52,7 +60,18 @@ class SelectTranslationViewModel(application: Application) : AndroidViewModel(ap
     val combinedTranslations: State<CombinedTranslations?> = _combinedTranslations
 
     fun combineTranslations() {
-
+        val result = sortedMapOf<String, MutableSet<TranslationMetadataWithID>>()
+        val source = (allTranslations.value as TranslationListState.Loaded).all
+        for (id in source.keys) {
+            val lang = source[id]!!.language
+            val item = TranslationMetadataWithID(id, source[id]!!)
+            if (lang in result.keys) {
+                result[lang]!!.add(item)
+            } else {
+                result[lang] = mutableSetOf(item)
+            }
+        }
+        _combinedTranslations.value = result
     }
 
     fun loadTranslationList() {

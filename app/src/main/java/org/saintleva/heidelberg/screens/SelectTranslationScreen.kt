@@ -132,18 +132,24 @@ fun SelectTranslationScreen(navigateToReadingScreen: () -> Unit, innerPadding: P
         }
 
         is TranslationListState.Loaded -> {
-            val names = state.all
+            val combined = viewModel.combinedTranslations.value!!
             LazyColumn(modifier = Modifier.padding(innerPadding)) {
-                for (key in names.keys) {
+                for (lang in combined.keys) {
                     item {
-                        TranslationItem(
-                            metadata = names[key]!!,
-                            isCurrent = viewModel.isCurrent(key),
-                            onTranslationChange = {
-                                viewModel.changeCurrentTranslationId(key)
-                                navigateToReadingScreen()
-                            }
-                        )
+                        Text(lang)
+                    }
+                    val names = combined[lang]!!
+                    for (name in names) {
+                        item {
+                            TranslationItem(
+                                metadata = name.data,
+                                isCurrent = viewModel.isCurrent(name.id),
+                                onTranslationChange = {
+                                    viewModel.changeCurrentTranslationId(name.id)
+                                    navigateToReadingScreen()
+                                }
+                            )
+                        }
                     }
                 }
             }
