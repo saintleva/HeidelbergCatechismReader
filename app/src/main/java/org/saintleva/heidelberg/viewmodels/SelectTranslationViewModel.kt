@@ -33,20 +33,12 @@ import org.saintleva.heidelberg.data.TranslationMetadata
 import java.util.SortedMap
 
 
-//class OneLanguageTranslations(
-//    val language: String
-//) {
-//    val translations = mutableListOf<TranslationMetadata>()
-//}
-//
-//typealias CombinedTranslations = List<OneLanguageTranslations>
-
-class TranslationMetadataWithID(
+class ExtendedMetadata(
     val id: String,
     val data: TranslationMetadata
 )
 
-typealias CombinedTranslations = SortedMap<String, MutableSet<TranslationMetadataWithID>>
+typealias CombinedTranslations = SortedMap<String, MutableSet<ExtendedMetadata>>
 
 class SelectTranslationViewModel(application: Application) : AndroidViewModel(application) {
 
@@ -60,11 +52,12 @@ class SelectTranslationViewModel(application: Application) : AndroidViewModel(ap
     val combinedTranslations: State<CombinedTranslations?> = _combinedTranslations
 
     fun combineTranslations() {
-        val result = sortedMapOf<String, MutableSet<TranslationMetadataWithID>>()
-        val source = (allTranslations.value as TranslationListState.Loaded).all
+        val result = sortedMapOf<String, MutableSet<ExtendedMetadata>>()
+        val loaded = (allTranslations.value as TranslationListState.Loaded)
+        val source = loaded.all
         for (id in source.keys) {
             val lang = source[id]!!.language
-            val item = TranslationMetadataWithID(id, source[id]!!)
+            val item = ExtendedMetadata(id, source[id]!!)
             if (lang in result.keys) {
                 result[lang]!!.add(item)
             } else {

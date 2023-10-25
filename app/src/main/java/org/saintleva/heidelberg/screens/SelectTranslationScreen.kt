@@ -31,6 +31,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
@@ -57,7 +58,9 @@ fun TranslationItem(metadata: TranslationMetadata, isCurrent: Boolean, onTransla
     Card(
         modifier = Modifier
             .fillMaxSize()
-            .padding(8.dp)
+            .padding(8.dp),
+        colors = CardDefaults.cardColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant),
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
     ) {
         Column(
             modifier = Modifier
@@ -71,20 +74,18 @@ fun TranslationItem(metadata: TranslationMetadata, isCurrent: Boolean, onTransla
                 .padding(horizontal = 8.dp, vertical = 4.dp)
                 .clickable { onTranslationChange() },
             ) {
-            Text(
-                text = metadata.name,
-                style = MaterialTheme.typography.labelSmall
-            )
-            if (!metadata.isEnglish()) {
+            if (metadata.name != null) {
+                Text(
+                    text = metadata.name,
+                    style = MaterialTheme.typography.labelSmall
+                )
+            }
+            if (metadata.englishName != null) {
                 Text(
                     text = metadata.englishName,
                     style = MaterialTheme.typography.labelSmall
                 )
             }
-            Text(
-                text = metadata.language,
-                style = MaterialTheme.typography.labelSmall
-            )
             if (metadata.isOriginal) {
                 Row {
                     Icon(Icons.Default.Check, contentDescription = "Original")
@@ -135,11 +136,16 @@ fun SelectTranslationScreen(navigateToReadingScreen: () -> Unit, innerPadding: P
             val combined = viewModel.combinedTranslations.value!!
             LazyColumn(modifier = Modifier.padding(innerPadding)) {
                 for (lang in combined.keys) {
-                    item {
-                        Text(lang)
-                    }
                     val names = combined[lang]!!
-                    for (name in names) {
+                    item {
+                        Box(
+                            modifier = Modifier.fillMaxWidth(),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Text(lang)
+                        }
+                    }
+                    for (name in names.toSortedSet(compareBy { it.data.nameToUse })) {
                         item {
                             TranslationItem(
                                 metadata = name.data,

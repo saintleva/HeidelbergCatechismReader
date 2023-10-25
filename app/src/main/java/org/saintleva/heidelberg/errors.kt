@@ -32,4 +32,6 @@ class DataFormatException(fileType: FileType, cause: Exception) : DataException(
 
 class TranslationIdIsEmptyStringException: HeidelbergException()
 
+class NoLanguageSpecifiedException: HeidelbergException()
+
 class CatechismNotLoadedException: HeidelbergException()

@@ -18,9 +18,7 @@
 package org.saintleva.heidelberg.data
 
 import android.content.Context
-import android.util.Log
 import androidx.compose.runtime.mutableStateOf
-import com.squareup.moshi.JsonReader
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -30,7 +28,7 @@ import okio.source
 import org.saintleva.heidelberg.DataException
 import org.saintleva.heidelberg.FileLoadingException
 import org.saintleva.heidelberg.FileType
-import org.saintleva.heidelberg.TranslationIdIsEmptyStringException
+import org.saintleva.heidelberg.NoLanguageSpecifiedException
 
 
 sealed class TranslationListState {
@@ -43,6 +41,7 @@ object Manager {
 
     var allTranslations = mutableStateOf<TranslationListState>(TranslationListState.None)
 
+    @OptIn(kotlin.ExperimentalStdlibApi::class)
     suspend fun load(context: Context) {
         val moshi = Moshi
             .Builder()
@@ -60,17 +59,11 @@ object Manager {
         val inputStream = assetManager.open("list")
         try {
             val bufferedSource = inputStream.source().buffer()
-            delay(3000)
+            delay(1500)
             allTranslations.value = TranslationListState.Loaded(adapter.fromJson(bufferedSource)!!) //TODO: remove "!!"
-            //TODO: remove it
-//            for (id in allTranslations.keys) {
-//                Log.d("compose", "id == $id")
-//                Log.d("compose", "allTranslations[$id].name == ${allTranslations[id]?.name}")
-//                if (id.isEmpty()) {
-//                    throw TranslationIdIsEmptyStringException()
-//                }
-//            }
         } catch (e: java.io.IOException) {
+            throw FileLoadingException(FileType.LIST, e)
+        } catch (e: NoLanguageSpecifiedException) {
             throw FileLoadingException(FileType.LIST, e)
         }
     }

@@ -19,6 +19,7 @@ package org.saintleva.heidelberg.data
 
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import org.saintleva.heidelberg.NoLanguageSpecifiedException
 
 
 //open class TranslationWithoutLanguage(
@@ -30,12 +31,18 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 //}
 
 class TranslationMetadata(
-    val name: String,
-    val englishName: String,
+    val name: String?,
+    val englishName: String?,
     val language: String,
     val isOriginal: Boolean
 ) {
-    fun isEnglish() = name == englishName
+    init {
+        if (name == null && englishName == null) {
+            throw NoLanguageSpecifiedException()
+        }
+    }
+
+    val nameToUse = name ?: englishName
 }
 
 typealias AllTranslations = Map<String, TranslationMetadata>

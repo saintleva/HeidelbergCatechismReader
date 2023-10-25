@@ -2,79 +2,79 @@
     "ustinovich": {
         "name": "Перевод Евгения Устиновича, 2021",
         "englishName": "Translation by Evgeny Ustinovich",
-        "language": "russian",
+        "language": "Russian (Русский)",
         "isOriginal": false
     },
     "afrikaans": {
-        "name": "",
+        "name": null,
         "englishName": "Translation to Afrikaans language from forms.reformed.org.ua",
-        "language": "afrikaans",
+        "language": "Afrikaans (Afrikaanse taal)",
         "isOriginal": false
     },
     "dutch-modern": {
-        "name": "",
+        "name": null,
         "englishName": "Translation to modern Dutch language from forms.reformed.org.ua",
-        "language": "dutch",
+        "language": "Dutch",
         "isOriginal": false
     },
     "dutch-old": {
-        "name": "",
+        "name": null,
         "englishName": "Translation to old Dutch language from forms.reformed.org.ua",
-        "language": "dutch",
+        "language": "Dutch",
         "isOriginal": false
     },
     "english-modern": {
         "name": "Translation to modern English language from forms.reformed.org.ua",
-        "englishName": "Translation to modern English language from forms.reformed.org.ua",
-        "language": "english",
+        "englishName": null,
+        "language": "English",
         "isOriginal": false
     },
     "english-old": {
         "name": "Translation to old English language from forms.reformed.org.ua",
-        "englishName": "Translation to old English language from forms.reformed.org.ua",
-        "language": "english",
+        "englishName": null,
+        "language": "English",
         "isOriginal": false
     },
     "german-modern": {
-        "name": "",
+        "name": null,
         "englishName": "Translation to modern German language from forms.reformed.org.ua",
-        "language": "german",
+        "language": "German (Deutsch)",
         "isOriginal": false
     },
     "german-original": {
-        "name": "",
+        "name": null,
         "englishName": "German original from forms.reformed.org.ua",
-        "language": "german",
+        "language": "German (Deutsch)",
         "isOriginal": true
     },
     "latin": {
-        "name": "",
+        "name": null,
         "englishName": "Translation to Latin language from forms.reformed.org.ua",
-        "language": "latin",
+        "language": "Latin (Latīnum)",
         "isOriginal": false
     },
     "russian1": {
         "name": "Русский перевод №1 с сайта forms.reformed.org.ua",
         "englishName": "1st russian translation from forms.reformed.org.ua",
-        "language": "russian",
+        "language": "Russian (Русский)",
         "isOriginal": false
     },
     "russian2": {
         "name": "Русский перевод №2 с сайта forms.reformed.org.ua",
         "englishName": "2nd russian translation from forms.reformed.org.ua",
-        "language": "russian",
+        "language": "Russian (Русский)",
         "isOriginal": false
     },
     "russian3": {
         "name": "Русский перевод №3 с сайта forms.reformed.org.ua",
         "englishName": "3rd russian translation from forms.reformed.org.ua",
-        "language": "russian",
+        "language": "Russian (Русский)",
         "isOriginal": false
     },
     "ukrainian": {
         "name": "Український переклад із сайту forms.reformed.org.ua",
         "englishName": "Ukrainian translation from forms.reformed.org.ua",
-        "language": "ukrainian",
+        "language": "Ukrainian (Українська)",
         "isOriginal": false
     }
 }
