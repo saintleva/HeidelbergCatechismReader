@@ -229,7 +229,7 @@ fun ReadingArea(viewModel: ReadingViewModel, innerPadding: PaddingValues, questi
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .padding(all = 4.dp),
-                                style = MaterialTheme.typography.headlineMedium
+                                style = MaterialTheme.typography.headlineLarge
                             )
                         }
                         if (start.sunday != null) {
@@ -239,7 +239,7 @@ fun ReadingArea(viewModel: ReadingViewModel, innerPadding: PaddingValues, questi
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .padding(all = 4.dp),
-                                style = MaterialTheme.typography.titleSmall
+                                style = MaterialTheme.typography.headlineMedium
                             )
                         }
                         RecordItem(catechism, i, ReadingTextTransformer)

@@ -28,6 +28,7 @@ import org.saintleva.heidelberg.CatechismState
 import org.saintleva.heidelberg.FileLoadingException
 import org.saintleva.heidelberg.Repository
 import org.saintleva.heidelberg.TranslationId
+import org.saintleva.heidelberg.data.AllTranslations
 import org.saintleva.heidelberg.data.TranslationListState
 import org.saintleva.heidelberg.data.TranslationMetadata
 import java.util.SortedMap
@@ -70,7 +71,9 @@ class SelectTranslationViewModel(application: Application) : AndroidViewModel(ap
     fun loadTranslationList() {
         viewModelScope.launch {
             try {
-                Repository.manager.load(getApplication())
+                if (Repository.manager.allTranslations.value == TranslationListState.None) {
+                    Repository.manager.load(getApplication())
+                }
                 combineTranslations()
             } catch (e: FileLoadingException) {
                 _allTranslations.value = TranslationListState.Error(e)

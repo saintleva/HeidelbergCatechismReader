@@ -17,14 +17,17 @@
 
 package org.saintleva.heidelberg.screens
 
+import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
@@ -34,8 +37,10 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedCard
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -44,6 +49,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -55,11 +61,11 @@ import org.saintleva.heidelberg.viewmodels.SelectTranslationViewModel
 
 @Composable
 fun TranslationItem(metadata: TranslationMetadata, isCurrent: Boolean, onTranslationChange: () -> Unit) {
-    Card(
+    OutlinedCard(
         modifier = Modifier
             .fillMaxSize()
             .padding(8.dp),
-        colors = CardDefaults.cardColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant),
+//        colors = CardDefaults.cardColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
     ) {
         Column(
@@ -77,19 +83,28 @@ fun TranslationItem(metadata: TranslationMetadata, isCurrent: Boolean, onTransla
             if (metadata.name != null) {
                 Text(
                     text = metadata.name,
-                    style = MaterialTheme.typography.labelSmall
+                    style = MaterialTheme.typography.bodyMedium
                 )
             }
             if (metadata.englishName != null) {
+                if (metadata.name != null) {
+                    Spacer(modifier = Modifier.height(8.dp))
+                }
                 Text(
                     text = metadata.englishName,
-                    style = MaterialTheme.typography.labelSmall
+                    style = if (metadata.name == null)
+                        MaterialTheme.typography.bodyMedium
+                    else
+                        MaterialTheme.typography.bodySmall.copy(fontStyle = FontStyle.Italic)
                 )
             }
             if (metadata.isOriginal) {
-                Row {
+                Row(verticalAlignment = Alignment.CenterVertically) {
                     Icon(Icons.Default.Check, contentDescription = "Original")
-                    Text(stringResource(R.string.original))
+                    Text(
+                        text = stringResource(R.string.original),
+                        style = MaterialTheme.typography.labelMedium
+                    )
                 }
             }
         }
@@ -134,6 +149,7 @@ fun SelectTranslationScreen(navigateToReadingScreen: () -> Unit, innerPadding: P
 
         is TranslationListState.Loaded -> {
             val combined = viewModel.combinedTranslations.value!!
+            //Log.d("compose", "combined == $combined")
             LazyColumn(modifier = Modifier.padding(innerPadding)) {
                 for (lang in combined.keys) {
                     val names = combined[lang]!!
@@ -142,7 +158,7 @@ fun SelectTranslationScreen(navigateToReadingScreen: () -> Unit, innerPadding: P
                             modifier = Modifier.fillMaxWidth(),
                             contentAlignment = Alignment.Center
                         ) {
-                            Text(lang)
+                            Text(text = lang, style = MaterialTheme.typography.titleLarge)
                         }
                     }
                     for (name in names.toSortedSet(compareBy { it.data.nameToUse })) {

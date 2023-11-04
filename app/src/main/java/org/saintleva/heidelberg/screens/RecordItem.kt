@@ -80,7 +80,7 @@ fun RecordItem(catechism: Catechism, index: Int, transformer: TextTransformer) {
         Text(
             text = "${catechism.blockNames.question} ${index + 1}",
             modifier = Modifier.padding(all = 4.dp),
-            style = MaterialTheme.typography.displayMedium
+            style = MaterialTheme.typography.titleLarge
         )
         CopyableSubItem(
             text = transformer.transformQuestion(record.question, index),
@@ -88,7 +88,7 @@ fun RecordItem(catechism: Catechism, index: Int, transformer: TextTransformer) {
         )
         CopyableSubItem(
             text = transformer.transformAnswer(record.answer, index),
-            style = MaterialTheme.typography.bodySmall
+            style = MaterialTheme.typography.bodyMedium
         )
     }
 }
