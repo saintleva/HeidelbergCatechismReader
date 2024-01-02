@@ -17,7 +17,6 @@
 
 package org.saintleva.heidelberg.screens
 
-import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -35,8 +34,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import org.saintleva.heidelberg.R
-import org.saintleva.heidelberg.Repository
 import org.saintleva.heidelberg.data.SearchConditions
+import org.saintleva.heidelberg.ui.screens.reading.NavigateToScreens
+import org.saintleva.heidelberg.ui.screens.reading.ReadingScreen
+import org.saintleva.heidelberg.ui.screens.selecttranslation.SelectTranslationScreen
 
 
 sealed class Route(val path: String) {

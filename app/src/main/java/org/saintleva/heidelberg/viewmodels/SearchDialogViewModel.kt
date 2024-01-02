@@ -19,7 +19,7 @@ package org.saintleva.heidelberg.viewmodels
 
 import androidx.compose.runtime.*
 import androidx.lifecycle.ViewModel
-import org.saintleva.heidelberg.Repository
+import org.saintleva.heidelberg.data.repository.Repository
 import org.saintleva.heidelberg.data.SearchConditions
 
 sealed class SearchDialogEvent {

@@ -18,6 +18,7 @@
 package org.saintleva.heidelberg
 
 import android.content.Context
+import org.saintleva.heidelberg.data.repository.TranslationId
 
 
 class ScrollPosition(

@@ -19,7 +19,7 @@ package org.saintleva.heidelberg
 
 import android.app.Application
 import android.util.Log
-import kotlinx.coroutines.delay
+import org.saintleva.heidelberg.data.repository.Repository
 
 class MyApplication : Application() {
 
