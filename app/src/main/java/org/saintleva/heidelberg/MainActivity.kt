@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -11,10 +12,12 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import org.saintleva.heidelberg.data.repository.Repository
-import org.saintleva.heidelberg.screens.AppNavGraph
+import org.saintleva.heidelberg.ui.screens.AppNavGraph
 import org.saintleva.heidelberg.ui.theme.HeidelbergCatechismReaderTheme
 
 class MainActivity : ComponentActivity() {
+
+    private val viewModel by viewModels<MainViewModel>()
 
     @ExperimentalMaterial3Api
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +39,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         Log.d("lifecycle", "MainActivity.onSaveInstanceState()") // TODO: remove it
-        Repository.savePositionToPrefs(this)
+        viewModel.repository.savePositionToPrefs(this)
         super.onSaveInstanceState(outState)
     }
 }
