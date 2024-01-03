@@ -17,10 +17,10 @@
 
 package org.saintleva.heidelberg.data
 
-import android.os.Parcelable
 import androidx.compose.ui.text.style.TextIndent
 import kotlinx.coroutines.delay
 import org.saintleva.heidelberg.HeidelbergException
+import org.saintleva.heidelberg.data.models.Catechism
 import org.saintleva.heidelberg.ui.multiParagraphText
 
 

@@ -15,7 +15,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.saintleva.heidelberg.data
+package org.saintleva.heidelberg.data.models
 
 import org.saintleva.heidelberg.HeidelbergException
 

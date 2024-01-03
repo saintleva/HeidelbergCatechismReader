@@ -21,6 +21,10 @@ import org.jdom2.Element
 import org.jdom2.input.DOMBuilder
 import org.saintleva.heidelberg.DataFormatException
 import org.saintleva.heidelberg.FileType
+import org.saintleva.heidelberg.data.models.BlockNames
+import org.saintleva.heidelberg.data.models.Record
+import org.saintleva.heidelberg.data.models.Structure
+import org.saintleva.heidelberg.data.models.Translation
 import java.io.InputStream
 import java.lang.StringBuilder
 import javax.xml.parsers.DocumentBuilderFactory
