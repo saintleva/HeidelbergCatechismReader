@@ -18,7 +18,10 @@
 package org.saintleva.heidelberg.data.repository
 
 import android.content.Context
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
+import androidx.lifecycle.MutableLiveData
+import kotlinx.coroutines.flow.MutableStateFlow
 import org.saintleva.heidelberg.Position
 import org.saintleva.heidelberg.ScrollPosition
 import org.saintleva.heidelberg.data.Found
@@ -29,9 +32,9 @@ import org.saintleva.heidelberg.saveToPrefs
 
 object RepositoryImpl : Repository {
 
-    override val currentTranslationId = mutableStateOf<TranslationId>(TranslationId.None)
+    override val currentTranslationId = MutableStateFlow<TranslationId>(TranslationId.None)
 
-    override val catechismState = mutableStateOf<CatechismState>(CatechismState.Never)
+    override val catechismState = MutableStateFlow<CatechismState>(CatechismState.Never)
 
     override var scrollPosition = ScrollPosition.DEFAULT
 
@@ -50,5 +53,5 @@ object RepositoryImpl : Repository {
 
     override var previousConditions: SearchConditions? = null
 
-    override val found = mutableStateOf<Found?>(null)
+    override val found = MutableStateFlow<Found?>(null)
 }

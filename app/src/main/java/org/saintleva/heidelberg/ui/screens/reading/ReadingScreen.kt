@@ -45,6 +45,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextIndent
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
@@ -95,8 +96,9 @@ object ReadingTextTransformer : TextTransformer {
 fun CatechismNavigationButtons(viewModel: ReadingViewModel, lazyListState: LazyListState,
                                scope: CoroutineScope, navigateToScreens: NavigateToScreens
 ) {
+    val catechismState = viewModel.catechismState.collectAsStateWithLifecycle()
 
-    if (viewModel.catechismState.value !is CatechismState.Loaded) return
+    if (catechismState.value !is CatechismState.Loaded) return
 
     fun lastVisibleItemIndex(): Int {
         val info = lazyListState.layoutInfo.visibleItemsInfo
@@ -105,7 +107,7 @@ fun CatechismNavigationButtons(viewModel: ReadingViewModel, lazyListState: LazyL
         return info[info.lastIndex].index
     }
 
-    val catechism = (viewModel.catechismState.value as CatechismState.Loaded).catechism
+    val catechism = (catechismState.value as CatechismState.Loaded).catechism
     val position = lazyListState.firstVisibleItemIndex
 
     ElementSpin(
@@ -172,10 +174,12 @@ fun NoTranslationBox() {
 @Composable
 fun ReadingArea(viewModel: ReadingViewModel, innerPadding: PaddingValues, questionPosition: Int) {
 
+    val scrollPosition = viewModel.scrollPosition.collectAsStateWithLifecycle()
+
     val lazyListState =
         if (questionPosition == -1)
-            rememberLazyListState(viewModel.scrollPosition.value.firstVisibleItemIndex,
-                viewModel.scrollPosition.value.firstVisibleItemScrollOffset)
+            rememberLazyListState(scrollPosition.value.firstVisibleItemIndex,
+                scrollPosition.value.firstVisibleItemScrollOffset)
         else
             rememberLazyListState(questionPosition)
 
@@ -191,7 +195,9 @@ fun ReadingArea(viewModel: ReadingViewModel, innerPadding: PaddingValues, questi
 
     val errorAlerted = remember { mutableStateOf(false) }
 
-    when (val state = viewModel.catechismState.value) {
+    val catechismState = viewModel.catechismState.collectAsStateWithLifecycle()
+
+    when (val state = catechismState.value) {
         CatechismState.Never -> {
             NoTranslationBox()
         }

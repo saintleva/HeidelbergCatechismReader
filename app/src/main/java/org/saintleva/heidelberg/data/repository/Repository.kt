@@ -19,6 +19,9 @@ package org.saintleva.heidelberg.data.repository
 
 import android.content.Context
 import androidx.compose.runtime.MutableState
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import kotlinx.coroutines.flow.MutableStateFlow
 import org.saintleva.heidelberg.DataException
 import org.saintleva.heidelberg.ScrollPosition
 import org.saintleva.heidelberg.TranslationIdIsEmptyStringException
@@ -47,9 +50,9 @@ sealed class TranslationId {
 
 interface Repository {
 
-    val currentTranslationId: MutableState<TranslationId>
+    val currentTranslationId: MutableStateFlow<TranslationId>
 
-    val catechismState: MutableState<CatechismState>
+    val catechismState: MutableStateFlow<CatechismState>
 
     var scrollPosition: ScrollPosition
 
@@ -58,5 +61,5 @@ interface Repository {
 
     var previousConditions: SearchConditions?
 
-    val found: MutableState<Found?>
+    val found: MutableStateFlow<Found?>
 }

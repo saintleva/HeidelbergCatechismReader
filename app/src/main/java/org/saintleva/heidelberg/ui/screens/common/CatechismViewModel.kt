@@ -18,12 +18,15 @@
 package org.saintleva.heidelberg.ui.screens.common
 
 import android.app.Application
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
+import androidx.compose.runtime.collectAsState
+import kotlinx.coroutines.flow.MutableStateFlow
 import org.saintleva.heidelberg.data.repository.CatechismState
 
 
 abstract class CatechismViewModel(application: Application) : RepositoryViewModel(application) {
 
     protected val _catechismState = repository.catechismState
-    val catechismState: State<CatechismState> = _catechismState
+    val catechismState: MutableStateFlow<CatechismState> = _catechismState
 }
