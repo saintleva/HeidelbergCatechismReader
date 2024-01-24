@@ -26,17 +26,21 @@ import org.saintleva.heidelberg.data.models.Record
 import org.saintleva.heidelberg.data.models.Structure
 import org.saintleva.heidelberg.data.models.Translation
 import java.io.InputStream
-import java.lang.StringBuilder
 import javax.xml.parsers.DocumentBuilderFactory
 
 
 fun trimTextInXml(text: CharSequence): String {
     val result = StringBuilder()
     val lines = text.lines()
-    for (i in 1 until lines.size - 1) {
+    for (i in 0 until lines.size) {
+        if ((i == 0) && lines[i].isBlank()) continue
         result.append(lines[i].trimStart())
-        if (i < lines.size - 2)
+        if (i < lines.size - 2) {
             result.append("\n")
+        }
+        if ((i == lines.size - 2) && lines[i + 1].isNotBlank()) {
+            result.append("\n")
+        }
     }
     return result.toString()
 }
@@ -60,15 +64,17 @@ fun loadTranslationFromXml(stream: InputStream): Translation {
                 blockNamesNode.getAttributeValue("question")
             )
         )
-        for (partNode in rootNode.getChild("partNames").getChildren("part"))
+        for (partNode in rootNode.getChild("partNames").getChildren("part")) {
             result.partNames.add(partNode.text)
-        for (recordNode in rootNode.getChild("data").getChildren("record"))
+        }
+        for (recordNode in rootNode.getChild("data").getChildren("record")) {
             result.records.add(
                 Record(
                     trimTextInXml(recordNode.getChild("question").text),
                     trimTextInXml(recordNode.getChild("answer").text)
                 )
             )
+        }
         return result
     }
     catch (e: Exception) {

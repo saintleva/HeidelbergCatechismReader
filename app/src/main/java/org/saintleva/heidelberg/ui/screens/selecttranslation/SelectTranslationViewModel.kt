@@ -18,9 +18,11 @@
 package org.saintleva.heidelberg.ui.screens.selecttranslation
 
 import android.app.Application
+import android.util.Log
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import org.saintleva.heidelberg.FileLoadingException
 import org.saintleva.heidelberg.FileType
@@ -41,18 +43,23 @@ class SelectTranslationViewModel(application: Application) : RepositoryViewModel
         CombinedTranslationManagerComponent.inject(this)
     }
 
-    private val _currentTranslationId: MutableState<TranslationId> = repository.currentTranslationId
-    val currentTranslationId: State<TranslationId> = _currentTranslationId
+    private val _currentTranslationId = repository.currentTranslationId
+    val currentTranslationId: StateFlow<TranslationId> = _currentTranslationId
 
     private val _combinedTranslations = manager.combinedTranslations
-    val combinedTranslations: State<CombinedTranslationListState> = _combinedTranslations
+    val combinedTranslations: StateFlow<CombinedTranslationListState> = _combinedTranslations
 
     fun loadTranslationList() {
         viewModelScope.launch {
             try {
                 if (manager.allTranslations.value == TranslationListState.None) {
+                    Log.d("anthony", "manager: loading started...")
                     manager.load(getApplication())
+                    Log.d("anthony", "manager: loading finished")
+                    Log.d("anthony", "manager: combining started...")
                     manager.combineTranslations()
+                    Log.d("anthony", "manager: combining finished...")
+                    Log.d("anthony", "combinedTranslations.value == ${combinedTranslations.value}")
                 }
             } catch (e: FileLoadingException) {
                 _combinedTranslations.value =

@@ -33,6 +33,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextIndent
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.data.Found
@@ -69,14 +70,17 @@ class FoundTransformer(val found: Found) : TextTransformer {
 
 @Composable
 fun FoundScreen(conditions: SearchConditions, innerPadding: PaddingValues) {
+
     val viewModel = viewModel<FoundViewModel>()
     viewModel.find(conditions)
-    if (viewModel.found.value == null) {
+    val found = viewModel.found.collectAsStateWithLifecycle()
+
+    if (found.value == null) {
         Box(modifier = Modifier.fillMaxSize()) {
             CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
         }
     } else {
-        val found = viewModel.found.value!!
+        val found = found.value!!
         if (found.isEmpty()) {
             Box(
                 modifier = Modifier

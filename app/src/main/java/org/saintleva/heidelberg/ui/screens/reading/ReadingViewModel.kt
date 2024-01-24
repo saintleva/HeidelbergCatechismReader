@@ -23,6 +23,8 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import org.saintleva.heidelberg.*
 import org.saintleva.heidelberg.data.loader.CatechismLoader
@@ -36,8 +38,8 @@ class ReadingViewModel(application: Application) : CatechismViewModel(applicatio
 
     lateinit var loader: CatechismLoader
 
-    private var _scrollPosition = mutableStateOf(ScrollPosition.DEFAULT)
-    val scrollPosition: State<ScrollPosition> = _scrollPosition
+    private var _scrollPosition = MutableStateFlow(ScrollPosition.DEFAULT)
+    val scrollPosition: StateFlow<ScrollPosition> = _scrollPosition
 
     init {
         CatechismLoaderComponent.inject(this)

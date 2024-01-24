@@ -23,6 +23,8 @@ import androidx.compose.runtime.State
 import androidx.compose.ui.text.style.TextIndent
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import org.saintleva.heidelberg.data.repository.Repository
 import org.saintleva.heidelberg.data.Found
@@ -39,11 +41,8 @@ class FoundViewModel(application: Application) : LoadedCatechismViewModel(applic
             repository.previousConditions = value
         }
 
-    private val _found: MutableState<Found?>
-        get() = repository.found
-
-    val found: State<Found?>
-        get() = _found
+    private val _found: MutableStateFlow<Found?> = repository.found
+    val found: StateFlow<Found?> = _found
 
     fun find(conditions: SearchConditions) {
         if (conditions != _previousConditions) {

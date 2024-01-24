@@ -19,6 +19,7 @@ package org.saintleva.heidelberg.data.manager
 
 import android.content.Context
 import androidx.compose.runtime.MutableState
+import kotlinx.coroutines.flow.MutableStateFlow
 import org.saintleva.heidelberg.DataException
 import org.saintleva.heidelberg.data.models.AllTranslations
 import org.saintleva.heidelberg.data.models.TranslationMetadata
@@ -32,8 +33,8 @@ sealed class TranslationListState {
 }
 
 interface TranslationManager {
-    var allTranslations: MutableState<TranslationListState>
-    suspend fun load(context: Context)
+    val allTranslations: MutableStateFlow<TranslationListState>
+    fun load(context: Context)
 }
 
 class ExtendedMetadata(
@@ -50,6 +51,6 @@ sealed class CombinedTranslationListState {
 }
 
 interface CombinedTranslationManager: TranslationManager {
-    var combinedTranslations: MutableState<CombinedTranslationListState>
+    val combinedTranslations: MutableStateFlow<CombinedTranslationListState>
     fun combineTranslations()
 }

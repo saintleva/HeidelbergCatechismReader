@@ -17,10 +17,14 @@
 
 package org.saintleva.heidelberg.data.manager
 
+import android.util.Log
 import androidx.compose.runtime.mutableStateOf
+import kotlinx.coroutines.flow.MutableStateFlow
 
 
 interface StandardCombinedTranslationManager : CombinedTranslationManager {
+
+    override val combinedTranslations: MutableStateFlow<CombinedTranslationListState>
 
     override fun combineTranslations() {
         val result = sortedMapOf<String, MutableSet<ExtendedMetadata>>()
@@ -35,6 +39,7 @@ interface StandardCombinedTranslationManager : CombinedTranslationManager {
                 result[lang] = mutableSetOf(item)
             }
         }
-        combinedTranslations = mutableStateOf(CombinedTranslationListState.Loaded(result))
+        combinedTranslations.value = CombinedTranslationListState.Loaded(result)
+        Log.d("anthony", "StandardCombinedTranslationManager: combinedTranslations.value == ${combinedTranslations.value}")
     }
 }

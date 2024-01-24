@@ -39,8 +39,7 @@ object AssetsCatechismLoader : CatechismLoader {
             val inputStream = assetManager.open("translations/$id.translation")
             try {
                 loaded[id] = loadTranslationFromXml(inputStream)
-            }
-            catch (e: java.io.IOException) {
+            } catch (e: java.io.IOException) {
                 throw FileLoadingException(FileType.TRANSLATION, e)
             }
         }
@@ -48,8 +47,7 @@ object AssetsCatechismLoader : CatechismLoader {
             val inputStream = assetManager.open("structure")
             try {
                 structure = loadStructureFromXml(inputStream)
-            }
-            catch (e: java.io.IOException) {
+            } catch (e: java.io.IOException) {
                 throw FileLoadingException(FileType.STRUCTURE, e)
             }
         }

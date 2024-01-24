@@ -46,6 +46,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.data.manager.CombinedTranslationListState
@@ -120,10 +121,11 @@ fun NoListBox() {
 @Composable
 fun SelectTranslationScreen(navigateToReadingScreen: () -> Unit, innerPadding: PaddingValues) {
     val viewModel = viewModel<SelectTranslationViewModel>()
+    val combinedTranslations = viewModel.combinedTranslations.collectAsStateWithLifecycle()
 
     val errorAlerted = remember { mutableStateOf(false) }
 
-    when (val state = viewModel.combinedTranslations.value) {
+    when (val state = combinedTranslations.value) {
         CombinedTranslationListState.None -> {
             Box(modifier = Modifier.fillMaxSize()) {
                 CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))

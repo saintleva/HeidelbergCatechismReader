@@ -18,11 +18,10 @@
 package org.saintleva.heidelberg.data.manager
 
 import android.content.Context
-import androidx.compose.runtime.mutableStateOf
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.MutableStateFlow
 import okio.buffer
 import okio.source
 import org.saintleva.heidelberg.FileLoadingException
@@ -34,13 +33,13 @@ import org.saintleva.heidelberg.data.models.TranslationMetadata
 
 object AssetsTranslationManager : StandardCombinedTranslationManager {
 
-    override var combinedTranslations =
-        mutableStateOf<CombinedTranslationListState>(CombinedTranslationListState.None)
+    override val combinedTranslations =
+        MutableStateFlow<CombinedTranslationListState>(CombinedTranslationListState.None)
 
-    override var allTranslations = mutableStateOf<TranslationListState>(TranslationListState.None)
+    override val allTranslations = MutableStateFlow<TranslationListState>(TranslationListState.None)
 
-    //@OptIn(kotlin.ExperimentalStdlibApi::class)
-    override suspend fun load(context: Context) {
+    //TODO: Do I must to make this method suspend?
+    override fun load(context: Context) {
         val moshi = Moshi
             .Builder()
             .add(KotlinJsonAdapterFactory())
@@ -57,7 +56,6 @@ object AssetsTranslationManager : StandardCombinedTranslationManager {
         val inputStream = assetManager.open("list")
         try {
             val bufferedSource = inputStream.source().buffer()
-            delay(1500)
             allTranslations.value =
                 TranslationListState.Loaded(adapter.fromJson(bufferedSource)!!) //TODO: remove "!!"
         } catch (e: java.io.IOException) {
