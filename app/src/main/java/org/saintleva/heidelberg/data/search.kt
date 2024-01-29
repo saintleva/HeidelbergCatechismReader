@@ -18,7 +18,6 @@
 package org.saintleva.heidelberg.data
 
 import androidx.compose.ui.text.style.TextIndent
-import kotlinx.coroutines.delay
 import org.saintleva.heidelberg.HeidelbergException
 import org.saintleva.heidelberg.data.models.Catechism
 import org.saintleva.heidelberg.ui.multiParagraphText
@@ -62,7 +61,6 @@ typealias Found = Map<Int, FoundInRecord>
 suspend fun findInCatechism(catechism: Catechism, conditions: SearchConditions, indent: TextIndent): Found {
     val result = mutableMapOf<Int, FoundInRecord>()
     for (i in 0 until catechism.questionCount) {
-        delay(10L) //TODO: remove it
         val foundInRecord = FoundInRecord(
             if (conditions.searchInQuestions)
                 findSubstring(

@@ -31,6 +31,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
@@ -94,20 +95,24 @@ object ReadingTextTransformer : TextTransformer {
 
 @Composable
 fun CatechismNavigationButtons(viewModel: ReadingViewModel, lazyListState: LazyListState,
-                               scope: CoroutineScope, navigateToScreens: NavigateToScreens
+                               navigateToScreens: NavigateToScreens
 ) {
     val catechismState = viewModel.catechismState.collectAsStateWithLifecycle()
 
     if (catechismState.value !is CatechismState.Loaded) return
 
+    val scope = rememberCoroutineScope()
+
     fun lastVisibleItemIndex(): Int {
         val info = lazyListState.layoutInfo.visibleItemsInfo
-        if (info.isEmpty())
+        if (info.isEmpty()) {
             return -1
+        }
         return info[info.lastIndex].index
     }
 
     val catechism = (catechismState.value as CatechismState.Loaded).catechism
+//    val position = rememberSaveable { mutableStateOf(lazyListState.firstVisibleItemIndex) }
     val position = lazyListState.firstVisibleItemIndex
 
     ElementSpin(
@@ -132,7 +137,6 @@ fun CatechismNavigationButtons(viewModel: ReadingViewModel, lazyListState: LazyL
             }
         }
     )
-    Log.d("compose", "lastVisibleItemIndex() == ${lastVisibleItemIndex()}")
     val sunday = catechism.sundayOfQuestion(position)
     ElementSpin(
         element = "${stringResource(R.string.sunday)} ${sunday + 1}",
@@ -172,16 +176,8 @@ fun NoTranslationBox() {
 }
 
 @Composable
-fun ReadingArea(viewModel: ReadingViewModel, innerPadding: PaddingValues, questionPosition: Int) {
-
-    val scrollPosition = viewModel.scrollPosition.collectAsStateWithLifecycle()
-
-    val lazyListState =
-        if (questionPosition == -1)
-            rememberLazyListState(scrollPosition.value.firstVisibleItemIndex,
-                scrollPosition.value.firstVisibleItemScrollOffset)
-        else
-            rememberLazyListState(questionPosition)
+fun ReadingArea(viewModel: ReadingViewModel, innerPadding: PaddingValues,
+                lazyListState: LazyListState) {
 
     val nestedScrollConnection = remember {
         object : NestedScrollConnection {
@@ -280,7 +276,6 @@ interface NavigateToScreens {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
-    val scope = rememberCoroutineScope()
 
     val viewModel = viewModel<ReadingViewModel>()
 
@@ -296,12 +291,24 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
 
     val aboutMenuExpanded = remember { mutableStateOf(false) }
 
-    val lazyListState = rememberLazyListState()
+    val scrollPosition = viewModel.scrollPosition.collectAsStateWithLifecycle()
+    val lazyListState =
+        if (questionPosition == -1)
+            rememberLazyListState(scrollPosition.value.firstVisibleItemIndex,
+                scrollPosition.value.firstVisibleItemScrollOffset)
+        else
+            rememberLazyListState(questionPosition)
+
+
+    val appBarModifier = Modifier.height(40.dp)
 
     @Composable
     fun filledBottomAppBar()  {
-        BottomAppBar {
-            CatechismNavigationButtons(viewModel, lazyListState, scope, navigateToScreens)
+        BottomAppBar(
+            modifier = appBarModifier,
+            containerColor = MaterialTheme.colorScheme.primaryContainer
+        ) {
+            CatechismNavigationButtons(viewModel, lazyListState, navigateToScreens)
         }
     }
 
@@ -316,6 +323,8 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
         topBar = {
             TopAppBar(
                 title = {},
+                modifier = appBarModifier,
+//                containerColor = MaterialTheme.colorScheme.surfaceVariant,
 //                title = {
 //                    Text(
 //                        "Simple TopAppBar",
@@ -323,6 +332,9 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
 //                        overflow = TextOverflow.Visible
 //                    )
 //                },
+                colors = TopAppBarDefaults.smallTopAppBarColors(
+                    containerColor = MaterialTheme.colorScheme.surfaceVariant
+                ),
                 navigationIcon = {
                     IconButton(
                         onClick = navigateToScreens::selectTranslation
@@ -338,7 +350,7 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
                         Icon(Icons.Filled.Search, contentDescription = "Search")
                     }
                     if (isWidthLarge) {
-                        CatechismNavigationButtons(viewModel, lazyListState, scope, navigateToScreens)
+                        CatechismNavigationButtons(viewModel, lazyListState, navigateToScreens)
                     }
 //                        Spacer(modifier = Modifier.weight(1f))
                     Box {
@@ -379,6 +391,6 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
         if (searchDialogViewModel.showDialog.value) {
             SearchDialog(searchDialogViewModel, innerPadding)
         }
-        ReadingArea(viewModel, innerPadding, questionPosition)
+        ReadingArea(viewModel, innerPadding, lazyListState)
     }
 }

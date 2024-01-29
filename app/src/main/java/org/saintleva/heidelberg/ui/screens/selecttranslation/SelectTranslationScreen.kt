@@ -69,7 +69,7 @@ fun TranslationItem(metadata: TranslationMetadata, isCurrent: Boolean, onTransla
                 .fillMaxWidth()
                 .background(
                     color = if (isCurrent)
-                        MaterialTheme.colorScheme.secondary
+                        MaterialTheme.colorScheme.tertiaryContainer
                     else
                         MaterialTheme.colorScheme.surface
                 )
@@ -146,7 +146,6 @@ fun SelectTranslationScreen(navigateToReadingScreen: () -> Unit, innerPadding: P
 
         is CombinedTranslationListState.Loaded -> {
             val combined = state.combined
-            //Log.d("compose", "combined == $combined")
             LazyColumn(modifier = Modifier.padding(innerPadding)) {
                 for (lang in combined.keys) {
                     val names = combined[lang]!!
