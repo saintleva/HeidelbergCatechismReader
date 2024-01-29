@@ -40,6 +40,5 @@ interface StandardCombinedTranslationManager : CombinedTranslationManager {
             }
         }
         combinedTranslations.value = CombinedTranslationListState.Loaded(result)
-        Log.d("anthony", "StandardCombinedTranslationManager: combinedTranslations.value == ${combinedTranslations.value}")
     }
 }

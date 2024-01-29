@@ -18,16 +18,13 @@
 package org.saintleva.heidelberg.data.repository
 
 import android.content.Context
-import androidx.compose.runtime.MutableState
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import kotlinx.coroutines.flow.MutableStateFlow
 import org.saintleva.heidelberg.DataException
 import org.saintleva.heidelberg.ScrollPosition
 import org.saintleva.heidelberg.TranslationIdIsEmptyStringException
-import org.saintleva.heidelberg.data.models.Catechism
 import org.saintleva.heidelberg.data.Found
 import org.saintleva.heidelberg.data.SearchConditions
+import org.saintleva.heidelberg.data.models.Catechism
 
 
 sealed class CatechismState {

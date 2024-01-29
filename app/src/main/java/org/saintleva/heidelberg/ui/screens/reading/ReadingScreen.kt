@@ -95,8 +95,7 @@ object ReadingTextTransformer : TextTransformer {
 
 @Composable
 fun CatechismNavigationButtons(viewModel: ReadingViewModel, lazyListState: LazyListState,
-                               navigateToScreens: NavigateToScreens
-) {
+                               navigateToScreens: NavigateToScreens) {
     val catechismState = viewModel.catechismState.collectAsStateWithLifecycle()
 
     if (catechismState.value !is CatechismState.Loaded) return
