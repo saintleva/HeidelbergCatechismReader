@@ -37,7 +37,7 @@ object RepositoryImpl : Repository {
     override val catechismState = MutableStateFlow<CatechismState>(CatechismState.Never)
 
     override var scrollPosition = ScrollPosition.DEFAULT
-
+ 
     override fun savePositionToPrefs(context: Context) {
         saveToPrefs(
             Position(currentTranslationId.value, scrollPosition),

@@ -43,15 +43,17 @@ import org.saintleva.heidelberg.ui.screens.common.TextTransformer
 import org.saintleva.heidelberg.ui.multiParagraphText
 
 
-class FoundTransformer(val found: Found) : TextTransformer {
+class FoundTransformer(
+    val found: Found,
+    val backgroundColor: Color
+) : TextTransformer {
 
     private fun transformSomething(source: String, foundItem: List<IntRange>): AnnotatedString {
         return buildAnnotatedString {
-            //append(source)
             append(multiParagraphText(source, TextIndent(firstLine = 12.sp)))
             for (i in foundItem.indices)
                 addStyle(
-                    style = SpanStyle(background = Color.Red),
+                    style = SpanStyle(background = backgroundColor),
                     start = foundItem[i].start,
                     end = foundItem[i].endInclusive + 1
                 )
@@ -85,7 +87,7 @@ fun FoundScreen(conditions: SearchConditions, innerPadding: PaddingValues) {
             Box(
                 modifier = Modifier
                     .padding(innerPadding)
-                    .background(color = Color.LightGray)
+                    .background(color = MaterialTheme.colorScheme.secondaryContainer)
                     .fillMaxSize(),
                 contentAlignment = Alignment.Center
             ) {
@@ -108,7 +110,11 @@ fun FoundScreen(conditions: SearchConditions, innerPadding: PaddingValues) {
             LazyColumn(modifier = Modifier.padding(innerPadding)) {
                 for (index in found.keys) {
                     item {
-                        RecordItem(viewModel.catechism, index, FoundTransformer(found))
+                        RecordItem(
+                            viewModel.catechism,
+                            index,
+                            FoundTransformer(found, MaterialTheme.colorScheme.primary)
+                        )
                         if (index < found.keys.maxOrNull()!!) {
                             Spacer(modifier = Modifier.padding(all = 4.dp))
                             Divider(

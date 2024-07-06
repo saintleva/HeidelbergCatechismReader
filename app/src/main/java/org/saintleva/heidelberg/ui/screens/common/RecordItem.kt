@@ -17,6 +17,7 @@
 
 package org.saintleva.heidelberg.ui.screens.common
 
+import android.widget.Toast
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Box
@@ -31,6 +32,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalClipboardManager
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextStyle
@@ -54,16 +56,46 @@ fun CopyableSubItem(text: AnnotatedString, style: TextStyle) {
             style = style
         )
         DropdownMenu(expanded = expanded.value, onDismissRequest = { expanded.value = false }) {
+            val message = stringResource(R.string.text_copied_to_clipboard)
+            val context = LocalContext.current
             DropdownMenuItem(
                 text = { Text(stringResource(R.string.copy)) },
                 onClick = {
                     clipboardManager.setText(text)
+                    Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
                     expanded.value = false
                 }
             )
         }
     }
 }
+
+//    Box(modifier = Modifier
+//        .padding(all = 4.dp), style = style
+//            )
+//        }
+//        DropdownMenu(
+//            expanded = menuExpanded.value,
+//            onDismissRequest = { menuExpanded.value = false },
+//            offset = DpOffset(menuPosition.value.x.toDp(), menuPosition.value.y.toDp())
+//        ) {
+//            DropdownMenuItem(
+//                text = { Text(stringResource(R.string.copy)) },
+//                onClick = {
+//                    clipboardManager.setText(text)
+//                    menuExpanded.value = false
+////                    SnackbarHostState.showSnackbar()
+//                    Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
+//                }
+//            )
+//        }
+//        if (snackbarVisible.value) {
+//            Snackbar(modifier = Modifier.padding(16.dp)) {
+//                Text(stringResource(R.string.text_copied_to_clipboard))
+//            }
+//        }
+//    }
+//}
 
 interface TextTransformer {
     fun transformQuestion(source: String, index: Int): AnnotatedString

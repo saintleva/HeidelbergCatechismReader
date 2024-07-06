@@ -60,6 +60,7 @@ import org.saintleva.heidelberg.ui.screens.common.RecordItem
 import org.saintleva.heidelberg.ui.screens.searchdialog.SearchDialog
 import org.saintleva.heidelberg.ui.screens.common.TextTransformer
 import org.saintleva.heidelberg.ui.multiParagraphText
+import org.saintleva.heidelberg.ui.screens.common.appBarModifier
 import org.saintleva.heidelberg.ui.screens.searchdialog.SearchDialogEvent
 import org.saintleva.heidelberg.ui.screens.searchdialog.SearchDialogViewModel
 
@@ -111,7 +112,6 @@ fun CatechismNavigationButtons(viewModel: ReadingViewModel, lazyListState: LazyL
     }
 
     val catechism = (catechismState.value as CatechismState.Loaded).catechism
-//    val position = rememberSaveable { mutableStateOf(lazyListState.firstVisibleItemIndex) }
     val position = lazyListState.firstVisibleItemIndex
 
     ElementSpin(
@@ -178,6 +178,7 @@ fun NoTranslationBox() {
 fun ReadingArea(viewModel: ReadingViewModel, innerPadding: PaddingValues,
                 lazyListState: LazyListState) {
 
+    //TODO: Do I need to use rememberSaveable() there?
     val nestedScrollConnection = remember {
         object : NestedScrollConnection {
             override fun onPostScroll(consumed: Offset, available: Offset,
@@ -188,7 +189,7 @@ fun ReadingArea(viewModel: ReadingViewModel, innerPadding: PaddingValues,
         }
     }
 
-    val errorAlerted = remember { mutableStateOf(false) }
+    val errorAlerted = rememberSaveable { mutableStateOf(false) }
 
     val catechismState = viewModel.catechismState.collectAsStateWithLifecycle()
 
@@ -288,7 +289,7 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
         else -> {}
     }
 
-    val aboutMenuExpanded = remember { mutableStateOf(false) }
+    val aboutMenuExpanded = rememberSaveable { mutableStateOf(false) }
 
     val scrollPosition = viewModel.scrollPosition.collectAsStateWithLifecycle()
     val lazyListState =
@@ -298,8 +299,6 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
         else
             rememberLazyListState(questionPosition)
 
-
-    val appBarModifier = Modifier.height(40.dp)
 
     @Composable
     fun filledBottomAppBar()  {
@@ -344,7 +343,8 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
                 },
                 actions = {
                     IconButton(
-                        onClick = { searchDialogViewModel.show() }
+                        onClick = { searchDialogViewModel.show() },
+                        enabled = viewModel.isCatechismLoaded()
                     ) {
                         Icon(Icons.Filled.Search, contentDescription = "Search")
                     }
@@ -364,7 +364,8 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
                         ) {
                             DropdownMenuItem(
                                 text = { Text(stringResource(about_translation)) },
-                                onClick = navigateToScreens::aboutTranslation
+                                onClick = navigateToScreens::aboutTranslation,
+                                enabled = viewModel.isCatechismLoaded()
                             )
                             DropdownMenuItem(
                                 text = { Text(stringResource(R.string.about_catechism)) },

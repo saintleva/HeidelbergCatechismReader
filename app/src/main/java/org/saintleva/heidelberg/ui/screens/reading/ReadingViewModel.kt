@@ -61,6 +61,8 @@ class ReadingViewModel(application: Application) : CatechismViewModel(applicatio
         }
     }
 
+    fun isCatechismLoaded() = _catechismState.value is CatechismState.Loaded
+
     fun selectToLoad() {
         _catechismState.value = CatechismState.SelectedToLoad
         loadCatechism()

@@ -17,6 +17,7 @@
 
 package org.saintleva.heidelberg.ui.screens.select
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
@@ -31,7 +32,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -48,34 +51,40 @@ fun SelectSundayScreen(navigateToReadingScreen: (Int) -> Unit, innerPadding: Pad
         remember { mutableStateOf(catechism.sundayOfQuestion(selectedQuestion)) }
 
     LazyVerticalGrid(
-        columns = GridCells.Adaptive(minSize = 70.dp),
+        columns = GridCells.Adaptive(minSize = 90.dp),
         modifier = Modifier.padding(innerPadding)
     ) {
         for (i in 0 until catechism.sundayCount) {
             item {
                 Card(
                     modifier = Modifier
-                        .padding(2.dp)
+                        .padding(1.dp)
                         .clickable {
                             newSelectedSunday.value = i
                             navigateToReadingScreen(catechism.sundayStart(newSelectedSunday.value))
                         },
+                    shape = RectangleShape,
                     colors = CardDefaults.cardColors(containerColor =
                     if (i == newSelectedSunday.value)
-                        MaterialTheme.colorScheme.secondary
+                        MaterialTheme.colorScheme.tertiary
                     else
-                        Color.LightGray
-                    )
+                        MaterialTheme.colorScheme.tertiaryContainer
+                    ),
+                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.onBackground)
                 ) {
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Column(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
                         Text(
                             text = "${i + 1}",
-                            fontSize = 24.sp
+                            style = MaterialTheme.typography.titleLarge
                         )
                         Text(
                             text = "(${stringResource(R.string.questions)}\n" +
                                     "${catechism.sundayStart(i) + 1}..${catechism.sundayEnd(i)})",
-                            fontSize = 12.sp
+                            textAlign = TextAlign.Center,
+                            style = MaterialTheme.typography.bodySmall
                         )
                     }
                 }

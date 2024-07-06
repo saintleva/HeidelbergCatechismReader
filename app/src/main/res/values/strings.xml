@@ -32,4 +32,5 @@
     <string name="select_question">Select question</string>
     <string name="select_translation">Select translation</string>
     <string name="original">original</string>
+    <string name="text_copied_to_clipboard">Text has been copied to clipboard</string>
 </resources>

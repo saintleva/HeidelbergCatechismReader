@@ -38,6 +38,7 @@ import org.saintleva.heidelberg.data.SearchConditions
 import org.saintleva.heidelberg.ui.screens.about.AboutApplicationScreen
 import org.saintleva.heidelberg.ui.screens.about.AboutCatechismScreen
 import org.saintleva.heidelberg.ui.screens.about.AboutTranslationScreen
+import org.saintleva.heidelberg.ui.screens.common.appBarModifier
 import org.saintleva.heidelberg.ui.screens.found.FoundScreen
 import org.saintleva.heidelberg.ui.screens.select.SelectQuestionScreen
 import org.saintleva.heidelberg.ui.screens.select.SelectSundayScreen
@@ -101,6 +102,7 @@ fun AppNavGraph(navController: NavHostController) {
             topBar = {
                 TopAppBar(
                     title = { Text(title) },
+                    modifier = appBarModifier,
                     navigationIcon = {
                         IconButton(onClick = { navController.navigateUp() }) {
                             Icon(Icons.Default.ArrowBack, contentDescription = "Go back")
