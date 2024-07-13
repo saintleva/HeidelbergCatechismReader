@@ -17,22 +17,30 @@
 
 package org.saintleva.heidelberg.ui.screens.about
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
+import org.saintleva.heidelberg.R
 
 
 @Composable
 fun AboutCatechismScreen(innerPadding: PaddingValues) {
-    //TODO: Implement real screen and remove this stub
     Column(modifier = Modifier.padding(innerPadding)) {
-        Text("AboutCatechismScreen 1")
-        Text("AboutCatechismScreen 2")
-        Text("AboutCatechismScreen 3")
-        Text("AboutCatechismScreen 4")
-        Text("AboutCatechismScreen 5")
+        Image(
+            painter = painterResource(R.drawable.catechism_1563_edition),
+            contentDescription = "Catechism 1563 edition"
+            //modifier = Modifier.size(128.dp)
+        )
+        Text(
+            text = stringResource(R.string.about_catechism_text),
+            modifier = Modifier.padding(innerPadding).padding(10.dp)
+        )
     }
 }

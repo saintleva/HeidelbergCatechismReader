@@ -26,6 +26,8 @@ import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material3.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -39,6 +41,7 @@ import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
 import androidx.compose.ui.input.nestedscroll.NestedScrollSource
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontWeight
@@ -70,11 +73,11 @@ fun ElementSpin(element: String, previousEnabled: Boolean, onPrevious: () -> Uni
                 nextEnabled: Boolean, onNext: () -> Unit, onSelect: () -> Unit) {
     Row(verticalAlignment = Alignment.CenterVertically) {
         IconButton(onClick = onPrevious, enabled = previousEnabled) {
-            Icon(Icons.Default.ArrowBack, contentDescription = "Go to previous")
+            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Go to previous")
         }
         Text(text = element, modifier = Modifier.clickable { onSelect() })
         IconButton(onClick = onNext, enabled = nextEnabled) {
-            Icon(Icons.Default.ArrowForward, contentDescription = "Go to next")
+            Icon(Icons.AutoMirrored.Filled.ArrowForward, contentDescription = "Go to next")
         }
     }
 }
@@ -322,14 +325,6 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
             TopAppBar(
                 title = {},
                 modifier = appBarModifier,
-//                containerColor = MaterialTheme.colorScheme.surfaceVariant,
-//                title = {
-//                    Text(
-//                        "Simple TopAppBar",
-//                        maxLines = 1,
-//                        overflow = TextOverflow.Visible
-//                    )
-//                },
                 colors = TopAppBarDefaults.smallTopAppBarColors(
                     containerColor = MaterialTheme.colorScheme.surfaceVariant
                 ),
@@ -337,8 +332,11 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
                     IconButton(
                         onClick = navigateToScreens::selectTranslation
                     ) {
-                        //TODO: Use "Translation" icon
-                        Icon(Icons.Default.Face, contentDescription = "Select translation")
+                        Icon(
+                            painterResource(R.drawable.language),
+                            contentDescription = "Select translation",
+                            modifier = Modifier.size(28.dp)
+                        )
                     }
                 },
                 actions = {
@@ -351,7 +349,6 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
                     if (isWidthLarge) {
                         CatechismNavigationButtons(viewModel, lazyListState, navigateToScreens)
                     }
-//                        Spacer(modifier = Modifier.weight(1f))
                     Box {
                         IconButton(
                             onClick = { aboutMenuExpanded.value = true }

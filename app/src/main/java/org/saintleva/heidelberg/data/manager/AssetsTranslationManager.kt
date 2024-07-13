@@ -39,7 +39,7 @@ object AssetsTranslationManager : StandardCombinedTranslationManager {
     override val allTranslations = MutableStateFlow<TranslationListState>(TranslationListState.None)
 
     //TODO: Do I must to make this method suspend?
-    override fun load(context: Context) {
+    override suspend fun load(context: Context) {
         val moshi = Moshi
             .Builder()
             .add(KotlinJsonAdapterFactory())
@@ -53,8 +53,8 @@ object AssetsTranslationManager : StandardCombinedTranslationManager {
         )
 
         val assetManager = context.assets
-        val inputStream = assetManager.open("list")
         try {
+            val inputStream = assetManager.open("list")
             val bufferedSource = inputStream.source().buffer()
             allTranslations.value =
                 TranslationListState.Loaded(adapter.fromJson(bufferedSource)!!) //TODO: remove "!!"
