@@ -36,16 +36,16 @@ object AssetsCatechismLoader : CatechismLoader {
     override suspend fun load(id: String, context: Context): Catechism {
         val assetManager = context.assets
         if (id !in loaded) {
-            val inputStream = assetManager.open("translations/$id.translation")
             try {
+                val inputStream = assetManager.open("translations/$id.translation")
                 loaded[id] = loadTranslationFromXml(inputStream)
             } catch (e: java.io.IOException) {
                 throw FileLoadingException(FileType.TRANSLATION, e)
             }
         }
         if (structure == null) {
-            val inputStream = assetManager.open("structure")
             try {
+                val inputStream = assetManager.open("structure")
                 structure = loadStructureFromXml(inputStream)
             } catch (e: java.io.IOException) {
                 throw FileLoadingException(FileType.STRUCTURE, e)

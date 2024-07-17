@@ -18,6 +18,7 @@
 package org.saintleva.heidelberg.ui.screens.reading
 
 import android.app.Application
+import android.util.Log
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
@@ -49,6 +50,7 @@ class ReadingViewModel(application: Application) : CatechismViewModel(applicatio
     private fun loadCatechism() {
         viewModelScope.launch(Dispatchers.IO) {
             try {
+                Log.d("lifecycle", "ReadingViewModel.loadCatechism(), ${repository.currentTranslationId.value}")
                 _catechismState.value = CatechismState.Loaded(
                     loader.load(
                         (repository.currentTranslationId.value as TranslationId.Id).value,
@@ -58,6 +60,14 @@ class ReadingViewModel(application: Application) : CatechismViewModel(applicatio
             } catch (e: FileLoadingException) {
                 _catechismState.value = CatechismState.Error(e)
             }
+        }
+    }
+
+    fun tryToLoadSavedCatechism() {
+        Log.d("lifecycle", "ReadingViewModel.tryToLoadSavedCatechism(), ${repository.currentTranslationId.value}")
+        if (repository.currentTranslationId.value is TranslationId.Id
+            && _catechismState.value == CatechismState.Never) {
+            selectToLoad()
         }
     }
 

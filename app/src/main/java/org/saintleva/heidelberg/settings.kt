@@ -18,6 +18,7 @@
 package org.saintleva.heidelberg
 
 import android.content.Context
+import android.util.Log
 import org.saintleva.heidelberg.data.repository.TranslationId
 
 
@@ -58,6 +59,7 @@ fun saveToPrefs(position: Position, context: Context) {
 fun loadFromPrefs(context: Context): Position {
     val prefs = context.getSharedPreferences(STORAGE_STATE, Context.MODE_PRIVATE)
     val translationString = prefs.getString(TRANSLATION_ID, "")
+    Log.d("lifecycle", "translationString == $translationString")
     return Position(
         if (translationString.isNullOrEmpty())
             TranslationId.None

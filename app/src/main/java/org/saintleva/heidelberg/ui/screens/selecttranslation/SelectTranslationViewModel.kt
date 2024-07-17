@@ -22,6 +22,7 @@ import android.util.Log
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import org.saintleva.heidelberg.FileLoadingException
@@ -43,7 +44,11 @@ class SelectTranslationViewModel(application: Application) : RepositoryViewModel
         CombinedTranslationManagerComponent.inject(this)
     }
 
-    private val _currentTranslationId = repository.currentTranslationId
+    private val _currentTranslationId: MutableStateFlow<TranslationId>
+        get() {
+            Log.d("lifecycle", "repository.currentTranslationId == ${repository.currentTranslationId.value}")
+            return repository.currentTranslationId
+        }
     val currentTranslationId: StateFlow<TranslationId> = _currentTranslationId
 
     private val _combinedTranslations = manager.combinedTranslations

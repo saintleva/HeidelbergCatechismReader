@@ -18,6 +18,7 @@
 package org.saintleva.heidelberg.data.repository
 
 import android.content.Context
+import android.util.Log
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.MutableLiveData
@@ -33,8 +34,19 @@ import org.saintleva.heidelberg.saveToPrefs
 object RepositoryImpl : Repository {
 
     override val currentTranslationId = MutableStateFlow<TranslationId>(TranslationId.None)
+//        get() {
+//            Log.d("lifecycle", "repository.currentTranslationId == ${currentTranslationId.value}")
+//            return currentTranslationId
+//        }
 
     override val catechismState = MutableStateFlow<CatechismState>(CatechismState.Never)
+//        get() {
+//            when (currentTranslationId.value) {
+//                TranslationId.None -> MutableStateFlow<CatechismState>(CatechismState.Never)
+//                is TranslationId.Id -> MutableStateFlow<CatechismState>(CatechismState.Loaded())
+//            }
+//
+//        }
 
     override var scrollPosition = ScrollPosition.DEFAULT
  
@@ -47,6 +59,11 @@ object RepositoryImpl : Repository {
 
     override fun loadPositionFromPrefs(context: Context) {
         val position = loadFromPrefs(context)
+        if (position.translation is TranslationId.Id) {
+            Log.d("lifecycle", "translation == ${position.translation.value}")
+        } else {
+            Log.d("lifecycle", "translation is None")
+        }
         currentTranslationId.value = position.translation
         scrollPosition = position.scroll
     }

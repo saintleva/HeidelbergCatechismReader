@@ -166,7 +166,7 @@ fun AppNavGraph(navController: NavHostController) {
                         navController.navigate(Route.AboutApplication.path)
                     }
                 },
-                backStackEntry.arguments!!.getInt(Route.Reading.questionPosition)
+                backStackEntry.arguments!!.getInt(Route.Reading.questionPosition, -1)
             )
         }
 

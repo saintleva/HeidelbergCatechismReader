@@ -196,6 +196,8 @@ fun ReadingArea(viewModel: ReadingViewModel, innerPadding: PaddingValues,
 
     val catechismState = viewModel.catechismState.collectAsStateWithLifecycle()
 
+    viewModel.tryToLoadSavedCatechism()
+
     when (val state = catechismState.value) {
         CatechismState.Never -> {
             NoTranslationBox()
@@ -296,12 +298,16 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
 
     val scrollPosition = viewModel.scrollPosition.collectAsStateWithLifecycle()
     val lazyListState =
-        if (questionPosition == -1)
-            rememberLazyListState(scrollPosition.value.firstVisibleItemIndex,
-                scrollPosition.value.firstVisibleItemScrollOffset)
-        else
+        if (questionPosition == -1) {
+            Log.d("anthony", "ReadingScreen(), questionPosition == $questionPosition")
+            rememberLazyListState(
+                scrollPosition.value.firstVisibleItemIndex,
+                scrollPosition.value.firstVisibleItemScrollOffset
+            )
+        } else {
+            Log.d("anthony", "ReadingScreen(), questionPosition == $questionPosition")
             rememberLazyListState(questionPosition)
-
+        }
 
     @Composable
     fun filledBottomAppBar()  {

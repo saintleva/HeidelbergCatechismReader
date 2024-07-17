@@ -22,6 +22,9 @@ class MainActivity : ComponentActivity() {
     @ExperimentalMaterial3Api
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d("lifecycle", "MainActivity.onCreate()") // TODO: remove it
+        viewModel.repository.loadPositionFromPrefs(this)
+
 
         setContent {
             val navController = rememberNavController()
@@ -35,6 +38,18 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    override fun onPause() {
+        viewModel.repository.savePositionToPrefs(this)
+        Log.d("lifecycle", "MainActivity.onPause()")
+        super.onPause()
+    }
+
+    override fun onStop() {
+        viewModel.repository.savePositionToPrefs(this)
+        Log.d("lifecycle", "MainActivity.onPause()")
+        super.onStop()
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
