@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -38,7 +38,6 @@ object AssetsTranslationManager : StandardCombinedTranslationManager {
 
     override val allTranslations = MutableStateFlow<TranslationListState>(TranslationListState.None)
 
-    //TODO: Do I must to make this method suspend?
     override suspend fun load(context: Context) {
         val moshi = Moshi
             .Builder()
@@ -57,7 +56,7 @@ object AssetsTranslationManager : StandardCombinedTranslationManager {
             val inputStream = assetManager.open("list")
             val bufferedSource = inputStream.source().buffer()
             allTranslations.value =
-                TranslationListState.Loaded(adapter.fromJson(bufferedSource)!!) //TODO: remove "!!"
+                TranslationListState.Loaded(adapter.fromJson(bufferedSource)!!)
         } catch (e: java.io.IOException) {
             throw FileLoadingException(FileType.LIST, e)
         } catch (e: NoLanguageSpecifiedException) {

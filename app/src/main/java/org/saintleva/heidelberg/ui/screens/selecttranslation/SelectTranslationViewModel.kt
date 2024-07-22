@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -18,9 +18,6 @@
 package org.saintleva.heidelberg.ui.screens.selecttranslation
 
 import android.app.Application
-import android.util.Log
-import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.State
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -44,11 +41,8 @@ class SelectTranslationViewModel(application: Application) : RepositoryViewModel
         CombinedTranslationManagerComponent.inject(this)
     }
 
-    private val _currentTranslationId: MutableStateFlow<TranslationId>
-        get() {
-            Log.d("lifecycle", "repository.currentTranslationId == ${repository.currentTranslationId.value}")
-            return repository.currentTranslationId
-        }
+    private val _currentTranslationId: MutableStateFlow<TranslationId> =
+        repository.currentTranslationId
     val currentTranslationId: StateFlow<TranslationId> = _currentTranslationId
 
     private val _combinedTranslations = manager.combinedTranslations
@@ -58,13 +52,8 @@ class SelectTranslationViewModel(application: Application) : RepositoryViewModel
         viewModelScope.launch {
             try {
                 if (manager.allTranslations.value == TranslationListState.None) {
-                    Log.d("anthony", "manager: loading started...")
                     manager.load(getApplication())
-                    Log.d("anthony", "manager: loading finished")
-                    Log.d("anthony", "manager: combining started...")
                     manager.combineTranslations()
-                    Log.d("anthony", "manager: combining finished...")
-                    Log.d("anthony", "combinedTranslations.value == ${combinedTranslations.value}")
                 }
             } catch (e: FileLoadingException) {
                 _combinedTranslations.value =

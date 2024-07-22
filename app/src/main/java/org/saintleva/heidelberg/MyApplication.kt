@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -18,7 +18,6 @@
 package org.saintleva.heidelberg
 
 import android.app.Application
-import android.util.Log
 import org.saintleva.heidelberg.data.repository.Repository
 import org.saintleva.heidelberg.di.RepositoryComponent
 
@@ -32,18 +31,15 @@ class MyApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        Log.d("lifecycle", "MyApplication.ocCreate()") //TODO: remove it
         repository.loadPositionFromPrefs(this)
     }
 
     override fun onLowMemory() {
-        Log.d("lifecycle", "MyApplication.onLowMemory()") //TODO: remove it
         repository.savePositionToPrefs(this)
         super.onLowMemory()
     }
 
     override fun onTerminate() {
-        Log.d("lifecycle", "MyApplication.onTerminate()") //TODO: remove it
         repository.savePositionToPrefs(this)
         super.onTerminate()
     }

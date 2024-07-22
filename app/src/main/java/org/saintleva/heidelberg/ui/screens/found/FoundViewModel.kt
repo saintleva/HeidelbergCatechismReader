@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -18,15 +18,12 @@
 package org.saintleva.heidelberg.ui.screens.found
 
 import android.app.Application
-import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.State
 import androidx.compose.ui.text.style.TextIndent
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import org.saintleva.heidelberg.data.repository.Repository
 import org.saintleva.heidelberg.data.Found
 import org.saintleva.heidelberg.data.SearchConditions
 import org.saintleva.heidelberg.data.findInCatechism

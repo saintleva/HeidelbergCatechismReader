@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -18,16 +18,14 @@
 package org.saintleva.heidelberg.ui.screens.reading
 
 import android.app.Application
-import android.util.Log
 import androidx.compose.foundation.lazy.LazyListState
-import androidx.compose.runtime.State
-import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import org.saintleva.heidelberg.*
+import org.saintleva.heidelberg.FileLoadingException
+import org.saintleva.heidelberg.ScrollPosition
 import org.saintleva.heidelberg.data.loader.CatechismLoader
 import org.saintleva.heidelberg.data.repository.CatechismState
 import org.saintleva.heidelberg.data.repository.TranslationId
@@ -50,7 +48,6 @@ class ReadingViewModel(application: Application) : CatechismViewModel(applicatio
     private fun loadCatechism() {
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                Log.d("lifecycle", "ReadingViewModel.loadCatechism(), ${repository.currentTranslationId.value}")
                 _catechismState.value = CatechismState.Loaded(
                     loader.load(
                         (repository.currentTranslationId.value as TranslationId.Id).value,
@@ -64,7 +61,6 @@ class ReadingViewModel(application: Application) : CatechismViewModel(applicatio
     }
 
     fun tryToLoadSavedCatechism() {
-        Log.d("lifecycle", "ReadingViewModel.tryToLoadSavedCatechism(), ${repository.currentTranslationId.value}")
         if (repository.currentTranslationId.value is TranslationId.Id
             && _catechismState.value == CatechismState.Never) {
             selectToLoad()

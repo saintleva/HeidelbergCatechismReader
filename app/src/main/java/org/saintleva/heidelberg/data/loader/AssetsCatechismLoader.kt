@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,11 +20,11 @@ package org.saintleva.heidelberg.data.loader
 import android.content.Context
 import org.saintleva.heidelberg.FileLoadingException
 import org.saintleva.heidelberg.FileType
+import org.saintleva.heidelberg.data.loadStructureFromXml
+import org.saintleva.heidelberg.data.loadTranslationFromXml
 import org.saintleva.heidelberg.data.models.Catechism
 import org.saintleva.heidelberg.data.models.Structure
 import org.saintleva.heidelberg.data.models.Translation
-import org.saintleva.heidelberg.data.loadStructureFromXml
-import org.saintleva.heidelberg.data.loadTranslationFromXml
 
 
 object AssetsCatechismLoader : CatechismLoader {

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -18,9 +18,7 @@
 package org.saintleva.heidelberg
 
 import android.app.Application
-import org.saintleva.heidelberg.data.repository.Repository
-import org.saintleva.heidelberg.di.RepositoryComponent
 import org.saintleva.heidelberg.ui.screens.common.RepositoryViewModel
 
 
-class MainViewModel(application: Application) : RepositoryViewModel(application) {}
+class MainViewModel(application: Application) : RepositoryViewModel(application)

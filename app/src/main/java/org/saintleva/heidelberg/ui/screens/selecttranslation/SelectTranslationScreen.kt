@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -50,7 +50,6 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.data.manager.CombinedTranslationListState
-import org.saintleva.heidelberg.data.manager.TranslationListState
 import org.saintleva.heidelberg.data.models.TranslationMetadata
 import org.saintleva.heidelberg.ui.screens.common.DataAlert
 
@@ -61,7 +60,6 @@ fun TranslationItem(metadata: TranslationMetadata, isCurrent: Boolean, onTransla
         modifier = Modifier
             .fillMaxSize()
             .padding(8.dp),
-//        colors = CardDefaults.cardColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
     ) {
         Column(

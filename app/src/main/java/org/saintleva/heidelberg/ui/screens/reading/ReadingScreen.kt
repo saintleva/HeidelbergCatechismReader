@@ -1,5 +1,5 @@
  /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,15 +20,33 @@ package org.saintleva.heidelberg.ui.screens.reading
 import android.content.res.Configuration
 import android.util.Log
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.rememberLazyListState
-import androidx.compose.material3.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.automirrored.filled.ArrowForward
-import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.filled.MoreVert
+import androidx.compose.material.icons.filled.Search
+import androidx.compose.material3.BottomAppBar
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Divider
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -51,33 +69,31 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
-import org.saintleva.heidelberg.*
 import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.R.string.about_translation
-import org.saintleva.heidelberg.data.repository.CatechismState
 import org.saintleva.heidelberg.data.SearchConditions
+import org.saintleva.heidelberg.data.repository.CatechismState
+import org.saintleva.heidelberg.ui.multiParagraphText
 import org.saintleva.heidelberg.ui.screens.common.DataAlert
 import org.saintleva.heidelberg.ui.screens.common.RecordItem
-import org.saintleva.heidelberg.ui.screens.searchdialog.SearchDialog
 import org.saintleva.heidelberg.ui.screens.common.TextTransformer
-import org.saintleva.heidelberg.ui.multiParagraphText
 import org.saintleva.heidelberg.ui.screens.common.appBarModifier
+import org.saintleva.heidelberg.ui.screens.searchdialog.SearchDialog
 import org.saintleva.heidelberg.ui.screens.searchdialog.SearchDialogEvent
 import org.saintleva.heidelberg.ui.screens.searchdialog.SearchDialogViewModel
 
 
-@Composable
+ @Composable
 fun ElementSpin(element: String, previousEnabled: Boolean, onPrevious: () -> Unit,
                 nextEnabled: Boolean, onNext: () -> Unit, onSelect: () -> Unit) {
     Row(verticalAlignment = Alignment.CenterVertically) {
         IconButton(onClick = onPrevious, enabled = previousEnabled) {
-            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Go to previous")
+            Icon(painterResource(R.drawable.caret_back), contentDescription = "Go to previous")
         }
         Text(text = element, modifier = Modifier.clickable { onSelect() })
         IconButton(onClick = onNext, enabled = nextEnabled) {
-            Icon(Icons.AutoMirrored.Filled.ArrowForward, contentDescription = "Go to next")
+            Icon(painterResource(R.drawable.caret_forward), contentDescription = "Go to next")
         }
     }
 }
@@ -367,16 +383,24 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
                         ) {
                             DropdownMenuItem(
                                 text = { Text(stringResource(about_translation)) },
-                                onClick = navigateToScreens::aboutTranslation,
+                                onClick = {
+                                    navigateToScreens.aboutTranslation()
+                                    aboutMenuExpanded.value = false },
                                 enabled = viewModel.isCatechismLoaded()
                             )
                             DropdownMenuItem(
                                 text = { Text(stringResource(R.string.about_catechism)) },
-                                onClick = navigateToScreens::aboutCatechism
+                                onClick = {
+                                    navigateToScreens.aboutCatechism()
+                                    aboutMenuExpanded.value = false
+                                }
                             )
                             DropdownMenuItem(
                                 text = { Text(stringResource(R.string.about_application)) },
-                                onClick = navigateToScreens::aboutApplication
+                                onClick = {
+                                    navigateToScreens.aboutApplication()
+                                    aboutMenuExpanded.value = false
+                                }
                             )
                         }
                     }
@@ -392,7 +416,7 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
         }
     ) { innerPadding ->
         if (searchDialogViewModel.showDialog.value) {
-            SearchDialog(searchDialogViewModel, innerPadding)
+            SearchDialog(searchDialogViewModel)
         }
         ReadingArea(viewModel, innerPadding, lazyListState)
     }

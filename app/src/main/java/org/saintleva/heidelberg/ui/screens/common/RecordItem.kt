@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -69,33 +69,6 @@ fun CopyableSubItem(text: AnnotatedString, style: TextStyle) {
         }
     }
 }
-
-//    Box(modifier = Modifier
-//        .padding(all = 4.dp), style = style
-//            )
-//        }
-//        DropdownMenu(
-//            expanded = menuExpanded.value,
-//            onDismissRequest = { menuExpanded.value = false },
-//            offset = DpOffset(menuPosition.value.x.toDp(), menuPosition.value.y.toDp())
-//        ) {
-//            DropdownMenuItem(
-//                text = { Text(stringResource(R.string.copy)) },
-//                onClick = {
-//                    clipboardManager.setText(text)
-//                    menuExpanded.value = false
-////                    SnackbarHostState.showSnackbar()
-//                    Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
-//                }
-//            )
-//        }
-//        if (snackbarVisible.value) {
-//            Snackbar(modifier = Modifier.padding(16.dp)) {
-//                Text(stringResource(R.string.text_copied_to_clipboard))
-//            }
-//        }
-//    }
-//}
 
 interface TextTransformer {
     fun transformQuestion(source: String, index: Int): AnnotatedString

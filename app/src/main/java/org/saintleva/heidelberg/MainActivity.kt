@@ -1,7 +1,23 @@
+/*
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 3 of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package org.saintleva.heidelberg
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
@@ -11,7 +27,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
-import org.saintleva.heidelberg.data.repository.Repository
 import org.saintleva.heidelberg.ui.screens.AppNavGraph
 import org.saintleva.heidelberg.ui.theme.HeidelbergCatechismReaderTheme
 
@@ -22,9 +37,8 @@ class MainActivity : ComponentActivity() {
     @ExperimentalMaterial3Api
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("lifecycle", "MainActivity.onCreate()") // TODO: remove it
-        viewModel.repository.loadPositionFromPrefs(this)
 
+        viewModel.repository.loadPositionFromPrefs(this)
 
         setContent {
             val navController = rememberNavController()
@@ -42,18 +56,15 @@ class MainActivity : ComponentActivity() {
 
     override fun onPause() {
         viewModel.repository.savePositionToPrefs(this)
-        Log.d("lifecycle", "MainActivity.onPause()")
         super.onPause()
     }
 
     override fun onStop() {
         viewModel.repository.savePositionToPrefs(this)
-        Log.d("lifecycle", "MainActivity.onPause()")
         super.onStop()
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
-        Log.d("lifecycle", "MainActivity.onSaveInstanceState()") // TODO: remove it
         viewModel.repository.savePositionToPrefs(this)
         super.onSaveInstanceState(outState)
     }

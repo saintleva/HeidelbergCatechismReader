@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2025 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -18,7 +18,6 @@
 package org.saintleva.heidelberg.data.manager
 
 import android.content.Context
-import androidx.compose.runtime.MutableState
 import kotlinx.coroutines.flow.MutableStateFlow
 import org.saintleva.heidelberg.DataException
 import org.saintleva.heidelberg.data.models.AllTranslations

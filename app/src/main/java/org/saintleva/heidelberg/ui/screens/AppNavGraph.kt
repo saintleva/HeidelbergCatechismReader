@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -17,25 +17,18 @@
 
 package org.saintleva.heidelberg.ui.screens
 
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.modifier.modifierLocalMapOf
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -48,10 +41,10 @@ import org.saintleva.heidelberg.ui.screens.about.AboutCatechismScreen
 import org.saintleva.heidelberg.ui.screens.about.AboutTranslationScreen
 import org.saintleva.heidelberg.ui.screens.common.appBarModifier
 import org.saintleva.heidelberg.ui.screens.found.FoundScreen
-import org.saintleva.heidelberg.ui.screens.select.SelectQuestionScreen
-import org.saintleva.heidelberg.ui.screens.select.SelectSundayScreen
 import org.saintleva.heidelberg.ui.screens.reading.NavigateToScreens
 import org.saintleva.heidelberg.ui.screens.reading.ReadingScreen
+import org.saintleva.heidelberg.ui.screens.select.SelectQuestionScreen
+import org.saintleva.heidelberg.ui.screens.select.SelectSundayScreen
 import org.saintleva.heidelberg.ui.screens.selecttranslation.SelectTranslationScreen
 
 
