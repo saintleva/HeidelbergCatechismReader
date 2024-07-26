@@ -34,5 +34,9 @@
     <string name="original">original</string>
     <string name="text_copied_to_clipboard">Text has been copied to clipboard</string>
     <string name="about_catechism_text">The Heidelberg Catechism (1563), one of the Three Forms of Unity, is a Protestant confessional document taking the form of a series of questions and answers, for use in teaching Calvinist Christian doctrine. It was published in 1563 in Heidelberg, Germany. Its original title translates to Catechism, or Christian Instruction, according to the Usages of the Churches and Schools of the Electoral Palatinate. Commissioned by the prince-elector of the Electoral Palatinate, it is sometimes referred to as the \"Palatinate Catechism.\" It has been translated into many languages and is regarded as one of the most influential of the Reformed catechisms.</string>
-    <string name="about_application_text">HeildelbergCatechismReader - это продвинутое Android-приложение для чтения Гейдельбергского катехизиса.\n\nРазработал Левкевич Антон (leva.dev@gmail.com)\n\nБлагодарности Семенович Галине, Семеновичу Вите и малой группе церкви \"Новая Земля\" за молитвы за этот проект. Также благодарность Алине Нестерович за создание логотипа приложения.</string>
+    <string name="about_application_text">HeildelbergCatechismReader is an advanced Android
+        application for reading the Heidelberg Catechism.\n\Developed by Anton Liaukevich
+        (leva.dev@gmail.com) \n\nThanks to Mikhail Nareiko for the app idea. Thanks to Halina
+        Semenovich, Victor Semenovich (who also helped me with the development), and the small
+        group of the New Land Church for their prayers for this project. Thanks also to Alina Nesterovich for creating the app logo.</string>
 </resources>

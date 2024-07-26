@@ -91,7 +91,7 @@ fun ElementSpin(element: String, previousEnabled: Boolean, onPrevious: () -> Uni
         IconButton(onClick = onPrevious, enabled = previousEnabled) {
             Icon(painterResource(R.drawable.caret_back), contentDescription = "Go to previous")
         }
-        Text(text = element, modifier = Modifier.clickable { onSelect() })
+        Text(text = element, modifier = Modifier.clickable { onSelect() }, fontSize = 13.sp)
         IconButton(onClick = onNext, enabled = nextEnabled) {
             Icon(painterResource(R.drawable.caret_forward), contentDescription = "Go to next")
         }
