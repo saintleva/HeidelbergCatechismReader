@@ -31,14 +31,14 @@ import org.saintleva.heidelberg.data.models.AllTranslations
 import org.saintleva.heidelberg.data.models.TranslationMetadata
 
 
-object AssetsTranslationManager : StandardCombinedTranslationManager {
+class AssetsTranslationManager(private val context: Context) : StandardCombinedTranslationManager {
 
     override val combinedTranslations =
         MutableStateFlow<CombinedTranslationListState>(CombinedTranslationListState.None)
 
     override val allTranslations = MutableStateFlow<TranslationListState>(TranslationListState.None)
 
-    override suspend fun load(context: Context) {
+    override suspend fun load() {
         val moshi = Moshi
             .Builder()
             .add(KotlinJsonAdapterFactory())

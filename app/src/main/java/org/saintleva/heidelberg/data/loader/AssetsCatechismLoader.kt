@@ -27,13 +27,13 @@ import org.saintleva.heidelberg.data.models.Structure
 import org.saintleva.heidelberg.data.models.Translation
 
 
-object AssetsCatechismLoader : CatechismLoader {
+class AssetsCatechismLoader(private val context: Context) : CatechismLoader {
 
     override var structure: Structure? = null
 
     override val loaded = mutableMapOf<String, Translation>()
 
-    override suspend fun load(id: String, context: Context): Catechism {
+    override suspend fun load(id: String): Catechism {
         val assetManager = context.assets
         if (id !in loaded) {
             try {

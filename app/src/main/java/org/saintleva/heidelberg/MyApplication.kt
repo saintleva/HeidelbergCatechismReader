@@ -19,7 +19,6 @@ package org.saintleva.heidelberg
 
 import android.app.Application
 import org.saintleva.heidelberg.data.repository.Repository
-import org.saintleva.heidelberg.di.RepositoryComponent
 
 class MyApplication : Application() {
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -17,12 +17,18 @@
 
 package org.saintleva.heidelberg.di
 
+import org.koin.dsl.module
+import org.saintleva.heidelberg.data.loader.AssetsCatechismLoader
+import org.saintleva.heidelberg.data.loader.CatechismLoader
 import org.saintleva.heidelberg.data.manager.AssetsTranslationManager
-import org.saintleva.heidelberg.ui.screens.selecttranslation.SelectTranslationViewModel
+import org.saintleva.heidelberg.data.manager.CombinedTranslationManager
+import org.saintleva.heidelberg.data.repository.Repository
+import org.saintleva.heidelberg.data.repository.RepositoryImpl
 
-object CombinedTranslationManagerComponent {
 
-    fun inject(selectTranslationViewModel: SelectTranslationViewModel) {
-        selectTranslationViewModel.manager = AssetsTranslationManager
-    }
+val dataModule = module {
+
+    single<CatechismLoader> { AssetsCatechismLoader(get()) }
+    single<CombinedTranslationManager> { AssetsTranslationManager(get()) }
+    single<Repository> { RepositoryImpl(get())}
 }

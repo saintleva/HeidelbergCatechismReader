@@ -29,7 +29,6 @@ import org.saintleva.heidelberg.data.manager.CombinedTranslationManager
 import org.saintleva.heidelberg.data.manager.TranslationListState
 import org.saintleva.heidelberg.data.repository.CatechismState
 import org.saintleva.heidelberg.data.repository.TranslationId
-import org.saintleva.heidelberg.di.CombinedTranslationManagerComponent
 import org.saintleva.heidelberg.ui.screens.common.RepositoryViewModel
 
 

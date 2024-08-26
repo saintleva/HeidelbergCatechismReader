@@ -53,8 +53,8 @@ interface Repository {
 
     var scrollPosition: ScrollPosition
 
-    fun savePositionToPrefs(context: Context)
-    fun loadPositionFromPrefs(context: Context)
+    fun savePositionToPrefs()
+    fun loadPositionFromPrefs()
 
     var previousConditions: SearchConditions?
 

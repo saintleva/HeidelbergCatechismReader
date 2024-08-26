@@ -17,6 +17,7 @@
 
 package org.saintleva.heidelberg.ui.screens.select
 
+import android.util.Log
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -48,6 +49,8 @@ fun SelectQuestionScreen(navigateToReadingScreen: (Int) -> Unit, innerPadding: P
                          selected: Int) {
     val viewModel = viewModel<LoadedCatechismViewModel>()
     val newSelected = remember { mutableStateOf(selected) }
+
+    Log.d("anthony", "We are in SelectQuestionScreen()")
 
     LazyVerticalGrid(
         columns = GridCells.Adaptive(minSize = 100.dp),

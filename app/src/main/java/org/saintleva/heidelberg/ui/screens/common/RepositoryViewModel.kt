@@ -20,7 +20,6 @@ package org.saintleva.heidelberg.ui.screens.common
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import org.saintleva.heidelberg.data.repository.Repository
-import org.saintleva.heidelberg.di.RepositoryComponent
 
 
 abstract class RepositoryViewModel(application: Application) : AndroidViewModel(application) {

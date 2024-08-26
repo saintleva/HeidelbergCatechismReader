@@ -70,6 +70,11 @@ dependencies {
 
     implementation("androidx.navigation:navigation-compose:2.7.7")
 
+    implementation("io.insert-koin:koin-core:3.4.3")
+    implementation("io.insert-koin:koin-android:3.4.3")
+    implementation("io.insert-koin:koin-androidx-compose:3.4.3")
+    implementation("io.insert-koin:koin-androidx-compose-viewmodel:3.4.3")
+
     implementation("org.jdom:jdom2:2.0.6.1")
     implementation("com.squareup.moshi:moshi-kotlin:1.14.0")
 }

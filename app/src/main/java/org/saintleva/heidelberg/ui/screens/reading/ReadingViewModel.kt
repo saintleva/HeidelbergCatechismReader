@@ -29,7 +29,6 @@ import org.saintleva.heidelberg.ScrollPosition
 import org.saintleva.heidelberg.data.loader.CatechismLoader
 import org.saintleva.heidelberg.data.repository.CatechismState
 import org.saintleva.heidelberg.data.repository.TranslationId
-import org.saintleva.heidelberg.di.CatechismLoaderComponent
 import org.saintleva.heidelberg.ui.screens.common.CatechismViewModel
 
 

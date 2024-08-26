@@ -18,11 +18,16 @@
 package org.saintleva.heidelberg.ui.screens.common
 
 import android.app.Application
+import android.util.Log
 import org.saintleva.heidelberg.CatechismNotLoadedException
 import org.saintleva.heidelberg.data.models.Catechism
 import org.saintleva.heidelberg.data.repository.CatechismState
 
 abstract class LoadedCatechismViewModel(application: Application) : CatechismViewModel(application) {
+
+    init {
+        Log.d("anthony", "LoadedCatechismViewModel init")
+    }
 
     val catechism: Catechism
         get() {

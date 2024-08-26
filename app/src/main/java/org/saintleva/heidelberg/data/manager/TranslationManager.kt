@@ -33,7 +33,7 @@ sealed class TranslationListState {
 
 interface TranslationManager {
     val allTranslations: MutableStateFlow<TranslationListState>
-    suspend fun load(context: Context)
+    suspend fun load()
 }
 
 class ExtendedMetadata(

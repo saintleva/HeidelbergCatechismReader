@@ -26,5 +26,5 @@ import org.saintleva.heidelberg.data.models.Translation
 interface CatechismLoader {
     var structure: Structure?
     val loaded: MutableMap<String, Translation>
-    suspend fun load(id: String, context: Context): Catechism
+    suspend fun load(id: String): Catechism
 }

@@ -27,7 +27,7 @@ import org.saintleva.heidelberg.loadFromPrefs
 import org.saintleva.heidelberg.saveToPrefs
 
 
-object RepositoryImpl : Repository {
+class RepositoryImpl(private val context: Context) : Repository {
 
     override val currentTranslationId = MutableStateFlow<TranslationId>(TranslationId.None)
 
@@ -35,14 +35,14 @@ object RepositoryImpl : Repository {
 
     override var scrollPosition = ScrollPosition.DEFAULT
  
-    override fun savePositionToPrefs(context: Context) {
+    override fun savePositionToPrefs() {
         saveToPrefs(
             Position(currentTranslationId.value, scrollPosition),
             context
         )
     }
 
-    override fun loadPositionFromPrefs(context: Context) {
+    override fun loadPositionFromPrefs() {
         val position = loadFromPrefs(context)
         currentTranslationId.value = position.translation
         scrollPosition = position.scroll
