@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        viewModel.repository.loadPositionFromPrefs(this)
+        viewModel.repository.loadPositionFromPrefs()
 
         setContent {
             val navController = rememberNavController()
@@ -55,17 +55,17 @@ class MainActivity : ComponentActivity() {
     }
 
     override fun onPause() {
-        viewModel.repository.savePositionToPrefs(this)
+        viewModel.repository.savePositionToPrefs()
         super.onPause()
     }
 
     override fun onStop() {
-        viewModel.repository.savePositionToPrefs(this)
+        viewModel.repository.savePositionToPrefs()
         super.onStop()
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
-        viewModel.repository.savePositionToPrefs(this)
+        viewModel.repository.savePositionToPrefs()
         super.onSaveInstanceState(outState)
     }
 }

@@ -47,7 +47,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.viewmodel.compose.viewModel
+import org.koin.androidx.compose.koinViewModel
 import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.data.manager.CombinedTranslationListState
 import org.saintleva.heidelberg.data.models.TranslationMetadata
@@ -118,7 +118,7 @@ fun NoListBox() {
 
 @Composable
 fun SelectTranslationScreen(navigateToReadingScreen: () -> Unit, innerPadding: PaddingValues) {
-    val viewModel = viewModel<SelectTranslationViewModel>()
+    val viewModel = koinViewModel<SelectTranslationViewModel>()
     val combinedTranslations = viewModel.combinedTranslations.collectAsStateWithLifecycle()
 
     val errorAlerted = remember { mutableStateOf(false) }

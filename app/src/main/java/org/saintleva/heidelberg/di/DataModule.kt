@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Anton Liaukevich 2021-2022 <leva.dev@gmail.com>
+ * Copyright (C) Anton Liaukevich 2022-2024 <leva.dev@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -27,7 +27,6 @@ import org.saintleva.heidelberg.data.repository.RepositoryImpl
 
 
 val dataModule = module {
-
     single<CatechismLoader> { AssetsCatechismLoader(get()) }
     single<CombinedTranslationManager> { AssetsTranslationManager(get()) }
     single<Repository> { RepositoryImpl(get())}

@@ -28,17 +28,15 @@ import org.saintleva.heidelberg.data.manager.CombinedTranslationListState
 import org.saintleva.heidelberg.data.manager.CombinedTranslationManager
 import org.saintleva.heidelberg.data.manager.TranslationListState
 import org.saintleva.heidelberg.data.repository.CatechismState
+import org.saintleva.heidelberg.data.repository.Repository
 import org.saintleva.heidelberg.data.repository.TranslationId
 import org.saintleva.heidelberg.ui.screens.common.RepositoryViewModel
 
 
-class SelectTranslationViewModel(application: Application) : RepositoryViewModel(application) {
-
-    lateinit var manager: CombinedTranslationManager
-
-    init {
-        CombinedTranslationManagerComponent.inject(this)
-    }
+class SelectTranslationViewModel(
+    val manager: CombinedTranslationManager,
+    repository: Repository
+) : RepositoryViewModel(repository) {
 
     private val _currentTranslationId: MutableStateFlow<TranslationId> =
         repository.currentTranslationId
@@ -51,7 +49,7 @@ class SelectTranslationViewModel(application: Application) : RepositoryViewModel
         viewModelScope.launch {
             try {
                 if (manager.allTranslations.value == TranslationListState.None) {
-                    manager.load(getApplication())
+                    manager.load()
                     manager.combineTranslations()
                 }
             } catch (e: FileLoadingException) {

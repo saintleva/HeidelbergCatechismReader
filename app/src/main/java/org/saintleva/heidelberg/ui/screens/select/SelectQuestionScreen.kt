@@ -32,14 +32,14 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
+import org.koin.androidx.compose.koinViewModel
 import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.ui.screens.common.LoadedCatechismViewModel
 
@@ -47,10 +47,8 @@ import org.saintleva.heidelberg.ui.screens.common.LoadedCatechismViewModel
 @Composable
 fun SelectQuestionScreen(navigateToReadingScreen: (Int) -> Unit, innerPadding: PaddingValues,
                          selected: Int) {
-    val viewModel = viewModel<LoadedCatechismViewModel>()
-    val newSelected = remember { mutableStateOf(selected) }
-
-    Log.d("anthony", "We are in SelectQuestionScreen()")
+    val viewModel = koinViewModel<LoadedCatechismViewModel>()
+    val newSelected = rememberSaveable { mutableStateOf(selected) }
 
     LazyVerticalGrid(
         columns = GridCells.Adaptive(minSize = 100.dp),

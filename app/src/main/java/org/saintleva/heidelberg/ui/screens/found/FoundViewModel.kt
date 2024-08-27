@@ -27,10 +27,11 @@ import kotlinx.coroutines.launch
 import org.saintleva.heidelberg.data.Found
 import org.saintleva.heidelberg.data.SearchConditions
 import org.saintleva.heidelberg.data.findInCatechism
+import org.saintleva.heidelberg.data.repository.Repository
 import org.saintleva.heidelberg.ui.screens.common.LoadedCatechismViewModel
 
 
-class FoundViewModel(application: Application) : LoadedCatechismViewModel(application) {
+class FoundViewModel(repository: Repository) : LoadedCatechismViewModel(repository) {
 
     private var _previousConditions: SearchConditions?
         get() = repository.previousConditions

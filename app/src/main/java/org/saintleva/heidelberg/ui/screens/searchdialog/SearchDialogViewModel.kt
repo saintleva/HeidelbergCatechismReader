@@ -21,6 +21,7 @@ import android.app.Application
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import org.saintleva.heidelberg.data.SearchConditions
+import org.saintleva.heidelberg.data.repository.Repository
 import org.saintleva.heidelberg.ui.screens.common.RepositoryViewModel
 
 
@@ -29,7 +30,7 @@ sealed class SearchDialogEvent {
     data class ApplySearchConditionsEvent(val conditions: SearchConditions): SearchDialogEvent()
 }
 
-class SearchDialogViewModel(application: Application) : RepositoryViewModel(application) {
+class SearchDialogViewModel(repository: Repository) : RepositoryViewModel(repository) {
 
     private val _showDialog = mutableStateOf(false)
     val showDialog: State<Boolean> = _showDialog

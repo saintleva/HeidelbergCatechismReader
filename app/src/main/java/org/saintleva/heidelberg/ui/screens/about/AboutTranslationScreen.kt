@@ -26,18 +26,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
+import org.koin.androidx.compose.koinViewModel
 import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.ui.screens.common.LoadedCatechismViewModel
 
 
 @Composable
 fun AboutTranslationScreen(innerPadding: PaddingValues) {
-    val viewModel = viewModel<LoadedCatechismViewModel>()
+    val viewModel = koinViewModel<LoadedCatechismViewModel>()
     if (viewModel.catechism != null) {
         Text(
             text = viewModel.catechism.description,
-            modifier = Modifier.padding(innerPadding).padding(10.dp)
+            modifier = Modifier
+                .padding(innerPadding)
+                .padding(10.dp)
         )
     } else {
         Text(

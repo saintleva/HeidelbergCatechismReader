@@ -17,8 +17,8 @@
 
 package org.saintleva.heidelberg
 
-import android.app.Application
+import org.saintleva.heidelberg.data.repository.Repository
 import org.saintleva.heidelberg.ui.screens.common.RepositoryViewModel
 
 
-class MainViewModel(application: Application) : RepositoryViewModel(application)
+class MainViewModel(repository: Repository) : RepositoryViewModel(repository)

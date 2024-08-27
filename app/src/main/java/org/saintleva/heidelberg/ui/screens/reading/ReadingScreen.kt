@@ -70,6 +70,7 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import kotlinx.coroutines.launch
+import org.koin.androidx.compose.koinViewModel
 import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.R.string.about_translation
 import org.saintleva.heidelberg.data.SearchConditions
@@ -298,9 +299,9 @@ interface NavigateToScreens {
 @Composable
 fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
 
-    val viewModel = viewModel<ReadingViewModel>()
+    val viewModel = koinViewModel<ReadingViewModel>()
 
-    val searchDialogViewModel = viewModel<SearchDialogViewModel>()
+    val searchDialogViewModel = koinViewModel<SearchDialogViewModel>()
 
     when (val event = searchDialogViewModel.searchDialogEvent.value) {
         is SearchDialogEvent.ApplySearchConditionsEvent -> {

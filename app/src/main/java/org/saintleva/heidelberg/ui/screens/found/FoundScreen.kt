@@ -25,7 +25,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -41,7 +41,7 @@ import androidx.compose.ui.text.style.TextIndent
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.viewmodel.compose.viewModel
+import org.koin.androidx.compose.koinViewModel
 import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.data.Found
 import org.saintleva.heidelberg.data.SearchConditions
@@ -80,7 +80,7 @@ class FoundTransformer(
 @Composable
 fun FoundScreen(conditions: SearchConditions, innerPadding: PaddingValues) {
 
-    val viewModel = viewModel<FoundViewModel>()
+    val viewModel = koinViewModel<FoundViewModel>()
     viewModel.find(conditions)
     val found = viewModel.found.collectAsStateWithLifecycle()
 
@@ -124,7 +124,7 @@ fun FoundScreen(conditions: SearchConditions, innerPadding: PaddingValues) {
                         )
                         if (index < found.keys.maxOrNull()!!) {
                             Spacer(modifier = Modifier.padding(all = 4.dp))
-                            Divider(
+                            HorizontalDivider(
                                 thickness = 1.dp,
                                 modifier = Modifier.padding(horizontal = 4.dp)
                             )

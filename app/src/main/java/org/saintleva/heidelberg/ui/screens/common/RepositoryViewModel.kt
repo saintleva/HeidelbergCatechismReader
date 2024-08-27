@@ -17,16 +17,8 @@
 
 package org.saintleva.heidelberg.ui.screens.common
 
-import android.app.Application
-import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.ViewModel
 import org.saintleva.heidelberg.data.repository.Repository
 
 
-abstract class RepositoryViewModel(application: Application) : AndroidViewModel(application) {
-
-    lateinit var repository: Repository
-
-    init {
-        RepositoryComponent.inject(this)
-    }
-}
+abstract class RepositoryViewModel(val repository: Repository) : ViewModel()

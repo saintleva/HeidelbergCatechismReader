@@ -21,22 +21,23 @@ import android.app.Application
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
-import org.koin.core.logger.Level
+import org.koin.java.KoinJavaComponent.inject
 import org.saintleva.heidelberg.data.repository.Repository
+import org.saintleva.heidelberg.di.appModule
 import org.saintleva.heidelberg.di.dataModule
 
 
 class MyApplication : Application() {
 
-    lateinit var repository: Repository
+    val repository: Repository by inject(Repository::class.java)
 
     override fun onCreate() {
         super.onCreate()
 
         startKoin {
-            androidLogger(Level.INFO)
+            androidLogger()
             androidContext(this@MyApplication)
-            modules(dataModule)
+            modules(listOf(dataModule, appModule))
         }
 
         repository.loadPositionFromPrefs()

@@ -28,19 +28,20 @@ import org.saintleva.heidelberg.FileLoadingException
 import org.saintleva.heidelberg.ScrollPosition
 import org.saintleva.heidelberg.data.loader.CatechismLoader
 import org.saintleva.heidelberg.data.repository.CatechismState
+import org.saintleva.heidelberg.data.repository.Repository
 import org.saintleva.heidelberg.data.repository.TranslationId
 import org.saintleva.heidelberg.ui.screens.common.CatechismViewModel
 
 
-class ReadingViewModel(application: Application) : CatechismViewModel(application) {
-
-    lateinit var loader: CatechismLoader
+class ReadingViewModel(
+    private val loader: CatechismLoader,
+    repository: Repository
+) : CatechismViewModel(repository) {
 
     private var _scrollPosition = MutableStateFlow(ScrollPosition.DEFAULT)
     val scrollPosition: StateFlow<ScrollPosition> = _scrollPosition
 
     init {
-        CatechismLoaderComponent.inject(this)
         _scrollPosition.value = repository.scrollPosition
     }
 
@@ -49,8 +50,7 @@ class ReadingViewModel(application: Application) : CatechismViewModel(applicatio
             try {
                 _catechismState.value = CatechismState.Loaded(
                     loader.load(
-                        (repository.currentTranslationId.value as TranslationId.Id).value,
-                        context = getApplication()
+                        (repository.currentTranslationId.value as TranslationId.Id).value
                     )
                 )
             } catch (e: FileLoadingException) {
