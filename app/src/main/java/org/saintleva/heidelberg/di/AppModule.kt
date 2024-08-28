@@ -26,9 +26,8 @@ import org.saintleva.heidelberg.ui.screens.reading.ReadingViewModel
 import org.saintleva.heidelberg.ui.screens.searchdialog.SearchDialogViewModel
 import org.saintleva.heidelberg.ui.screens.selecttranslation.SelectTranslationViewModel
 
+
 val appModule = module {
-    //viewModelOf(::RepositoryViewModel)
-    //viewModelOf(::CatechismViewModel)
     viewModelOf(::LoadedCatechismViewModel)
     viewModelOf(::FoundViewModel)
     viewModelOf(::ReadingViewModel)
