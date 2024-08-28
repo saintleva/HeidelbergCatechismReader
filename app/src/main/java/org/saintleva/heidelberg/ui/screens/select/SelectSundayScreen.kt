@@ -79,6 +79,7 @@ fun SelectSundayScreen(navigateToReadingScreen: (Int) -> Unit, innerPadding: Pad
                     ) {
                         Text(
                             text = "${i + 1}",
+                            textAlign = TextAlign.Center,
                             style = MaterialTheme.typography.titleLarge
                         )
                         Text(

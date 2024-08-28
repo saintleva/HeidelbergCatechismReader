@@ -68,7 +68,6 @@ import androidx.compose.ui.text.style.TextIndent
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.viewmodel.compose.viewModel
 import kotlinx.coroutines.launch
 import org.koin.androidx.compose.koinViewModel
 import org.saintleva.heidelberg.R
@@ -343,6 +342,8 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
     val isWidthLarge = configuration.orientation == Configuration.ORIENTATION_LANDSCAPE ||
             configuration.screenWidthDp > 840
 
+    val catechismState = viewModel.catechismState.collectAsStateWithLifecycle()
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -365,7 +366,7 @@ fun ReadingScreen(navigateToScreens: NavigateToScreens, questionPosition: Int) {
                 actions = {
                     IconButton(
                         onClick = { searchDialogViewModel.show() },
-                        enabled = viewModel.isCatechismLoaded()
+                        enabled = catechismState.value is CatechismState.Loaded
                     ) {
                         Icon(Icons.Filled.Search, contentDescription = "Search")
                     }

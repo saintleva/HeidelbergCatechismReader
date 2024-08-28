@@ -17,7 +17,6 @@
 
 package org.saintleva.heidelberg.ui.screens.select
 
-import android.util.Log
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -78,12 +77,14 @@ fun SelectQuestionScreen(navigateToReadingScreen: (Int) -> Unit, innerPadding: P
                     ) {
                         Text(
                             text = "${i + 1}",
+                            textAlign = TextAlign.Center,
                             style = MaterialTheme.typography.titleLarge
                         )
                         Text(
                             text = "(${stringResource(R.string.sunday)}" +
                                     " ${viewModel.catechism.sundayOfQuestion(i) + 1})",
-                            textAlign = TextAlign.Center
+                            textAlign = TextAlign.Center,
+                            style = MaterialTheme.typography.bodySmall
                         )
                     }
                 }

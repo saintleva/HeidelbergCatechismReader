@@ -74,7 +74,7 @@ fun AboutApplicationScreen(innerPadding: PaddingValues) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Image(
-                painter = painterResource(R.drawable.logo_for_about_screen),
+                painter = painterResource(R.drawable.icon_1024_transparent),
                 contentDescription = "Logo"
                 //TODO: Implement chrome key
 //            colorFilter = ColorFilter.tint(Color.Transparent, blendMode = BlendMode.SrcIn)
