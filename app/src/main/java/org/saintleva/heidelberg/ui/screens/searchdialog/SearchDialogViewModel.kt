@@ -17,7 +17,6 @@
 
 package org.saintleva.heidelberg.ui.screens.searchdialog
 
-import android.app.Application
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import org.saintleva.heidelberg.data.SearchConditions

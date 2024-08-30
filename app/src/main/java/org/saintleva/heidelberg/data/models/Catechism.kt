@@ -15,6 +15,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
+@file:Suppress("RemoveExplicitTypeArguments", "RemoveExplicitTypeArguments")
+
 package org.saintleva.heidelberg.data.models
 
 import org.saintleva.heidelberg.HeidelbergException
@@ -46,7 +48,7 @@ class Start(
 
 class Structure(
     val questionCount: Int,
-    val partStarts: List<Int>,
+    private val partStarts: List<Int>,
     val sundayStarts: List<Int>
 ) {
     val starts = List<Start>(questionCount) { Start() }
@@ -83,6 +85,7 @@ class BadSundayIndexException: BadIndexException()
 
 class BadPartIndexException: BadIndexException()
 
+@Suppress("RemoveExplicitTypeArguments")
 class Catechism(
     private val _structure: Structure,
     private val _translation: Translation
@@ -95,9 +98,6 @@ class Catechism(
     val sundayCount: Int
         get() = _structure.sundayStarts.size
 
-    val partCount: Int
-        get() = _structure.partStarts.size
-
     fun sundayStart(sundayIndex: Int): Int {
         try {
             return _structure.sundayStarts[sundayIndex]
@@ -109,18 +109,10 @@ class Catechism(
     fun sundayEnd(sundayIndex: Int): Int {
         if (sundayIndex < 0 || sundayIndex >= sundayCount)
             throw BadSundayIndexException()
-        if (sundayIndex + 1 < sundayCount)
-            return _structure.sundayStarts[sundayIndex + 1]
+        return if (sundayIndex + 1 < sundayCount)
+            _structure.sundayStarts[sundayIndex + 1]
         else
-            return questionCount
-    }
-
-    fun partStart(partIndex: Int): Int {
-        try {
-            return _structure.partStarts[partIndex]
-        } catch (e: ArrayIndexOutOfBoundsException) {
-            throw BadSundayIndexException()
-        }
+            questionCount
     }
 
     val blockNames: BlockNames

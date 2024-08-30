@@ -64,7 +64,7 @@ fun loadFromPrefs(context: Context): Position {
         if (translationString.isNullOrEmpty())
             TranslationId.None
         else
-            TranslationId.Id(translationString!!),
+            TranslationId.Id(translationString),
         ScrollPosition(
             prefs.getInt(SCROLL_FIRST_VISIBLE_ITEM_INDEX, 0),
             prefs.getInt(SCROLL_FIRST_VISIBLE_ITEM_SCROLL_OFFSET, 0)

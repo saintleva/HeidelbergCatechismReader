@@ -32,7 +32,7 @@ import javax.xml.parsers.DocumentBuilderFactory
 fun trimTextInXml(text: CharSequence): String {
     val result = StringBuilder()
     val lines = text.lines()
-    for (i in 0 until lines.size) {
+    for (i in lines.indices) {
         if ((i == 0) && lines[i].isBlank()) continue
         result.append(lines[i].trimStart())
         if (i < lines.size - 2) {

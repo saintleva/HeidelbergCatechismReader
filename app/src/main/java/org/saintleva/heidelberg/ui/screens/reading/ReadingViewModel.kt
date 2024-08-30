@@ -17,7 +17,6 @@
 
 package org.saintleva.heidelberg.ui.screens.reading
 
-import android.app.Application
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers

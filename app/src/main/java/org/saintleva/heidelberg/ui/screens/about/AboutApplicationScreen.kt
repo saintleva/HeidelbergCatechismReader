@@ -57,8 +57,6 @@ fun AboutApplicationScreen(innerPadding: PaddingValues) {
             Image(
                 painter = painterResource(R.drawable.logo_for_about_screen),
                 contentDescription = "Logo"
-                //TODO: Implement chrome key
-//            colorFilter = ColorFilter.tint(Color.Transparent, blendMode = BlendMode.SrcIn)
             )
             Spacer(modifier = Modifier.width(10.dp))
             Text(
@@ -74,10 +72,8 @@ fun AboutApplicationScreen(innerPadding: PaddingValues) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Image(
-                painter = painterResource(R.drawable.icon_1024_transparent),
+                painter = painterResource(R.drawable.logo_for_about_screen),
                 contentDescription = "Logo"
-                //TODO: Implement chrome key
-//            colorFilter = ColorFilter.tint(Color.Transparent, blendMode = BlendMode.SrcIn)
             )
             Spacer(modifier = Modifier.height(10.dp))
             Text(

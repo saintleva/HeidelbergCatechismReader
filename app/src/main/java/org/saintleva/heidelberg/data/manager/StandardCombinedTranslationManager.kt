@@ -17,12 +17,8 @@
 
 package org.saintleva.heidelberg.data.manager
 
-import kotlinx.coroutines.flow.MutableStateFlow
-
 
 interface StandardCombinedTranslationManager : CombinedTranslationManager {
-
-    override val combinedTranslations: MutableStateFlow<CombinedTranslationListState>
 
     override fun combineTranslations() {
         val result = sortedMapOf<String, MutableSet<ExtendedMetadata>>()

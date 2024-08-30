@@ -17,7 +17,6 @@
 
 package org.saintleva.heidelberg.ui.screens.common
 
-import android.app.Application
 import android.util.Log
 import org.saintleva.heidelberg.CatechismNotLoadedException
 import org.saintleva.heidelberg.data.models.Catechism

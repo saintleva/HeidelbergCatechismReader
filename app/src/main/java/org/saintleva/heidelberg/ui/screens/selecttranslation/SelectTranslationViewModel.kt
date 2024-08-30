@@ -17,7 +17,6 @@
 
 package org.saintleva.heidelberg.ui.screens.selecttranslation
 
-import android.app.Application
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -34,13 +33,13 @@ import org.saintleva.heidelberg.ui.screens.common.RepositoryViewModel
 
 
 class SelectTranslationViewModel(
-    val manager: CombinedTranslationManager,
+    private val manager: CombinedTranslationManager,
     repository: Repository
 ) : RepositoryViewModel(repository) {
 
     private val _currentTranslationId: MutableStateFlow<TranslationId> =
         repository.currentTranslationId
-    val currentTranslationId: StateFlow<TranslationId> = _currentTranslationId
+    private val currentTranslationId: StateFlow<TranslationId> = _currentTranslationId
 
     private val _combinedTranslations = manager.combinedTranslations
     val combinedTranslations: StateFlow<CombinedTranslationListState> = _combinedTranslations

@@ -45,14 +45,14 @@ import org.koin.androidx.compose.koinViewModel
 import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.data.Found
 import org.saintleva.heidelberg.data.SearchConditions
-import org.saintleva.heidelberg.ui.multiParagraphText
+import org.saintleva.heidelberg.data.multiParagraphText
 import org.saintleva.heidelberg.ui.screens.common.RecordItem
 import org.saintleva.heidelberg.ui.screens.common.TextTransformer
 
 
 class FoundTransformer(
     val found: Found,
-    val backgroundColor: Color
+    private val backgroundColor: Color
 ) : TextTransformer {
 
     private fun transformSomething(source: String, foundItem: List<IntRange>): AnnotatedString {

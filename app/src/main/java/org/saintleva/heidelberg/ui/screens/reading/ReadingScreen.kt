@@ -36,10 +36,10 @@ import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.Divider
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -73,8 +73,8 @@ import org.koin.androidx.compose.koinViewModel
 import org.saintleva.heidelberg.R
 import org.saintleva.heidelberg.R.string.about_translation
 import org.saintleva.heidelberg.data.SearchConditions
+import org.saintleva.heidelberg.data.multiParagraphText
 import org.saintleva.heidelberg.data.repository.CatechismState
-import org.saintleva.heidelberg.ui.multiParagraphText
 import org.saintleva.heidelberg.ui.screens.common.DataAlert
 import org.saintleva.heidelberg.ui.screens.common.RecordItem
 import org.saintleva.heidelberg.ui.screens.common.TextTransformer
@@ -251,7 +251,7 @@ fun ReadingArea(viewModel: ReadingViewModel, innerPadding: PaddingValues,
                         if (start.part != null) {
                             Text(
                                 text = "${catechism.blockNames.part} ${romanNumber(start.part!!)}. " +
-                                        "${catechism.partName(start.part!!)}",
+                                        catechism.partName(start.part!!),
                                 textAlign = TextAlign.Center,
                                 modifier = Modifier
                                     .fillMaxWidth()
@@ -272,9 +272,9 @@ fun ReadingArea(viewModel: ReadingViewModel, innerPadding: PaddingValues,
                         RecordItem(catechism, i, ReadingTextTransformer)
                         if (i < catechism.questionCount - 1) {
                             Spacer(modifier = Modifier.padding(all = 4.dp))
-                            Divider(
-                                thickness = 1.dp,
-                                modifier = Modifier.padding(horizontal = 4.dp)
+                            HorizontalDivider(
+                                modifier = Modifier.padding(horizontal = 4.dp),
+                                thickness = 1.dp
                             )
                         }
                     }

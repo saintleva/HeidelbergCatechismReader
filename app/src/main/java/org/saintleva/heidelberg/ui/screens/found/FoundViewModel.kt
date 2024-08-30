@@ -17,7 +17,6 @@
 
 package org.saintleva.heidelberg.ui.screens.found
 
-import android.app.Application
 import androidx.compose.ui.text.style.TextIndent
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewModelScope

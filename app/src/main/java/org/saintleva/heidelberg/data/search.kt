@@ -20,7 +20,6 @@ package org.saintleva.heidelberg.data
 import androidx.compose.ui.text.style.TextIndent
 import org.saintleva.heidelberg.HeidelbergException
 import org.saintleva.heidelberg.data.models.Catechism
-import org.saintleva.heidelberg.ui.multiParagraphText
 
 
 class EmptySubstringException : HeidelbergException()

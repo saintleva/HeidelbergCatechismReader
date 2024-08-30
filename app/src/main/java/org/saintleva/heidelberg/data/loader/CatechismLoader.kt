@@ -17,7 +17,6 @@
 
 package org.saintleva.heidelberg.data.loader
 
-import android.content.Context
 import org.saintleva.heidelberg.data.models.Catechism
 import org.saintleva.heidelberg.data.models.Structure
 import org.saintleva.heidelberg.data.models.Translation

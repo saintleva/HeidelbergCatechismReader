@@ -18,7 +18,7 @@
 package org.saintleva.heidelberg
 
 
-abstract class HeidelbergException() : Exception()
+abstract class HeidelbergException : Exception()
 
 abstract class HeidelbergCausedException(cause: Exception) : Exception(cause)
 

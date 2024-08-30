@@ -17,7 +17,6 @@
 
 package org.saintleva.heidelberg.data.manager
 
-import android.content.Context
 import kotlinx.coroutines.flow.MutableStateFlow
 import org.saintleva.heidelberg.DataException
 import org.saintleva.heidelberg.data.models.AllTranslations
