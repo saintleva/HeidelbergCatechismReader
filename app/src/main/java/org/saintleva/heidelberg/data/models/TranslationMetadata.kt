@@ -17,8 +17,10 @@
 
 package org.saintleva.heidelberg.data.models
 
+import androidx.annotation.Keep
 import org.saintleva.heidelberg.NoLanguageSpecifiedException
 
+@Keep
 class TranslationMetadata(
     val name: String?,
     val englishName: String?,
